@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="templates:surround?with=templates/page.html&amp;at=content">
+    <script src="$app-root/resources/js/tablesorter/js/jquery.tablesorter.js"/>
+    <script src="$app-root/resources/js/tablesorter/js/jquery.tablesorter.widgets.js"/>
+    <script src="$app-root/resources/js/tablesorter/js/jquery.tablesorter.pager.js"/>
+    <link rel="stylesheet" type="text/css" href="$app-root/resources/js/tablesorter/css/theme.bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="$app-root/resources/js/tablesorter/css/jquery.tablesorter.pager.css"/>
+    <script src="$app-root/resources/js/leaflet/leaflet.js"/>
+    <link rel="stylesheet" href="$app-root/resources/js/leaflet/leaflet.css"/>
+    <link rel="stylesheet" type="text/css" href="$app-root/resources/js/leaflet/MarkerCluster.css"/>
+    <link rel="stylesheet" type="text/css" href="$app-root/resources/js/leaflet/MarkerCluster.Default.css"/><!-- history.js -->
+    <script src="$app-root/resources/js/historyjs/jquery.history.js"/><!-- history.js END-->
+    <script type="text/javascript" src="$app-root/resources/js/leaflet/markercluster_not_official.js"/>
+    <script>$(function() { 
+            $("table").tablesorter(
+                { theme : "bootstrap", widthFixed: false,
+                headerTemplate : '{content} {icon}', widgets : [ "uitheme", "filter", "zebra" ], filter_cssFilter: "form-control"}
+               );
+        });</script><!--     https://mottie.github.io/tablesorter/docs/index.html#api Event: tablesorter-initialized-->
+    <div class="panel panel-default">
+        <div class="panel-heading" style="text-align:center;">
+            <h1>
+                <span id="amount"/> Orte <br/>
+                <small>
+                    <span id="searchstring"/>
+                </small>
+            </h1>
+        </div>
+        <div class="panel-body">
+            <div id="parentMap"/>
+            <table class="table table-striped table-condensed table-hover">
+                <thead>
+                    <tr>
+                        <th class="header">
+                            Ortsname (normalisiert)
+                        </th>
+                        <th>Alternative Schreibweisen</th>
+                        <th>Normdata</th>
+                        <th>GPS</th>
+                    </tr>
+                </thead>
+                <tr data-template="app:listPlace"/>
+            </table>
+        </div>
+    </div>
+    <script>$( document ).ready(function() {
+        var all_rows = $("tr").slice( 2 ) ;
+            $('#amount').text(all_rows.length);
+        
+            var fetched_param = decodeURIComponent($.urlParam("place"));
+
+            if (fetched_param != "null"){
+                
+               $.tablesorter.setFilters( $('table'), [ fetched_param], true );
+               $('table').trigger('search', true);
+            }
+            
+            $("#mapid").remove()
+            $("#parentMap").append("&lt;div id='mapid'&gt;&lt;/div&gt;");
+            $( "#mapid").css("height", "500px");
+            var map = L.map('mapid').setView([48.69096, 9.14062], 5); 
+            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+            attribution: 'Map data &lt;a href="http://openstreetmap.org"&gt;OpenStreetMap&lt;/a&gt; contributors, &lt;a href="http://creativecommons.org/licenses/by-sa/2.0/"&gt;CC-BY-SA&lt;/a&gt;, Imagery © &lt;a href="http://mapbox.com"&gt;Mapbox&lt;/a&gt;',
+            maxZoom: 18,
+            id: 'mapbox.light',
+            accessToken: 'pk.eyJ1Ijoic2VubmllcmVyIiwiYSI6ImNpbHk1YWV0bDAwZnB2dW01d2l1Y3phdmkifQ.OljQLEhqeAygai2y6VoSwQ'
+            }).addTo(map);
+            
+            var rows = $("tr:visible").has( "geo" );
+            
+            places = []
+            rows.each(function (index, value) {
+            var place_name = $(value).find('a').first().text().trim();
+            var coordinates = ($(value).find('geo').first().text().trim()).split(' ');
+            var lng_value = parseFloat((coordinates[1]).replace(',', '.'));
+            var lat_value = parseFloat((coordinates[0]).replace(',', '.'));
+            var getty_id = $(value).find('idno').first().text().trim();
+            var place = {
+            orig_name : place_name,
+            lng : lng_value,
+            lat : lat_value,
+            getty :getty_id
+            };
+            places.push(place);
+            });
+            var markerClusters = L.markerClusterGroup();
+            $(places).each(function (index, value){
+            if (value.lng)
+            {
+            var popup = value.orig_name
+            var m = L.marker( [value.lat, value.lng] ).bindPopup( popup );
+            markerClusters.addLayer( m );
+            }
+            });
+            map.addLayer( markerClusters );
+            console.log(places);
+           // History.pushState({searchstring: "place"}, "looking for "+searchstring, "?place="+searchstring);   
+
+            
+            $("td input").bind("keyup", function(e) {
+                var all_rows = $("tr").length -2;
+                var col_id = $(this).parent().attr('data-column');
+                var searchstring = $(this).val();
+                var filtered_rows = $("tr:visible").slice( 2 ) ;
+                $('#filtered').text(filtered_rows);
+                $('#all').text(all_rows);
+                $('#searchstring').text("'"+searchstring+"' kommt "+filtered_rows.length+ "mal vor.");
+                
+                $("#mapid").remove()
+                $("#parentMap").append("&lt;div id='mapid'&gt;&lt;/div&gt;");
+                $( "#mapid").css("height", "500px");
+                var map = L.map('mapid').setView([48.69096, 9.14062], 5); 
+                L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+                attribution: 'Map data &lt;a href="http://openstreetmap.org"&gt;OpenStreetMap&lt;/a&gt; contributors, &lt;a href="http://creativecommons.org/licenses/by-sa/2.0/"&gt;CC-BY-SA&lt;/a&gt;, Imagery © &lt;a href="http://mapbox.com"&gt;Mapbox&lt;/a&gt;',
+                maxZoom: 18,
+                id: 'mapbox.light',
+                accessToken: 'pk.eyJ1Ijoic2VubmllcmVyIiwiYSI6ImNpbHk1YWV0bDAwZnB2dW01d2l1Y3phdmkifQ.OljQLEhqeAygai2y6VoSwQ'
+                }).addTo(map);
+                
+                var rows = $("tr:visible").has( "geo" );
+                
+                places = []
+                rows.each(function (index, value) {
+                var place_name = $(value).find('a').first().text().trim();
+                var coordinates = ($(value).find('geo').first().text().trim()).split(' ');
+                var lng_value = parseFloat((coordinates[1]).replace(',', '.'));
+                var lat_value = parseFloat((coordinates[0]).replace(',', '.'));
+                var getty_id = $(value).find('idno').first().text().trim();
+                var place = {
+                orig_name : place_name,
+                lng : lng_value,
+                lat : lat_value,
+                getty :getty_id
+                };
+                places.push(place);
+                });
+                var markerClusters = L.markerClusterGroup();
+                $(places).each(function (index, value){
+                if (value.lng)
+                {
+                var popup = value.orig_name
+                var m = L.marker( [value.lat, value.lng] ).bindPopup( popup );
+                markerClusters.addLayer( m );
+                }
+                });
+                map.addLayer( markerClusters );
+                console.log(places);
+                History.pushState({searchstring: "place"}, "looking for "+searchstring, "?place="+searchstring);   
+            });
+         });</script>
+</div>

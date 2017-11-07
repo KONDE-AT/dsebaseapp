@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="templates:surround?with=templates/page.html&amp;at=content">
+    <div data-template="app:XMLtoHTML"/>
+    <script src="$app-root/resources/js/hrjs/hr.js"/>
+    <script>var hit = findGetParameter("searchexpr")
+        new HR("p", {
+        highlight: hit
+        }).hr();</script>
+</div>

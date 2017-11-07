@@ -1,0 +1,36 @@
+/* Application styles could go here */
+html{
+    height:100%;
+}
+body{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+}
+header{
+    flex:0 0 auto;
+    background-color:#333; /*#F8F8F8*/
+    color:#ffffff;
+}
+.main-content{
+    flex:1 0 auto;
+}
+
+span.data-hr {
+    background-color: #ffff00;
+}
+
+footer{
+    flex:0 0 auto;
+    background-color:#333; /*#F8F8F8*/
+    color:#ffffff;
+    font-size:13px;
+    padding:20px;
+    /* position: absolute;*/
+    left:0;
+    right:0;
+    width:100%;
+    margin-top:10px;
+}
+footer .poweredby { float: right; margin: 33px 10px 0 0;}
+footer .poweredby img { width: 120px; }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="templates:surround?with=templates/page.html&amp;at=content"> <script src="$app-root/resources/js/tablesorter/js/jquery.tablesorter.js"/> <script src="$app-root/resources/js/tablesorter/js/jquery.tablesorter.widgets.js"/> <script src="$app-root/resources/js/tablesorter/js/jquery.tablesorter.pager.js"/> <link rel="stylesheet" type="text/css" href="$app-root/resources/js/tablesorter/css/theme.bootstrap.css"/> <link rel="stylesheet" type="text/css" href="$app-root/resources/js/tablesorter/css/jquery.tablesorter.pager.css"/> <script src="$app-root/resources/js/historyjs/jquery.history.js"/> <script>$(function() { 
+        $("table").tablesorter(
+        { theme : "bootstrap", widthFixed: false,
+        headerTemplate : '{content} {icon}', widgets : [ "uitheme", "filter", "zebra" ], filter_cssFilter: "form-control"}
+        );
+        });</script> <span data-template="app:nameOfIndexEntry"/> <table class="table table-striped table-condensed table-hover"> <thead>
+            <tr align="center" font-size="1.0em"> <th class="header">Absender  </th> <th>Empfänger</th> <th>Ausstellungsort</th> <th>Datum</th> <th>Treffer</th> <th>KWIC / Dokument-ID</th> </tr> </thead> <tr data-template="app:indexSearch_hits"/> </table>
+</div>

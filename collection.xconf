@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://exist-db.org/collection-config/1.0">
+    <index xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <fulltext default="none" attributes="false"/>
+        <create qname="tei:term" type="xs:string"/>
+        <create qname="tei:persName" type="xs:string"/>
+        <create qname="tei:placeName" type="xs:string"/>
+        <create qname="tei:rs" type="xs:string"/>
+        <create qname="@ref" type="xs:string"/>
+        <lucene>
+            <text qname="tei:p"/>
+        </lucene>
+    </index>
+    <triggers>
+        <trigger class="org.exist.extensions.exquery.restxq.impl.RestXqTrigger"/>
+    </triggers>
+</collection>

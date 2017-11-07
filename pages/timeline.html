@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="templates:surround?with=templates/page.html&amp;at=content">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"/>  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.css" rel="stylesheet" type="text/css"/>
+    
+    <style type="text/css">
+        #visualization {
+            position: relative;
+        }
+    </style>
+    <script id="item-template" type="text/x-handlebars-template">
+        <table class="table table-bordered table-hover table-condensed">
+            <tr>
+                <th>Sender</th>
+                <td colspan="3" class="description">{{sender}}</td>
+            </tr>
+            {{#if receiver}}
+            <tr>
+                <th>Receiver</th>
+                <td colspan="3" class="description">{{receiver}}</td>
+            </tr>
+            {{/if}}
+            <tr>
+                <th>zum Dokument</th>
+                <td>
+                    <a href="{{backlink}}">click to follow</a>
+                </td>
+           </tr>
+        </table>
+    </script>
+        <div id="visualization">
+           
+        </div>
+    <ul class="menu">
+        <li>Click into the timeline hold<code>ctrl</code> to zoom</li>
+        <li>Data fetched from<a href="../analyze/timeline.xql">../analyze/timeline.xql</a>
+        </li>
+    </ul>
+    
+    <script type="text/javascript">
+        var datasource = "../analyze/timeline.xql"
+        var container = document.getElementById('visualization');
+        $.getJSON( datasource, function( data ) {
+        // create a handlebars template
+            var source   = document.getElementById('item-template').innerHTML;
+            var template = Handlebars.compile(document.getElementById('item-template').innerHTML);
+            var options = {
+                template: template,
+                stack: true,
+                horizontalScroll: true,
+                zoomKey: 'ctrlKey',
+                maxHeight: 600,
+                start: new Date(),
+                end: new Date(1000*60*60*24 + (new Date()).valueOf()),
+                margin: {
+                 item: 10, // minimal margin between items
+                 axis: 5   // minimal margin between items and the axis
+                },
+                orientation: 'top',
+                start: new Date(1833,01,01),
+                end: new Date(1862, 01, 01)
+            };
+            var timeline = new vis.Timeline(container, data.item, options);
+        });
+ 
+    </script>
+</div>

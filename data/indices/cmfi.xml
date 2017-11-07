@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Correspondence Metadata Interchange Format for: Die Korrespondenz von Leo von Thun-Hohenstein</title>
+                <editor>Peter Andorfer</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <ref target="https://thun-korrespondenz.acdh.oeaw.ac.at">Die Korrespondenz von Leo von Thun-Hohenstein</ref>
+                </publisher>
+                <idno type="url">https://thun-korrespondenz.acdh.oeaw.ac.at</idno>
+                <date when="2017-06-28+02:00"/>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY 4.0</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="online">Die Korrespondenz von Leo von Thun-Hohenstein<ref target="https://thun-korrespondenz.acdh.oeaw.ac.at">https://thun-korrespondenz.acdh.oeaw.ac.at</ref>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/padlesak-an-thun-1860-03-31-a3-xxi-d565.xml">
+                <correspAction type="sent">
+                    <persName ref="#padlesak-johann">Johann Padlesák</persName>
+                    <settlement ref="#place_c12b8d9779a8ad2b240a57b31c979290">Prag</settlement>
+                    <date when="1860-03-31">31. März 1860</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/118757393">Leo Thun</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/nuell-sicardsburg-ferstl-an-thun-1856-04-a3-xxi-377.xml">
+                <correspAction type="sent">
+                    <persName ref="http://d-nb.info/gnd/118735691">Eduard van der Nüll</persName>
+                    <settlement ref="#place_1b388e3352c32b76b8d975c4d3625070">Wien</settlement>
+                    <date>April 1856</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/118757393">Leo Thun</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/note-nadasdy-an-goluchowski-1860-01-06-a3-xxi-d525f.xml">
+                <correspAction type="sent">
+                    <persName ref="#nadasdy-franz">Franz Nádasdy</persName>
+                    <date when="1860-01-06">6. Januar 1860</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/11676516X">Agenor Goluchowski</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/note-nadasdy-an-goluchowski-1860-01-05-a3-xxi-d525e.xml">
+                <correspAction type="sent">
+                    <persName ref="#nadasdy-franz">Franz Nádasdy</persName>
+                    <date when="1860-01-05">5. Januar 1860</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/11676516X">Agenor Goluchowski</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/note-nadasdy-an-goluchowski-1860-01-05-a3-xxi-d525d.xml">
+                <correspAction type="sent">
+                    <persName ref="#nadasdy-franz">Franz Nádasdy</persName>
+                    <date when="1860-01-05">5. Januar 1860</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/11676516X">Agenor Goluchowski</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/note-nadasdy-an-goluchowski-1859-11-05-a3-xxi-d525b.xml">
+                <correspAction type="sent">
+                    <persName ref="#nadasdy-franz">Franz Nádasdy</persName>
+                    <settlement ref="#place_1b388e3352c32b76b8d975c4d3625070">Wien</settlement>
+                    <date when="1859-11-05">5. November 1859</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/11676516X">Agenor Goluchowski</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/note-nadasdy-an-goluchowski-1859-11-05-a3-xxi-d525a.xml">
+                <correspAction type="sent">
+                    <persName ref="#nadasdy-franz">Franz Nádasdy</persName>
+                    <date when="1859-11-05">5. November 1859</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/11676516X">Agenor Goluchowski</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/note-nadasdy-an-goluchowski-1859-11-05-a3-xxi-d525.xml">
+                <correspAction type="sent">
+                    <persName ref="#nadasdy-franz">Franz Nádasdy</persName>
+                    <date when="1859-11-05">5. November 1859</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/11676516X">Agenor Goluchowski</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/note-goluchowski-an-nadasdy-1859-12-21-a3-xxi-d525c.xml">
+                <correspAction type="sent">
+                    <persName ref="http://d-nb.info/gnd/11676516X">Agenor Goluchowski</persName>
+                    <date when="1859-12-21">21. Dezember 1859</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="#nadasdy-franz">Franz Nádasdy</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/nostitz-an-thun-1860-01-04-a3-xxi-d545.xml">
+                <correspAction type="sent">
+                    <persName ref="http://d-nb.info/gnd/130125873">Albert Nostitz</persName>
+                    <settlement ref="#place_c12b8d9779a8ad2b240a57b31c979290">Prag</settlement>
+                    <date when="1860-01-04">4. Jänner 1860</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/118757393">Leo Thun</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/neumann-an-thun-1851-04-13-a3-xxi-d113.xml">
+                <correspAction type="sent">
+                    <persName ref="http://d-nb.info/gnd/118587293">Leopold Neumann</persName>
+                    <settlement ref="#place_1b388e3352c32b76b8d975c4d3625070">Wien</settlement>
+                    <date when="1851-04-13">13. April 1851</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/118757393">Leo Thun</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/neumann-an-thun-1850-09-21-a3-xxi-d71.xml">
+                <correspAction type="sent">
+                    <persName ref="http://d-nb.info/gnd/118587293">Leopold Neumann</persName>
+                    <settlement ref="#place_1b388e3352c32b76b8d975c4d3625070">Wien</settlement>
+                    <date when="1850-09-21">21. September 1850</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/118757393">Leo Thun</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/mueller-an-thun-1854-10-13-a3-xxi-d291.xml">
+                <correspAction type="sent">
+                    <persName ref="http://d-nb.info/gnd/118585045">Johann Georg Müller</persName>
+                    <settlement ref="#place_4dbe0ffdffa5c77b20027b8cf10de19d">Hildesheim</settlement>
+                    <date when="1854-10-13">13. Oktober 1854</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/118757393">Leo Thun</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/mozart-an-thun-o-d-a3-xxi-d183.xml">
+                <correspAction type="sent">
+                    <persName ref="http://d-nb.info/gnd/1023724472">Joseph Mozart</persName>
+                    <date/>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/118757393">Leo Thun</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/mozart-an-thun-o-d-a3-xxi-d182.xml">
+                <correspAction type="sent">
+                    <persName ref="http://d-nb.info/gnd/1023724472">Joseph Mozart</persName>
+                    <date/>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/118757393">Leo Thun</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/mozart-an-thun-1853-09-19-a3-xxi-d235.xml">
+                <correspAction type="sent">
+                    <persName ref="http://d-nb.info/gnd/1023724472">Joseph Mozart</persName>
+                    <settlement ref="#place_1b388e3352c32b76b8d975c4d3625070">Wien</settlement>
+                    <date/>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/118757393">Leo Thun</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/moy-an-thun-1860-01-02-a3-xxi-d544.xml">
+                <correspAction type="sent">
+                    <persName ref="http://d-nb.info/gnd/174390033">Ernst Moy de Sons</persName>
+                    <settlement ref="#place_1ff97f22292e3d91119e867aadcf511b">Innsbruck</settlement>
+                    <date when="1860-01-02">2. Januar 1860</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/118757393">Leo Thun</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/moy-an-thun-1859-02-13-a3-xxi-d497.xml">
+                <correspAction type="sent">
+                    <persName ref="http://d-nb.info/gnd/174390033">Ernst Moy de Sons</persName>
+                    <settlement ref="#place_1ff97f22292e3d91119e867aadcf511b">Innsbruck</settlement>
+                    <date when="1859-02-13">13. Februar 1859</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/118757393">Leo Thun</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/moy-an-thun-1859-01-07-a3-xxi-d491.xml">
+                <correspAction type="sent">
+                    <persName ref="http://d-nb.info/gnd/174390033">Ernst Moy de Sons</persName>
+                    <settlement ref="#place_1ff97f22292e3d91119e867aadcf511b">Innsbruck</settlement>
+                    <date when="1859-01-07">7. Januar 1859</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/118757393">Leo Thun</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/moy-an-thun-1858-01-28-a3-xxi-d445.xml">
+                <correspAction type="sent">
+                    <persName ref="http://d-nb.info/gnd/174390033">Ernst Moy de Sons</persName>
+                    <settlement ref="#place_1ff97f22292e3d91119e867aadcf511b">Innsbruck</settlement>
+                    <date when="1858-01-28">28. Januar 1858</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/118757393">Leo Thun</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/moy-an-thun-1855-01-06-a3-xxi-d322.xml">
+                <correspAction type="sent">
+                    <persName ref="http://d-nb.info/gnd/174390033">Ernst Moy de Sons</persName>
+                    <settlement ref="#place_1ff97f22292e3d91119e867aadcf511b">Innsbruck</settlement>
+                    <date when="1855-01-06">06. Jänner 1855</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/118757393">Leo Thun</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/moy-an-thun-1854-12-08-a3-xxi-d308.xml">
+                <correspAction type="sent">
+                    <persName ref="http://d-nb.info/gnd/174390033">Ernst Moy de Sons</persName>
+                    <settlement ref="#place_1ff97f22292e3d91119e867aadcf511b">Innsbruck</settlement>
+                    <date when="1854-12-08">08. Dezember 1854</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/118757393">Leo Thun</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/moy-an-thun-1854-07-19-a3-xxi-d270.xml">
+                <correspAction type="sent">
+                    <persName ref="http://d-nb.info/gnd/174390033">Ernst Moy de Sons</persName>
+                    <settlement ref="#place_1ff97f22292e3d91119e867aadcf511b">Innsbruck</settlement>
+                    <date when="1854-07-19">19. Juli 1854</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/118757393">Leo Thun</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/moy-an-thun-1853-07-21-a3-xxi-d219.xml">
+                <correspAction type="sent">
+                    <persName ref="http://d-nb.info/gnd/174390033">Ernst Moy de Sons</persName>
+                    <settlement ref="#place_1ff97f22292e3d91119e867aadcf511b">Innsbruck</settlement>
+                    <date when="1853-07-21">21. Juli 1853</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/118757393">Leo Thun</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/moy-an-thun-1852-04-05-a3-xxi-d161.xml">
+                <correspAction type="sent">
+                    <persName ref="http://d-nb.info/gnd/174390033">Ernst Moy de Sons</persName>
+                    <settlement ref="#place_1ff97f22292e3d91119e867aadcf511b">Innsbruck</settlement>
+                    <date when="1852-04-05">5. April 1852</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/118757393">Leo Thun</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/moy-an-thun-1852-02-01-a3-xxi-d155.xml">
+                <correspAction type="sent">
+                    <persName ref="http://d-nb.info/gnd/174390033">Ernst Moy de Sons</persName>
+                    <settlement ref="#place_1ff97f22292e3d91119e867aadcf511b">Innsbruck</settlement>
+                    <date when="1852-02-01">1. Februar 1852</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/118757393">Leo Thun</persName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc ref="https://thun-korrespondenz.acdh.oeaw.ac.at/moy-an-thun-1851-11-09-a3-xxi-d128.xml">
+                <correspAction type="sent">
+                    <persName ref="http://d-nb.info/gnd/174390033">Ernst Moy de Sons</persName>
+                    <settlement ref="#place_1ff97f22292e3d91119e867aadcf511b">Innsbruck</settlement>
+                    <date when="1851-11-09">9. November 1851</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="http://d-nb.info/gnd/118757393">Leo Thun</persName>
+                </correspAction>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>some text</p>
+        </body>
+    </text>
+</TEI>

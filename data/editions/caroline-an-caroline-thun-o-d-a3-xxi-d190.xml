@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>
+                    <rs type="person" ref="#langenau-karoline" role="sender">Karoline Langenau</rs>
+                    an <rs type="person" ref="#thun-hohenstein-caroline" role="recipient">Caroline
+                        Thun</rs>
+                    <lb/>o. O., o. D. [Februar 1853]</title>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Staatliches Gebietsarchiv Leitmeritz, Zweigstelle
+                            Tetschen-Bodenbach</institution>
+                        <repository>Familienarchiv Thun-Hohenstein, Linie Tetschen, Nachlass Leo
+                            Thun</repository>
+                        <idno>A3 XXI D190</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <p>Karoline Langenau, Schwester des Diplomaten Ferdinand Langenau,
+                            übersendet Caroline Thun ein Schreiben von Karl Ahn aus Mainz mit der
+                            Bitte, dieses an ihren Mann Leo Thun weiterzuleiten. Ahn ist ein Protegé
+                            ihres Schwagers Karl Mertens. Dieser bürgt sowohl für Ahns
+                            wissenschaftliche Fähigkeiten als auch für dessen
+                            Charakterfestigkeit.<lb/>Im beigelegten Schreiben bittet Karl Ahn Leo
+                            Thun um eine Stelle als Gymnasiallehrer oder Bibliothekar in Österreich.
+                            Das Schreiben beinhaltet auch den Lebenslauf von Ahn. Ahn hat Theologie
+                            und klassische Philologie und Altertumskunde studiert und die
+                            Lehramtsprüfung für das Gymnasium bereits absolviert. Derzeit ist er
+                            Erzieher bei der Familie von Karl Mertens in Mainz.</p>
+                    </msContents>
+                    <physDesc>
+                        <p>Beilage: <ref target="#D190_1">Schreiben von Karl Ahn. Mainz, 11. Februar
+                                1853</ref>.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName ref="#langenau-karoline">Karoline Langenau</persName>
+                    <date/>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="#thun-hohenstein-caroline">Caroline Thun</persName>
+                </correspAction>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item>approved by Mazohl</item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript">
+                <index>
+                    <term>Personalfragen</term>
+                    <term>Personalvermittlung</term>
+                    <term>Gymnasien</term>
+                    <term>Klassische Philologie</term>
+                </index>
+                <p>Mit tausend Dank, liebe Gräfin, übersende ich hier das Buch und meine Schuld. Ich
+                    hätte es selbst gebracht, wollte Sie aber in den ersten Tagen des Hierseins
+                    Ihrer Frau Schwester<note xml:id="note_1">Es ist nicht klar, wer hier gemeint
+                        ist, da Caroline Thun keine Schwester hatte. Vielleicht meinte Karoline
+                        Langenau eine Schwester von Leo Thun, Elisabeth oder Anna Maria.</note>
+                    nicht überfallen, und hatte so heftige Schmerzen, daß ich recht herunten war.
+                    Zugleich habe ich mir überlegt, daß es wohl besser, wenn ich, ehe ich Ihren
+                        <rs type="person" ref="#thun-hohenstein-leo">Herrn Gemahl</rs> aufsuche, ihm
+                    beiliegendes Schreiben des Protigés <rs type="person" ref="#mertens-karl">meines
+                        Schwagers</rs> übergebe, damit er sieht, was er zu leisten fähig, und
+                    ob es wohl möglich ihn mit der Zeit in österreichische Dienste zu bringen, was
+                    sein sehnlichster Wunsch.<note xml:id="note_2">
+                        <ref target="#D190_1">Vgl. das
+                            Schreiben von Karl Ahn vom 11. Februar 1853.</ref>
+                    </note> Für seine
+                    guten Gesinnungen und Moralität bürgt <rs type="person" ref="#mertens-karl">mein
+                        Schwager</rs>, der sehr mit ihm und seinen Leistungen zufrieden.
+                    Vielleicht wäre es nicht so schwer, da es nicht gerade für den Augenblick, indem
+                    es sehr zu wünschen, daß er die Zeit, daß <rs type="person" ref="#mertens-karl">Mertens</rs> noch in <rs type="place" subtype="place" ref="#place_3496da6c1db0a5223edb1fb4c415a154">Mainz</rs> bleibt – bis
+                    November 1854 – wenn[?] nicht unvorhergesehene Fälle eintreten, bei den
+                        <rs type="person" ref="#mertens-karl-sohn">Knaben</rs> bleiben könnte. Ich
+                    bitte sehr des zerknitterten Zustandes des Schreibens wegen um Verzeihung, dies
+                    ist meine Schuld. Ich komme dann selbst nachfragen, was wohl zu hoffen, und ob
+                    es <rs type="person" ref="#thun-hohenstein-leo">Graf Thun</rs> möglich für den
+                    guten <rs type="person" ref="#ahn-karl">Herrn Ahn</rs> etwas zu thun. Auf baldiges
+                    Wiedersehen.</p>
+                <p>Ihre Caroline</p>
+                <p>Den versprochenen Abend an meinem einsamen Theetisch mit <rs type="person" ref="#mertens-zoe">Zoe</rs>[?] schenke ich Ihnen aber nicht.</p>
+                <p/>
+                <div xml:id="D190_1" type="enclosure">
+                    <p>Curriculum vitae des <rs type="person" ref="#ahn-karl">Dr. philos. Karl Ahn</rs>
+                        aus <rs type="place" subtype="place" ref="#place_d4279ac9f79e45b961a6fb2c80c169be">Seligenstadt</rs> im Großherzogthum
+                            <rs type="place" subtype="region" ref="#place_b1955bcdd57fab7b269abbb05a7abd51">Hessen</rs>
+                    </p>
+                    <p>Derselbe ist Sohn des zu <rs type="place" subtype="place" ref="#place_d4279ac9f79e45b961a6fb2c80c169be">Seligenstadt</rs> verstorbenen
+                        Oberzolleinnehmers <rs type="person" ref="#ahn-friedrich">Friedrich Ahn</rs>
+                        und dessen gleichfalls verstorbenen Ehefrau <rs type="person" ref="#ahn-elisabetha">Elisabetha</rs>, geb. Kaiser, alt 26 Jahre und katholischer
+                        Confession. Im Herbste 1845 absolvirte er, nachdem er während 5 Jahren die 6
+                        Gymnasialklassen durchgemacht hatte, das Großherzogliche hessische Gymnasium
+                        zu <rs type="place" subtype="place" ref="#place_3496da6c1db0a5223edb1fb4c415a154">Mainz</rs> mit dem Maturitätszeugnisse Nr. II. („sehr
+                        gut“), studirte hierauf während 3 Jahren an der <orgName>Landesuniversität zu Giessen</orgName>
+                        katholische Theologie und wurde im Herbste 1848 nach abgelegter
+                        Fakultätsprüfung, worin er sich das Prädikat „gut bis sehr gut“ erwarb, in
+                        das bischöfliche Priesterseminarium zu <rs type="place" subtype="place" ref="#place_3496da6c1db0a5223edb1fb4c415a154">Mainz</rs>
+                        aufgenommen. Hier empfing er die minores und sollte im folgenden Jahre 1849,
+                        nachdem er sich durch Prüfungen über die praktische Seelsorge und durch
+                        Predigten als gereift erwiesen, die Priesterweihe nebst den beiden höheren
+                        andern empfangen, als er freiwillig und mit anerkennenden Zeugnissen seiner
+                        Fähigkeit und guten Aufführung das Seminarium verließ, weil er die Pflichten
+                        des Priesterstandes nicht übernehmen zu können glaubte. Von nun an ergab er
+                        sich auf der <orgName>Universität
+                            Gießen</orgName> dem Studium der klassischen Alterthumskunde, wurde
+                        ordentliches Mitglied des philologischen Seminariums für Forschungen auf dem
+                        Gebiete der Alterthumskunde, worin er sich von der Großherzoglichen
+                        hessischen Regierung die 3. Goldene Medaille erwarb, und legte nach
+                        zweijährigem Studium im Herbste 1851 vor der Großherzoglichen hessischen
+                        Prüfungskommission das Examen für das Amt der Gymnasiallehrer ab, nämlich in
+                        der griechischen und römischen Alterthumskunde, Erklärung der klassischen
+                        Schriften, alten und neueren Philosophie, Sanskrite Sprache, Mathematik,
+                        Geographie und Geschichte, wobey er die philosophische Doktorwürde erlangte.
+                        Infolgedessen wurde er von [der] Großherzoglichen hessischen Regierung unter
+                        die Candidaten des Gymnasiallehreramts aufgenommen und zum Accesse an das
+                        Gymnasium zu <rs type="place" subtype="place" ref="#place_3496da6c1db0a5223edb1fb4c415a154">Mainz</rs> angewiesen. Zum Schlusse möchte er
+                        noch bemerken, daß er außer den vorgeschriebenen Collegien noch solche über
+                        englische Sprache und Litteratur hörte. Dermalen hat er die Ehre mit der
+                        Erziehung des Sohnes Seiner Excellenz <rs type="person" ref="#mertens-karl">Freiherrn
+                            von Mertens</rs>, k.k. österreichischer Feldmarschalllieutenants
+                        und Vicegouverneur von <rs type="place" subtype="place" ref="#place_3496da6c1db0a5223edb1fb4c415a154">Mainz</rs> betraut zu
+                        seyn.<lb/>Unterzeichneter Candidat des Gymnasiallehramts und Doctor philos.
+                        wünscht in den k.k. österreichischen Staaten einen seinen Kenntnissen und
+                        Fähigkeiten entsprechende Verwendung zu finden, entweder als Gymnasiallehrer
+                        in einer Universitätsstadt oder auch als Assistent oder Bibliothekar an
+                        einer Bibliothek in einer solchen Stadt in der Absicht, um sich später für
+                        einen akademischen Lehrstuhl der Alterthumskunde habilitiren zu
+                        können.<lb/>Zu solchem Behufe erlaubt er sich nachfolgend seine gemachten
+                        Studien in einem Curriculum vitae kurz zu erörtern mit dem Beyfügen, daß er
+                        sich zu einer etwaigen Verwendung an einer Bibliothek durch eine zweyjährige
+                        Bedienstung an der Universitätsbibliothek zu <rs type="place" subtype="place" ref="#place_d54f6cc2237a0ee51accd7a92bf76db1">Gießen</rs>
+                        als Sekretär die zureichende Qualification erworben zu haben glaubt.</p>
+                    <p>C. Ahn Dr. philos.</p>
+                    <p>Mainz, am 11. Febr. 1853</p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
