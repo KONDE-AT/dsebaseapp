@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="templates:surround?with=templates/page.html&amp;at=content">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"/>  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.css" rel="stylesheet" type="text/css"/>
+    
+    <style type="text/css">
+        #visualization {
+        width: 100%;
+        height: 600px;
+        border: 1px solid lightgray;
+        }
+    </style>
+    
+    <div id="visualization">
+        
+    </div>
+    <ul class="menu">
+        <li>Click into the timeline hold<code>ctrl</code> to zoom</li>
+        <li>Data fetched from<a href="..analyze/cmfi2netjson.xql">../analyze/cmfi2netjson.xql</a>
+        </li>
+    </ul>
+    
+    <script type="text/javascript">
+        var datasource = "../analyze/cmfi2netjson.xql"
+        var container = document.getElementById('visualization');
+        $.getJSON( datasource, function( data ) {           
+            // create a network
+            var container = document.getElementById('visualization');
+            var data = {
+                nodes: data.nodes,
+                edges: data.edges
+            };
+            var options = {};
+            var network = new vis.Network(container, data, options);
+        });
+        
+    </script>
+</div>
