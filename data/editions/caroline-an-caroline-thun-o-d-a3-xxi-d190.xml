@@ -35,7 +35,7 @@
                             Erzieher bei der Familie von Karl Mertens in Mainz.</p>
                     </msContents>
                     <physDesc>
-                        <p>Beilage: <ref target="#D190_1">Schreiben von Karl Ahn. Mainz, 11. Februar
+                        <p>Beilage:<ref target="#D190_1">Schreiben von Karl Ahn. Mainz, 11. Februar
                                 1853</ref>.</p>
                     </physDesc>
                 </msDesc>
@@ -94,14 +94,14 @@
                     guten <rs type="person" ref="#ahn-karl">Herrn Ahn</rs> etwas zu thun. Auf baldiges
                     Wiedersehen.</p>
                 <p>Ihre Caroline</p>
-                <p>Den versprochenen Abend an meinem einsamen Theetisch mit <rs type="person" ref="#mertens-zoe">Zoe</rs>[?] schenke ich Ihnen aber nicht.</p>
+                <p>Den versprochenen Abend an meinem einsamen Theetisch mit<rs type="person" ref="#mertens-zoe">Zoe</rs>[?] schenke ich Ihnen aber nicht.</p>
                 <p/>
                 <div xml:id="D190_1" type="enclosure">
-                    <p>Curriculum vitae des <rs type="person" ref="#ahn-karl">Dr. philos. Karl Ahn</rs>
+                    <p>Curriculum vitae des<rs type="person" ref="#ahn-karl">Dr. philos. Karl Ahn</rs>
                         aus <rs type="place" subtype="place" ref="#place_d4279ac9f79e45b961a6fb2c80c169be">Seligenstadt</rs> im Großherzogthum
                             <rs type="place" subtype="region" ref="#place_b1955bcdd57fab7b269abbb05a7abd51">Hessen</rs>
                     </p>
-                    <p>Derselbe ist Sohn des zu <rs type="place" subtype="place" ref="#place_d4279ac9f79e45b961a6fb2c80c169be">Seligenstadt</rs> verstorbenen
+                    <p>Derselbe ist Sohn des zu<rs type="place" subtype="place" ref="#place_d4279ac9f79e45b961a6fb2c80c169be">Seligenstadt</rs> verstorbenen
                         Oberzolleinnehmers <rs type="person" ref="#ahn-friedrich">Friedrich Ahn</rs>
                         und dessen gleichfalls verstorbenen Ehefrau <rs type="person" ref="#ahn-elisabetha">Elisabetha</rs>, geb. Kaiser, alt 26 Jahre und katholischer
                         Confession. Im Herbste 1845 absolvirte er, nachdem er während 5 Jahren die 6
