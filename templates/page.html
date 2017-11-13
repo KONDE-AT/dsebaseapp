@@ -3,12 +3,14 @@
     <head>
         <title data-template="config:app-title">App Title</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta data-template="config:app-meta"/>
+        <command data-template="config:app-meta"/>
         <link rel="shortcut icon" href="$shared/resources/images/exist_icon_16x16.ico"/>
-        <link rel="stylesheet" type="text/css" href="$app-root/resources/css/bootstrap-3.0.3.min.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"/>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"/>
         <link rel="stylesheet" type="text/css" href="$app-root/resources/css/style.css"/>
-        <script type="text/javascript" src="$app-root/resources/js/jquery/jquery-2.2.1.min.js"/>
-        <script type="text/javascript" src="$app-root/resources/js/bootstrap-3.0.3.min.js"/>
+        
+        
         <!--scroll to top start-->
         <link rel="stylesheet" href="../resources/js/scroll-to-top/css/ap-scroll-top.min.css"/>
         <script src="../resources/js/scroll-to-top/js/ap-scroll-top.min.js"/>
@@ -94,6 +96,9 @@
                                 <a href="../../../../exist/restxq/dsebaseapp/editions/json">Text as JSON</a>
                             </li>
                             <li>
+                                <a href="../../../../exist/restxq/dsebaseapp/dt/editions/json">Datatables API-Endpoint</a>
+                            </li>
+                            <li>
                                 <a href="../analyze/cmfi2net.xql">Network Data (GEFX)</a>
                             </li>
                             <li>
@@ -131,7 +136,7 @@
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="https://github.com/acdh-oeaw/dsebaseapp" class="navlink" target="_blank">
+                        <a href="https://github.com/KONDE-AT/dsebaseapp" class="navlink" target="_blank">
                             <img src="../resources/img/GitHub-Mark-Light-64px.png" alt="github" width="20%"/>
                         </a>
                     </div>
@@ -142,6 +147,7 @@
                     </div>
                 </div>
             </div>
+            
             <script>/*script for loading the content of the modal */
                 $(document).ready(function(){
                     var trigger = $('a[data-type]');
@@ -157,7 +163,7 @@
                     });
                 });</script>
                 <script type="text/javascript">
-                $(window).load(function(){
+                $(window).on('load', function(){
                     $('#myModal').modal('show');
                 });
         </script>
@@ -165,13 +171,11 @@
             <script type="text/javascript">
                    // http://www.jqueryscript.net/animation/jQuery-Plugin-For-Fixed-Positioned-Scroll-To-Top-Button-ap-scroll-top.html
                    // Setup plugin with default settings
-                   $(document).ready(function() {
-                       $.apScrollTop({
-                           'onInit': function(evt) {
+                   $.apScrollTop({
+                       'onInit': function(evt) {
                               // console.log('apScrollTop: init');
                            }
                        });
-                   });
             </script>
         <!-- scroll-up-bottom end -->
         </footer>

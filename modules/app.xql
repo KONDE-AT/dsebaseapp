@@ -159,37 +159,21 @@ let $searchkey:= '#'||$searchkey
 let $entities := collection($app:editions)//tei:TEI[.//*/@ref=$searchkey]
 let $terms := collection($app:editions)//tei:TEI[.//tei:term[./text() eq substring-after($searchkey, '#')]] 
 for $title in ($entities, $terms)
-let $hits := if (count(root($title)//*[@ref=$searchkey]) = 0) then 1 else count(root($title)//*[@ref=$searchkey])
-let $snippet := 
-    for $entity in root($title)//*[@ref=$searchkey]
-            let $before := $entity/preceding::text()[1]
-            let $after := $entity/following::text()[1]
-            return
-                <p>... {$before} <strong><a href="{concat(app:hrefToDoc($title), "&amp;searchkey=", $indexSerachKey)}"> {$entity/text()}</a></strong> {$after}...<br/></p>
-let $sender := fn:normalize-space($title//tei:rs[@role=contains($title//tei:rs/@role,'sender') and 1]/text()[1])
-let $sender_nn := if(fn:exists($title//tei:rs[@role=contains($title//tei:rs/@role,'sender') and 1]/text()))
-                            then concat(functx:substring-after-last($sender,' '), ", ")
-                            else "ohne Absender"
-let $sender_vn := functx:substring-before-last($sender,' ')
-let $empfänger := fn:normalize-space($title//tei:rs[@role=contains($title//tei:rs/@role,'recipient') and 1]/text()[1])
-let $empfänger_nn := if(fn:exists($title//tei:rs[@role=contains($title//tei:rs/@role,'recipient') and 1]/text()))
-                                then concat(functx:substring-after-last($empfänger,' '), ", ")
-                                else "ohne Empfänger"
-let $empfänger_vn := functx:substring-before-last($empfänger,' ')
-let $wo := if(fn:exists($title//tei:title//tei:rs[@type='place']))
-                     then $title//tei:title//tei:rs[@type='place']//text()
-                     else 'no place'
-let $wann := data($title//tei:date/@when)[1]
-let $zitat := $title//tei:msIdentifier
-return 
-        <tr>
-           <td>{$sender_nn}{$sender_vn}</td>
-           <td>{$empfänger_nn}{$empfänger_vn}</td>
-           <td align="center">{$wo}</td>
-           <td align="center"><abbr title="{$zitat}">{$wann}</abbr></td>
-           <td>{$hits}</td>
-           <td>{$snippet}<p style="text-align:right">({<a href="{concat(app:hrefToDoc($title), "&amp;searchkey=", $indexSerachKey)}">{app:getDocName($title)}</a>})</p></td>
-        </tr>   
+    let $docTitle := string-join(root($title)//tei:titleStmt/tei:title//text(), ' ') 
+    let $hits := if (count(root($title)//*[@ref=$searchkey]) = 0) then 1 else count(root($title)//*[@ref=$searchkey])
+    let $snippet := 
+        for $entity in root($title)//*[@ref=$searchkey]
+                let $before := $entity/preceding::text()[1]
+                let $after := $entity/following::text()[1]
+                return
+                    <p>... {$before} <strong><a href="{concat(app:hrefToDoc($title), "&amp;searchkey=", $indexSerachKey)}"> {$entity/text()}</a></strong> {$after}...<br/></p>
+    let $zitat := $title//tei:msIdentifier
+    return 
+            <tr>
+               <td>{$docTitle}</td>
+               <td>{$hits}</td>
+               <td>{$snippet}<p style="text-align:right">({<a href="{concat(app:hrefToDoc($title), "&amp;searchkey=", $indexSerachKey)}">{app:getDocName($title)}</a>})</p></td>
+            </tr>   
 };
  
 (:~

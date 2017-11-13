@@ -1,57 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div class="templates:surround?with=templates/page.html&amp;at=content">
-    <script src="$app-root/resources/js/tablesorter/js/jquery.tablesorter.js"/>
-    <script src="$app-root/resources/js/tablesorter/js/jquery.tablesorter.widgets.js"/>
-    <script src="$app-root/resources/js/tablesorter/js/jquery.tablesorter.pager.js"/>
-    <link rel="stylesheet" type="text/css" href="$app-root/resources/js/tablesorter/css/theme.bootstrap.css"/>
-    <link rel="stylesheet" type="text/css" href="$app-root/resources/js/tablesorter/css/jquery.tablesorter.pager.css"/>
-    <script src="$app-root/resources/js/historyjs/jquery.history.js"/>
-    <script>$(function() { 
-        $("table").tablesorter(
-        { theme : "bootstrap", widthFixed: false,
-        headerTemplate : '{content} {icon}', widgets : [ "uitheme", "filter", "zebra" ], filter_cssFilter: "form-control"}
-        );
-        });</script>
+<div data-template="templates:surround" data-template-with="templates/datatable.html" data-template-at="datatable">
     <div class="panel panel-default">
         <div class="panel-heading" style="text-align:center;">
-            <h1>
-                <span id="amount"/> Personen<br/>
-                <small>
-                    <span id="searchstring"/>
-                </small>
+            <h1>Persons<br/>
             </h1>
         </div>
         <div class="panel-body">
-            <table class="table table-striped table-condensed table-hover">
+            <table id="myTable" class="table table-striped table-condensed table-hover">
                 <thead>
                     <tr>
-                        <th class="header">
-                            Nachname
-                        </th>
-                        <th>Vorname</th>
-                        <th>Geonames ID</th>
+                        <th>Name</th>
+                        <th>Forename</th>
+                        <th>Normdata</th>
                     </tr>
                 </thead>
                 <tr data-template="app:listPers"/>
             </table>
         </div>
     </div>
-    <script>$( document ).ready(function() {
-            var all_rows = $("tr").slice( 2 ) ;
-            $('#amount').text(all_rows.length);
-        
-            var fetched_param = decodeURIComponent($.urlParam("person"));
-
-            if (fetched_param != "null"){
-                
-               $.tablesorter.setFilters( $('table'), [ fetched_param], true );
-               $('table').trigger('search', true);
-            }
-            $("td input").bind("keyup", function(e) {
-            var searchstring = $(this).val();
-            var filtered_rows = $("tr:visible").slice( 2 ) ;
-            $('#searchstring').text("'"+searchstring+"' kommt "+filtered_rows.length+ "mal vor.");
-            History.pushState({searchstring: "person"}, "looking for "+searchstring, "?person="+searchstring);   
-                        });
-         });</script>
+    <script>$('#myTable').DataTable({
+            keepConditions: true
+        });</script>
 </div>

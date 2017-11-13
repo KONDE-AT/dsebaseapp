@@ -9,7 +9,7 @@ body{
 }
 header{
     flex:0 0 auto;
-    background-color:#333; /*#F8F8F8*/
+    background-color:#F8F8F8;
     color:#ffffff;
 }
 .main-content{

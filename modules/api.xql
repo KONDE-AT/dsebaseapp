@@ -54,6 +54,22 @@ let $serialization := switch($format)
             ($serialization, $result)
 };
 
+(:~ lists content of collection according to datatables API ~:)
+declare 
+    %rest:GET
+    %rest:path("/dsebaseapp/dt/{$collection}/{$format}")
+    %rest:query-param("start", "{$start}", 0)
+    %rest:query-param("lenght", "{$lenght}", 10)
+function api:list-documents($collection, $format, $start, $lenght, $draw) {
+let $result:= api:dt-list-collection-content($collection, $start, $lenght, $draw)
+
+let $serialization := switch($format)
+    case('xml') return $api:XML
+    default return $api:JSON
+        return 
+            ($serialization, $result)
+};
+
 declare 
     %rest:GET
     %rest:path("/dsebaseapp/{$collection}/{$id}/{$format}")
@@ -66,6 +82,39 @@ function api:show-document-api($collection, $id, $format) {
        ($serialization, $result)
 };
 
+declare %private function api:dt-list-collection-content($collection as xs:string, $start, $lenght, $draw){
+        let $draw := xs:integer($draw)
+        let $start := xs:integer($start)+1
+        let $lenght := xs:integer($lenght)
+        let $docs := collection($config:app-root||'/data/'||$collection)//tei:TEI
+        let $all := count($docs)
+        let $docs := subsequence($docs, $start, $start+$lenght)
+       
+        let $result := 
+            <result>
+                <draw>{$draw}</draw>
+                <recordsTotal>{$all}</recordsTotal>
+                <recordsFiltered>{$all}</recordsFiltered>
+                <meta>
+                    <hits>{$all}</hits>
+                </meta>
+               
+                {for $doc in $docs
+                
+                let $id := app:getDocName($doc)
+                    return
+                        <data>
+                            <type>TEI-Document</type>
+                            <id>{$id}</id>
+                            <attributes>
+                                <title>{normalize-space(string-join($doc//tei:title[1]//text(), ' '))}</title>
+                            </attributes>
+                        </data>
+                 }
+            </result>
+            return 
+                $result
+};
 
 declare %private function api:list-collection-content($collection as xs:string, $pageNumber, $pageSize){
     if ($pageNumber castable as xs:integer and $pageSize castable as xs:integer) then
