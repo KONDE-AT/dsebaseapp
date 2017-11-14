@@ -13,14 +13,66 @@
                         </th>
                         <th>Alternative Schreibweisen</th>
                         <th>Normdata</th>
-                        <th>GPS</th>
+                        <th>Lat</th>
+                        <th>Lng</th>
                     </tr>
                 </thead>
                 <tr data-template="app:listPlace"/>
             </table>
         </div>
     </div>
-    <script>$('#myTable').DataTable({
-        keepConditions: true
-        });</script>
+    <script>
+        
+        let draw = false;
+
+        init();
+        function init() {
+            // initialize DataTables
+            const table = $("#myTable").DataTable();
+            // get table data
+            const tableData = getTableData(table);
+            // create Highcharts
+            //createHighcharts(tableData);
+
+            // table events
+            setTableEvents(table);
+        }
+
+        function getTableData(table) {
+            var filteredData = table
+                .data()
+                .filter( function ( value, index ) {
+                    if (value[4]){
+                        return value
+                    }
+                } );
+            // console.log(filteredData);
+            return filteredData
+        }
+
+        function setTableEvents(table) {
+            // listen for page clicks
+            table.on("page", () =&gt; {
+                draw = true;
+            });
+
+            // listen for updates and adjust the chart accordingly
+            table.on("draw", () =&gt; {
+                if (draw) {
+                    draw = false;
+                } else {
+                const tableData = getTableData(table);
+                //createHighcharts(tableData);
+                console.log(tableData);
+                }
+            });
+
+        }
+        
+    </script>
+    <!--<script>
+        $('#myTable').DataTable({
+            keepConditions: true
+        });
+    </script>-->
 </div>
