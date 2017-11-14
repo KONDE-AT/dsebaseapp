@@ -476,7 +476,7 @@
                         <placeName>Bonghás</placeName>
                         <placeName type="alt">Bonyhád</placeName>
                         <location>
-                            <geo decls="#LatLng">46.32145, 18.55193</geo>
+                            <geo decls="#LatLng">46.32145 18.55193</geo>
                         </location>
                     </place>
                     <place xml:id="place_b0dfe294f5f1448875d017a903b777ae">
