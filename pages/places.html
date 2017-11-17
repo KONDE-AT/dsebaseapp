@@ -3,7 +3,6 @@
     <div class="panel panel-default">
         <div class="panel-heading" style="text-align:center;">
             <h1>Places</h1>
-            <h2 id="filterInfo"/>
         </div>
         <div class="panel-body">
             <div id="map"/>     
@@ -32,7 +31,10 @@
     <script src="https://unpkg.com/leaflet.markercluster@1.2.0/dist/leaflet.markercluster.js"/>
     <script>$("#map").css("height", "500px");
         var table = $('#myTable').DataTable({
-            keepConditions: true
+            keepConditions: true,
+            buttons: [
+                'copy', 'excel', 'pdf'
+            ]
         });
         var tiles = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
             attribution: 'Map data &amp;copy;<a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
@@ -55,14 +57,12 @@
         map.fitBounds(markers.getBounds());
         
         $(document).ready(function() {
-            
             $("#myTableBody").show();
         } );
         
         table.on( 'search.dt', function () {
             //markers.removeLayer(startLayer);
             markers.clearLayers();
-            $('#filterInfo').html( 'Filtering for: <strong>'+table.search()+'</strong>' );
             var currentTableData = getTableData(table);
             var currentGeoJson = createGeoJson(currentTableData);
             console.log(currentGeoJson);
