@@ -4,7 +4,7 @@ xquery version "3.0";
  : A set of helper functions to access the application context from
  : within a module.
  :)
-module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/config";
+module namespace config="http://www.digital-archiv.at/ns/rundbriefe-app/config";
 
 declare namespace templates="http://exist-db.org/xquery/templates";
 

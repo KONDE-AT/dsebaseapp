@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Digitale Edition der Rundbriefe des Instituts für Theaterwissenschaften 1944-1945</title>
+            <title type="sub">Transkription Rundbrief Nr. 4, Teil 1</title>
+            <principal><rs type="person" ref="#therese_sperlich">Therese Sperlich</rs></principal>
+         </titleStmt>
+         <publicationStmt>
+            <publisher><rs type="person" ref="#therese_sperlich">Therese Sperlich</rs></publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/"></licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <institution>Archiv Institut Theater-, Film- und Medienwissenschaften</institution>
+                  <repository>Nachlass Kindermann</repository>
+                  <idno>Schachtel 7, Mappe 4, Zahl 37</idno>
+               </msIdentifier>
+               <history>
+                  <origin></origin>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+     <body>
+     <pb n="1"/>
+     <head type="main">Rundbrief des <lb>
+     </lb><head type="sub">Zentralinstituts für Theaterwissenschaft</head><lb>
+     </lb>an der Universität Wien <lb>
+     </lb>_________________________________________ <lb>
+     </lb>August 1944   Nr. 4      Erscheint jährlich viermal <p>
+     </p> Liebe Kameraden! <lb>
+     </lb>
+     </head>
+        
+         <lb></lb>
+         Das Sommersemester 1944 ist gut zu Ende gegangen. Immer
+         wieder haben wir bei unseren Arbeiten an Euch gedacht. Nun
+         wollen wir Euch wieder über unser Tun und Treiben Bericht er-
+         statten.
+         <shift>Zunächst möchten wir allen den Vielen unter Euch herzlichst </shift>
+         danken, die unseren letzten Rundbrief beantwortet haben. Es kamen
+         so viele begeisterte Feldpostbriefe, daß wir darin bestärkt wurden,
+         den bisherigen Weg so lebendig als nur möglich fortzusetzen. Zu
+         unserer großen Freude hat ein überraschend hoher Prozentsatz un-
+         serer Fernbetreuten die im letzten Rundbrief an Hand seiner Bei-
+         lage gestellten Aufgaben gelöst; andere haben die Lösung in nahe
+         Aussicht gestellt. Die meisten Lösungen zeigen intensive Anteil-
+         nahme und gutes Geschick, in manchen Fällen sogar schon wahre
+         fachliche Begabung. Wir wissen, unter welchen erschwerenden Um-
+         ständen derlei Arbeiten entstehen und schätzen sie deshalb um
+         so höher. Den meisten der Einsender haben wir schon einzeln ge-
+         dankt. Die restlichen Antworten werden bald folgen. Wir haben
+         den Eindruck, daß uns einmal aus den Kreisen unserer – nunmehr
+         schon über zweihundert – Fernbetreuten viele besonders begabte
+         Studierende der Theaterwissenschaft zukommen werden. <p>
+         </p><shift> Das abgelaufene Sommersemester war besonders arbeitsreich. </shift>
+         Die Zahl unserer studierenden Institutsmitglieder ist auf über hun-
+         dertachtzig gestiegen. Dieser starke Zudrang zur Theaterwissen-
+         schaft veranlaßt uns, sehr streng zu sieben. Wir haben von un-
+         serer Wiener Schule her nicht den Ehrgeiz, besonders viele, son-
+         dern besonders gute Kräfte dem deutschen Theaterleben zuzufüh-
+         ren. Um nun schon während des Studienganges besonders strenge
+         Maßstäbe anzulegen und dem einzelnen mancherlei Gelegenheit zur
+         Selbstkontrolle zu bieten, haben wir eine neue Studienordnung ein-
+         geführt. Wir fügen diesem Rundbrief ein Exemplar bei, damit Ihr
+         Euch orientieren könnt. Natürlich ist in Aussicht genommen, bei
+         Eurer dereinstigen Heimkehr dann besondere Bestimmungen für
+         Kriegsteilnehmer zu erlassen, die sich den allgemeinen Richtlinien
+         <pb n="2"/>
+         des Reichserziehungsministeriums hinsichtlich der für Euch zu schaf-
+         fenden Erleichterungen anpassen sollen. Der starke Andrang und
+         das Anwachsen unseres Lehr- und Forschungsapparates veranlaßte
+         uns auch, zu sechs bisherigen noch zwei weitere Räume: den
+         Loewe-Raum und den Wildbrandt-Baudius-Raum (beide mit schö-
+         nen Bildern dieser Künstler geziert), in Verwendung zu nehmen. <p>
+         <pb/> <shift>Nun zunächst ein Bild dessen, was den Studierenden in Vor- </shift>
+         lesungen, Seminarübungen und Kolloquien geboten wurde. Das
+         dreistündige Hauptkolleg von [gesperrt]Prof. Dr. Heinz Kindermann[/gesperrt],
+         das nun im schönen großen Auditorium maximum der Universität
+         stattfindet und meist von instruktiven Lichtbildern begleitet ist, be-
+         handelte diesmal [gesperrt]„Das deutsche und europäische Thea-
+         ter der Renaissancezeit"[/gesperrt].<p>
+         </p><shift>[kleiner gedruckt] Im Gegensatz zu den Mysterien und prunkvollen Prozessionen des</shift>
+         Mittelalters, die stets auf das Transzendente, auf das göttliche Geschehen
+         bezogen waren, entwickelt sich nun das diesseitsgebundene weltliche
+         Theater.<p>
+         </p><shift>Von Italien, dem Ursprungsland der Renaissance, ausgehend, nimmt es</shift>
+         seinen Weg und vermittelt den verschiedenen europäischen Nationen An-
+         regungen zu jeweils arteigener Auseinandersetzung und individueller Gestaltung.<p>
+         </p><shift>Italien selbst knüpft dabei unmittelbar an theatralische Vorstellungen</shift>
+         der Antike an. In den Palästen der Patrizier und an den Höfen der Landes-
+         fürsten werden in Festsälen und Säulenhallen kunstvoll angelegte Bühnen-
+         wände als Hintergrund eines langgestreckten Holzpodiums aufgebaut und
+         von einem amphitheatralisch angeordneten Zuschauerraum umrundet.<p>
+         </p><shift>Ferrata, mit dem Hofe des Fürsten Ercole d’Este, Florenz, mit dem</shift>
+         prunkreichen Hof der Medici, und Rom, mit dem damals recht weltfrohen
+         Vatikan, bildeten die Mittelpunkte der italienischen Theaterkultur.<p>
+         </p><shift>	Es ist nicht mehr der unbekannte Spielleiter des mittelalterlichen</shift>
+         Spiels, sondern der berühmte Künstler, der sein Können in der reichen De-
+         koration, im perspektivisch gestalteten Illusionsraum, der schon bald die
+         rein dekorative Flächenwand ablöst, kühn entfaltet. Meister wie Raphael
+         setzen ihren Stolz darein, Bühnenbilder und Architekturen zu entwerfen,
+         ganze Künstlerfamilien entwickeln den eigenen Stil im Laufe von mehreren
+         Generationen. Schloß man sich in der Wahl der Stücke zunächst an die
+         Antike an, vor allem an Plautus und Terenz, so entstehen doch gerade in
+         Italien erstaunlich früh Originalstücke in italienischer Sprache. Bedeutende
+         Dichter, wie Ariost, Macchiavelli, Tasso, schreiben die Texte der Komödien,
+         Satyrspiele und Tragödien und spannen mit ihrem Stoff einen weltweiten
+         Bogen vom antiken Vorbild bis zur modernen Gesellschaftssatire.<p>
+         </p><shift>	Während im Mittelalter die Spielzahl in die Hunderte stieg, treten</shift>
+         nun selten mehr als zehn Spieler auf. Damit ist eine weitgehende Differen-
+         zierung der Schauspielkunst gegeben.<p>
+         </p><shift>Eine große Rolle spielt die Musik, die in antiker Klangfarbe bis zu</shift>
+         ganzen Flötenorchestern aktiviert wird.<p>
+         </p><shift>	Musik, Bühnenbild und Dichtung bilden in prachtliebendem Mitein-</shift>
+         ander in Italien schon früh das Gesamtkunstwerk aus, das in Deutschland
+         erst mit dem Barock einsetzt.<p>
+         </p><shift>In [gesperrt] Deutschland [/gesperrt] fehlten die unmittelbaren Anknüpfungspunkte an</shift>
+         die Antike. Auch mußte sich hier die Theaterkunst ganz anders entfalten,
+         infolge der kulturtragenden Schicht, die sich nicht, wie in Italien, aus Ver-
+         tretern des höfischen Lebens, sondern aus Bürgern und Handwerkern zu-
+         sammensetzte. Eine dritte unterschiedliche Vorgegebenheit bildete zuletzt
+         <pb/><pb n="3"/>
+         die Reformation, die in bestimmender Weise das Renaissancetheater in
+         Deutschland beeinflußte.<p>
+         </p><shift>So entstehen in Deutschland im 16. Jahrhundert drei Spielschichten:</shift><p>
+         </p><shift>1. das Humanistentheater, das sich vorwiegend an italienischen Terenz-</shift>
+         Vorstellungen schult,<p>
+         </p><shift>2. das Reformationstheater, das sich aus Haltung und Stoffen des</shift>
+         reformatorischen Kampfes speist, und<p>
+         </p><shift>3. das Handwerkertheater, das sich vom Fasnachtsspiel her durch</shift>
+         literarische Fixierung und Veredelung bildet und in der Meistersingerbühne
+         eine klassische Form findet.<p>
+         </p><shift>Auf den lebendigen Beziehungen zu Italien baut das lateinische, ge-</shift>
+         lehrte Humanistendrama auf, das sich den antiken Stoff, vor allem durch
+         Übernahme von Terenz-Dramen, zu eigen macht, aber nicht das Erbe der
+         südlichen Kunstrenaissance in der Bühnengestaltung antritt, sondern den
+         Hauptakzent auf die Ausbildung rethorisch-dialektischer Momente legt.
+         War es doch meist ein Schultheater und diente der geistigen Schulung und
+         der Erziehung zu sprachlicher Gewandtheit der Patriziersöhne. Die eigen-
+         gesetzlichen Formen des antiken Dramas, wie Akt- und Szeneneinteilung.
+         Einheit von Raum, Zeit und Handlung, weiß selbst das späte Humanisten-
+         drama nur willkürlich zu handhaben, wenngleich auch in Deutschland, be-
+         sonders in den deutschen Grenzlanden, in denen sich das Theater in der
+         unmittelbaren Auseinandersetzung mit dem ausländischen Gut zu eigener
+         Höhe entwickelt, Künstler von Rang am Werke sind. Conrad Celtis‘ „Ludus
+         Dianae" in Linz stellt den Höhepunkt dar, der, mit dem Festgedanken der
+         Kaiserehrung verbunden, nicht weit hinter den italienischen Hoffesten zu-
+         rückgestanden haben mag. Aber sind es in Italien die Meister der bilden-
+         den Kunst, die das Auge befriedigen, so sind es in Deutschland Dichter und
+         Pädagogen, die den Text gestalten und zum Ohr sprechen wollen. Somit
+         trägt auch die Bühne [gesperrt] nicht [/gesperrt] jene Schaufreudigkeit der italienischen Spiele,
+         zeigt weder Dekorationslust noch Illusionswillen, sondern bietet einen
+         gänzlich neutralen Charakter, der die Phantasie und die Vorstellungskraft
+         anregt. Mit der Simultanbühne des Mittelalters teilt die Humanistenbühne
+         Deutschlands den neutralen Spielort; das kubische Nebeneinander ist
+         zwar meist der Sukzession gewichen und hat sich damit der perspektivi-
+         schen Handlungsschau des Renaissancemenschen angeglichen.<p>
+         </p><shift>Mit dem gleichen Bühnenbild tritt uns das Reformationstheater ent-</shift>
+         gegen, dessen Grundprinzip auch das Wort ist, aber [gesperrt] nicht [/gesperrt] das dialektisch
+         geschliffene Wort, sondern das Wort des Herzens, das erlebnisvermittelnde,
+         volksnahe Wort. Das Latein der Humanisten wird hier bald von einer
+         kraftvollen deutschen Sprache abgelöst. Stoffe der Bibel und Bilder des
+         Menschen in seiner Todesstunde wollen zu ethisch gläubigen Werten hin-
+         weisen. Der strenge Regelkodex der Schauspielkunst, den das Schultheater
+         ausgebildet hat, wird von unmittelbar lebendigen Gebärden oft durch-
+         brochen, wenngleich der Typ des Rollenträgers auch hier zum Ausdruck
+         kommt.<p>
+         </p><shift>Hans Sachs, der Nürnberger Schuster, zollt sowohl dem Reformations-</shift>
+         drama in seinen Werken seinen Beitrag wie dem Handwerkertheater der
+         Meistersinger – und darin schon zeigt sich eine enge Verbindung dieser
+         beiden Schauspielrichtungen des 16. Jahrhunderts. Er gestaltet das reli-
+         giöse Streitgespräch und die derbe Fasnachtsrevue. Wurzeln seine refor-
+         matorischen Beiträge im Geist der bürgerlichen Frömmigkeit, so seine Fast-
+         nachtsspiele in der Lust der breiten Bürgermasse an der Situationskomik.<p>
+         </p><shift>Der Auftrittsstil der Spieler im Fasnachtsstück ist derb und hand-</shift>
+         fest. Die Gestalten stellen äußerlich zwar Typen dar, aber die Handlung
+         ist von dieser Typik unberührt, sie verläuft nach dem Gesetz der Situa-
+         tionskomik und wurzelt im Grotesken schlechthin. Auch die Meistersinger-
+         bühne ist geistig [gesperrt] nicht [/gesperrt] festgelegt durch Dekoration oder Illusionswillen,<p>
+         <pb/><pb n="4"/>
+         sondern als Podiumaufbau nur mit Vorhängen versehen, deren Schlitze die
+         Tore bedeuten.<p>
+         </p><shift>Einfachste Requisiten zeichnen diese drei Typen der deutschen Re-</shift>
+         naissancebühne aus. Das Kostüm entspricht dem Festgewand des Alltags,
+         dem bürgerlichen Sonntag der kleinen Städte. Alle drei aber haben als
+         gemeinsame Wirkungskraft die Didaktik, die das deutsche 16. Jahrhundert
+         beherrscht, und nicht jene unmittelbare Festfreude Italiens.<p>
+         </p><shift>Eine lebhafte Ausbildung erfuhr das Renaissancetheater in den Nie-</shift>
+         derlanden, in denen die Rederijker, eine sozial den Meistersingern parallel
+         aufgebaute Gesellschaft, sich zum Träger der Theaterspiele machten. Sie
+         gingen aus dem Zusammenschluß von Narrengilden, Choralgesellschaften
+         und geistlichen Bruderschaften hervor und setzten sich vorwiegend aus
+         Handwerkern zusammen. Waren jedoch die Meistersinger von der Lyrik
+         um Drama den Weg gegangen, so setzten die Rederijker beim Drama an,
+         verbanden den Schauspielstil des Narrenstegreifs mit dem feierlich stilisier-
+         ten Bild der Präfigurationen, d. h. der lebenden Bilder, die bei Predigten
+         ihre vertiefende Anwendung fanden, und bauten beides in ein antikes und
+         deutsches Spielgefüge ein, indem sie hinter neutraler Vorderbühne mit Hilfe
+         kostbar gewebter Tapeten die „antike" Schauwand errichteten, die ihren
+         flächigen Bildcharakter mit den über- und nebeneinander aufgestellten
+         „Toonels" in den Kirchen teilte. Diese glückliche Übereinstimmung der
+         Form ließ die antike Schauwand in den Niederlanden bald Fuß fassen, doch
+         unterscheidet sie sich lebhaft von der rein dekorativen Schauwand Italiens
+         durch die Praktikabilität ihrer Obergeschosse, in denen lebende Bilder oder
+         Plastiken der Lukas-Maler-Gilde hinter Vorhängen auf ihre Enthüllung war-
+         teten.<p>
+         </p><shift>Wie im Theater des Mittelalters sehen wir also auch im Theater der</shift>
+         Renaissance eine deutliche nationale Unterschiedlichkeit und selbsteigene
+         Ausbildung innerhalb der drei Länder, die die Renaissancebewegung in
+         Europa in erster Linie formten.[/kleiner gedruckt]<p>
+         </p><shift>In dem von Prof. Kindermann geleiteten [gesperrt] Proseminar [/gesperrt] wur-</shift>
+         den rund 100 mündliche oder schriftliche Referate zum Thema
+         [gesperrt] „Geschichte des Burgtheaters" [/gesperrt] erstattet. Jedes Einzel-
+         thema wurde von vier Referenten behandelt. Das lehrreichste da-
+         von, d. h. dasjenige, das die meisten Ansatzpunkte zu einer Dis-
+         kussion und Kritik gab, wurde vorgetragen, und zunächst durften
+         dann die Verfasser der übrigen drei Referate das Wort ergreifen.
+         Natürlich konnten sich auch alle übrigen Teilnehmer des Proseminars
+         an den Debatten beteiligen, die jeweils durch die Kritik und Zu-
+         sammenfassung des Professors abgeschlossen wurden. Bei den The-
+         men ging es zunächst um die Hauptetappen der Burgtheatergeschichte
+         von den Anfängen bis zur Gegenwart. Sie wurden stets in Ver-
+         bindung gebracht mit den allgemeinen Zügen der gleichzeitigen Volks-
+         und Kulturgeschichte, der allgemeinen Kunst- und Theatergeschichte.
+         Die Probleme der Theaterleitung und das Profil der Leiterpersön-
+         lichkeiten wurden da ebenso sichtbar gemacht wie die Art des Spie-
+         lens und die Ensemblezusammensetzung, der Spielplanaufbau und
+         die Inszenierungskunst. Im Prinzip zielten die Referate darauf ab,
+         nicht allein Einblick zu gewähren in den Wachstumsprozeß dieses
+         traditionsreichsten Nationaltheaters der Deutschen, sondern auch zu
+         zeigen, wie man überhaupt eine Theatergeschichte schreibt, welches
+         <pb/><pb n="5"/>
+         Zusammenspiel der Kräfte erst dieses theatralische Ganze formt und
+         seinen Epochenausdruck bedingt. Nur wer solche Überlegungen an 
+         wichtigen Beispielen mit wissenschaftlichen Mitteln angestellt hat,
+         kann die volle Tragweite der Theaterkunst der Gegenwart und ihre
+         Rolle im Leben des Volkes ermessen. Andere Referatsgruppen wieder
+         beschäftigten sich mit dem Entwicklungsgang eines bestimmten Dra-
+         matikers im Spielplan und in der Darstellungskunst des Burg-
+         theaters, also z. B. Shakespeare, Lessing, Goethe, Schiller, Kleist,
+         Grillparzer, Raimund, Hebbel, Gerhart Hauptmann im Burgtheater.
+         Wieder andere Referatgruppen untersuchten den Wandel einer be-
+         stimmten Rolle in der Geschichte des Burgtheaters, also z. B. die
+         Götz-Darsteller, die Egmont-Darsteller, die Wallenstein-Darsteller,
+         die Faust-Darsteller, die Gretchen-Darstellerinnen des Burgtheaters.
+         Auch Fragen des Bühnenbildes und der Zensur wurden mit ein-
+         geschlossen. So entstand insgesamt ein recht farbenreiches und an-
+         schauliches Gesamtbild. Jedenfalls haben die Teilnehmer des Pro-
+         seminars methodisch und theatergeschichtlich eine Menge gelernt.<p>
+         </p><shift>Das von Prof. Kindermann geleitete [gesperrt] Hauptseminar [/gesperrt], also</shift>
+         der kleinere Kreis der schon reiferen Studierenden der Theater-
+         wissenschaft, befaßte sich mit der [breit] „Geschichte des deutschen
+         Spielplans vom 18. Jahrhunderts bis zur Gegenwart" [breit/].
+         Die Spielplanforschung war lange vernachlässigt oder nur schema-
+         tisch betrieben worden. Ihr wird gerade in der Wiener Schule be-
+         sonderes Augenmerk zugewandt, weil das Profil jedes Theaters von
+         der Spielplangestaltung her geprägt wird und weil das Theater mit
+         Hilfe seiner Art des Spielplanaufbaues zur wirkenden Kraft im
+         Werdeprozeß des Volkes und im gegenseitigen Verstehen der Völ-
+         ker zu werden vermag. So wurden hier erstmalig neue Methoden
+         der Spielplanforschung erprobt, die gerade auch solche Zusammen-
+         hänge aufdeckten. Auch die enge Beziehung zwischen Schauspiel-
+         kunst und Spielgestaltung sowie die Fragen der staatlichen Lenkung
+         in den einzelnen Zeitaltern wurden erörtert. Vom Spielplan der
+         Neuberin führte der Weg über die Spielplangestaltung Ekhofs und
+         Schröders, Goethes und Schreyvogels, Immermanns und Laubes,
+         der Meininger und der Naturalisten bis herüber zum Spielplan des
+         ersten Weltkrieges und unserer eigenen Zeit. So wurden hier neue
+         Wege eingeschlagen und neue, für die Spielplangestaltung kommen-
+         der Epochen aufschlußreiche Resultate erzielt.<p>
+         </p><shift>Im Rahmen der Praktika hielt Doz. Dr. Börge ein Kolloquium</shift>
+         über praktische [gesperrt] Dramaturgie [/gesperrt] und eines über [gesperrt] Filmkunde [/gesperrt].<p>
+         </p><shift>In seinem [gesperrt] Kolloquium über praktische Dramaturgie[/gesperrt]</shift>
+         behandelte er die Komödie und die Tragödie als Grundlage der Schauspiel-
+         kunst; die Komödie illustrierte er an Holbergs „Jeppe von Berge", die
+         Tragödie an Schillers „Maria Stuart". Dr. Börge interpretierte die Komödie
+         aus dem Gesamtkunstwerk Holbergs. Die dramaturgischen Probleme
+         der Aufführungsmöglichkeiten und notwendigen Striche wurden vom
+         <pb/><pb n="6"/>
+      
+         </p>
+         </p>
+     </body>
+  </text>
+</TEI>
