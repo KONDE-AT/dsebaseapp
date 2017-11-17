@@ -1,118 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div data-template="templates:surround" data-template-with="templates/datatable.html" data-template-at="datatable">
-        <div class="panel panel-default">
-            <div class="panel-heading" style="text-align:center;">
-                <h1>Places</h1>
-            </div>
-            <div class="panel-body">
-                <div>
-                    <table id="myTable" class="table table-striped table-condensed table-hover">
-                        <thead>
-                            <tr>
-                                <th class="header">
-                                    Ortsname (normalisiert)
-                                </th>
-                                <th>Alternative Schreibweisen</th>
-                                <th>Normdata</th>
-                                <th>Lat</th>
-                                <th>Lng</th>
-                            </tr>
-                        </thead>
-                        <tr data-template="app:listPlace"/>
-                    </table>
-                </div>
-                <div id="map-bx">
-                    <div id="map"/>
-                </div>
-            </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" style="text-align:center;">
+            <h1>Places</h1>
+            <h2 id="filterInfo"/>
         </div>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.2.0/dist/MarkerCluster.Default.css"/>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.2.0/dist/MarkerCluster.css"/>
-        <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""/>
-        <script src="https://unpkg.com/leaflet.markercluster@1.2.0/dist/leaflet.markercluster.js"/>
-        <script>let draw = true;
-
-            $("#map").css("height", "500px");
-            const map = L.map('map');
-            init();
-            function init() {
-                const table = $("#myTable").DataTable();
-                const tableData = getTableData(table);
-                map.setView([0, 0], 2);
-                const mapLayer = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-                    attribution: 'Map data &amp;lt;a href="http://openstreetmap.org"&amp;gt;OpenStreetMap&amp;lt;/a&amp;gt; contributors, &amp;lt;a href="http://creativecommons.org/licenses/by-sa/2.0/"&amp;gt;CC-BY-SA&amp;lt;/a&amp;gt;Imagery © &amp;lt;a href="http://mapbox.com"&amp;gt;Mapbox&amp;lt;/a&amp;gt;',
-                    maxZoom: 18,
-                    id: 'mapbox.light',
-                    accessToken: 'pk.eyJ1Ijoic2VubmllcmVyIiwiYSI6ImNpbHk1YWV0bDAwZnB2dW01d2l1Y3phdmkifQ.OljQLEhqeAygai2y6VoSwQ'
-                }).addTo(map);
-                setTableEvents(table);
-
-            }
-
-            function getTableData(table) {
-                const dataArray = [],
-                  placesArray = [];
-
-                // loop table rows
-                table.rows({ search: "applied" }).every(function() {
-                  const data = this.data();
-                  if( data[3]){
-                    placesArray.push(data);
-                  }
-                });
-
-                // store all data in dataArray
-                dataArray.push(placesArray);
-
-                return dataArray;
-              }
-
-
-            function onEachFeature(feature, layer) {
-                layer.bindPopup(feature.properties.name);
-            };
-
-            function createGeoJson(data){
-                var geojsonArray = [];
-                data[0].forEach(function(element, i) {
-                    var geojson = new Object();
-                    geojson.id = i;
-                    geojson.type = "Feature";
-                    geojson.geometry = {
-                        "type": "Point",
-                        "coordinates": [
-                            element[4],
-                            element[3]
-                        ]
-                    };
-                    geojson.properties = {
-                        "name": element[0]
-                    };
-                    geojsonArray.push(geojson);
-                });
-                var geoJsonLayer = L.geoJson( geojsonArray, {onEachFeature: onEachFeature});
-                return geoJsonLayer;
-            };
-
-            function setTableEvents(table) {
-              // listen for page clicks
-              table.on("page", () =&gt; {
-                draw = true;
-              });
-
-              // listen for updates and adjust the chart accordingly
-              table.on("draw", () =&gt; {
-                if (draw) {
-                  draw = false;
-                } else {
-                  const tableData = getTableData(table);
-                  var markers = L.markerClusterGroup({});
-                  var geoJsonLayer = createGeoJson(tableData);
-                  markers.addLayer(geoJsonLayer);
-                  map.addLayer(markers);
-                  map.fitBounds(markers.getBounds(), {'maxZoom': 12});
-                }
-              });
-            }</script>
+        <div class="panel-body">
+            <div id="map"/>     
+            <div>
+                <table id="myTable" class="table table-striped table-condensed table-hover">
+                    <thead>
+                        <tr>
+                            <th class="header"> Ortsname (normalisiert) </th>
+                            <th>Alternative Schreibweisen</th>
+                            <th>Normdata</th>
+                            <th>Lat</th>
+                            <th>Lng</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myTableBody" style="display:none">
+                        <tr data-template="app:listPlace"/>
+                    </tbody>
+                </table>
+            </div>       
+        </div>
     </div>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.2.0/dist/MarkerCluster.Default.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.2.0/dist/MarkerCluster.css"/>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet.markercluster@1.2.0/dist/leaflet.markercluster.js"/>
+    <script>$("#map").css("height", "500px");
+        var table = $('#myTable').DataTable({
+            keepConditions: true
+        });
+        var tiles = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+            attribution: 'Map data &amp;copy;<a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox.light',
+            accessToken: 'pk.eyJ1Ijoic2VubmllcmVyIiwiYSI6ImNpbHk1YWV0bDAwZnB2dW01d2l1Y3phdmkifQ.OljQLEhqeAygai2y6VoSwQ'
+        });
+        var map = L.map('map').addLayer(tiles);
+        var markers = L.markerClusterGroup();
+        var currentTableData = getTableData(table);
+        var currentGeoJson = createGeoJson(currentTableData);
+        console.log(currentGeoJson);
+        var startLayer = L.geoJson(currentGeoJson, {
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup(feature.properties.name);
+            }
+        });
+        markers.addLayer(startLayer);
+        map.addLayer(markers);
+        map.fitBounds(markers.getBounds());
+        
+        $(document).ready(function() {
+            
+            $("#myTableBody").show();
+        } );
+        
+        table.on( 'search.dt', function () {
+            //markers.removeLayer(startLayer);
+            markers.clearLayers();
+            $('#filterInfo').html( 'Filtering for: <strong>'+table.search()+'</strong>' );
+            var currentTableData = getTableData(table);
+            var currentGeoJson = createGeoJson(currentTableData);
+            console.log(currentGeoJson);
+           var geoJsonLayer = L.geoJson(currentGeoJson, {
+                onEachFeature: function (feature, layer) {
+                    layer.bindPopup(feature.properties.name);
+                }
+            });
+            markers.addLayer(geoJsonLayer);
+            map.addLayer(markers);
+            try {
+                map.fitBounds(markers.getBounds());
+            }
+            catch(err) {
+                console.log(err);
+            }
+        } );
+        
+        function getTableData(table) {
+            const dataArray = [],
+            placesArray = [];
+            // loop table rows
+            table.rows({ search: "applied" }).every(function() {
+                const data = this.data();
+                if( data[3]){
+                    placesArray.push(data);
+                }
+            });
+            // store all data in dataArray
+            dataArray.push(placesArray);
+            return dataArray;
+        };
+        
+        function createGeoJson(data){
+            var geojsonArray = [];
+            data[0].forEach(function(element, i) {
+                var geojson = new Object();
+                geojson.id = i;
+                geojson.type = "Feature";
+                geojson.geometry = {
+                    "type": "Point",
+                    "coordinates": [
+                        element[4],
+                        element[3]
+                    ]
+                };
+                geojson.properties = {
+                    "name": element[0]
+                };
+                geojsonArray.push(geojson);
+            });
+            return geojsonArray;
+        };
+        function onEachFeature(feature, layer) {
+            layer.bindPopup(feature.properties.name);
+        };
+    
+    </script>
+
+</div>

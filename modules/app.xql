@@ -220,6 +220,8 @@ declare function app:listPlace($node as node(), $model as map(*)) {
             <td>{$lng}</td>
         </tr>
 };
+
+
 (:~
  : creates a basic term-index derived from the all documents stored in collection'/data/editions'
  :)
