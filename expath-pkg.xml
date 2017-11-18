@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package xmlns="http://expath.org/ns/pkg" name="http://www.digital-archiv.at/ns/dsebaseapp" abbrev="dsebaseapp" version="1.0" spec="1.0">
-    <title>dsebaseapp</title>
+<package xmlns="http://expath.org/ns/pkg" name="http://www.digital-archiv.at/ns/rundbriefe-app" abbrev="rundbriefe-app" version="1.0" spec="1.0">
+    <title>Rundbriefe App</title>
     <dependency package="http://exist-db.org/apps/shared"/>
 </package>

@@ -1,7 +1,7 @@
 xquery version "3.0";
 declare namespace functx = "http://www.functx.com";
 import module namespace xmldb="http://exist-db.org/xquery/xmldb";
-import module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/config" at "../modules/config.xqm";
+import module namespace config="http://www.digital-archiv.at/ns/rundbriefe-app/config" at "../modules/config.xqm";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 declare function functx:capitalize-first
