@@ -17,7 +17,11 @@
             </table>
         </div>
     </div>
-    <script>$('#myTable').DataTable({
-        keepConditions: true
+    <script>var table = $('#myTable').DataTable({
+             keepConditions: true,
+             dom: 'Bfrtip',
+             buttons: [
+                'copy', 'excel', 'pdf'
+             ]
         });</script>
 </div>

@@ -20,10 +20,15 @@
         </div>
     </div>
     <script>var table = $('#myTable').DataTable({
-            keepConditions: true
+                keepConditions: true,
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'excel', 'pdf'
+                ]
         });
     
         $(document).ready(function() {
-            $("#myTableBody").show();
+            $("#myTableBody").show({
+            });
         });</script>
 </div>
