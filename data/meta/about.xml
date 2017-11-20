@@ -1,35 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>About your application</title>
-                <author>
-                    <persName>
-                        <forename>forename</forename>
-                        <surname>surename</surname>
-                    </persName>
-                </author>
-            </titleStmt>
-            <publicationStmt>
-                <publisher/>
-                <availability>
-                       <licence target="https://creativecommons.org/licenses/by/4.0/">
-                           <p>The (CC BY 4.0)-License applies to this document.</p>
-                       </licence>
-                   </availability>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Born digital.</p>
-            </sourceDesc>
-        </fileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div>
-                <head>About</head>
-                <p>Some place to write your project</p>
-            </div>
-        </body>
-    </text>
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Some Text about our Project encoded in TEI</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <p>Some text here.</p>
+      </body>
+  </text>
 </TEI>
