@@ -1,11 +1,11 @@
 xquery version "3.0";
 
-module namespace api="http://www.digital-archiv.at/ns/rundbriefe-app/api";
+module namespace api="http://www.digital-archiv.at/ns/dsebaseproject/api";
 declare namespace rest = "http://exquery.org/ns/restxq";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 import module namespace functx = "http://www.functx.com";
-import module namespace app="http://www.digital-archiv.at/ns/rundbriefe-app/templates" at "app.xql";
-import module namespace config="http://www.digital-archiv.at/ns/rundbriefe-app/config" at "config.xqm";
+import module namespace app="http://www.digital-archiv.at/ns/dsebaseproject/templates" at "app.xql";
+import module namespace config="http://www.digital-archiv.at/ns/dsebaseproject/config" at "config.xqm";
 declare namespace output = "http://www.w3.org/2010/xslt-xquery-serialization";
 declare namespace http = "http://expath.org/ns/http-client";
 
@@ -41,7 +41,7 @@ declare variable $api:XML :=
 (:~ lists content of collection ~:)
 declare 
     %rest:GET
-    %rest:path("/rundbriefe-app/{$collection}/{$format}")
+    %rest:path("/dsebaseproject/{$collection}/{$format}")
     %rest:query-param("page[number]", "{$pageNumber}", 1)
     %rest:query-param("page[size]", "{$pageSize}", 20)
 function api:list-documents($collection, $format, $pageNumber, $pageSize) {
@@ -57,7 +57,7 @@ let $serialization := switch($format)
 (:~ lists content of collection according to datatables API ~:)
 declare 
     %rest:GET
-    %rest:path("/rundbriefe-app/dt/{$collection}/{$format}")
+    %rest:path("/dsebaseproject/dt/{$collection}/{$format}")
     %rest:query-param("start", "{$start}", 0)
     %rest:query-param("lenght", "{$lenght}", 10)
 function api:list-documents($collection, $format, $start, $lenght, $draw) {
@@ -72,7 +72,7 @@ let $serialization := switch($format)
 
 declare 
     %rest:GET
-    %rest:path("/rundbriefe-app/{$collection}/{$id}/{$format}")
+    %rest:path("/dsebaseproject/{$collection}/{$id}/{$format}")
 function api:show-document-api($collection, $id, $format) {
     let $result := api:show-document($collection, $id)
     let $serialization := switch($format)

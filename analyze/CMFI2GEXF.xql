@@ -1,8 +1,8 @@
 xquery version "3.0";
 declare namespace functx = "http://www.functx.com";
 import module namespace xmldb="http://exist-db.org/xquery/xmldb";
-import module namespace config="http://www.digital-archiv.at/ns/rundbriefe-app/config" at "../modules/config.xqm";
-import module namespace app="http://www.digital-archiv.at/ns/rundbriefe-app/templates" at "../modules/app.xql";
+import module namespace config="http://www.digital-archiv.at/ns/dsebaseproject/config" at "../modules/config.xqm";
+import module namespace app="http://www.digital-archiv.at/ns/dsebaseproject/templates" at "../modules/app.xql";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace gefx = "http://gexf.net/data/hello-world.gexf";
 declare namespace util = "http://exist-db.org/xquery/util";
@@ -16,8 +16,8 @@ let $source := doc($fallback)
 let $result := 
         <gexf xmlns="http://www.gexf.net/1.2draft" version="1.2">
             <meta lastmodifieddate="{current-date()}">
-                <creator>rundbriefe-app-net.xql</creator>
-                <description>A network of persons mentioned in the rundbriefe-app-Korpus</description>
+                <creator>dsebaseproject-net.xql</creator>
+                <description>A network of persons mentioned in the dsebaseproject-Korpus</description>
             </meta>
             <graph mode="static" defaultedgetype="directed">
                 <nodes>

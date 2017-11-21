@@ -33,7 +33,7 @@
                     <place xml:id="place_d9c760d2f9fb1d5170c2517c7be64c75">
                         <placeName>Risran</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_c50f4f1960426cf2b75774029040aef9">
@@ -139,7 +139,7 @@
                     <place xml:id="place_7b31b3d2749acea549b70e3c292a8d7c">
                         <placeName>Bukovakora</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_3ff694e5c82611cda53341a9bae21735">
@@ -253,7 +253,7 @@
                     <place xml:id="place_d87ecf2812221b35c14efd3de8dd844d">
                         <placeName>Steger</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_4ac23ef3c3fd921d68e5827e59995c19">
@@ -348,7 +348,7 @@
                     <place xml:id="place_6f4402d6ad62cafca8ecfaa58cc6a2a0">
                         <placeName>Labor</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_8f96082621edf8a333416cae9740e8fe">
@@ -476,7 +476,7 @@
                         <placeName>Bonghás</placeName>
                         <placeName type="alt">Bonyhád</placeName>
                         <location>
-                            <geo decls="#LatLng">46.32145, 18.55193</geo>
+                            <geo decls="#LatLng">46.32145 18.55193</geo>
                         </location>
                     </place>
                     <place xml:id="place_b0dfe294f5f1448875d017a903b777ae">
@@ -587,7 +587,7 @@
                     <place xml:id="place_5d05770a7f64a4a2a6bdd7972a09f343">
                         <placeName>Kaczony</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_1a75b35314be8c19f22c5c5334d78c8f">
@@ -771,7 +771,7 @@
                     <place xml:id="place_7d9832776dd78bc9e7f5eeb6c168c92b">
                         <placeName>Waizna</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_48e23d043764ef6b2d7d7acd9ac09860">
@@ -1269,7 +1269,7 @@
                     <place xml:id="place_dd2e77b38f042b1e93b1aae8c230209e">
                         <placeName>Vecse</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_0d02faf704bd0c9d27ef4e5dc7980b02">
@@ -1290,7 +1290,7 @@
                         <placeName>huens</placeName>
                         <placeName type="alt">Hüns</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_c2c2d1830244756d67cdaa1b1b84353b">
@@ -1303,7 +1303,7 @@
                         <placeName>asch</placeName>
                         <placeName type="alt">Ascher</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_9ae0133b9256a87352801c2a37fdd149">
@@ -1357,19 +1357,19 @@
                     <place xml:id="place_7dc16ef12d80c384504f4f185172adab">
                         <placeName>Kis-Almas</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_411da68f378eda6ae9e1d4d6a3e4ec87">
                         <placeName>Samson</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_1286d21b26bd017b6eee85bd6947bb1b">
                         <placeName>Smeczna</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_ac634c014ec212922c6d2e0df2f7833f">
@@ -1490,13 +1490,13 @@
                     <place xml:id="place_b140e3c7620d2b69957198cf19feac25">
                         <placeName>Chwalbogowo</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_20fd1ec63df813feb0d7095f9a884d6d">
                         <placeName>Pojnik</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_3cf7586c237d681e808f91a22597874a">
@@ -1699,7 +1699,7 @@
                         <placeName>semptau</placeName>
                         <placeName type="alt">Semptauer</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_69fd6a9101d2280687aea76a4d7d3189">
@@ -1852,14 +1852,14 @@
                     <place xml:id="place_91f7b0064800d29ad8cd02f64845679d">
                         <placeName>Peruc</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_0a703b7d65a1a57903599f90cb45d869">
                         <placeName>Riegel</placeName>
                         <placeName type="alt"/>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_c382bca7364f2cede24b32dd15a1c6bd">
@@ -1888,7 +1888,7 @@
                     <place xml:id="place_16f90d6b340b3a83ead652eadec3945f">
                         <placeName>Kosmark</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_7c623c08220222bd9f50583382924179">
@@ -1928,13 +1928,13 @@
                         <placeName type="pref">Csurgo</placeName>
                         <placeName type="alt">Csurgo</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_4744fc042844c987d0121739bb70fff7">
                         <placeName>Tabor</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_af35ec026fddf9c8c4ecda002507bd0e">
@@ -1982,7 +1982,7 @@
                     <place xml:id="place_36ad7c77f8390477ad63932edeee38d7">
                         <placeName>Sambor</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_2a4be755c8b67c0c6cfe1a447c30b96f">
@@ -2179,7 +2179,7 @@
                     <place xml:id="place_62530da690f678833916ae0e5880bbaa">
                         <placeName>Zsigra</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_bc75499a4c6e541cfb7f0506a5cd7823">
@@ -2204,7 +2204,7 @@
                         <placeName>ossnitz</placeName>
                         <placeName type="alt">Oßnitz</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_adda55565233fbaf78dd3de460e8a5f0">
@@ -2219,7 +2219,7 @@
                     <place xml:id="place_17873f60321986b78504c3e9bc5be2ba">
                         <placeName>Riegel</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_3759c8464ee4c9a3bc2a2833ecb4a535">
@@ -2233,7 +2233,7 @@
                         <placeName>falkenstein</placeName>
                         <placeName type="alt">Falkensteiner</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_0b2950da137a57c3c4e35298274ef639">
@@ -2290,7 +2290,7 @@
                     <place xml:id="place_c95cce995ec7158d0a34817229dcc590">
                         <placeName>Czecze</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_e610955f9b1286d934a0a5447e5e5192">
@@ -2461,7 +2461,7 @@
                     <place xml:id="place_0f16f2953a5b6db73a3221b09bb9a30c">
                         <placeName>Belligam</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_7d1865c03241bd7a6616fa5587af6f8b">
@@ -2501,7 +2501,7 @@
                     <place xml:id="place_d4dd361519676af4280e8accc235d3ba">
                         <placeName>Egyháza</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_272d83bc2bcd299616aa2d70845a7dd7">
@@ -2514,14 +2514,14 @@
                     <place xml:id="place_cac911dbd5121527b9b33b925a770ecc">
                         <placeName>Hodrics</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_d2e3b68c09bf9b8d968f82a071af664f">
                         <placeName>csank</placeName>
                         <placeName type="alt">Csanker</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_664837cae9a0918a874bea7ecaff2b9d">
@@ -2529,7 +2529,7 @@
                         <placeName type="pref">cserekoez</placeName>
                         <placeName type="alt">Csereköz</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_bb1ec51841f0efe46207c3c72c7399a6">
@@ -2574,7 +2574,7 @@
                     <place xml:id="place_2ce3aa8333eff3c8f37bbe5ae1bbae56">
                         <placeName>Lattugna</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_7e075e3a2f9d18e970715aa1851dc619">
@@ -2620,13 +2620,13 @@
                     <place xml:id="place_4510d4e4afdfe71771afea781bc55d46">
                         <placeName>o. O.</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_9a5837b80620c345ca2e92b82abd3756">
                         <placeName>Tchorda</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_a85f31baa24303a7fce0658c22ddca85">
@@ -2655,13 +2655,13 @@
                     <place xml:id="place_6b62d8e38eff45aa22468bb25b59347a">
                         <placeName>Bela</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_9ef8d8da6bd02fc57e90b6cb7908e006">
                         <placeName>Wartenstein</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_4b2c7a5609677d91853c5aea95266f42">
@@ -2674,13 +2674,13 @@
                     <place xml:id="place_1298c1018eaa420942d33c303446bac4">
                         <placeName>Szentes</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_14967be2c6f0b9ed1da33491472d1080">
                         <placeName>Sainte-Menehould</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_e33dd70f39b25f77dfbff9da757f7f91">
@@ -2693,19 +2693,19 @@
                     <place xml:id="place_9011379bdff19d09ae233b1ad0f9f0bf">
                         <placeName>Jaworzno</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_b96fb1213c6f288ceb0d58df21166f6c">
                         <placeName>Kis-Berezne</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_b3798be58d0947c0e4f64ac8c2e089d4">
                         <placeName>Friedeck</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_b44e37a4ee49dda3f42793b593508e1e">
@@ -2734,7 +2734,7 @@
                     <place xml:id="place_1f4618e511a0092e1476716e8a76a84c">
                         <placeName>Godowa</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_4866028918ba5927e585c8bfac2454b4">
@@ -2755,13 +2755,13 @@
                         <placeName>allhau</placeName>
                         <placeName type="alt">Alhau</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_76103710e212e02de0ac9e0524ab4fbb">
                         <placeName>Suczawa</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_9263526b6b07a4e038fef1dd4b691224">
@@ -2797,7 +2797,7 @@
                     <place xml:id="place_e79f778b81d26bce192c8787475b10a3">
                         <placeName>Ervatien</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_f1caba4d97489c0279c46ba7763cdf61">
@@ -2858,7 +2858,7 @@
                         <placeName type="pref">Ladány</placeName>
                         <placeName type="alt">Ladány</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_34757f828b3f00c518507eb75bc8f67d">
@@ -2881,7 +2881,7 @@
                     <place xml:id="place_23872f4a2fc4d4d0711708a60b077e00">
                         <placeName>Tiba</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_44bc041e25bf07eda0af2bee7bc67665">
@@ -2889,7 +2889,7 @@
                         <placeName type="alt">Szeniczer</placeName>
                         <placeName type="alt">Szenicz</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_70bde987c42c09240ef3e840fc66a461">
@@ -2931,7 +2931,7 @@
                     <place xml:id="place_a86a6088f4f3738d2b406f89edb5f880">
                         <placeName>Schilbesch</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_3667cbbafb66c626f2c1d56c1bd96d69">
@@ -3022,7 +3022,7 @@
                     <place xml:id="place_7aa4b04a15847f513325aa0ed7b6096b">
                         <placeName>Karstadt</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_a68f28642d7df7ac14a487ed8df5e2d5">
@@ -3327,7 +3327,7 @@
                     <place xml:id="place_779f9e7ebda7335db3bd8c038e45c8f3">
                         <placeName>Kaza</placeName>
                         <location>
-                            <geo decls="#LatLng">None None</geo>
+                            <geo decls="#LatLng"/>
                         </location>
                     </place>
                     <place xml:id="place_ac50ce07a4cbc7f0535c99cbce72b336">

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Berichte über das Schul- und Pfarrwesen mehrerer Bezirkskommissariate an die
+                    k.k. Stadthauptmannschaft<lb/>
+                    <date from="1851-03-15" to="1851-03-17">15. bis
+                        17. März 1851</date>
+                </title>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Staatliches Gebietsarchiv Leitmeritz, Zweigstelle
+                            Tetschen-Bodenbach</institution>
+                        <repository>Familienarchiv Thun-Hohenstein, Linie Tetschen, Nachlass Leo
+                            Thun</repository>
+                        <idno>A3 XXI D109</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <p>Das Konvolut enthält die Berichte von drei Bezirkskommissaren zur
+                            Situation des Schulwesens in den jeweiligen Bezirken.<lb/>Zunächst
+                            schildert Karl Heinz vom Bezirkskommissariat Sechshaus die Situation in
+                            seinem Bezirk. Er zeichnet dabei ein schlechtes Bild vom Zustand der
+                            Bildungsanstalten: Die Kleinkindbewahranstalt sowie die Pfarr- und
+                            Trivialschulen in Reindorf, Fünf- und Sechshausen seien überfüllt. Die
+                            Lehrer könnten daher nur wenig bewirken und dementsprechend schlecht sei
+                            der Fortschritt der Schüler. Die Situation bei den Abend- und
+                            Wiederholungsschulen bezeichnet Heinz als noch schlechter. Zur Lösung
+                            der Probleme schlägt er die Anstellung von mehr und besseren Lehrern
+                            vor. Positiv erwähnt der Berichterstatter indes die 1849 errichtete
+                            Bürgerschule von Franz Dobisch in Reindorf.<lb/>Im zweiten Bericht
+                            äußert sich Prokop Prucha zum Schul- und Pfarrbezirk Hernals. Er beklagt
+                            sich dabei besonders über den Pfarrer in Neulerchenfeld, der auf Grund
+                            seines Lebenswandels und seiner Predigten keine Vorbildwirkung für die
+                            Schuljugend habe. Zu den Pfarrern in Ottakring und Dornbach äußert er
+                            sich positiv, den Pfarrer von Hernals bezeichnet er hingegen als
+                            moralisch und politisch bedenklich.<lb/>Im dritten Bericht schildert
+                            Wilhelm Rickert die Situation im Bezirk Gaudenzdorf. Er lobt den Leiter
+                            der Pfarrschule in Untermeidling. Den Leiter der öffentlichen Schule in
+                            Gaudenzdorf kritisiert er indes, da dieser ein Trinker sei und daher
+                            seine Pflichten als Lehrer vernachlässige.</p>
+                    </msContents>
+                    <physDesc>
+                        <p>Drei Stücke:</p>
+                        <p>
+                            <ref target="#D109_1">Stadthauptmannschaftliches Bezirkskommissariat
+                                Sechshaus an die k.k. Stadthauptmannschaft, Sechshaus, 17. März
+                                1851.</ref>
+                            <lb/>
+                            <ref target="#D109_2">Stadthauptmannschaftliches
+                                Bezirkskommissariat Hernals an die k.k. Stadthauptmannschaft,
+                                Hernals, 16. März 1851.</ref>
+                            <lb/>
+                            <ref target="#D109_3">Stadthauptmannschaftliches Bezirkskommissariat Gaudenzdorf an die
+                                k.k. Stadthauptmannschaft, Gaudenzdorf, 15. März 1851.</ref>
+                        </p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <list>
+                <item>approved by Mazohl</item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript">
+                <index>
+                    <term>Volksschulen</term>
+                    <term>Volksschullehrer</term>
+                    <term>Kultus</term>
+                    <term>Wien</term>
+                </index>
+                <div xml:id="D109_1">
+                    <p>Bericht</p>
+                    <p>Es ist eine allgemein anerkannte Thatsache, daß die Demoralisirung der
+                        hierbezirklichen Bevölkerung der untern Klassen größtentheils dem
+                        mangelhaften Schulunterrichte zugeschrieben werden muß und daß die Schulen
+                        dieses Bezirkes, in der unmittelbaren Nähe der<rs type="place" subtype="place" ref="#place_95b8315bd8f5c49ffd94d827cc5ece93">Residenz</rs>, in ihrer Wirkung bei weitem nicht einmal mit der
+                        letzten Dorfschule <rs type="place" subtype="region" ref="#place_867b530d8072e0e4d907aa82937d3e01">Böhmens</rs> verglichen werden
+                        können.<lb/>Man kann das Schulwesen des Bezirkes füglich in 3 Theilen
+                        abtheilen, und zwar:<lb/>1. Kleinkinderbewahranstalt<lb/>2. die eigentlichen
+                        Pfarr- und Trivialschulen<lb/>3. die Abend- und
+                        Wiederholungsschulen.<lb/>Die Kleinkinderbewahranstalt, welche als Grundlage
+                        des Schulwesens betrachtet werden soll, ist gegenwärtig wirklich nichts
+                        anderes als Bewahranstalt, denn seit zwei Jahren wird daselbst nicht der
+                        geringste Unterricht ertheilt, daher wenn das Kind in die Schule selbst
+                        eintritt, es auch nicht einmal die allergeringsten Vorkenntnisse mitbringt.
+                        Die hiesige Kleinkinderbewahranstalt wird im Sommer von 130–180 Kindern
+                        besucht, welche sämtlich in einem Zimmer untergebracht, von einem einzigen
+                        Lehrer beaufsichtiget werden, nur die Mädchen erhalten die
+                        allernothdürftigsten Unterweisungen im Stricken von des Lehrers
+                        Gattin.<lb/>Daß bei einer solchen Überfüllung ein Lehrer nichts leisten
+                        kann, ist augenscheinlich, um so mehr als gegenwärtig nur Kinder, die aller
+                        häuslichen Erziehung und Aufsicht entbehren, dort untergebracht werden und
+                        besser erzogene Kinder oder Kinder nur halbwegs bemittelter Eltern diese
+                        Anstalt gar nicht besuchen.<lb/>Wenn nun diese Kinder aus der
+                        Kleinkinderbewahranstalt in die eigentliche Schule übertreten, so ist eben
+                        so wenig die Möglichkeit vorhanden, in der Schule selbst und allein, ohne
+                        häuslichen Privatunterricht, den Kindern die nöthigen Kenntnisse
+                        beizubringen.<lb/>Im Bezirke selbst befinden sich drei Schulen: die
+                        Pfarrschule zu <rs type="place" subtype="place" ref="#place_a8a8d03449db447f4be292c0240da5a2">Reindorf</rs> und die beiden Trivialschulen
+                        zu <rs type="place" subtype="place" ref="#place_b3a1423103ff1eb4f2a8af2d045be4be">Fünfhaus</rs> und
+                            <rs type="place" subtype="place" ref="#place_089f86d9d1435122eee164e3917b138d">Sechshaus</rs>.<lb/>Die <rs type="place" subtype="place" ref="#place_a8a8d03449db447f4be292c0240da5a2">Reindorfer</rs> Schule zählt ungefähr 1.200 schulfähige Kinder,
+                        von denen aber nur bei 900 die Schule besuchen.<lb/>Die Lokalitäten selbst
+                        sind von der Art, daß sie kaum sämtliche Schulfähigen fassen können –
+                        wenigstens nicht ohne größte Überfüllung; in <rs type="place" subtype="place" ref="#place_b3a1423103ff1eb4f2a8af2d045be4be">Fünfhaus</rs> sind über 800 und <rs type="place" subtype="place" ref="#place_089f86d9d1435122eee164e3917b138d">Sechshaus</rs>
+                        über 470 schulfähiger Kinder; erstere Schule wird aber von beiläufig 750 und
+                        letztere von 390 Kinder besucht.<lb/>Jede Schule theilt sich in eine
+                        Vorbereitungsklasse, eine Ober- und Unterabtheilung und eine 2.
+                        Klasse.<lb/>Wie sehr bei so großer Anzahl der Schüler der Lehrer, was doch
+                        wenigstens in den Vorbereitungsklassen unbedingt nothwendig wäre, sich mit
+                        jedem einzelnen Schüler beschäftigen kann, ist wohl in die Augen springend,
+                        daher daraus auch zu folgern, wie wenig die Kinder in den Schulen lernen
+                        können.<lb/>Dasselbe ist auch der Fall mit der Religionslehre.<lb/>Dazu
+                        kommt noch, daß der Lehrer bei der <rs type="place" subtype="place" ref="#place_a8a8d03449db447f4be292c0240da5a2">Reindorfer</rs> Pfarrschule seit Jahren krank und dienstunfähig
+                        ist und das ganze Schulwesen seinen Gehilfen – darunter sein Sohn und
+                        Schwiegersohn – überlassen muß, daß diese auch die Pfarrmeßnerei zu besorgen
+                        haben und daß es schon wiederholt geschehen ist, daß wenn einer der
+                        Schulgehilfen der Meßnerei wegen z. B. beim „Kranken versehen“ aus der
+                        Schule sich entfernen muß, des Lehrers jüngster mit der Fallsucht behafteter
+                        Sohn die Aufsicht über die Klasse abberufener Gehilfen übernimmt und während
+                        der Aufsicht von der Epilepsie befallen wird, so daß die Schüler aus Furcht
+                        und Scheu sich aus der Schule flüchten.<lb/>In <rs type="place" subtype="place" ref="#place_b3a1423103ff1eb4f2a8af2d045be4be">Fünfhaus</rs> befaßt sich der Lehrer ebenfalls nicht selbst mit
+                        dem Unterrichte, sondern hält sich hierzu Gehilfen, die er jedoch
+                        überwacht.<lb/>In <rs type="place" subtype="place" ref="#place_089f86d9d1435122eee164e3917b138d">Sechshaus</rs> betheiligt sich der
+                        Lehrer selbst unmittelbar an dem Unterrichte.<lb/>Außer diesen Übelständen
+                        muß noch berücksichtigt werden, daß ein Gehilfe in den hiesigen Schulen nur
+                        4 bis 6 fr CM monatlichen Lohn vom Schulinhaber erhält und daher zur
+                        Erhaltung seiner Existenz auf Privatlekzionen etc. angewiesen ist, daß er
+                        daher in der Schule selbst nur eben seine Schuldigkeit leistet, keineswegs
+                        aber einen besonderen Fleiß und Eifer entwickeln wird. Welche Anforderung
+                        kann man wohl auch bei einer solchen Besoldung stellen?<lb/>Endlich müssen
+                        die Lehrer das Unterrichtsgeld – 12 fr CM monatlich – selbst einkassiren,
+                        kommen daher öfter mit den Partheien des rückständigen Schulgeldes wegen in
+                        Kollisionen und haben überdies eine große Anzahl zahlungsunfähiger Kinder in
+                        der Schule. Was nun die Abend- und Wiederholungsschule des Bezirkes
+                        betrifft, so sind dieselben womöglich noch schlechter.<lb/>Die Abendschulen
+                        sind für jene Kinder bestimmt, die noch schulpflichtig sind, jedoch schon in
+                        den Fabriken als Stecker, Streicher etc. arbeiten und daher erst nach der
+                        Arbeit und an Sonntagen die Schule besuchen sollen. Wie wenig diese Schule
+                        dem Zwecke entsprach, ist der deutlichste Beweis der, daß in <rs type="place" subtype="place" ref="#place_b3a1423103ff1eb4f2a8af2d045be4be">Fünfhaus</rs> und in
+                            <rs type="place" subtype="place" ref="#place_089f86d9d1435122eee164e3917b138d">Sechshaus</rs> derlei Schulen gar nicht mehr gehalten
+                        werden und daß in <rs type="place" subtype="place" ref="#place_a8a8d03449db447f4be292c0240da5a2">Reindorf</rs> nur bei 30 Kinder die
+                        Abendschule besuchen. Allein was sollen diese Schulen auch nutzen, da sie
+                        doch eigentlich nur den Zweck haben, daß das Kind das Gelernte wiederholt
+                        und hie und da vervollkommnet, wenn die Kinder früher noch gar nichts
+                        gelernt haben, denn gewöhnlich sind es nur Findelkinder und Kinder von
+                        Fabriksarbeitern, welche von den Abendschulen Gebrauch machen, aber früher
+                        die Schule nur bis zum 7.–8. Jahre nothdürftig besucht und daher nicht
+                        einmal die allernothwendigsten Vorkenntnisse haben.<lb/>Den Beweis über das
+                        Gesagte liefern tägliche Erfahrungen, indem häufig Stecker- und
+                        Streicherjungen oder Mädchen hier vorkommen, die auch nicht einen Buchstaben
+                        kennen, von einer Religion oder den Zehn Geboten u. dgl. gar keinen Begriff
+                        haben und höchstens das Vater Unser oder den Glauben herzusagen im Stande
+                        sind, ohne auch nur im Geringsten den Sinn davon zu verstehen.<lb/>Bei der
+                        sonntägigen Wiederholungsschule für die Lehrjungen ist derselbe Übelstand.
+                        Im Ganzen sind bei 900 Lehrjungen in allen 3 Schulen, von diesen besucht ein
+                        großer Theil diese Wiederholungsschule gar nicht oder sehr selten, ein sehr
+                        großer Theil ist der deutschen Sprache gar nicht kundig, der Schulbesuch für
+                        sie daher ohne allen Zweck, jedoch nothwendig, um das zum Freisprechen
+                        nöthige Wiederholungsschulzeugnis zu erhalten. Überdies sind diese
+                        Lehrjungen, da dem Lehrer keine ausgiebigen Strafmittel zu Gebote stehen, so
+                        ausgelassen und unfolgsam, daß von einem Nutzen der Wiederholungsschule gar
+                        keine Rede sein kann.<lb/>Aus dem Gesagten geht auch hervor, auf welche
+                        Weise diesen Übelständen nach und nach abgeholfen werden könnte.<lb/>Es muß
+                        die Kleinkinderbewahranstalt nicht bloß als Bewahranstalt, sondern auch als
+                        Lehranstalt benutzt werden, daher eine Abtheilung der Kinder und die
+                        Beigebung eines 2. Lehrers erforderlich ist. In den eigentlichen Schulen ist
+                        ebenfalls nothwendig die Schüler wenigstens der ersten Kathegorie
+                        abzutheilen und jedem Theil zu verschiedenen Stunden der Unterricht zu
+                        ertheilen, für welchen Fall die vorhandenen Lokalitäten vollkommen
+                        hinreichen und der Lehrer mehr mit jedem Kinde einzeln sich zu beschäftigen
+                        in die Lage gesetzt wird, natürlich müßte das Lehrpersonale vermehrt und
+                        besser besoldet werden. Bezüglich der Abendschule müßten die Verordnungen,
+                        welche das Alter der zu Fabriksarbeiten zulässigen Kinder bestimmen und
+                        diesen Schulbesuch regeln, befolgt und dafür die Fabriksinhaber
+                        verantwortlich gemacht werden.<lb/>Die Wiederholungsschulen müssen
+                        nachmittags, nicht wie bisher vormittags, zu welcher Zeit der Lehrjunge oft
+                        vom Lehrherrn nicht entbehrt werden kann, abgehalten und nicht bloß in jeder
+                        Schule in einem Lehrzimmer der Unterricht vorgenommen und letzterer so wie
+                        auch die Priesterlehre auch für die böhmischen Lehrjungen zugänglich und
+                        nützlich gemacht – überhaupt sämtliche Schulen unter strengere Aufsicht und
+                        Kontrolle gestellt werden. Was die Persönlichkeit der diesbezirklichen
+                        Lehrer betrifft, so ist gegen dieselben nichts Widriges vorgekommen oder
+                        erhoben worden, ebenso wurde bezüglich der Fähigkeit der Lehrer und Gehilfen
+                        im Schulfache keine widrige Wahrnehmung gemacht.<lb/>Schließlich muß noch
+                        der Privatlehranstalt des <rs type="person" ref="#tobisch-franz">Franz Dobisch
+                            [Tobisch]</rs> in <rs type="place" subtype="place" ref="#place_a8a8d03449db447f4be292c0240da5a2">Reindorf</rs> Nr. 69 erwähnt
+                        werden, welchem erst im Jahre 1849 die Errichtung einer Bürgerschule für den
+                        Pfarrbezirk <rs type="place" subtype="place" ref="#place_a8a8d03449db447f4be292c0240da5a2">Reindorf</rs> bewilligt wurde und der erst im
+                        2. Jahre des Bestehens seiner Schule (3. und 4. Klasse) bereits 120
+                        Zöglinge, darunter von <rs type="place" subtype="place" ref="#place_1549a9a3dfd0c321ec93e4da91736104">Hütteldorf</rs>,
+                            <rs type="place" subtype="place" ref="#place_1a598eeca6df59d538f051fc5a231d9a">Baumgarten</rs>, <rs type="place" subtype="place" ref="#place_e3a1571b9091d6d78548ad3b4b159d11">Hetzendorf</rs>
+                        hat, ein Beweis des Bedürfnisses einer guten Schule und der Bereitwilligkeit
+                        der Eltern hievon Gebrauch zu machen; freilich befaßt sich auch <rs type="person" ref="#tobisch-franz">Dobisch</rs> selbst mit dem Unterrichte seiner
+                        Zöglinge und zahlt seinem 2. Hilfslehrer bei 40 fr CM monatlich, kann daher
+                        von diesem auch hinlängliche Brauchbarkeit in wissenschaftlicher Beziehung
+                        und fleißige Verwendung fordern.</p>
+                    <p>k.k. stadthauptmannschaft. Bez. Kommissariat Sechshaus<lb/>am 17. März
+                            1851<lb/>
+                        <rs type="person" ref="#heinz-karl">Heinz</rs>
+                    </p>
+                </div>
+                <div xml:id="D109_2">
+                    <p>Unter den mehreren Momenten polizeilichen Belanges war es auch Kirche und
+                        Schule hierbezirklich, worauf der Gefertigte Aufmerksamkeit wendete und
+                        davon durch Auskünfte und eigene Wahrnehmung sich die Überzeugung zu
+                        verschaffen bemüht war, wienach das Wesen und Bestreben dieser Institution
+                        verfaßt und ihr Ziel festgestellt sei.<lb/>Im Allgemeinen läßt sich wie
+                        anderwärts auch hier die Bemerkung machen, daß das Verderbnis des
+                        Familienlebens durch die Gottesdiener und Lehrer nicht nur nicht
+                        eingehalten, sondern vielmehr in der Ausbreitung geradehin gefördert
+                        wird.<lb/>Einen genauen Nachweis hierüber muß man sich wegen
+                        Unzulänglichkeit der bisher gemachten Wahrnehmungen für später vorbehalten
+                        und man kann vorläufig nur Einzelnes darüber anführen.<lb/>Am ungünstigsten
+                        steht die Sache in <rs type="place" subtype="place" ref="#place_30e401734dd84d2c5c0f739ba6b6b74c">Neulerchenfeld</rs> und der ehrerbietig
+                        Gefertigte kann die Versicherung aussprechen, daß hier eine Abhilfe dringend
+                        nothwendig erscheint. Der <rs type="place" subtype="place" ref="#place_30e401734dd84d2c5c0f739ba6b6b74c">Neulerchenfelder</rs> Pfarrer ist schon als Priester überhaupt
+                        unduldsam und zur Deficienz allein geeignet und es muß daher befremden, wie
+                        noch das Konsistorium ungeachtet der von der Gemeinde bereits gemachten
+                        Vorstellung mit der Amovirung dieses Herrn noch immer zaudert.<lb/>Würde man
+                        auch gar nicht gehört haben, daß dieser Priester in Folge anstrengender
+                        Studien der chaldeischen und anderer todten Sprachen sich an eine ganz
+                        abstrakte Anschauung gewöhnt hat und in den Vorträgen stets barock und
+                        lächerlich wird, daß er ferner durch übermäßiges Trinken sehr häufig seinen
+                        Beruf prostituirt und außer einem vortretenden Cinismus nur wenige Tugenden
+                        seines Standes übet, so wäre das Anhören einer einzigen Christenlehre, wie
+                        der Gefertigte sie gehört, zur Überzeugung hinlänglich, daß die Vorträge
+                        dieses Mannes die ohnehin vorwaltende Frivolität der Jugend bis zur
+                        Entartung steigern und jeden Funken religiösen Sinnes erlöschen müsse, weil
+                        die strengste Frömmigkeit an diesem verworrenen Gerede Anstoß nimmt, der
+                        leichtfertige Sinn aber daran den schicklichen Anlaß zum Gespötte und
+                        Verunglimpfung der religiösen Übung findet.<lb/>Darum ist es auch
+                        begreiflich, daß die Jugend während der Christenlehre in der grobsten Art
+                        ausartet und die Gemeindevorstehung sich sogar bemüßiget sah zur Aufsicht,
+                        wiewohl ohne Erfolg, 2 Glieder der Vorstehung in die Kirche zu
+                        bestellen.<lb/>Wenn der Gefertigte auch nur immer fragte, immer erhielt er
+                        die Auskunft, daß dieser Pfarrer für die Gemeinde ein übles Geschick sei und
+                        eine Änderung dringend nothwendig erscheinet. In politischer Beziehung steht
+                        er übrigens außer dem Kreise jeder Zurechnungsfähigkeit.<lb/>Die Schule
+                        unter Leitung eines tüchtigen und strebsamen Oberlehrers wäre gut bestellet,
+                        doch kann sie bei einer Verfassung der Kirche wie die erwähnte, wie leicht
+                        begreiflich, zu keinem besonderen Gedeihen gelangen.<lb/>Die Lehrer sind
+                        ebenfalls verwendbar und insbesondere wären auch die beiden Kooperatoren in
+                        der Katechetik mit Gunst in Verwendung, wenn nicht das leidige Verhältnis zu
+                        ihrem Pfarrer, mit welchem sie, nebenbei bemerkt, selten in Berührung
+                        kommen, daher auch im Wirthshause [?], ihren Eifer verkümmern
+                        müßte.<lb/>In <rs type="place" subtype="place" ref="#place_ae27b00fe645446cec370e16f3d1a671">Ottakring</rs> ist der Pfarrherr ebenso
+                        gesinnungstüchtig, wie er in seinem Amte zum Wohle der ihm anvertrauten
+                        Gemeinde wirkt. Leider ist der größte Theil der Bewohnerschaft jener
+                        verkümmerten Gewerbsklasse angehörig, welche für Religion und Gesittung
+                        gleichgiltig ist. Alle Bestrebung bliebe da erfolglos. Nur die alte Gemeinde
+                        obliegt noch fleißiger dem Kirchenbesuche.<lb/>Der Schullehrer, ein alter
+                        Mann, ist äußerst nachlässig, vielleicht die Folge davon, daß ein
+                        verhältnismäßig ganz geringer Theil der schulpflichtigen Kinder die Schule
+                        besuchet und von diesen wieder nur wenige, von den übrigen gar keine das
+                        Schulgeld bezahlen wollen. Man will dem Manne in dieser Beziehung
+                        beihilflich sein.<lb/>Der <rs type="place" subtype="place" ref="#place_6be66c0b77354cfc57532ae11c489da6">Hernalser</rs>
+                        Pfarrer wird durch den Ruf als sehr grob gegen Arme bezeichnet und viele
+                        Leute wollen wissen, daß er große Neigung zum Frauengeschlechte nicht zu
+                        unterdrücken wisse.<lb/>Der Gottesdienst in <rs type="place" subtype="place" ref="#place_6be66c0b77354cfc57532ae11c489da6">Hernals</rs>
+                        wird andächtig geübt und wird von Seite der Gemeindevorstehung daran viel
+                        und rege Theilnahme gezeigt. Die Schule ist gut bestellt.<lb/>Übrigens haben
+                        die Priester und Lehrer in politischer Beziehung noch nie zu einer
+                        bedenklichen Wahrnehmung Anlaß gegeben, nur der Pfarrer soll im Jahre [1]848
+                        bei der Reichstagsdeputirtenwahl in <rs type="place" subtype="place" ref="#place_a3c879a4f19e7987aa5aa1f1b929b0da">Klosterneuburg</rs>
+                        ebenfalls im freigeisterischen Sinne kandidirt haben, daher er wohl auch bei
+                        der letzten Gemeindewahl, wo die Konservativen die Oberhand erhielten,
+                        ungeachtet der Aspirirung völlig übergangen wurde.<lb/>In
+                            <rs type="place" subtype="place" ref="#place_f5af0e4beb99b2ded62ac5ff72643954">Dornbach</rs> ist eine größtentheils ländliche
+                        Bevölkerung und daher der Pfarrer, welcher eine besondere Vorliebe für die
+                        Landwirthschaft hat, in das natürliche Verhältnis gesetzt in der Gemeinde
+                        ohne Vorwurf der Nachlässigkeit seiner Neigung obzuliegen.<lb/>In religiöser
+                        Beziehung beschränkt er sich auf den Vollzug der nothwendigen kirchlichen
+                        Akte. In politischer Beziehung zählt er zu den „Schwarzgelben“.<lb/>Der
+                        Schullehrer ist jung und intelligent – Strebsamkeit würde dieser
+                        Bewohnerschaft kaum dankeswerth erscheinen.<lb/>So viel im Allgemeinen und
+                        vorläufig und man kann nicht umhin, nochmals auf den <rs type="place" subtype="place" ref="#place_30e401734dd84d2c5c0f739ba6b6b74c">Neulerchenfelder</rs> Pfarrer zurückzukommen
+                        mit der Erinnerung, daß die Amovirung desselben dringend nothwendig
+                        erscheine, wobei man nur noch bemerken zu müssen glaubt, daß dieser Pfarrer
+                        selbst versetzt zu werden wünscht, auch schon diesfalls Schritte gemacht
+                        hat, aber so wie die Gemeinde ungehört blieb.</p>
+                    <p>Hernals, am 16. März [1]851<lb/>
+                        <rs type="person" ref="#prucha-prokop">Prucha</rs>
+                    </p>
+                </div>
+                <div xml:id="D109_3">
+                    <p>Stadthauptmannschaftliches Bezirkscommissariat<lb/>Gaudenzdorf, Wien, am 15.
+                        März 1851</p>
+                    <p>Löbliche k.k. Stadthauptmannschaft!</p>
+                    <p>In Folge erhaltenen hohen Auftrages des Herrn k.k. Ministerialrathes und
+                        Stadthauptmannes<rs type="person" ref="#weiss-von-starkenfels-theodor">Weiß von
+                            Starkenfels</rs> wird folgendes gehorsamst berichtet.<lb/>In
+                        diesem Bezirke befinden sich 2 Schulen: die Pfarrschule in
+                            <rs type="place" subtype="place" ref="#place_01dbd9137da0ce96d711c4cd8cbeef6f">Untermeidling</rs> Nr. 75 und eine öffentliche Schule
+                        in <rs type="place" subtype="place" ref="#place_7c623c08220222bd9f50583382924179">Gaudenzdorf</rs> Nr. 47. Die erstere steht unter
+                        Leitung des Schullehrers <rs type="person" ref="#bartsch-jakob">Jacob
+                            Bartsch</rs> aus <rs type="place" subtype="place" ref="#place_2ab7384f536cc10ddfcec7284e1f32d3">Zwölfaxing</rs> geb. 59 Jahre, k[ath.] eh[elicher], Vater von 6
+                        Kindern, von denen der älteste Sohn Schulgehilfe ist und so wie sein Vater
+                        die allgemeine Achtung genießt, dieselbe auch nach den bisher gemachten
+                        Erfahrungen vollkommen verdient.<lb/>Der Vorsteher der Schule in
+                            <rs type="place" subtype="place" ref="#place_7c623c08220222bd9f50583382924179">Gaudenzdorf</rs> Nr. 47 ist der Lehrer <rs type="person" ref="#schnabel-jakob">Jacob Schnabel</rs>, von
+                            <rs type="place" subtype="place" ref="#place_dd478124f3334c385daa440b23a1b65a">Untermarkersdorf</rs>, in Nöst.[<rs type="place" subtype="region" ref="#place_01b2e8cfb34e1d933aa943e42ef15919">Niederösterreich</rs>] geb. 48 Jahre,
+                        k[ath.] eh[elicher], Vater von 4 Kindern im Alter von 5–12 Jahren, ein Mann,
+                        der zwar das Mechanische des Schuldienstes vollkommen inne hat, dessen Geist
+                        aber durch eingewurzelten Hang zur Trunkenheit stumpf geworden ist, daher
+                        mit dem gegenwärtigen Bedürfnisse der Zeit nicht fortschreitet, auch
+                        gegenüber der Schuljugend sein Ansehen nicht zu bewahren weiß. Eine
+                        nachtheilige Folge seines Hanges zum Trunke, dem er sich täglich abends im
+                        Übermaße in Gasthäusern überläßt, ist, daß der vernünftigere Theil der
+                        Bevölkerung zu ihm kein Zutrauen hat, seine Kinder aus der Schule zurückhält
+                        und entweder anderwärts unterrichten läßt oder ganz ohne Unterricht
+                        aufwachsen läßt, daher sich auch die Frequenz in seiner Schule bedeutend
+                        vermindert und nur die Kinder armer und sorgloser Eltern dieselbe
+                        besuchen.</p>
+                    <p>
+                        <rs type="person" ref="#rickert-wilhelm">Rickert</rs>
+                    </p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
