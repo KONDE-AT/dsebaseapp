@@ -1,3 +1,3 @@
-# rundbriefe app
+# dsebaseapp
 
-An eXist-db based web app to curate, publish and analyze "Rundbriefe".
+An eXist-db based web app to curate, publish and analyze documents encoded in XML/TEI.
