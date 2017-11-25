@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <meta xmlns="http://exist-db.org/xquery/repo">
-    <description>An eXist-db based web app to curate, publish and analyze "Rundbriefe"</description>
+    <description>An eXist-db based web app to curate, publish and analyze documents encoded in XML/TEI</description>
     <author ref="http://d-nb.info/gnd/129199176">Peter Andorfer</author>
     <website/>
     <status>alpha</status>
