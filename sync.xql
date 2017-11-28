@@ -3,7 +3,7 @@ xquery version "3.0";
 declare namespace expath="http://expath.org/ns/pkg";
 declare namespace repo="http://exist-db.org/xquery/repo";
 
-import module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/config" at "modules/config.xqm";
+import module namespace config="http://www.digital-archiv.at/ns/rita-new/config" at "modules/config.xqm";
 
 let $target-base-default := "C:\Users\pandorfer\ownCloud\GIT\Redmine\"
 let $app-name := doc(concat($config:app-root, "/repo.xml"))//repo:target/text()

@@ -1,6 +1,6 @@
 xquery version "3.1";
-module namespace exgithtml="http://www.digital-archiv.at/ns/dsebaseapp/exgithtml";
-import module namespace app="http://www.digital-archiv.at/ns/dsebaseapp/templates" at "../modules/app.xql";
+module namespace exgithtml="http://www.digital-archiv.at/ns/rita-new/exgithtml";
+import module namespace app="http://www.digital-archiv.at/ns/rita-new/templates" at "../modules/app.xql";
 
 (:~
 : returns the path to data collection as hidden input field value

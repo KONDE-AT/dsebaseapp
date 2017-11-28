@@ -1,34 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>ListPerson</title>
+            <title>Personenverzeichnis des Editionsprojects Reading in The Alps</title>
+            <respStmt>
+               <resp>Datenkruation</resp>
+               <name>
+                        <rs type="person" ref="#span_michael">Michael Span</rs>
+                    </name>
+               <name>
+                        <rs type="person" ref="#proksch_michael">Michael Proksch</rs>
+                    </name>
+               <name>
+                        <rs type="person" ref="#peter_andorfer">Peter Andorfer</rs>
+                    </name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <publisher>Reading in the Alps</publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+                  <p>The (CC BY-SA 4.0)-License applies to this document.</p>
+                  <p>You are allowed to share (copy and redistribute the material in any medium or format) and adapt (remix, transform, and build upon the material) for any purpose, even commercially.</p>
+                  <p>You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</p>
+                  <p>ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.</p>
+               </licence>
+            </availability>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <p>Born Digital</p>
          </sourceDesc>
       </fileDesc>
   </teiHeader>
   <text>
       <body>
-         <p>
-            <listPerson>
-               <person xml:id="malte_wulf">
-                  <persName>
-                     <surname>Malte</surname>
-                     <forename>Wulf</forename>
-                  </persName>
-                  <idno type="OCRID">add some</idno>
-                  <idno type="VIAF">add some</idno>
-               </person>
-            </listPerson>
-         </p>
+         <listPerson xml:id="listperson">
+            <person xml:id="prokosch_michael">
+               <persName>
+                  <forename>Michael</forename>
+                  <surname>Proksch</surname>
+               </persName>
+               <idno type="URL">VIAF | OCRID</idno>
+            </person>
+            <person xml:id="span_michael">
+               <persName>
+                  <forename>Michael</forename>
+                  <surname>Span</surname>
+               </persName>
+               <idno type="URL">VIAF</idno>
+            </person>
+            <person xml:id="andorfer_peter">
+               <persName>
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+               </persName>
+               <idno type="URL">VIAF</idno>
+            </person>
+         </listPerson>
       </body>
   </text>
 </TEI>

@@ -1,8 +1,8 @@
 xquery version "3.1";
 declare namespace functx = "http://www.functx.com";
 import module namespace xmldb="http://exist-db.org/xquery/xmldb";
-import module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/config" at "../modules/config.xqm";
-import module namespace app="http://www.digital-archiv.at/ns/dsebaseapp/templates" at "../modules/app.xql";
+import module namespace config="http://www.digital-archiv.at/ns/rita-new/config" at "../modules/config.xqm";
+import module namespace app="http://www.digital-archiv.at/ns/rita-new/templates" at "../modules/app.xql";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace util = "http://exist-db.org/xquery/util";
 declare option exist:serialize "method=xml media-type=text/xml omit-xml-declaration=no indent=yes";
@@ -34,8 +34,8 @@ let $RDF :=
 <!-- define involved Project(s) -->        
 
         <acdh:Project rdf:about="{$baseID||$config:app-name||'/project'}">
-            <acdh:hasTitle>dsebaseapp</acdh:hasTitle>
-            <acdh:hasDescription>dsebaseapp Project Description</acdh:hasDescription>
+            <acdh:hasTitle>rita-new</acdh:hasTitle>
+            <acdh:hasDescription>rita-new Project Description</acdh:hasDescription>
             <acdh:hasStartDate>2010-07-01</acdh:hasStartDate>
             <acdh:hasEndDate>2015-06-30</acdh:hasEndDate>
             <acdh:hasPrincipalInvestigator>
@@ -90,7 +90,7 @@ let $RDF :=
                             for $y in $node//tei:titleStmt//tei:author//tei:persName
                                 let $uri := if(starts-with(data($y/@key), 'http')) 
                                     then $y/@key
-                                    else "https://id.acdh.oeaw.ac.at/dsebaseapp/"||data($y/@key)
+                                    else "https://id.acdh.oeaw.ac.at/rita-new/"||data($y/@key)
                             
                                 return
                                     <acdh:hasAuthor>

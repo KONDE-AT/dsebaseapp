@@ -1,5 +1,5 @@
 xquery version "3.0";
-import module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/config" at "modules/config.xqm";
+import module namespace config="http://www.digital-archiv.at/ns/rita-new/config" at "modules/config.xqm";
 
 (: grant general execution rights to all scripts in analyze and modules collection :)
 for $resource in xmldb:get-child-resources(xs:anyURI($config:app-root||"/analyze/"))
