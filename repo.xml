@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <meta xmlns="http://exist-db.org/xquery/repo">
-    <description>An eXist-db based web app to curate, publish and analyze documents encoded in XML/TEI</description>
+    <description>This is a eXist-db based application to bootstrap the developement process of a digital edition web application</description>
     <author ref="http://d-nb.info/gnd/129199176">Peter Andorfer</author>
     <website/>
     <status>alpha</status>
     <license>GNU-LGPL</license>
     <copyright>true</copyright>
     <type>application</type>
-    <target>rita-new</target>
+    <target>dsebaseapp</target>
     <prepare>pre-install.xql</prepare>
     <finish>post-install.xql</finish>
     <permissions xmlns:repo="http://exist-db.org/xquery/repo" password="" user="admin" group="dba" mode="rw-rw-r--"/>

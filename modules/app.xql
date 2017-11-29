@@ -1,13 +1,11 @@
 xquery version "3.0";
-module namespace app="http://www.digital-archiv.at/ns/rita-new/templates";
+module namespace app="http://www.digital-archiv.at/ns/dsebaseapp/templates";
 declare namespace tei="http://www.tei-c.org/ns/1.0";
 declare namespace functx = 'http://www.functx.com';
 import module namespace templates="http://exist-db.org/xquery/templates" ;
-import module namespace config="http://www.digital-archiv.at/ns/rita-new/config" at "config.xqm";
+import module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/config" at "config.xqm";
 import module namespace kwic = "http://exist-db.org/xquery/kwic" at "resource:org/exist/xquery/lib/kwic.xql";
 
-declare variable $app:appName := doc(concat($config:app-root, "/repo.xml"))//repo:target/text();
-declare variable  $app:data := $config:app-root||'/data';
 declare variable  $app:editions := $config:app-root||'/data/editions';
 declare variable  $app:indices := $config:app-root||'/data/indices';
 declare variable $app:placeIndex := $config:app-root||'/data/indices/listplace.xml';
@@ -291,22 +289,3 @@ let $params :=
 return
     transform:transform($xml, $xsl, $params)
 };
-
-(:~
-: returns the name of the repoDir - the directory on disk used as GitRepo
-:)
-declare function app:repoDir($node as node(), $model as map (*), $prefix as xs:string){
-    let $repoDir := $prefix||'/'||$app:appName
-    return
-        <input type="hidden" name="repoDir" value="{$repoDir}"/>
-};
-
-(:~
-: returns the path to data collection as hidden input field value
-:)
-declare function app:gitCollection($node as node(), $model as map (*)){
-    let $gitCollection := $app:data
-    return
-        <input type="hidden" name="gitCollection" value="{$gitCollection}"/>
-};
-
