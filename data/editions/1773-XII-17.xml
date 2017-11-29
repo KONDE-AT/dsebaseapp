@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>1773 XII 17/18, St. Georgen (in der Kaplanei) [Gasser Joseph (Benefiziat), fol. 117r-131v]</title>
+            <respStmt>
+               <resp>Transkription und Annotation</resp>
+               <name>
+                  <rs type="person" ref="#prokosch_michael">Michael Prokosch</rs>
+               </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Reading in the Alps</publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+                  <p>The (CC BY-SA 4.0)-License applies to this document.</p>
+                  <p>You are allowed to share (copy and redistribute the material in any medium or format) and adapt (remix, transform, and build upon the material) for any purpose, even commercially.</p>
+                  <p>You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</p>
+                  <p>ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc type="invetory">
+               <msIdentifier>
+                  <institution>Südtiroler Landesarchiv (SLA)</institution>
+                  <repository>Verfachbücher Landgericht St. Michaelsburg</repository>
+                  <idno>1762 I 28</idno>
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+                     <locus from="53r" to="65r"/>
+                     <note>
+                        <rs type="skos" ref="#inventar">Inventar</rs>
+                     </note>
+                  </msItem>
+               </msContents>
+               <history>
+                  <origin notBefore="1762-01-28" notAfter="1762-01-28">
+                     <rs type="place" ref="st_lorenzen">St. Lorenzen</rs>
+                  </origin>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <p>
+               <pb n="117r"/>
+            </p>
+            <p>
+               <hi rend="background(lightGray)">[Rubrum:]</hi> Vermigens Egenzung Einraumung und Erbs Thaillung</p>
+            <p>Weillende Herrn<rs type="person">Joseph Gasser</rs> gewesten Beneficiaten zu <rs type="place">Sanct Georgen</rs> seel.</p>
+            <p>
+               <hi rend="background(lightGray)">[Aktenvermerk:]</hi> Exped. 1 <hi rend="background(lightGray)">[mal]</hi>
+            </p>
+            <p>Actum<rs type="place">Sanct Georgen in der Caplaney Behausung</rs>, den 17 und 18sten December, anno 1773.</p>
+            <p>Vor Ihro Hochwürden, und Gnaden, dem wohl gebohrnen Herrn Herrn<rs type="person">Joseph Mathias Igramb zu Liebenrain, und Fragburg</rs>, Tyrolischen Herren und Landman, S.S. Theol. Dri. hochfürstlich Brixnerisch würcklichen Consistorial Rath, auch Dochand und Pfarrherrn zu <rs type="place">Brunegg</rs>. Dann dem wohl edlgebohrnen, gestrengen, und hochgelehrten Herrn <rs type="person">Joseph Innocenz Englmohr, von Aufkirchen, zu Mohregg</rs>, Pfleger, und Landtrichtern der Herrschafft <rs type="place">Sanct Michaelsburg</rs>.</p>
+            <p>Zugegen des wohl edlen Herrn<rs type="person">Franz Michaelen Marchner</rs> Amtgericht- und Comissionschreiber zu <rs type="place">Brunegg</rs>. Und des fürnemmen <rs type="person">Hannsen Mitterhofer</rs> Würth, und Gastgebens auch Gerichts Ausschus allda zu <rs type="place">Sanct Georgen</rs> Landgerichts Sanct Michaelsburg sössig, als Beysizern, und Taxatores.</p>
+            <p>Nachdeme Gott dem Allmächtigen abermalen beliebet, seinen allerheiligisten Willen zu vollziechen, und andurch weylande dem wohlehrwürdigen edlen und wohlgelehrten Herrn<rs type="person">Joseph Gasser</rs> gewesten Beneficiaten zu <rs type="place">St. Georgen</rs> von diesen Zeitlichen zu dem Ewigen abzufordern, und zweifls ohne zu sich in die ewig himlische Freüd und Glickseligkeit an- und aufzunemmen, Gott gnad der Seelen, hat man von Seiten der gnädig geistlichen Commission, und weltlichen Obrigkeit etc. nicht ermanglet, also gleich die Secretur anzelegen, und seinen ainen <pb n="117v"/> als <rs type="person">vatterbändig noch minderjährigen Brueder auch Joseph Gasser</rs> zu <rs type="place">Brixen</rs>, massen der <rs type="person">baidpändige Brueder Jacob Gasser</rs> seiner Profession ein Hafner sich in <rs type="place">Engeland</rs> begeben, und bereits schon 25 Jahr abwesig ohne in Wissenschaft zu haben, obe selber noch bey Leben, oder tod seye, diesen Todfall wissent zu machen. Und so nun er <rs type="person">ainpändige Brueder Joseph Gasser</rs> mit <rs type="person">seinem Stief-Vatter Antoni Brunegger</rs> Hafnermeister zu <rs type="place">Brixen</rs>, als hierzue verpflichten Curatore anhero beykommen, und gehorsamblichen gebethen, das Herrn brüederlich angefallnen Vermigen in gebräuchige Beschreibung und Ergänzung zu bringen, und soforth dasselbe ihme, weilen der abwesige Brueder soviel als tod zu halten, allein einzuraummen, und zu yberlassen. Als wurde zu solchem Ende auf anheut däto Anstalt ernennet, und zufolg solch billichenssigen Begehrn, all vorderist die Secretur eröfnet, und sodann das zurugg gelassene Vermigen in Ergänzung und Verhandlung gebracht, wie mehrers hernach zu vernemmen, und folgt vor allen die</p>
+            <p>Inventur</p>
+            <p>Und zwar erstlichen in den klain</p>
+            <p>Stübelen.</p>
+            <p>Ain schlechts Tischl mit einen schwarz stainen Blätl, per	24 x</p>
+            <p>Ain Strosack, samt ain deto Polster per	9 x</p>
+            <p>Latus	33 x</p>
+            <p>
+               <pb n="118r"/>
+            </p>
+            <p>Ain klains Kopf Pölsterle mit inner- und aussern Ziechen, per	34 x</p>
+            <p>Ain schlechts Tischl ohne stainnen Plätl per	15 x</p>
+            <p>3 grien angestrichen Stüel, per	39 x</p>
+            <p>Ain<rs type="book">Schreib Buld</rs>, mit Schloss, und Bäntl, auch 4 Thätlen, per	57 x</p>
+            <p>Ain Pfund gelbe Wachs Täschen, per	48 x</p>
+            <p>Ain grose Ecce Homo Tafl, mit einer schlechten Rahm, per	20 x</p>
+            <p>
+               <note>
+                  <p rend="footnote text"> Gesamter Eintrag auf der linken Seite eingefügt.</p>
+               </note>Ain klains Täfele warauf das Christkindl gemahlen, ohne Rahm, per	10 x</p>
+            <p>In Kämmerle</p>
+            <p>Ain Stroosack, per	6 x</p>
+            <p>Ain klains Gahrn Häspele, per	7 x</p>
+            <p>2 Brod Rahm, per	10 x</p>
+            <p>Ain roth angestrichen Schissl Rahm, per	12 x</p>
+            <p>Ain klains schlechts Täfele, und ain Lainstuel, per	15 x</p>
+            <p>Ain in Leder eingefasste glösserne Viertl Flaschen, per	24 x</p>
+            <p>Ain Haus Glöggl, samt den Gehäng, und Drath, per	18 x</p>
+            <p>In der grösern Stuben.</p>
+            <p>Ain schwarz gepaistes Schatz Kästl, mit 18 Thätlen, 3 Thürlen, auch Schloss, und Bäntl, per	2 f 0 x</p>
+            <p>Darinnen.</p>
+            <p>2<unclear>spinnewetten</unclear> Bilder mit gulden Spizlen, per	1 f 0 x</p>
+            <p>An unterschiedlichen Christen Lehrsachen,</p>
+            <p>Latus	8 f 15 x</p>
+            <p>
+               <pb n="118v"/>
+            </p>
+            <p>Nemlichen Betten, Bilder, und Büechlen, auch Scapulier, per	3 f 0 x</p>
+            <p>Ain lange gegossene Schretpichs, mit Zelin Schlos, per	5 f 0 x</p>
+            <p>Ain andere klenere Schretpichs mit obig dergleichen Schlos, per	3 f 0 x</p>
+            <p>Aber ain deto mit einer Eisen Kappen, per	4 f 0 x</p>
+            <p>Und ain klaine deto, mit ein<unclear>Mortellet</unclear> Schloss, per	2 f 0 x</p>
+            <p>3 guete, und ain schlechter Schretpeitl samt darein befündlichen Schret, per	1 f 0 x</p>
+            <p>2 Pulfer Horn, samt ain viertl Pf. Pulfer per	20 x</p>
+            <p>Ain Federhaggen, ain gressers und ain kleners Schraufstöckl, per	1 f 30 x</p>
+            <p>3 Pichsen Wischer samt die Müetterlen per	18 x</p>
+            <p>1½ Pf. Stachl, pr	20 x</p>
+            <p>Ain Barbier Messer, per	18 x</p>
+            <p>3 Stöletlen samt die Schaiden, per	24 x</p>
+            <p>Ain topplts Feder- und ain Röbmesser, per	15 x</p>
+            <p>Ain messinge Spritzer, und ain deto Glöggl, per	30 x</p>
+            <p>5 Pappier- und ain Schaafschär, per	45 x</p>
+            <p>Ain Feyrzeüg, mit ain Zelin Schlos, per	12 x</p>
+            <p>Latus	22 f 52 x</p>
+            <p>
+               <pb n="119r"/>
+            </p>
+            <p>5 unterschiedliche Zänglen, per	24 x</p>
+            <p>Ain eisener Pichsen Wischer, per	10 x</p>
+            <p>6 Eisen Feil, 7 Porerlen, 3 Hämerlen und 2 Zirggelen, per	30 x</p>
+            <p>Ain Barbier Stain, per	6 x</p>
+            <p>Ain Saagl, per	4 x</p>
+            <p>13 Majolica- und stainene gresser und klenere Krüeg, alle mit zinnen Lückern, per	2 f 10 x</p>
+            <p>3 Egerer Flaschen, per	25 x</p>
+            <p>Ain glöserene Viertl Flaschen, mit den zinnen Lückl, per	30 x</p>
+            <p>8 Trünck Glöser, per	24 x</p>
+            <p>2 Hals- und 2 andere Glöser, per	30 x</p>
+            <p>2 Carvie- und 2 runde Glöser, auch ain Cavee Schalen, per	12 x</p>
+            <p>2 Häcklen, per	16 x</p>
+            <p>Aber 6 grösere gleiche, und 9 Wein auch 3 Stinglglöslen, per	1 f 16 x</p>
+            <p>Ain grose mit Leder eingefaste, und 1 andere glöserene Flaschen, pr	36 x</p>
+            <p>Ain glöserens Schälele, und ain griens Schrauf Glas, per	12 x</p>
+            <p>3 Cavee Schisselen, samt die Schalen, und 9 Majolica Schisselen, per	48 x</p>
+            <p>Ain glöserens Fläschl zu einen wohlriechenden Wasser, per	7 x</p>
+            <p>Latus	8 f 40 x</p>
+            <p>
+               <pb n="119v"/>
+            </p>
+            <p>Ain Cavee Mühl, per	15 x</p>
+            <p>Ain Goldwaag samt die Gewichter per	48 x</p>
+            <p>2 praunne Schisselen, samt ain weisen Salzfäsl, per	12 x</p>
+            <p>Ain messinger Leichter, und zway Putscher, per	12 x</p>
+            <p>7 Messer, und 5 Gabl, auch ain messinger Leichter samt ain<unclear>tirtl</unclear> Rädl, per	24 x</p>
+            <p>3 Schachtl, per	6 x</p>
+            <p>Aber ain<rs type="book">Schreib-Buld</rs> mit 3 Tätlen, per	24 x</p>
+            <p>Ain weis stainens Ober- und Unter Giespecket, per	6 x</p>
+            <p>Ain gressers und ain cleners Terzerol, das aine mit Messing garniert, per	2 f 0 x</p>
+            <p>Ain Rohrleichter, und ain plechens Ämpele, per	10 x</p>
+            <p>Ain messings Ämpele, per	18 x</p>
+            <p>Ain eisens Weckerle, per	3 f 0 x</p>
+            <p>Ain Unser Herr- und Unser Frauen Tafl, mit blau vergolten Ram, per	30 x</p>
+            <p>30 unterschiedliche Täfelen, per	5 f 0 x</p>
+            <p>Ain auf Holz gemahlen Heilige 3 Königen Tafl, per	30 x</p>
+            <p>2<hi rend="background(blue)">Barameter</hi>, per	12 x</p>
+            <p>Latus	14 f 7 x</p>
+            <p>
+               <pb n="120r"/>
+            </p>
+            <p>4 Trätene Mausfallen, per	24 x</p>
+            <p>2 weise Fenster Fürhänglen mit den Stänglen, und ain Handtuech, per	24 x</p>
+            <p>In Stuben Kämmerle.</p>
+            <p>Ain angestrichens Pethstädtl, per	48 x</p>
+            <p>Darinnen</p>
+            <p>Ain Strosack, 2 deto Pölster, und ain Töppich, per	20 x</p>
+            <p>Ain Unterpeth mit inner Zwilch, und aussern gleichhächlen Ziechen, wegt samt den Polster 23 Pf. à 13 x thuet	4 f 59 x</p>
+            <p>Ain Yberpeth mit inner Zwilch, und aussern Kölschen Ziechen, wigt 12 Pf. à 18 x, thuet	3 f 36 x</p>
+            <p>Aber ain Yberpeth mit obig dergleichen Ziechen, wigt 11 Pf. zu 24 x, thuet	4 f 24 x</p>
+            <p>Item ain Unterpeth mit inner Zwilch und aussern gleichhächlen Ziechen, wigt 20 Pf. zu 13 x thuet	4 f 20 x</p>
+            <p>3 Köpf Pölster, 2 hievon mit inner Zwilch, und ainer mit Parchet, all aber mit aussern Kölschen Ziechen, wegen 19 Pf. zu 10 x, thuet	3 f 10 x</p>
+            <p>Mehr ain Yberpeth mit inner Parchet, und aussern roth gebluemt kättonnen Ziechen, wigt 9 Pf. à 36 x thuet	5 f 24 x</p>
+            <p>Aber ain Yberpeth mit inner Zwilch und aussern Kölsch Ziechen, wegt 11 Pf. à 24 x, thuet	4 f 24 x</p>
+            <p>Latus	32 f 13 x</p>
+            <p>
+               <pb n="120v"/>
+            </p>
+            <p>3 Köpf-Kisser mit inner Parchet, 2 hievon mit weisfärben, und ains mit Kölschen aussern Ziechen, wegen 8 Pf. à 21 x, thuet	2 f 48 x</p>
+            <p>Item 2 Köpf Polster mit innern Zwilch, und ainer mit aussern kättonen<hi rend="strikethrough">Ziechen</hi> und der andere mit weisen Ziechen, wegen 10 Pf. à 15 x, thuet	2 f 30 x</p>
+            <p>Mehr ain langer Polster mit inner Parchet, ohne aussern Ziechen, wigt 6 Pf. à 20 x thuet	2 f 0 x</p>
+            <p>Weiters 2 Köpf Kislen mit innern Zwilch, und aussern kättonen Ziechen wegen 4 Pf. à 15 x, thuet	1 f 0 x</p>
+            <p>Ain Englische Decken, per	1 f 30 x</p>
+            <p>Zway schlechte Welsperger Töppichen per	16 x</p>
+            <p>Aber ain etwas bessern deto, per	12 x</p>
+            <p>2½ Pf. Harreisten à 17 x, thuet	42 x</p>
+            <p>Aber ain guete Englische Decken, per	2 f 0 x</p>
+            <p>Ain ainlizes härbens Leillach mit Spiz, per	1 f 30 x</p>
+            <p>Mehr ain par gleiche härbene Leillacher, mit Spiz, per	3 f 0 x</p>
+            <p>Aber 2 härbene Leillacher mit ungleichen Spizen, per	2 f 30 x</p>
+            <p>Mehr ain härbens Leillach mit Spiz per	1 f 30 x</p>
+            <p>
+               <note>
+                  <p rend="footnote text"> Gesamter Eintrag auf der linken Seite eingefügt.</p>
+               </note>2 gleichhächlene Leillacher mit Weberfransen pr	1 f 30 x</p>
+            <p>
+               <note>
+                  <p rend="footnote text"> Gesamter Eintrag auf der linken Seite eingefügt.</p>
+               </note>Item 2 gleichhächlene Leillacher mit Weberfransen pr	1 f 30 x</p>
+            <p>Latus 24 f 28 x</p>
+            <p>
+               <pb n="121r"/>
+            </p>
+            <p>Ain härbens, und ain rupfens Leillach, das aine mit Spitz, und das andere mit Fransen per	54 x</p>
+            <p>Ain härbens gewegglts Tischtuech per	24 x</p>
+            <p>Mehr 2 gwegglete Tischtüecher mit Fransen, per	48 x</p>
+            <p>Ain gflikhts, und 2 andere gewegglte Tischtiecher, per	36 x</p>
+            <p>Und ain schlechts Tischtuech, per	12 x</p>
+            <p>7 Handtüecher à 15 x, thuet	1 f 45 x</p>
+            <p>Ain grien gedruckte Pethdecken, per	1 f 30 x</p>
+            <p>11 lange Ellen Parchet à 18 x thuet	3 f 18 x</p>
+            <p>2⅓ Ellen härbens Tuech, à 20 x thuet	47 x</p>
+            <p>Mehr ain par rupfene Leillacher mit rothen und weisen Fransen, per	40 x</p>
+            <p>6 neue gewegglete Tisch Salvieter à 12 x, thuet	1 f 12 x</p>
+            <p>Aber 4 deto ohne Spiz, à 6 x thuet	24 x</p>
+            <p>Und weiters 12 andere deto, à 6 x thuet	1 f 12 x</p>
+            <p>Item 2 deto, per	12 x</p>
+            <p>Aber 6 andere schlechtere deto, à 5 x thuet	30 x</p>
+            <p>Item ain härbens, und 3 gleichhächlene Leillacher, per	2 f 30 x</p>
+            <p>Latus	16 f 54 x</p>
+            <p>
+               <pb n="121v"/>
+            </p>
+            <p>Mehr ain klains Tischtüechl, per	9 x</p>
+            <p>Weiters 2 rupfene gewegglete Handtüecher, per	24 x</p>
+            <p>Ain klains Tischtüechl mit Rostleisten, per	20 x</p>
+            <p>7 härbene Polster Ziechen à 20 x thuet	2 f 20 x</p>
+            <p>Ain neue klaine ohnunterfüetterte Welsperger Deck, per	28 x</p>
+            <p>3 Brodtüecher, per	21 x</p>
+            <p>3 tiefe, und 12 fleze gressere und klenere zinnene Schissl, wegen 19½ Pf. à 22 x thuet	7 f 9 x</p>
+            <p>20 zinnene Thäler wegen 21 Pf. zu 20 x, thuet	7 f 0 x</p>
+            <p>Ain Ober- und Unter zinnens Giespecket 2 deto Salzbichslen, ain Weichprunn Krüegl, und ain Pöcherle, wegt 7½ Pf. à 18 x thuet	2 f 15 x</p>
+            <p>Ain Pfund Zinn an Lücker, Pecher, und Löfl, per	15 x</p>
+            <p>10 strebene Tischplänlen, per	10 x</p>
+            <p>2 Tafl auf Leinwath gemahlen, ohne Rahm Maria, und Joseph mit den Christkindl vorstöllend per	30 x</p>
+            <p>2 blöchene Cavee Bichsen, ain deto Testl, ain Zugger Bichs, und 5 Trächterlen, per	30 x</p>
+            <p>Latus	21 f 51 x</p>
+            <p>
+               <pb n="122r"/>
+            </p>
+            <p>Ain plöchene, und ain liederene Hunds Kelper mit Eisen Spiz, per	12 x</p>
+            <p>Ain blöchene Zugger Bichs, mit 3 zinggenen Cavee Löfelen, per	9 x</p>
+            <p>Ain Pfund Cavee, und 1 Pf. Zugger per	54 x</p>
+            <p>2 Pf. Schret, und ¼ Pf. Pulfer, per	29 x</p>
+            <p>3 neue zirmmene und 7 klaine lerchene Wein Pippen, per	27 x</p>
+            <p>3 weise, und ain Strendl schwarzer Zwirn, per	24 x</p>
+            <p>Ain Pf. Saiften, und 2 Stumppen weise Wachs Körzen, per	15 x</p>
+            <p>Ain schwarzer Rock, und Camisol per	5 f 0 x</p>
+            <p>Ain blau abgetragner Rock, per	1 f 30 x</p>
+            <p>Ain schwarzer Budl Rock, per	2 f 30 x</p>
+            <p>Ain tüechens, und 2 zeigene schlechte Camusoler, per	1 f 0 x</p>
+            <p>Ain grauer schwarz ausgemachter Rock, per	1 f 0 x</p>
+            <p>4 Par schwarz liederene Hosen per	3 f 0 x</p>
+            <p>Ain Par tüechene deto, per	48 x</p>
+            <p>Ain grauer Rockolor, per	1 f 30 x</p>
+            <p>Ain Par floretseidene Strimpf, per	1 f 30 x</p>
+            <p>
+               <pb n="122v"/>
+            </p>
+            <p>6 Par schwarz wollene Strimpf à 15 x thuet	1 f 30 x</p>
+            <p>Ain Par schwarze gewürckte Strimpf per	30 x</p>
+            <p>2 Par weise Unterstrimpf, per	20 x</p>
+            <p>2 schwarze Hüet, per	50 x</p>
+            <p>3 saametene, und 2 andere Käpplen, per	24 x</p>
+            <p>Ain Par gelbe liederene Handschuech per	12 x</p>
+            <p>Mehr ain guets sametens Häubl und ain schlechteres deto, per	30 x</p>
+            <p>3 schlechte Kragen, per	9 x</p>
+            <p>2 neue, und 3 ältere floretseidene Schnupfüecher, per	2 f 30</p>
+            <p>11 andere unterschiedliche Schnupftüechlen,<hi rend="strikethrough">pr</hi> a 7 x thuet	1 f 17 x</p>
+            <p>15 baumwollene, Parchet- und leinnene Hauben, à 10 x thuet	2 f 30 x</p>
+            <p>42 härbene Hemater, à 30 x thuet	21 f 0 x</p>
+            <p>Ain Par Schuech mit Stächlen Schnallen, per	24 x</p>
+            <p>3 Par Vorerbelen, per	18 x</p>
+            <p>5 Ellen Spizfransen, und 7 Ellen Preiselen, per	24 x</p>
+            <p>2 Par gstrickte Docken, per	12 x</p>
+            <p>Ain zinnens Nachtgschyr wigt 2 Pf. per	20 x</p>
+            <p>Latus	33 f 20 x</p>
+            <p>
+               <pb n="123r"/>
+            </p>
+            <p>Ain tamasgens Häubl, per	6x</p>
+            <p>Ain groses Fehleisen, mit 2 Schlösser, und Eisen Panden, per	2 f 0 x</p>
+            <p>Ain anderes klains Fehleiselen, per	20 x</p>
+            <p>Ain gelb gstriefter gfüetterter Schlaf Rock, und ain weiser Hosen Höber, per	3 f 0 x</p>
+            <p>Ain Perspectiv, per	30 x</p>
+            <p>26 blau seidene, und mehreren Thails leinwattene Krägen, samt 4 pintlen Einfaspäntlen, per	45 x</p>
+            <p>Ain Essig Pänzl, und ain Anzäpfer, per	30 x</p>
+            <p>Darinnen yber 9 Mas, so die<rs type="person">Freyele v. Merl</rs> zu haben, noch 20 Mas Essig à 7 x thuet	2 f 20 x</p>
+            <p>Ain gfürneister Stock, samt den Mässing Knopf, per	15 x</p>
+            <p>Ain aufstehends angstrichnes Kästl mit 4 Stöhl, 2 Thürn,<hi rend="strikethrough">und</hi> auch<note>
+                  <p rend="footnote text"> 
+                     <hi rend="italic" xml:space="preserve">Über der Zeile statt </hi>und<hi rend="italic" xml:space="preserve"> geschrieben.</hi>
+                  </p>
+               </note> Schlos und Band, per	1 f 30 x</p>
+            <p>Und ain klains deto mit 3 Stöllen auch Schlos, und Band, per	30 x</p>
+            <p>Aber ain Pustollen mit Zelin Schloss, per	30 x</p>
+            <p>In der Kuchl.</p>
+            <p>Ain Feyrhund, und ain Herdpfann Knecht, per	45 x</p>
+            <p>Latus	13 f 1 x</p>
+            <p>
+               <pb n="123v"/>
+            </p>
+            <p>Ain Bradttesten, 2 Hainzlen, und ain Träfftesten, per	24 x</p>
+            <p>3 Prathspis, 6 Hafenplatten, 2 klaine Häcklen, 2 Messer, und ain Herdscheifele, per	40 x</p>
+            <p>7 grössere und clenere Pfändlen, per	3 f 0 x</p>
+            <p>2 mössinge Pfändlen, per	30 x</p>
+            <p>Ain Küechl Spis, ain Fleischgabl, 2 Grösere und klenere Mueser, 2 Eisen Löfl, 2 Dürchling, und 2 Wasser Köll, per	30 x</p>
+            <p>3 blechene Seichgazlen, und ain dergleichen Strauben Laur, ain Wieg- und ain Raifmesser, ain eisener Tischpfann Knecht, ain Riebeisen, ain Wursthörnle, 2 Rohrleichter, ain Putzer, ain Feyrkluppen, und ain Kuchlprillele, per	1 f 20 x</p>
+            <p>Ain Brod Graml, 2 Mehlscheifelen, ain Triebl, und ain Köll Kärl per	20 x</p>
+            <p>2 Ofen Gabl, 2 Hofenplatten, und ain Schaufl, per	12 x</p>
+            <p>9 grösere und klenere Köchler Häfen, per	18 x</p>
+            <p>Latus	7 f 14 x</p>
+            <p>
+               <pb n="124r"/>
+            </p>
+            <p>13 grösere und klenere stainnene Schissl, per	15 x</p>
+            <p>Aber 7 dergleichen Schissl, und 2 mit Drath eingefaste Häfen, per	15 x</p>
+            <p>Ain Taigschar, per	3 x</p>
+            <p>17 Klafter Prätl Sailer, per	25 x</p>
+            <p>6 stainene Cavee Häfen, und ain Schahlen, per	26 x</p>
+            <p>8 hilzene Thäller, per	8 x</p>
+            <p>Ain plöchens Salzfäsl, ain deto Schisseln, und ain Egerer Flaschen, per	20 x</p>
+            <p>Ain Wasserschoff, ain Feld Körb, und ain Nudlpreth, per	15 x</p>
+            <p>Ain Schlifstain mit ain Eisen Werbl, wigt 14 Pf., per	21 x</p>
+            <p>In unter Stübele</p>
+            <p>Ain Wasser Sprizer, samt den Plöchen Kolben, 5 Brodprether, und 7 stainnene Puschen Gschyr, per	1 f 0 x</p>
+            <p>2 Beyföslen, per	6 x</p>
+            <p>In Keller.</p>
+            <p>2 Pachmitten, ain<unclear>Schoff</unclear>, ain Wein Sechter, ain Stoz, 2 Puschentrög, ain klains Stözl, und ain Häspele, per	27 x</p>
+            <p>
+               <pb n="124v"/>
+            </p>
+            <p>An Stadtgschyr befündet sich bey den Mayr zu<unclear>Riggä</unclear> 5 Yh. zu 15 x, thuet	1 f 15 x</p>
+            <p>2½ Pf. Instlet Körzen, per	30 x</p>
+            <p>Ain Häggl Waag tragt ain Centen per	1 f 20 x</p>
+            <p>Und 2½ Land Yhrn Brixner Wein zu 7 f 30 x, thuet	18 f 45 x</p>
+            <p>Summa vorbeschriebner Inventur 249 f 57 x, id est</p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	249 f 57 x</p>
+            <p>
+               <rs type="book">Bücher.</rs>
+            </p>
+            <p>In Folio.</p>
+            <p>D. Franciscus Josephus Lohr Predigen 4 thom in französischen Bund, pr	6 f 30 x</p>
+            <p>Sitten- und Lehrreiche Predig von Lotarico Friderico v. Alpach 1 thom in französischen Bund, per	1 f 12 x</p>
+            <p>Francisc Heger Predigen 2 thom in französischen Bund, per	3 f 45</p>
+            <p>P. Conradus Purschel<unclear>us</unclear> Fons Aquae<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://www.zvab.com/servlet/SearchResults?an=Purselt&amp;tn=Fons+aquae+triplici&amp;cm_sp=mbc-_-SRP-_-all</hi>
+                  </p>
+               </note> in französischen Bund, per	45 x</p>
+            <p>P. Laymon Theol. Moralis<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://www.zvab.com/servlet/SearchResults?kn=theologia+moralis+laymann&amp;sts=t</hi>
+                  </p>
+               </note> in Schwein Leder, per	1 f 24 x</p>
+            <p>Ariadnae Evangelica<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://www.zvab.com/servlet/SearchResults?kn=leopold+gramiller&amp;sts=t</hi>
+                  </p>
+               </note> P. Leopoldi Gramiller, in weisen Pirment, per	1 f 12 x</p>
+            <p>Latus	14 f 48 x</p>
+            <p>
+               <pb n="125r"/>
+            </p>
+            <p>P. Josephus a Virg. Mariae Sonntag Predigen in weisen Pirment, per	1 f 12 x</p>
+            <p>P. Francis Hefler Concionator 2 thom in Pirment, per	1 f 30 x</p>
+            <p>P. Balthasar Keilinger<note>
+                  <p rend="footnote text"> Heißt tatsächlich: Knellinger.</p>
+               </note> Predigen auf alle Festtäg<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://books.google.at/books?id=O_xCAAAAcAAJ&amp;pg=PA538&amp;dq=Balthasar+Predigen+auf+alle+fest+tag&amp;hl=de&amp;sa=X&amp;ved=0ahUKEwik9cuOzbXWAhWKK8AKHSzTAisQ6AEIKDAA#v=onepage&amp;q=Balthasar%20Predigen%20auf%20alle%20fest%20tag&amp;f=false</hi>
+                  </p>
+               </note>, in Schwein Leder, per	1 f 24 x</p>
+            <p>Concordantiae Biblionum in französischen Bund, per<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> Evtl. folgendes Buch: https://books.google.at/books?id=s4VWAAAAcAAJ&amp;pg=PA9&amp;lpg=PA9&amp;dq=Concordantiae+Biblionum&amp;source=bl&amp;ots=apmE_TCFh2&amp;sig=ywlBEe6aJFwI7B3s1g5N6tVKIMo&amp;hl=de&amp;sa=X&amp;ved=0ahUKEwj8_ci3zbXWAhXGLVAKHbRjDV0Q6AEIKDAA#v=onepage&amp;q=Concordantiae%20Biblionum&amp;f=false</hi>
+                  </p>
+               </note>	2 f 20 x</p>
+            <p>In 4to</p>
+            <p>Ecclesiastes Apreviatus 3 thom französischen Bund, per	2 f 0 x</p>
+            <p>Claudius Joly Der Seelen Eüfrige Bus Bredigen, in französischen Bund, per	40 x</p>
+            <p>P. Marcelinus Holzer Exempl Predigen, mit obigen Bund, per	45 x</p>
+            <p>Idem Cathecismus, per	48 x</p>
+            <p>Franz Anoni Reichle Groser und Allgemeiner Cathecismus in Praunpappier, per	40 x</p>
+            <p>P. Cyrilus Riga Horti Plantation<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://www.zvab.com/servlet/SearchResults?kn=Horti+Plantationum&amp;sts=t</hi>
+                  </p>
+               </note> in praunn Pappier, per	48 x</p>
+            <p>Sacerdotale Prixinense, in französischen Bund, per	36 x</p>
+            <p>Roja Hugmond Biblische Geschichten in französischen Bund, per	36 x</p>
+            <p>Latus	13 f 19 x</p>
+            <p>
+               <pb n="125v"/>
+            </p>
+            <p>P. Anecletus Weiler Instructio Practica Moralis, per	18 x</p>
+            <p>Antoni Freisl Paurn Predigen per	18 x</p>
+            <p>P. Aberham à S. Clara 3 thom, per	1 f 0 x</p>
+            <p>P. Engl Ius Canonicus in Schwein Leder per	51 x</p>
+            <p>P. Conradus Prigl Centifolium Vernons Flori<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://www.zvab.com/servlet/SearchResults?an=Rosenkranz&amp;tn=Centifolium+vernans+flore&amp;cm_sp=mbc-_-SRP-_-all</hi>
+                  </p>
+               </note> in Schwein Leder, per	40 x</p>
+            <p>P. Benedict Fischer Centifolium Marianum in Schwein Leder, per	24 x</p>
+            <p>P. Heribert von Salurn 2 thom in Pirment, per	48 x</p>
+            <p>P. Mauritius Noten<unclear>ssussae</unclear> Homo Simplex Et Rectus<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> http://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10364899_00003.html</hi>
+                  </p>
+               </note>, per	24 x</p>
+            <p>Hortus Viriguus, per	24 x</p>
+            <p>Georgius Historicus<note>
+                  <p rend="footnote text"> Heißt tatsächlich: Pistorius.</p>
+               </note> Himlische Wunder Werck, <hi rend="strikethrough">per</hi> Mariae<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://books.google.at/books?id=TrFXAAAAcAAJ&amp;pg=PA190&amp;lpg=PA190&amp;dq=himmlische+wunderwerck+mariae&amp;source=bl&amp;ots=LpO59sdQR2&amp;sig=sA-4nBRppVz9PjCPW61fQPcHDjg&amp;hl=de&amp;sa=X&amp;ved=0ahUKEwik3MuB2LXWAhWKblAKHWeiAPwQ6AEIJjAA#v=onepage&amp;q=himmlische%20wunderwerck%20mariae&amp;f=false</hi>
+                  </p>
+               </note>, per	18 x</p>
+            <p>P. Vitus Haberius 30 Predigen, per	15 x</p>
+            <p>P. Ignatius Ertl Manitocium Bonaespei<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> Promontorium Bonae Spei, http://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10364113_00009.html</hi>
+                  </p>
+               </note> per	15 x</p>
+            <p>Jubel in Jubl Jahr, per	10 x</p>
+            <p>Wunderschöner Einzug, in Pappier per	10 x</p>
+            <p>Latus	6 f 15 x</p>
+            <p>
+               <pb n="126r"/>
+            </p>
+            <p>Nur Kein Tod Sind, per	10 x</p>
+            <p>In Octav</p>
+            <p>P. Carolus Rosignoli Geistliche Betrachtung 2 thom, per	24 x</p>
+            <p>Joannis Taberni Sinop. Theol. Practicae, per	10 x</p>
+            <p>Lusus Mirabiles<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> Evtl.: http://reader.digitale-sammlungen.de/de/fs1/object/display/bsb11347863_00005.html</hi>
+                  </p>
+               </note>, per	9 x</p>
+            <p>Truz Andacht, per	12 x</p>
+            <p>P. Pusenpaum Medulae Theol. Moral.<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> http://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10595926_00005.html</hi>
+                  </p>
+               </note>, per	12 x</p>
+            <p>Joann Christoph Peer Der In Eyl Bereitete Prediger<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> http://reader.digitale-sammlungen.de/de/fs1/object/display/bsb11290152_00001.html</hi>
+                  </p>
+               </note> 2 thom, pr	30 x</p>
+            <p>P. Francis Neymayr 10 thom per	3 f 0 x</p>
+            <p>P. Bilibaldus Cobold Scherz Und Ernst Beysammen<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://books.google.at/books?id=0dZiAAAAcAAJ&amp;pg=PP3&amp;lpg=PP3&amp;dq=Scherz+Und+Ernst+Beysammen&amp;source=bl&amp;ots=kw9w2oibxd&amp;sig=aPeQXLyWvLzngpZcXtvdm0Eq3bs&amp;hl=de&amp;sa=X&amp;ved=0ahUKEwiZ0uXe3rXWAhVEIVAKHf4CDV4Q6AEIKDAA#v=onepage&amp;q=Scherz%20Und%20Ernst%20Beysammen&amp;f=false</hi>
+                  </p>
+               </note>, per	15 x</p>
+            <p>Aloysius Peletius Seelig Sterbender Christ, per	30 x</p>
+            <p>Concilium Tridentinum, per	30 x</p>
+            <p>Patronillus Schreger Lustige Und Nutzliche Zeit Vertreibung per	21 x</p>
+            <p>
+               <unclear>Chopius</unclear> Christliche Betrachtung 2 thom, per	52 x</p>
+            <p>Latus	7 f 15 x</p>
+            <p>
+               <pb n="126v"/>
+            </p>
+            <p>P. Udalricus Probst Betrachtung, per	18 x</p>
+            <p>Geistlicher Vatter des Heiligen Francisci v.<hi rend="strikethrough">S</hi> Sales, per	20 x</p>
+            <p>Stubenpeck In Casus Reservatis, per	28 x</p>
+            <p>Arztney, Und Chyrurgi Der Armen per	18 x</p>
+            <p>Flagellum Demonum<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://www.secretera.pl/aukcje/9-viaukcjainternetowaksiazekigrafiki/152-starodruki/3247-mengus-hieronymus-flagellum-daemonum-exorcismos-terribiles-poten</hi>
+                  </p>
+               </note> Hyronimus Mengolt, per	21 x</p>
+            <p>Cathecismus Concilium Tridentinum per	15 x</p>
+            <p>P. Tobias Lohner Instruction Practicae per	20 x</p>
+            <p>Joann Paul Hausinger Christliches Fruehestuck, per	18 x</p>
+            <p>Balthasar Knellinger Geschicht Predigen per	20 x</p>
+            <p>Diurnale Neu Curati<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> Schreger; https://books.google.at/books?id=WQBXAAAAcAAJ&amp;printsec=frontcover&amp;hl=de&amp;source=gbs_ViewAPI&amp;redir_esc=y#v=onepage&amp;q&amp;f=false</hi>
+                  </p>
+               </note>, per	12 x</p>
+            <p>Ad Casus Conscientiae Ad Mandatum etc.	9 x</p>
+            <p>Englberti Kranckenbuch, per	12 x</p>
+            <p>Ain altes klains Previer samt ain Diurnal, per	30 x</p>
+            <p>Gilasius de Cilio Thesourus, per	26 x</p>
+            <p>Nattürliches Zauberbuch, per	18 x</p>
+            <p>Latus	4 f 45 x</p>
+            <p>
+               <pb n="127r"/>
+            </p>
+            <p>P. Leopold Freüd 12 thom in französischen Bund, per	6 f 0 x</p>
+            <p>P. Gervasius Pulver Cathecismus Historicus, und Auserlesene Lob Reden, 2 thom, per	1 f 20 x</p>
+            <p>P. Elbl Theol. Moralis 10 thom in französischen Bund, per	4 f 0 x</p>
+            <p>Joann Imhof Messis Mistica Theol. Moral. 2 thom, per	1 f 12 x</p>
+            <p>Etliche schlechte unterschiedliche Büechlen, per	1 f 30 x</p>
+            <p>Latus	14 f 2 x</p>
+            <p>Summa der<rs type="book">Büecher</rs>
+            </p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	60 f 24 x</p>
+            <p>Silber Geschmeid.</p>
+            <p>6 Par Messer, und Gabl mit silberen Häftern wegen 18<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mfrac xmlns="http://www.w3.org/1998/Math/MathML">
+                     <mrow>
+                        <mn>6</mn>
+                     </mrow>
+                     <mrow>
+                        <mn>8</mn>
+                     </mrow>
+                  </mfrac>
+               </mml:math> Loth, à 1 f thuet	18 f 45 x</p>
+            <p>6 darzue gehörige Löfl wegen 15½ Loth, à 1 f 6 x, thuet	17 f 3 x</p>
+            <p>2 besondere silberene Löfl, wegen 4⅞ Loth, à 1 f thuet	4 f 52 x</p>
+            <p>Ain silber inwendig vergoltes Schwimmerle, wigt 4⅝tl Loth, à 1 f 12 x, thuet	5 f 33 x</p>
+            <p>Ain silberene Tubagg Dosen, wegt 5 Loth, à 1 f 6 x, thuet	5 f 30 x</p>
+            <p>Latus	51 f 43 x</p>
+            <p>
+               <pb n="127v"/>
+            </p>
+            <p>Ain silberenes Salz Bichsl, wigt 4⅛tl Loth, zu 1 f, thuet	4 f 7½ x</p>
+            <p>Ain klains silberenes Bichsl samt ain deto<rs type="book">Bett-Buch Bschlächt</rs>, wegen 3⅛tl Loth, zu 50 x thuet	2 f 36 x</p>
+            <p>Ain toppletes Par in Silber gefasste Hemath Knöpflen samt 17 silberen Unter Märcklen, und halben Glauben, per	45 x</p>
+            <p>Ain silberene Sack Uhr, mit dopleten Geheis, und ainer trättenen Kötten per	20 f 0 x</p>
+            <p>Ain dompakens, und ain trätens Uhr Köttl, per	27 x</p>
+            <p>Ain Tobaggier, so blau und weis geschmelzt, per	51 x</p>
+            <p>Ain topplete mössinge Tobaggier per	15 x</p>
+            <p>Und ain klains Lothgewicht, per	10 x</p>
+            <p>Latus	29 f 11 x</p>
+            <p>Summä des Silber Gschmeid, und was dabey beriehrt</p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	80 f 54 x</p>
+            <p>Baarschafft</p>
+            <p>Ain Toppleter Thaller, per	4 f 12 x</p>
+            <p>5 ainfache deto, pr	10 f 30 x</p>
+            <p>4<hi rend="background(blue)">Gulden</hi>, per	4 f 12 x</p>
+            <p>Latus	18 f 54 x</p>
+            <p>
+               <pb n="128r"/>
+            </p>
+            <p>12 halbe deto, per	6 f 18 x</p>
+            <p>In anderen Silber Geld,<hi rend="strikethrough">per</hi>	1 f 52 x</p>
+            <p>In Kupfer Geld,	3 f 8 x</p>
+            <p>Von der<rs type="person">Freyele Mörlin</rs> kommen darzue die bezahlten	3 f 30 x</p>
+            <p>Der<rs type="person">Mathes Tratter </rs>hat auch an Stipendien bezahlt 10 f, von welchen aber der <rs type="person">Maria Thalackererin </rs>zu Ergänzung ihres dem Herren Ableiber in Behalt gegebenen Geld zahlt worden, 9 f 48 x, Rest also noch an Stipendien auszuwerffen, <hi rend="strikethrough">pr</hi>	12 x</p>
+            <p>Ingleichen hat auch der<rs type="person">Caplanei Administrierer Joseph Mayr Kuchlmayr</rs> allda zu <rs type="place">St. Georgen</rs> das von den lezten Quartal Luciae dem Herren Ableiber noch betroffene ratum von 11 Wochen, und die Woch zu 3 f 4 x, und zusammen zahlt	33 f 44 x</p>
+            <p>Und mehr zahlt er<rs type="person">Joseph Mayr</rs> für den, von dem Herren Ableiber seel. gelesenen und gehaltenen <rs type="person">Herrn Michael Mutschlechner</rs>, und <rs type="person">Herrn v. Wenzl</rs>ischen Jahrtag die hierfür zu empfangen gehabte	2 f 42 x</p>
+            <p>Latus	51 f 26 x</p>
+            <p>Summa der Baarschafft</p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	70 f 20 x</p>
+            <p>Schulden herein.</p>
+            <p>Seind keine verhanden.</p>
+            <p>
+               <pb n="128v"/>
+            </p>
+            <p>Summä Summärum des ganzen und völligen Vermigens	461 f 35 x</p>
+            <p>Abzüg</p>
+            <p>Als Ihro Hochwürden dem<rs type="person">Herrn Pfarrer zu Ga</rs>
+               <rs type="place">is</rs> für der Begräbnus, gehaltenen Heiligen Gottesdienst, als Bestättnus 7 und 30gist jedes mall mit Seel- und Lob Amt samt Vigil, gleichwie von verstorbenen <rs type="person">Herren Sebastian Christoph Fezl auch gewesten Beneficiaten allhier</rs> anno 1761 bezahlt worden	8 f 0 x</p>
+            <p>Denen<rs type="person">zwo Herren Cooperatore</rs> für Conduct und Vigil	2 f 0 x</p>
+            <p>Den<rs type="person">Candor</rs>	2 f 24 x</p>
+            <p>Für dem gewohnlichen Jahrtag samt Bitten, und Vigil wohlgemelten<rs type="person">Herrn Pfarrer</rs>	2 f 45 x</p>
+            <p>Dem Herren<rs type="person">Cooperatore</rs>	36 x</p>
+            <p>Dem<rs type="person">Candor</rs>	30 x</p>
+            <p>Dem<rs type="person">Mesner allda zu</rs> 
+               <rs type="place">St. Georgen</rs> mit Einschluss des Jahrtags	3 f 0 x</p>
+            <p>Mehr<rs type="person">demselben</rs> für 2 Tag- und Nacht Wachen	1 f 0 x</p>
+            <p>Dem<rs type="person">anderen Wachter</rs> nur für einen Tag, und Nacht	30 x</p>
+            <p>Für 3 extra gelesene Heilige Messen	1 f 12 x</p>
+            <p>Für Wachs, und Öhl bey dem ausgesezten Leichnahm	1 f 7 x</p>
+            <p>Für der Todten Truch	1 f 0 x</p>
+            <p>Für den Todten Graber, und Maurer	1 f 0 x</p>
+            <p>Latus	25 f 4 x</p>
+            <p>
+               <pb n="129r"/>
+            </p>
+            <p>Dem<rs type="person">Herren Niedergätscher als gewesten Beichtvatter</rs>, und das derselbe ihme zulezt beygestanden zu einer Erkantlichkeit	1 f 0 x</p>
+            <p>Dem<rs type="person">Herrn Cooperatore</rs> noch ausständiges Provisionsgeld	45 x</p>
+            <p>Was wegen dem Herren Ableiber in Grab gegebenen Paramentis für der Kirchen anzurechnen, wirdet zulezt beobachtet werden,</p>
+            <p>Wie in des Herren Ableibers Aufschreibung zu ersehen, seind noch 89 Heilige Messen, und darunter 3 auf der<rs type="place">Porkirchen zu Gais</rs> zu lesen ausständig, hierfür zu 30 und respective 24 x ausgesezt wirdet	35 f 54 x</p>
+            <p>Der<rs type="person">Catharina Lercherin Krankenwartherin</rs> in <rs type="place">Spittal zu Brixen</rs> um geliehenen Geld samt 13 f 36 x hiezue gesezter Verzinsung von 17 Jahren	36 f 36 x</p>
+            <p>Der<rs type="person">Christian Vieschnaler Mayr zu</rs> 
+               <rs type="place">Rodenegg</rs> begehrt an dem Herrn Ableiber Willen von 6 Jahren vorgestreckten Geld 70 f, dargegen ist in sein des Herren Ableibers Aufschreibung zu ersehen, das Herr Ableiber deme <hi rend="strikethrough">auch</hi> nur 66 f 24 x schuldig verblieben seye, an welchen aber derselbe weiters zahlt, sein des <rs type="person">Christian Vischnalers Ehewürthin </rs>11 f, dann für ihro <rs type="person">den Barbierer </rs>3 f, und zulezt auch deroselben bey ihren allhier seyn, 2 Ducaten pr 8 f 44 x thuet zusamen 22 f 44 x, also das man ihme <rs type="person">Christian Vieschnaler </rs>yber deren Abzug noch schuldig verbleiben wurde	43 f 40 x</p>
+            <p>Latus	117 f 55 x</p>
+            <p>
+               <pb n="129v"/>
+            </p>
+            <p>Dem<rs type="person">Michael Ehrnhauser Hinteregger</rs> in der <rs type="place">Neustüft</rs>, noch Rest an abgebenen Wein	5 f 21 x</p>
+            <p>Der<rs type="person">Freyele Maria Anna v. Mörl </rs>willen aufzubehalten gegebenen Geld	2 f 6 x</p>
+            <p>Dem<rs type="person">Herren Doctor Frenes </rs>zu <rs type="place">Brunegg </rs>willen gemachten Visiten	36 x</p>
+            <p>Dem<rs type="person">Herren Äppotecker </rs>
+               <rs type="place">daselbs</rs>	1 f 19 x</p>
+            <p>Dem<rs type="person">Herren Äppoteker </rs>zu <rs type="place">Iniching</rs>	1 f 57 x</p>
+            <p>Dem<rs type="person">Herren Franz Canrad Chyrurgos </rs>an ausständiger Bestallung, und abgebener Medicin	8 f 52 x</p>
+            <p>Dem<rs type="person">Johann Perffler Materalisten </rs>zu <rs type="place">Dietenhaim</rs>	27 x</p>
+            <p>Der<rs type="person">Brigita Eggerin </rs>allda zu <rs type="place">St. Georgen</rs>, willen dem Herren Ableiber in Behalt gegebenen Geld	8f 33 x</p>
+            <p>
+               <rs type="person">Titl. etc. Herrn Johann Balthasar v. Mörl </rs>noch ausständiges Cost Geld von 19 Wochen, à 1 f 36 x, thuet	30 f 24 x</p>
+            <p>Und aber wohldemselben vor der extra gehabten Müehewaltung	6 f 18 x</p>
+            <p>Dem<rs type="person">Niclaus Hueber</rs>, so von des Herrn Ableibers Todfall an bis anhero in dem Widum gewesten, und auf die Fahrnussen obacht getragen, mit Einschlus der auf <rs type="place">Brixen </rs>zu Ansagung des Todfalls gemachten Rais	3 f 0 x</p>
+            <p>Für ain Grabstaindl wirdet ausgesezt	4 f 0 x</p>
+            <p>Der geistliche Commissions Statt betrifft	13 f 48 x</p>
+            <p>Item der Gerichtsstatt von der weltlichen Obrigkeit samt den Schreib- und Siglgeld, auch Pferd und Wägele Lohn	21 f 46 x</p>
+            <p>Latus	108 f 27 x</p>
+            <p>
+               <pb n="130r"/>
+            </p>
+            <p>Und die bey der Bestättnus durch den Kirchvolck, und bey der Abhandlung von denen Erben, und geistlicher Commission aufgewente Würthszöhrung	19 f 21 x</p>
+            <p>Summä der Abzüg</p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	270 f 47 x</p>
+            <p>Yber deren Abnemmung verbleibt noch<rs type="person">Herr Joseph Gasser</rs>isches Vermigen vorständig</p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	190 f 48 x</p>
+            <p>Weilen aber nach so ergänzten Vermigen der<rs type="person">Mathes Tratter Tratter allda</rs> zu <rs type="place">St. Georgen</rs> beykommen, und hievorbeschrieben völlige Inventurs Posten für seinen geistlichen Herrn Brueder, und nunnmehrige würcklich resolvierten Beneficiaten allda zu <rs type="place">St. Georgen</rs> 
+               <rs type="person">Joseph Tratter</rs> zu ybernemmen, und yber vorigen Anschlag noch um 50 f mehrer zu geben, und diese zusammen betröffende 441 f 15 x inner halb acht Tag baar zu bezahlen versprochen, warmit man sich auch contentiert, als haben solche noch darzue zu kommen, id est mit	50 f 0 x</p>
+            <p>Also zwar, das in allen an Vermigen vorständig verbleibt</p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	240 f 48 x</p>
+            <p>Zu welch diesen Vermögen der Erb,<rs type="place">Joseph Gasser</rs> mit Nahmen, verhanden, deme solches erblichen zue- und angefallen wärn, alldieweilen aber von allerhöchsten Ort aus vermig der untern 10ten October 1772 und 12ten Juny anno 1773 allergnädigst ergangener Verordnungen statuieret worden, das die geistliche Verlassenschaften dergestalten verhandlet werden sollen, als nemlichen solle, wann kein Testament verhanden, aus dem verlassenen Vermögen die Helfte denen Erbs-<pb n="130v"/>Interessenten in Voraus, aus der ybrigen Helfte aber ain Dritl der Kirchen wo selber verstorben, ain Dritl denen Armen, und das ybrige Drittl abermalen denen Erben, da diese aber arm, und betürftig waren, auch solches Drittl denenselben zuekommen, und der diesfallige Erb ebenfalls für arm, und dieses Dritl höchst betürftig zu seyn zu halten, als hat mithin allvorderist von vorständig verbliebenen Vermigen für den Erb abgezochen zu werden, die Helfte mit	120 f 24 x</p>
+            <p>Dann von der ybrigen Helfte ain Dritl für der allhiesigen<rs type="place">St. Georgen Kirchen</rs>, mit	40 f 8 x</p>
+            <p>Und die ybrigen zwo Dritl abermalen für gemelten Erben, mit	80 f 16 x</p>
+            <p>Facit vorigen Vermigens Rest gleichzue, mit</p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	240 f 48 x</p>
+            <p>Und so nun, wie hievor zu sehen, der<rs type="person">Mathes Tratter</rs> die völligen Inventurs Posten ybernommen, und deren samt deme mehrers gegebenen 50 f mit zusamen 441 f 15 x ein Schuldner worden, als wirdet auch <hi rend="strikethrough">erstlich, und</hi>
+            </p>
+            <p>Erstlich, und allvorderist ihme<rs type="person">Mathes Tratter</rs> die Baarschafft und mithin das ganze und völlige hievorbeschrieben <rs type="person">Herr Joseph Gasser</rs>ische zurugg gelassene Vermigen für seinen Herren Brueder Joseph Tratter hiemit, und in Kraft dies also gleich zu würklichen Besizthum und Aigenthum, um anmit willkurlichen disponiern zu können, eingeraumt, und yberlassen, so zusammen betrifft</p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	511 f 35 x</p>
+            <p>Dargegen er<rs type="person">Mathes Tratter</rs>
+            </p>
+            <p>Andertens obligiert, zumalen schuldig, und verbunden seyn solle, alle hievorbeschriebene Abzüg und Schulden hinaus, mit 	270 f 47 x</p>
+            <p>
+               <pb n="131r"/>
+            </p>
+            <p>Dan der loblichen<rs type="place">St. Georgen Kirchen</rs> die	40 f 8 x</p>
+            <p>Und dem Erb<rs type="person">Joseph Gasser</rs> das betroffene Herr brüederliche Erb, mit	200 f 40 x</p>
+            <p>angehörde abzuführen, und zu bezahlen, so ebenfalls zusammen vorigen Vermigen gleichzutrifet, mit</p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	511 f 35 x</p>
+            <p>Weilen aber drittens von abwesig beidpändigen Brueder<rs type="person">Jacob Gasser </rs>kain aigentliche Nachricht verhanden, obe selber no bey Leben, oder tod seye, so hat das Erb solang stilligen zu verbleiben, bis er Erb <rs type="person">Joseph Gasser</rs> hierummen ein<hi rend="strikethrough">en</hi> annemliche Caution einstöllen wirdet, mit verspröchen, wann er <rs type="person">Jacob Gasser</rs>, oder von ihme jemande Legitimierter yber kurz, oder lang beykommen, und das Erb anspröchen wurde, demenselben zu Red, und Antworth zu stehen, allenfalls Satisfaction zu geben, und diesfalls sowohl die gnädig geistliche Commission als weltliche Obrigkeit ohne Nachtheil und Schaden zu halten.</p>
+            <p>Schlüslichen verbleibt um die Schulden hinaus, der Kirchen ihr Contingent, und Herrn brüederlichen Erb, des Vermigens ybernemenden<rs type="person">Mathesen Tratters</rs> ganzes und völliges Vermigen in specie die Einraummung fürpfändlichen einge-<pb n="131v"/>sezt verhaften und verschrieben.</p>
+            <p>Nach dem Ablesen bey voriger Vermigens Ergänzung Einraumung und Erbsthailung es verbleiben zu lassen, und darwider nicht anderes vorzunemmen, oder zu vorhandlen, sonderen alles fäst, und stäth zu halten, haben der ainpändige Bruder<rs type="person">Joseph Gasser</rs> mit Rath, und neben seinen <rs type="person">Stüefvattern, und verpflichten Curatore Antoni Brunegger</rs>, und der Vermigens ybernemmende <rs type="person">Mathes Tratter</rs> der gnädig geistlichen Commission und weltlichen Obrigkeit etc. das Hand Anloben, und zu Ausförtigung aines solchen Instruments die Siglbitt erstatt.</p>
+            <p>Testes nebst denen<rs type="person">Gerichts Beysizern Martin Eppacher gewester Schneidermeister</rs> zu <rs type="place">St. Georgen</rs>, und <rs type="person">Joseph Steeger Schreiber</rs>.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,15 +1,15 @@
 xquery version "3.0";
 declare namespace functx = "http://www.functx.com";
 import module namespace xmldb="http://exist-db.org/xquery/xmldb";
-import module namespace app="http://www.digital-archiv.at/ns/dsebaseapp/templates" at "../modules/app.xql";
-import module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/config" at "../modules/config.xqm";
+import module namespace app="http://www.digital-archiv.at/ns/rita-new/templates" at "../modules/app.xql";
+import module namespace config="http://www.digital-archiv.at/ns/rita-new/config" at "../modules/config.xqm";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare option exist:serialize "method=xml media-type=text/xml omit-xml-declaration=no indent=yes";
 
 (: script to generate a cmfi file from a collection of documents using the correspdesc module
  : you can pass in via url-param @baseURL :)
 
-let $baseURL := request:get-parameter("baseURL", "https://dsebaseapp-korrespondenz.acdh.oeaw.ac.at")
+let $baseURL := request:get-parameter("baseURL", "https://rita-new-korrespondenz.acdh.oeaw.ac.at")
 
 (: create the CMFI document:)
 let $CMFI := 

@@ -90,13 +90,13 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data endpoints</a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="../../../../exist/restxq/dsebaseapp/editions/xml">Text as XML</a>
+                                <a href="../../../../exist/restxq/rita-new/editions/xml">Text as XML</a>
                             </li>
                             <li>
-                                <a href="../../../../exist/restxq/dsebaseapp/editions/json">Text as JSON</a>
+                                <a href="../../../../exist/restxq/rita-new/editions/json">Text as JSON</a>
                             </li>
                             <li>
-                                <a href="../../../../exist/restxq/dsebaseapp/dt/editions/json">Datatables API-Endpoint</a>
+                                <a href="../../../../exist/restxq/rita-new/dt/editions/json">Datatables API-Endpoint</a>
                             </li>
                             <li>
                                 <a href="../analyze/cmfi2net.xql">Network Data (GEFX)</a>
@@ -146,7 +146,7 @@
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="https://github.com/KONDE-AT/dsebaseapp" class="navlink" target="_blank">
+                        <a href="https://github.com/KONDE-AT/rita-new" class="navlink" target="_blank">
                             <img src="../resources/img/GitHub-Mark-Light-64px.png" alt="github" width="20%"/>
                         </a>
                     </div>
@@ -166,7 +166,7 @@
                         var dataKey = $( this ).attr('data-key');
                         var xsl = dataType.replace(".xml", "");
                         var baseUrl = "showNoTemplate.html?directory=indices&amp;document="
-                        var url = baseUrl+dataType+"&amp;stylesheet="+xsl+"&amp;entiyID="+dataKey;
+                        var url = baseUrl+dataType+"&amp;stylesheet=node2html&amp;entiyID="+dataKey;
                         $('#loadModal').load(url, function(){
                             $('#myModal').modal('show');
                         });

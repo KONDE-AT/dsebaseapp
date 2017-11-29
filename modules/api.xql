@@ -1,11 +1,11 @@
 xquery version "3.0";
 
-module namespace api="http://www.digital-archiv.at/ns/dsebaseapp/api";
+module namespace api="http://www.digital-archiv.at/ns/rita-new/api";
 declare namespace rest = "http://exquery.org/ns/restxq";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 import module namespace functx = "http://www.functx.com";
-import module namespace app="http://www.digital-archiv.at/ns/dsebaseapp/templates" at "app.xql";
-import module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/config" at "config.xqm";
+import module namespace app="http://www.digital-archiv.at/ns/rita-new/templates" at "app.xql";
+import module namespace config="http://www.digital-archiv.at/ns/rita-new/config" at "config.xqm";
 declare namespace output = "http://www.w3.org/2010/xslt-xquery-serialization";
 declare namespace http = "http://expath.org/ns/http-client";
 
@@ -41,7 +41,7 @@ declare variable $api:XML :=
 (:~ lists content of collection ~:)
 declare 
     %rest:GET
-    %rest:path("/dsebaseapp/{$collection}/{$format}")
+    %rest:path("/rita-new/{$collection}/{$format}")
     %rest:query-param("page[number]", "{$pageNumber}", 1)
     %rest:query-param("page[size]", "{$pageSize}", 20)
 function api:list-documents($collection, $format, $pageNumber, $pageSize) {
@@ -57,7 +57,7 @@ let $serialization := switch($format)
 (:~ lists content of collection according to datatables API ~:)
 declare 
     %rest:GET
-    %rest:path("/dsebaseapp/dt/{$collection}/{$format}")
+    %rest:path("/rita-new/dt/{$collection}/{$format}")
     %rest:query-param("start", "{$start}", 0)
     %rest:query-param("lenght", "{$lenght}", 10)
 function api:list-documents($collection, $format, $start, $lenght, $draw) {
@@ -72,7 +72,7 @@ let $serialization := switch($format)
 
 declare 
     %rest:GET
-    %rest:path("/dsebaseapp/{$collection}/{$id}/{$format}")
+    %rest:path("/rita-new/{$collection}/{$id}/{$format}")
 function api:show-document-api($collection, $id, $format) {
     let $result := api:show-document($collection, $id)
     let $serialization := switch($format)

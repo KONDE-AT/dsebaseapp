@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>1771 IV 17, St. Lorenzen [Jais Coelestin Johann (Kooperator), fol. 72r-85v]</title>
+            <respStmt>
+               <resp>Transkription und Annotation</resp>
+               <name>
+                  <rs type="person" ref="#prokosch_michael">Michael Prokosch</rs>
+               </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Reading in the Alps</publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+                  <p>The (CC BY-SA 4.0)-License applies to this document.</p>
+                  <p>You are allowed to share (copy and redistribute the material in any medium or format) and adapt (remix, transform, and build upon the material) for any purpose, even commercially.</p>
+                  <p>You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</p>
+                  <p>ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc type="invetory">
+               <msIdentifier>
+                  <institution>Südtiroler Landesarchiv (SLA)</institution>
+                  <repository>Verfachbücher Landgericht St. Michaelsburg</repository>
+                  <idno>1762 I 28</idno>
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+                     <locus from="53r" to="65r"/>
+                     <note>
+                        <rs type="skos" ref="#inventar">Inventar</rs>
+                     </note>
+                  </msItem>
+               </msContents>
+               <history>
+                  <origin notBefore="1762-01-28" notAfter="1762-01-28">
+                     <rs type="place" ref="st_lorenzen">St. Lorenzen</rs>
+                  </origin>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <p>
+               <pb n="72r"/>
+            </p>
+            <p>
+               <hi rend="background(lightGray)">[Rubrum:]</hi> Vermigens Ergenzung Erbsthailung und Einraumbung</p>
+            <p>Weillende Herrn<rs type="person">Celestin Johan Jais</rs> gewester Cooperatore alhier seel.</p>
+            <p>
+               <hi rend="background(lightGray)">[Aktenvermerk:]</hi> Exped. 2 <hi rend="background(lightGray)">[mal]</hi>
+            </p>
+            <p>Actum in<rs type="place">Pfarr Widumb zu Sanct Lorenzen</rs>, den 17ten April anno 1771.</p>
+            <p>Vor Ihro Hochwirden und Gnaden dem hochwirdig hochedl gebohrn und hochgelehrten Herrn Herrn<rs type="person">Joseph Mathias Ingramb von Liebenrain und Fragburg</rs>, S.S. Theol. Dri. Tyrollischen Herrn und Landtman, hochfirstlich Brixnerrischen wirckhlichen Consistorial Rath, auch Dechant und Pfarrherrn zu <rs type="place">Brunegg</rs>, als gnedig verordneten Commissario</p>
+            <p>Und dem wohledel gebohrn gestreng und hochgelehrten Herrn<rs type="person">Joseph Innocenz Englmohr, von Aufkhirchen zu Mohregg</rs>, Pfeger und Landtrichtern, der Herrschafft <rs type="place">Sanct Michaelspurg</rs>,</p>
+            <p>Zugegen des wohledlen Herrn<rs type="person">Franz Michael Marchner</rs> geistlicher Commission und Ambtgerichtschreibern zu <rs type="place">Brunegg</rs>, und des <rs type="person">Johann Kerschpämber</rs> Landtgerichtschreibers zu <rs type="place">Sanct Lorenzen</rs>, der Herrschaft Sanct Michaelspurg.</p>
+            <p>Demnach Gott dem Allmechtigen abermahlen beliebt, seinen allerheilligisten Willen zu volziechen, und andurch weillende dem wohlehrwirdig<pb n="72v"/> wohledl und wohlgelehrten Herrn <rs type="person">Celestin </rs>
+               <hi rend="strikethrough background(green)">Jais</hi> 
+               <rs type="person">Johan Jais</rs> gewest eltisten Cooperotore alhier zue <rs type="place">Sanct Lorenzen</rs> nach langwirig schmerzlich ausgestandener Leibs Kranckhheit entlich wohl resignierter, von dism Zeitlichen zu dem Ebigen zu meniglichen Bethauren, abzufordern und zweiflsohne zu sich in die ebige Freidt und Glickhseeligkheit aufzunemben, Gott gnadt der Seelen, wurde von der gnedig geistlichen Commission sowohl als auch weltlichen Obrigkheit die gebreichige Secretur angelegt, und nach der abgeleibten Seelen zu Hilf und Trost abgehaltenen Heiligen Gottesdenst, auch an der loblichen Pfleggerichtsobrigkeit zu <rs type="place">Ymbst</rs> die Requisition erlassen, sein des Herrn Ableibers seel. <rs type="person">hinterlassene Geschwistrigeth</rs> und Erbs Interessenten zu Verabhandlung desselben hinterbegebenen Vermigens alhero zu verschaffen, alldieweillen aber sie Erbs Interessenten nach formierten Inventäri die Thaillung zu Ymbst vornemben zu migen von darumben angesprochen, als Herr Ableiber dortselbs gebohrn auch mit Liegenden <pb n="73r"/> Güetter und Vermigen angesessen were, so ist man von Seiten der weltlichen Obrigkheit gezwungen gewesen, die Sach hochloblicher ooe. Regierung umbstentlich einzuberichten und hoch die selbe in Unterthenigkheit zu belangen, das die Vermigens Abhandlung disen foro albo Herr Ableiber seel. verstorben, zueerkhent werden mechte, und gleichwie auch ein solches von dorthen aus vermig den untern 15ten Märti anno diß eingangenen hochgnedigen Befelch beschechen, mit den weitter befelchlichen Auftrag, das alle derley Verabhandlung vorgenomben werden sollen, wo der Todtfahl ervolgt, und <hi rend="strikethrough">welches</hi> sohin in Namen und anstatt der drei verhandenen Erbs Interessenten als des Herrn Ableibers seel. eheleiblich baidtpendigen <rs type="person">Brueder Joseph Jais</rs> seiner Profession ain Pilthauer, dan des auch verstorbenen <rs type="person">Brueder Johan Michael Jais</rs> bei <rs type="person">Anna Maria Holzerin</rs> in Ehepandt ainzig erzeigten Sohn <rs type="person">Joseph Jais</rs>, und der <rs type="person">Schwester Catharina Jaisin Johan Posch</rs>
+               <note>
+                  <p rend="footnote text"> 
+                     <hi rend="italic">Posch</hi> über der Zeile eingefügt.</p>
+               </note>
+               <rs type="person"> Purger und Vogltragers</rs> zu <rs type="place">Ymbst</rs> Ehewirthin, die zwo bestelte Gewalthaber und Vertretter <rs type="person">Joseph Kappeller</rs> Gerichts Verpflichter auch Burger und Glasermaister zu <rs type="place">Ymbst</rs> und widerholter <rs type="person">Johanes Posch</rs> däto alhero bei-<pb n="73v"/>khumben und gehorsamblichen gebethen, sein des Herrn Ableibers seeligen Hinterlassen und ihren Principällen und Ehewürthin nattirlichen Rechtens erblichen zue und angefahlnen Vermigen in gebreichige Beschreibung, Taxierung und Ergenzung zu bringen, und sovorth dasselbe unter sie zu vertheillen, warzue auf anheut dato Anstalt ernenet worden, als wurde auch zuvolg dern billichmessigen Begehern, erdeutes Vermigen in Ergenzung und Verthaillung gebracht, wie meherers hernach zu vernemben, und volgt vor allen die Inventurs-</p>
+            <p>Beschreibung</p>
+            <p>In verlassenen Leibclaidern und ybrigen Mobillien</p>
+            <p>Als ain schwarztiecher gewenter Rockh sambt dergleichen Comisol pr	4 f 0 x</p>
+            <p>Ittem ain Somer zeigener gwegglet schwarzer Rockh nebst dergleichen Comisolhosen und in Comisol ainen Anhengerle pr	8f 0 x</p>
+            <p>Sodan ain<unclear>folets</unclear>eidener prauner Rockh mit der gleichen und ainen schlecht schwarz zeigen Camisol per	3 f 0 x</p>
+            <p>Aber ain schwarzer schlechter Rockh und Comisol	1 f 0 x</p>
+            <p>Latus	16 f 0 x</p>
+            <p>
+               <pb n="74r"/>
+            </p>
+            <p>Und ain grau gewirckhter Rockh mit schwarzen Poleten per	1 f 30 x</p>
+            <p>Ain plau geblaimbt zeigener<unclear>Cosegeng</unclear> pr	2 f 0 x</p>
+            <p>Ain getruckhter Schlaff Rockh pr	48 x</p>
+            <p>Zwo Par schlecht yrchene Hosen pr	36 x</p>
+            <p>Ain Par ge<hi rend="strikethrough">stric</hi>wirkhte Stifelet pr	30 x</p>
+            <p>2 Par schwarz gestrickhte deto pr	40 x</p>
+            <p>Vier schwarze Halß Krägen pr	24 x</p>
+            <p>Ain Par schwarz Seiden gewirckhte Strimpf per	2 f 0 x</p>
+            <p>Ittem zwo Par abgetragen schlechte deto	40 x</p>
+            <p>Dan drei Par<unclear>fecetseidene</unclear> gestrickhte Strimpf	3 f 0 x</p>
+            <p>Zwo Par neu wollene gestrickhte und ain Par Hamburger Strimpf per	1 f 28 x</p>
+            <p>Zechen Par weiß leinern Unterstrimpf á 15 x	2 f 30 x</p>
+            <p>Ain besser und ain schlechter Hueth pr	48 x</p>
+            <p>Zwo leinbathene Hemather per	2 f 0 x</p>
+            <p>Latus	18 f 54 x</p>
+            <p>
+               <pb n="74v"/>
+            </p>
+            <p>20 besser und schlechtere Hemater und ain Pandt Mantl zu 27 x	9 f 27 x</p>
+            <p>Ain Par neue und 7 Par abgetragene Vorerbelen zu 8 x	1 f 4 x</p>
+            <p>Finf Schlafhauben	40 x</p>
+            <p>Ain Par weiß seidene Hantschuech pr	24 x</p>
+            <p>Ain Par gestrickhte schwarze Hantschuech pr	10 x</p>
+            <p>Ain Par neu samete rauche Stizlen	54 x</p>
+            <p>Mehr ain Par tiechen und ain Par gestrickhte deto	12 x</p>
+            <p>6 schlechte schwarze Heiblen per	20 x</p>
+            <p>Ain Par<hi rend="background(blue)">Paadthosen</hi>, ain Pätschen, ain Tisch Manipl und ain Parbier Tuech	20 x</p>
+            <p>Ain oliven farbes seidens Schnupf Tiechl mit rothen Straif pr	48 x</p>
+            <p>Ittem 19 unterschidliche deto zu 15 x	4 f 45 x</p>
+            <p>Ain Par alte Stifl pr	36 x</p>
+            <p>Ain Par neue Schuech	54 x</p>
+            <p>Und 2 Par abgetragene deto pr	40 x</p>
+            <p>Ain schwarz geferbte<unclear>Pockhhaus</unclear>	1 f 30 x</p>
+            <p>Latus	22 f 44 x</p>
+            <p>
+               <pb n="75r"/>
+            </p>
+            <p>Ain Spanisch Rohr mit ain Messing Knopf pr	36 x</p>
+            <p>Ain dines deto Rohr mit ain silberen kuepflred Pigl pr	2 f 6 x</p>
+            <p>Und ain noch cleners deto pr	54 x</p>
+            <p>Ain silberene Sackh Uhr per	16 f 0 x</p>
+            <p>Ain silberene Dubaggier per	3 f 0 x</p>
+            <p>Ain<hi rend="background(blue)">Schilch Krottene</hi> deto mit Silber gefast	4 f 0 x</p>
+            <p>Ain Par silberene Schuech- und ain Hosen Schnällele per	2 f 0 x</p>
+            <p>Ain in Silber gefaste Jerusalem Pethen, mit ain silberen Pfening und Monseraten Creizl per	1 f 0 x</p>
+            <p>Ain Rockh Pandt mit Golt eingestrickht	0 f 30 x</p>
+            <p>Ain silberens<unclear>Polchom</unclear> Pixl	45 x</p>
+            <p>Ain grosses Fehleisen per	45 x</p>
+            <p>In Strendlen und Knolen 1¼ Pfundt Zwirn	1 f 0 x</p>
+            <p>Drei viertl Pfundt Filiet Seiden in Strendlen pr	2 f 0 x</p>
+            <p>Latus	34 f 36 x</p>
+            <p>
+               <pb n="75v"/>
+            </p>
+            <p>Vier Ellen Hemath Biesden per	8 x</p>
+            <p>6½ Ellen roth und gelb gestrieffter Zeug à 10 x	1 f 5 x</p>
+            <p>102 Ellen ungeblaichts Tisch gewanth á 15 x	25 f 30 x</p>
+            <p>In etlich Stickhlen 19 Ellen härbens Tuech zu 18 x	5 f 42 x</p>
+            <p>Ain Par härbene Leillacher pr	1 f 12 x</p>
+            <p>Zwo griene Wälckhen- und ain weiser Firhang samt Kranz und zwo Ellen griener Zeig	36 x</p>
+            <p>15 Pfundt gehächleter Haar zu 18 x	4 f 30 x</p>
+            <p>Zwo messinge ungleiche Leichter	24 x</p>
+            <p>Ain Stockh Uhr mit schwarzen Cästl pr	5 f 0 x</p>
+            <p>Ain Cove Mill und ain kupferens Kändele	24 x</p>
+            <p>Ain messings Ämpele mit den Gläsl ittem ain plechens Cuterl und ain Majolico Krueg	24 x</p>
+            <p>Ain messinge Heng Uhr mit Stunt und Viertl	5 f 0 x</p>
+            <p>Latus	49 f 55 x</p>
+            <p>
+               <pb n="76r"/>
+            </p>
+            <p>94 Pfundt Äxamer Haar zu 22 x	34 f 28 x</p>
+            <p>Ain claine messinge Cavee Mill pr	24 x</p>
+            <p>Mehr ain Fehleisen	24 x</p>
+            <p>Ain Mueter Gottes Bildt von<rs type="place">Ainsidl</rs> mit plau glassierten und thails vergulten Ramb	24 x</p>
+            <p>Ain Heiliges Fronciscus<unclear>Noveri</unclear> Bildtens auf Kupfer gemahlen mit obiger Ramb per	1 f 0 x</p>
+            <p>17 unterschidlich claine Täfelen 2 clain und 2 grosse Cruxifix und 2 Rämblen von gredner Arbeith	2 f 0 x</p>
+            <p>Einich Kinder Leher Munusculer pr	2 f 0 x</p>
+            <p>Macht vorige Inventurs Beschreibung</p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	182 f 49 x</p>
+            <p>
+               <rs type="book">Piecher</rs>
+            </p>
+            <p>
+               <rs type="book">In Folio</rs>
+            </p>
+            <p>Clemens Burghausen Son und Feyrtag Predigen<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://lot-tissimo.com/de/i/8530</hi>
+                  </p>
+               </note> in 2 thom. Franzesischer Bundt pr	2 f 0 x</p>
+            <p>
+               <pb n="76v"/>
+            </p>
+            <p>P. Bovii<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> Carolus Bovis</hi>
+                  </p>
+               </note> Marianische Cremsl Predigen 1 thom in obigen Punt pr	1 f 0 x</p>
+            <p>Jacobi Marchantii Hortus Pastorum 1 thom obigen Pundt pr	1 f 0 x</p>
+            <p>Ferdinandi Hueber Son und Feyrtag Predigen 2 thom per	1 f 15 x</p>
+            <p>Manuscriptoten Tractatus de Sacram. Poenitentiae<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> Evtl. https://minerva.usc.es/xmlui/handle/10347/14618</hi>
+                  </p>
+               </note> ohne Tax</p>
+            <p>
+               <rs type="book">In Quart</rs>
+            </p>
+            <p>Anacleti Reifenstuel Theol. Moralis in Schwein Leder per	36 x</p>
+            <p>P. Franz Antoni Reichele Cathecismus in franzesischer Pundt pr	45 x</p>
+            <p>P. Francisci Peighard Lob, Ehr und Leich Reden<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://www.zvab.com/buch-suchen/titel/lob-ehr-danck-und-leich-reden/</hi>
+                  </p>
+               </note>	24 x</p>
+            <p>P. Zacharias Ratgeb Muster der Geistlichen Wohl Redenheit	20 x</p>
+            <p>Herr Gabriel Zürchers Prophetischer Clag Posaun	24 x</p>
+            <p>Claudii Jolii Geistreiche Lehr und Sontag Predigen<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://www.zvab.com/servlet/BookDetailsPL?bi=22467863302&amp;searchurl=kn%3Dgeistreiche%2Blehr%2Bund%26hl%3Don%26sortby%3D20</hi>
+                  </p>
+               </note>	30 x</p>
+            <p>Latus	6 f 14 x</p>
+            <p>
+               <pb n="77r"/>
+            </p>
+            <p>P. Joann Stephani Grossez Concionetor Meditationes per	24 x</p>
+            <p>Peter Hofers Sontag Predigen per	18 x</p>
+            <p>P. Ludovici Michon Casus de Sacramentis	15 x</p>
+            <p>Vita B. Mariae Virg.	12 x</p>
+            <p>
+               <unclear>Ignad</unclear>. Brixinens.	8 x</p>
+            <p>Bedenckh und Untersuechung der Frage etc.	3 x</p>
+            <p>Biblia Sacra teutsch	24 x</p>
+            <p>
+               <rs type="book">In 8.tav.</rs>
+            </p>
+            <p>Raiß Previer	1 f 0 x</p>
+            <p>Ain anderes deto in 4 Thaill pr	1 f 30 x</p>
+            <p>Armamentarium Ecclesiastium P. Ubaldi Stueber<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> http://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10591752_00005.html</hi>
+                  </p>
+               </note> per	12 x</p>
+            <p>Exterminium Acediae P. Francisci Neymayr<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://books.google.at/books?id=hQ09AAAAcAAJ&amp;pg=PP7&amp;lpg=PP7&amp;dq=Exterminium+neymayr&amp;source=bl&amp;ots=b0y7Dmxzb7&amp;sig=k3ONyEWdoSop9vciEk2dRUK1TiI&amp;hl=de&amp;sa=X&amp;ved=0ahUKEwiX8fqFsK7WAhWCoRoKHTx-BHYQ6AEILjAB#v=onepage&amp;q=Exterminium%20neymayr&amp;f=false</hi>
+                  </p>
+               </note>	15 x</p>
+            <p>Vir Apostolicus Tyrae Dicti<unclear>Autoritate</unclear>	18 x</p>
+            <p>Casus Conscientia Benedicti decim-4ti	24 x</p>
+            <p>Latus	5 f 23 x</p>
+            <p>
+               <pb n="77v"/>
+            </p>
+            <p>P. Gelasii de Cilia Benedict. et Exercismi per	15 x</p>
+            <p>Manuale Romanum	10 x</p>
+            <p>P. Joannis Taberna Synopsus Theolog. Pract.<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://www.zvab.com/servlet/BookDetailsPL?bi=13131516776&amp;searchurl=hl%3Don%26tn%3Dsynopsis%2Btheologiae%2Bpracticae%2Bcomplectens%2Bexplicans%26sortby%3D20%26an%3Dtaberna%2Bjohann%2Bbaptist</hi>
+                  </p>
+               </note>	12 x</p>
+            <p>P. Adelrici Schwarz Regulae Prudentis et pii Confessarii<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://books.google.at/books/about/Regula_prudentis_confessarii_studio_Adal.html?id=_oRKAAAAcAAJ&amp;redir_esc=y</hi>
+                  </p>
+               </note>	7 x</p>
+            <p>R. P. Joannis Stephani Grossez Diarium Sanctorum<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://www.zvab.com/servlet/BookDetailsPL?bi=8497289307&amp;searchurl=hl%3Don%26sortby%3D20%26an%3Dgrossez</hi>
+                  </p>
+               </note> in 2 thom	20 x</p>
+            <p>P. Francisci Fegebe Quaestiones Practicae pr	10 x</p>
+            <p>P. Francisci Neymayr Idea Rethorices	8 x</p>
+            <p>P. Anselmi Schnell Supplementum Theolog. Moralis pr	10 x</p>
+            <p>P. Alexii Riederer Geistliches Seelen Nez<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> http://digital.bib-bvb.de/view/bvbmets/viewer.0.6.1.jsp?folder_id=0&amp;dvs=1505728284718~903&amp;pid=3108510&amp;locale=de&amp;usePid1=true&amp;usePid2=true#</hi>
+                  </p>
+               </note>	12 x</p>
+            <p>Ars Semper Gaudendi pr	10 x</p>
+            <p>Casparii Mandl Meditationes	12 x</p>
+            <p>Todts Andacht oder Zuebereithung zu Einen Guethen Todt	12 x</p>
+            <p>Apendix ad Casus Conscientiae Benedicti decim-4ti	15 x</p>
+            <p>Latus	2 f 33 x</p>
+            <p>
+               <pb n="78r"/>
+            </p>
+            <p>P. Francisci Nepren Considerationes Christ. In 4 thom	48 x</p>
+            <p>Praedicti Auctoris Sacer Recessus pr	15 x</p>
+            <p>Passion Spiegl pr	12 x</p>
+            <p>Joannis Adami Weeber Iter Coeleste pr	6 x</p>
+            <p>Ausfiehrlicher Unterricht des Heiligen Mess Opfer	18 x</p>
+            <p>P. Neymayr Khern des Christenthumb pr	15 x</p>
+            <p>P. Benedicti Rogazzi Tractatis von der Erkhantnus und Liebe Gottes per	8 x</p>
+            <p>P. Adalberti Tylkoski Jugum Grave<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://www.zvab.com/servlet/SearchResults?sts=t&amp;an=&amp;tn=jugum+graeve&amp;kn=&amp;isbn=</hi>
+                  </p>
+               </note>	6 x</p>
+            <p>Proprium Brixinense so zu dem Praevier geherig, ohne Tax</p>
+            <p>Thomas de Kempis De Meditatione Christi<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> http://digital.ub.uni-duesseldorf.de/ink/content/titleinfo/3436168</hi>
+                  </p>
+               </note> pr	18 x</p>
+            <p>Manuscriptum de Cahn reserv. pr Bht</p>
+            <p>P. Nicolai Elve Catholisch Schlecht und Recht<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://books.google.at/books?id=bMhNAAAAcAAJ&amp;pg=PA245&amp;lpg=PA245&amp;dq=cathol+schlecht+und+Recht&amp;source=bl&amp;ots=2wQBN3W36t&amp;sig=2joZKvwZ9Zhj2HzeheJSCo12bb4&amp;hl=de&amp;sa=X&amp;ved=0ahUKEwj4ov7cv67WAhXFBBoKHW5QA30Q6AEIJjAA#v=onepage&amp;q=cathol%20schlecht%20und%20Recht&amp;f=false</hi>
+                  </p>
+               </note> pr	6 x</p>
+            <p>Drexelius in siben Theillelen pr	1 f 24 x</p>
+            <p>Latus	3 f 56 x</p>
+            <p>
+               <pb n="78v"/>
+            </p>
+            <p>Officium Hebdom. Sanctae pr	12 x</p>
+            <p>Gotschedo Teutsche Sprach Kunst<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> http://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10584340_00005.html</hi>
+                  </p>
+               </note> in franzesischen Einpundt pr	36 x</p>
+            <p>Rudimentae Hystoricae per	6 x</p>
+            <p>Ain alter Dictionarius Frisii pr	12 x</p>
+            <p>Ebenbildt Der Nättur Ein Kreiter Buech	10 x</p>
+            <p>21 claine unterschidliche Piechlen ohne Tax</p>
+            <p>Und mehr 22 dergleichen ohne Tax.</p>
+            <p>Betreffen zwar die<rs type="book">Piecher</rs> in den ausgeworffenen Tax 21 f 22 x weillen aber solche die zwo Gewalthabern den Herrn Cooperatore alda Jacob Moswalder Däto umb vier Kremizer Dugaten keiflichen verwendet, also ist nur villmeher ernente Summa alda per Vermigen zu tragen mit	17 f 36 x</p>
+            <p>Paarschafft</p>
+            <p>Siben Kremizer Dugaten zu 4 f 24 x	30 f 48 x</p>
+            <p>
+               <pb n="79r"/>
+            </p>
+            <p>Ain Salzburger und Brixner Dugaten pr	8 f 40 x</p>
+            <p>Ain Hollender deto pr	4 f 18 x</p>
+            <p>13 Payrische Thaller zu 2 f 16 x	27 f 18 x</p>
+            <p>2 deto halbe pr	2 f 6 x</p>
+            <p>6 deto viertl	3 f 9 x</p>
+            <p>In Ainundtzwainziger, Achtzechner, Sibner Stuckh, auch Groschen und Kupfer Gelt	240 f 37 x</p>
+            <p>Thuet die verhandene Paarschafft	316 f 56 x</p>
+            <p>Ligendts Gueth</p>
+            <p>Nemblichen zwo manemadt fruehemadt enhalb des<rs type="place">Pigers zu Ymbst</rs> ligent, so der grundtrechthalber frey Aigen, und Herr Ableiber seeligen von <rs type="person">seiner Mueter Frauen</rs>
+               <note>
+                  <p rend="footnote text"> 
+                     <hi rend="italic">Von seiner Mueter Frauen</hi> am linken Blattrand eingefügt.</p>
+               </note>
+               <rs type="person"> Catharina Mäzekopfin</rs>, weillende Herrn <rs type="person">Balthasarn Jais</rs> gewesten Raths Burger und der freyen Kunst Bildthauern in <rs type="place">Ober Marckht Ymbst</rs> gehaust <hi rend="strikethrough">seel.</hi> gewesten Eheconsorthin seel. laut Inventäri Vermigens Ergenzung und Verthaillung, so vor <pb n="79v"/> der dortselbstig loblichen <rs type="place">Ymbsterischen</rs> Pfleg und Landtgerichtsobrigkeit am 21 und 22isten April anno 1763 vorbeigangen, neben andern mehr, umb per 250 f erbs weise yberkhumben hat, wohl volglich auch alda in alten Tax gelassen und per Vermigen getragen wirdet, id est mit	250 f 0 x</p>
+            <p>Betragt das ligende Gueth	250 f 0 x</p>
+            <p>Schulden herein</p>
+            <p>
+               <rs type="person">Jungfrau Catharina Mitterhoferin</rs> Würth und Gastgebin <hi rend="background(cyan)">beim Aicholzer</hi> alhier in <rs type="place">Marckht Sanct Lorenzen</rs>, solle laut abgeben verhandener Privat Schuldtbekhantnus von 10ten Juli anno 1767 Capital	300 f 0 x</p>
+            <p>Die Interesse hievon auf 10ten Juli anno 1770 verfahlen, gibet<rs type="person">Schulnerin</rs> vor, den Herrn Ableiber seeligen bezalt zu haben, mithin pro rato seit gemelter Zeith bis negst Geörgi von 9½ Manath	8 f 18 x</p>
+            <p>Vermig einer weitteren Privat Schuldtbekhantnus von 20isten Jenner anno 1768<pb n="80r"/> ist auch <rs type="person">Frau Maria Prunerin</rs> Herrn <rs type="person">Gottlieb Paldauf Burger, Parbierer und Cramers alhier</rs> Ehewirthin, den Herrn Ableiber seel. 200 f yedoch mit denen schuldig worden, das 100 f hieraus solang dero Frau Schwester <rs type="person">Maria Josepha Prunerin Closterfrau</rs> in <rs type="place">Lienz</rs>, bei Leben sein wirdet, ohne Zins stilligen verbleiben, und sie <rs type="person">Frau Prunerin</rs> zu geniessen haben, die andern 100 f aber, sollen jehrlichen in Zeit der Stilligung, mit drei pro cento verinteressiert und gegen ainer viertl jehrigen Ab oder Aufkhindung bezalt werden, id est	200 f 0 x</p>
+            <p>Interesse hievon von die abtreiblichen 100 f auf verwichen 20isten Jenner verfahlen, von ain Jahr	3 f 0 x</p>
+            <p>Und pro rato bis Geörgi darauf von ain viertl Jahr	45 x</p>
+            <p>Ihro Hochwirden und hochfreyherrlich Gnaden<rs type="person">Herr Herr Hartmanns Freyherr von Enzenperg</rs> in <rs type="place">Brixen</rs> titl. etc. sollen auch vermig abgebener Schuldt Bekhantnus von 8ten Augusti anno 1770 umb empfangenes Anlechen	60 f 0 x</p>
+            <p>
+               <pb n="80v"/>
+            </p>
+            <p>Darzue pro rato Interesse seit der Anleichung bis negst Geörgi von 8 Manather zu 4 pro cento	1 f 36 x</p>
+            <p>Wie in vor allegierter Frauen<rs type="person">mueterlich Catharina Mäzekopfischen</rs> Vermigens Abhandlung zu ersechen, seint unter andern dem Herrn Ableiber seeligen aus deren mueterlich verlassenen Mobillien zu dessen Portion 10 f 28 x und auf Ableiben des ohne Leibs Erben verstorbenen <rs type="person">Brueder Felix Jais</rs> besag desselben Vermigens Liquidation Abhandlung und Verthaillung von 21ten Juli anno 1768 auch aus denen anererbt mueterlichen Mobillien 2 f 37 x und zusamben 13 f 5 x zu empfangen assigniert und angewisen worden, und alldieweillen solche des Herrn Ableibers seel. bestelte Vertretter Herr <rs type="person">Geörg Simon Holer Gasthalter und jeztiger Ambts Burgermaister</rs> zu <rs type="place">Ymbst</rs> unzweiflpar noch inhanden haben wirdet, als werden auch dise bei demselben alda per Vermigen getragen, id est mit	13 f 5 x</p>
+            <p>Auf den jehrlichen Ertrag des hievor eingetragenen ligenden Gueths zukhumben, hat des<pb n="81r"/> Herrn Ableibers seel. eheleiblicher <rs type="person">Schwester Catharina Jaisin Ehevogt</rs> und mit <rs type="person">Gewalthaber Johan Posch Burger und Vogltrager zu</rs> 
+               <rs type="place">Ymbst</rs> vorgetragen, das Herr Ableiber seeligen, ihme Schwager die Helffte hieraus bis zu seinen Ableiben zum Genus ohne Zins gelassen habe, bei welcher es auch der mit <rs type="person">Vertretter und Gewalthaber Joseph Kappeller</rs> darbei verbleiben gelassen, den Ertrag von der ybrigen Helffte hingegen aber, widerholter Herr <rs type="person">Geörg Simon Holler</rs> empfangen, weillen aber derselbe auch fir und anstatt den Herrn Ableiber seeligen ain und anderes bezalt, aber hievon keine Wissenschafft verhanden war, als werde mit denselben allererst zu liquidieren und disfahles alda nichts auszuwerfen sein.</p>
+            <p>Meher erdeuter<rs type="person">Herr Geörg Simon Holler</rs> ist zwar auch den Herrn Ableiber seel. laut vor allegiert briederlich <rs type="person">Felix Jais</rs>ischen Abhandlung 78 f 27 x schuldig worden, alldie weillen aber er <rs type="person">Herr Holler</rs> wie die Gewalthabern vorgetragen, mit solchen samt den Bestantzins Ertrag, jenige 98 f 28 x so Herr Ableiber <pb n="81v"/> seeligen den <rs type="person">Brueder Joseph Jais</rs> vigore <rs type="person">mieter</rs>licher Abhandlung wegen mehrerers beschechner Einraumbung schuldig worden, bezalt haben solle, so aber ebenfahles auf Liquidation beruehet, als wurde mithin auch wegen disen alda nichts per Vermigen, noch von denen ainsmahlen schuldig gewesten 98 f 28 x hienach was per Abzug zu bringen sein, dis zum Bht.</p>
+            <p>Dargegen ist auf Ableiben des<rs type="person">Brueder Felix Jais</rs> seel. auch die <rs type="person">Schwester Catharina Jaisin</rs> den Herrn Ableiber seeligen nach Sag vor allegierter <rs type="person">brieder</rs>leichen Abhandlung, 89 f 56 x schuldig worden, und da dise noch bei deroselben an und ausligent seint, als werden auch solche bei ihro alda per Vermigen getragen, id est mit	89 f 56 x</p>
+            <p>Die Interesse hievon seit Geörgi 1768 bis und mit Einschlus nebstkhumbende Geörgi 1771 von drei Jahr, gibet der<rs type="person">Schuldnerin Ehewirth Johan Posch</rs> vor, auch dise ihrer von den Herrn Ableiber seel. nachgesechen und geschenckht worden zu sein, bei welchen es <pb n="82r"/> auch der mit <rs type="person">Gewalthaber Joseph Kapeller</rs> darbei verbleiben gelassen, dis auch zum Bericht.</p>
+            <p>Und von denen Kirchen Gefehlen, gebihrt dem Herrn Ableiber seeligen seit verwichen Neu Jahr bis 17ten Jenner darauf als ervolgten Todtfahl von zwo Wochen noch das ratum, mit	1 f 40 x</p>
+            <p>Machen die Schulden herein</p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	678 f 20 x</p>
+            <p>Summä des ganz und velligen Vermigens,</p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	1445 f 41 x</p>
+            <p>Dargegen seint verhanden, volgende Abzüg und</p>
+            <p>Schulden hinaus</p>
+            <p>No 1: Als der Funeral Conto betrifft Sag Schein	12 f 45 x</p>
+            <p>No 2: Denen Grabmachern yber der genossenen Zehrung laut Schein, noch	1 f 0 x</p>
+            <p>No 3: Dem<rs type="person">Pfarr Mesner alhier Jacob Klapfer</rs> und <rs type="person">Joseph Pergmaister</rs> fir Anlegung und Auswarthung der Leich deut Schein	2 f 6 x</p>
+            <p>
+               <pb n="82v"/>
+            </p>
+            <p>No 4: Dem<rs type="person">Herrn Doctor Vogl</rs> zu <rs type="place">Brunegg</rs> inhalt Schein vor gemachten Visiten und ausstendiger Bestallung	8 f 20 x</p>
+            <p>Ingleichen den<rs type="person">Herrn Doctor Vestner</rs> 
+               <rs type="place">daselbs</rs>	1 f 0 x</p>
+            <p>No 5: In der<rs type="place">Apoteckhen zu ernenten Brunegg</rs> umb abgebener Medicin	10 f 18 x</p>
+            <p>No 6: Dem<rs type="person">Herrn Gottlieb Paldauf Parbierer</rs> alhier auch laut Conto	11 f 48 x</p>
+            <p>Den<rs type="person">Michael Unterlechner Arzt</rs> zu <rs type="place">Steegen</rs>	1 f 3 x</p>
+            <p>No 7: Der<rs type="person">Jungfrau Johanna Lucretia von Egerwin</rs> albo Herr Ableiber verstorben, Sag Conto umb ain und anderer eingekhaufften Sachen	11 f 40 x</p>
+            <p>No 8: Den<rs type="person">Michael Stieger Tischler</rs> vor gemachten Todten Truchen und hilzen Grab Creuz	2 f 0 x</p>
+            <p>No 9: Den<rs type="person">Joseph Unterpertinger Maurer</rs> in <rs type="place">Pflaurenz</rs> wegen Zuemachung des Grabes	30 x</p>
+            <p>No 10: Dem<rs type="person">Franz Mayr Weeber</rs> 
+               <pb n="83r"/>
+               <rs type="person"> Sohn</rs> alhier willen per <rs type="place">Brixen</rs> verrichten Gang, yber 30 x Zahlung, noch	30 x</p>
+            <p>No 11: Den<rs type="person">Jacob Helweger Burger</rs> alhier fir zwo mahl herunter und hinauf gefiehrten <rs type="person">Doctor</rs>	48 x</p>
+            <p>No 12: Meher voreingefierten<rs type="person">Jacob Klapfer</rs> in Chrafft Schein vor verrichter Schneider Arbeith	53 x</p>
+            <p>No 13: Den<rs type="person">Jacob Epacher Uhrmacher</rs> zu <rs type="place">Brunegg</rs> willen reparierter Sackh Uhr	1 f 20 x</p>
+            <p>No 14: Ihro Wohlerwirden den<rs type="person">Herrn Cooperatore alhier Andree Starckh</rs> laut Conto vorbestrittene Ausgaben	25 f 27 x</p>
+            <p>No 15: Der<rs type="person">Jungfrau Catharina Mitterhoferin Würthin alhier</rs> durch die Grabmacher und Leichtrager auch andern erlofnen Würths Zehrung	8 f 49 x</p>
+            <p>Der Pfarr Kirchen alhier willen den Herrn Ableiber in Grab gegebenen Pocamenter und bei denen Gotts denst geprenten weisen Wax Kerzen	15 f 0 x</p>
+            <p>
+               <pb n="83v"/>
+            </p>
+            <p>Ihro hochfreyherrlich Gnaden den Herrn Herrn Pfarrer alhier fir zwo ausstendige Applicationes	1 f 0 x</p>
+            <p>Dem<rs type="person">Herrn Cooperaters Provisor von Miller</rs> ausstendigen Wochen Gulden, weillen solcher den Herrn Ableiber seeligen guethgemacht worden,	3 f 30 x</p>
+            <p>Den<rs type="person">geistlichen Herrn Pasler</rs> vor zwo gelesnen Heiligen Messen	1 f 0 x</p>
+            <p>Zu extra Heiligen Messen hat Herr Ableiber seel. verschaffen, umb per	20 f 0 x</p>
+            <p>Bei Errichtung der Stationen<rs type="place">alhier in der Pfarr Sanct Lorenzen</rs> seint den Herrn Ableiber an den hierzue verehrten Gelt ybrig und in Handen verbliben, die zu ersezen habende	4 f 0 x</p>
+            <p>Fir ainen an der Maur anzumachen verlangten Todten Creuz wirdet sambt der Mahlen ausgesteckht	7 f 0 x</p>
+            <p>Der<rs type="person">Freyle Heisigerin</rs> in Pfarr Widumb von <unclear>nichstetter</unclear> zu ainen Drinckhgelt	1 f 30 x</p>
+            <p>
+               <pb n="84r"/>
+            </p>
+            <p>Ingleichen der<rs type="person">Diern Ursula Prassin</rs> wegen mit den Herrn Ableiber extra gehabter Bemiehung	3 f 0 x</p>
+            <p>Der<rs type="person">andern Diern Gerdrauth Wiellandtin</rs> auch	54 x</p>
+            <p>Und der<rs type="person">Diern bei der Jungfrau von Egererin</rs> ebenfahls obiger Ursachen	4 f 0 x</p>
+            <p>Und nebst disen auch das Crucifixl in natura,</p>
+            <p>Der geistlichn Commission Statt betrifft	14 f 48 x</p>
+            <p>Ittem der obrigkheitlichn Gerichts Statt samt den Schreib und Siglgeltern	25 f 0 x</p>
+            <p>Und die durch denen<rs type="person">zwo Gewalthabern</rs> in den alhier sein aufgewenthn Würths Zehrung	13 f 51 x</p>
+            <p>Summä der Abzüg und Schulden hinaus,</p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	214 f 50 x</p>
+            <p>Yber dere Abnembung, verbleibt noch<rs type="person">Herr Celestin Johan Jais</rs>isches Vermigen vorstendig</p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	1230 f 51 x</p>
+            <p>
+               <pb n="84v"/>
+            </p>
+            <p>Darzue seint drei Haubtstollen verhanden, gebihrt also ainen zue driten Portion,</p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	410 f 17 x</p>
+            <p>Allermassen man auch daraufhin von Seiten der gnedigen Commission und weltlichen Obrigkheit nicht ermanglet hette, jeden Stollen die zue gekhumbene Herr brüeder- und respective veterliche Erbs Portion ordenlich ab und auszuthaillen und zu assignieren, alldieweillen aber die zwo bestelte<rs type="person">Gewalthabern Joseph Kappeller und Johan Posch</rs> vorgetragen, das wie vorgemelt, mit des Herrn Ableibers seel. zu <rs type="place">Ymbst</rs> gehabten <rs type="person">Gewalthaber Herrn Geörg Simon Holler</rs> seines Einnemben und Ausgeben halber annoch zu liquidieren und mithin das Vermigen noch nicht allerdings liquidt war, und ohne dessen zur Assignation nicht wohl geschritten werden khan, sie <rs type="person">Gewalthabern</rs> hingegen auch willens sein, das <hi rend="strikethrough">vellige</hi> Vermigen auf negst Liechtmessen abzutreiben, und unter ihre Principällen <pb n="85r"/> selbsten zu verthaillen, und mithin gehorsamblich gebethen, ein solches zuezulassen und zu verwilligen, warwider man von Seiten der gnedig geistlichen Commission sowohl, als weltlichen Obrigkheit keine Bedenckhen getragen, als wurde auch<note>
+                  <p rend="footnote text"> Über der Zeile eingefügt.</p>
+               </note> sollichemach <hi rend="strikethrough">auch</hi> das ganz und vellig hievorbeschribene <rs type="person">Herr Celestin Johan Jais</rs>ische zurugg gelassene Vermigen, an ligendt und vahrenden hievon nichts ausgenemben, dem <rs type="person">Brueder Joseph</rs>, ittem des verstorbenen <rs type="person">Brueder Johan Michael Jais</rs> seel. <rs type="person">hinterlassenen Sohn auch Joseph Jais</rs>, und der <rs type="person">Schwester Catharina Jaisin</rs> alsogleich unter ihnen selbsten miteinander verthaillen zu migen, zu wirckhlichen Aigenthumb yedoch gegen deme eingeraumbt und yberlassen.</p>
+            <p>Das dieselbn dargegen oder villmeher an dern statt, die<rs type="person">Gewalthabern</rs> schuldig, und verpunden sein sollen, alle hievor beschribene Abzüg und Schulden hinaus, nebst deren erlofenen Commission und Gerichts Uncosten, auch Würths Zehrung an Geferde abzu-<pb n="85v"/>fiehren und zu bezahlen, und zugleich auch die gnedig geistliche Commission und weltliche Obrigkheit wegen diser beschechner Vermigens Einraumbung jezt als dan und dan fir jezt ohne Nachtheill und Schaden zu halten,</p>
+            <p>welch auch allen nach beschechner Ablesung nachzukhumben, sie zwo<rs type="person">Gewalthabern Joseph Kappeller, und Johann Posch</rs>, nebst gehorsambister Danckhs Abstattung der Immission halber, unter Verpfendung ihrer Principallen Vermigen, zuegesagt, und zu Confirmation dessen, der gnedig geistlichen Commission und weltlichen Obrigkheit das Handt Anloben erstatt haben.</p>
+            <p>Testes nebst denen Commission und Gerichts Beisizern, Ihro Wohlerwirden Herr<rs type="person">Andreeas Starckh Cooperator und Joseph Steeger Schreiber</rs> beedt alhier zu <rs type="place">St. Lorenzen</rs>.</p>
+         </div>
+      </body>
+   </text>
+</TEI>
