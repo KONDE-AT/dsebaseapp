@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>1762 I 28, St. Lorenzen [Mitterdorfer Jakob Christoph (Kooperator), fol.
+                    53r-65r]</title>
+            <respStmt>
+               <resp>Transkription und Annotation changes</resp>
+               <name>
+                  <rs ref="#prokosch_michael" type="person">Michael Prokosch</rs>
+               </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Reading in the Alps</publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+                  <p>The (CC BY-SA 4.0)-License applies to this document.</p>
+                  <p>You are allowed to share (copy and redistribute the material in any medium or format) and adapt (remix, transform, and build upon the material) for any purpose, even commercially.</p>
+                  <p>You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</p>
+                  <p>ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc type="invetory">
+               <msIdentifier>
+                  <institution>Südtiroler Landesarchiv (SLA)</institution>
+                  <repository>Verfachbücher Landgericht St. Michaelsburg</repository>
+                  <idno>1762 I 28</idno>
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+                     <locus from="53r" to=""/>
+                     <note>
+                        <rs type="skos" ref="#inventar">Inventar</rs>
+                     </note>
+                  </msItem>
+               </msContents>
+               <history>
+                  <origin notBefore="1762-01-28" notAfter="1762-01-28">
+                     <rs type="place" ref="#st_lorenzen">St. Lorenzen</rs>
+                  </origin>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>
+            <listPerson xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="listperson">
+            <person xml:id="prokosch_michael">
+               <persName>
+                  <forename>Michael</forename>
+                  <surname>Proksch</surname>
+               </persName>
+               <idno type="URL">VIAF | OCRID</idno>
+            </person>
+            <person xml:id="span_michael">
+               <persName>
+                  <forename>Michael</forename>
+                  <surname>Span</surname>
+               </persName>
+               <idno type="URL">VIAF</idno>
+            </person>
+            <person xml:id="andorfer_peter">
+               <persName>
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+               </persName>
+               <idno type="URL">VIAF</idno>
+            </person>
+         </listPerson>
+               
+            
+            <listPlace xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="listplace">
+            <place xml:id="dietenheim">
+               <placeName>Dietenheim</placeName>
+               <location>
+                  <geo decls="#LatLng"/>
+               </location>
+               <idno type="URL"/>
+            </place>
+            <place xml:id="st_georgen">
+               <placeName>St. Georgen</placeName>
+               <location>
+                  <geo decls="#LatLng"/>
+               </location>
+               <idno type="URL"/>
+            </place>
+            <place xml:id="st_lorenzen">
+               <placeName>St. Lorenzen</placeName>
+               <location>
+                  <geo decls="#LatLng">24.46861 39.6141</geo>
+               </location>
+               <idno type="URL">http://sws.geonames.org/109223</idno>
+            </place>
+         </listPlace>
+               
+            
+         </p>
+      </encodingDesc>
+   </teiHeader>
+    <text>
+        <body>
+            <div>
+
+                <p>
+               <pb n="53r"/>
+            </p>
+                <p>Unseren freundlichen Gruß, und Dienst zuvor. Ehrwürdig, edl, hochgelehrter
+                    besonders lieber Freund und Herr!</p>
+                <p>Demnach des Herrn Berichts genugs untern 28ten lezten verflossenen Monats, und
+                    Jahrs Priester<rs type="person">Jacob Christoph Mitterdorfer</rs>
+                    gewesener Cooperator zu <rs type="place">St. Lorenzen</rs>
+                    zeitlichen Tods verblichen, und hierauf in Namen diesortigen Ordinariats von dem
+                    Herrn an das Ableibers hintergebenen Zeitlichkeiten die Secretur angelegt
+                    worden; Als wollen es nit nur dabey bewenden lassen, sondern auch dem Herrn
+                    anmit den behörigen Commissions Gwalt dahin auftragen, daß selber gedachten
+                    Ableibers hinterlassene Vermögenheit servatis servandis, et vocatis vocandis
+                    vollständig beschreiben, ergänzen, vertheilen, und behöriger Orten aushändigen.
+                    Da aber die allenfalls verhanden leztwillige Verordnung von denen Erbs-, oder
+                    anderen Interessenten angefochten wurde, das zu Hinlegung derley Differenz
+                    verfachende Projecten zu diesortiger Entscheidung, wie auch seiner Zeiten die
+                    Handlungs acta in originali, oder copia authentica mit seinen Berichten anhero
+                    einsenden <pb n="53v"/> solle. Hieran
+                    vollziecht der Herr unseren Willen, und Maynung, und wür verbleiben demselben
+                    anbey wohl zugethan. Geben in Consistorio zu <rs type="place">Brixen</rs> den 4. Jenner 1762.</p>
+                <p>
+               <rs type="person">Ferdinand Joseph Bisch zu Hyschopl</rs>
+               <hi rend="Fußnotenanker">
+                  <note>
+                     <p rend="footnote text">
+                                <hi rend="background(lightGray)">Ferdinand Joseph Gabriel Graf zu
+                                    Sarnthein, seit 1727 Suffragan, Weihbischof und
+                                    Konsistorial-Präsident von Brixen. Hypsopolitanus / Hypsos:
+                                    Titulardiözese in Arkadien (Griechenland).
+                                    http://www.gcatholic.org/hierarchy/data/bishops-VONS.htm#58165</hi>
+                     </p>
+                  </note>
+               </hi>
+            </p>
+                <p>Praesident m.p.</p>
+                <p>
+               <rs type="person">Georg Tangl</rs>
+            </p>
+                <p>Secret. Eulicus m.p.</p>
+                <p>
+               <pb n="54v"/>
+            </p>
+                <p>4 Jener 1762</p>
+                <p>
+               <hi rend="background(lightGray)" xml:space="preserve">[Rubrum:] </hi>Commissionsgwalt
+                    zur Abhandlung des verstorben Cooperator zu <rs type="place">St.
+                        Lorenzen</rs> Prs. <rs type="person">Jacob Christoph
+                        Mitterdorfer</rs>ische Verlassenschafft seel. Den 14ten detto.</p>
+                <p>
+               <hi rend="background(lightGray)">[Briefadresse:]</hi> Dem ehrwürdig, edlen,
+                    hochgelehrten <rs type="person">Joseph Mathias Ingram von Liebenrain,
+                        und Fragburg</rs> SS. Theol. Dri. fürstlich <rs type="place">Brixnerisch</rs> wirklichen Consistorial Rath, auch Dechand, und Pfarrern
+                    zu <rs type="place">Brunegg</rs>, unseren besonders lieben Freund,
+                    und Herrn.</p>
+                <p>
+               <rs type="place">Brunegg</rs>
+            </p>
+                <p>
+               <pb n="55r"/>
+            </p>
+                <p>
+               <hi rend="background(lightGray)">[Rubrum:]</hi> Abhandlung</p>
+                <p>Herr<rs type="person">Jacob Christoph Mitterdorfer</rs> Cooperator
+                    seel.</p>
+                <p>
+               <hi rend="background(lightGray)">[Aktenvermerk:]</hi> Exped.</p>
+                <p>Actum in<rs type="place">Pfarr Widums zu Sanct Lorenzen</rs>, den
+                    28isten Jenner anno 1762.</p>
+                <p>Vor Ihro Hochwirden und Gnaden dem hochwirdig hochedl gebohrn und hochgelehrten
+                    Herrn Herrn<rs type="person">Joseph Mathias Igramb von Liebenrain
+                        und Fragburg</rs>, S.S. Theol. Dri., Tyrollischen Herrn und Landtman
+                    hochfirstlich Brixnerisch wirckhlichen Consistorial Rath, auch Dechandt und
+                    Pfarrherrn zu <rs type="place">Brunegg</rs>, als vermig vorgewisen
+                    und alda ad acto registrierten gnedigen Commissions Befelch, gnedig verordneten
+                    Commissorio</p>
+                <p>Und dem wohledl gebohrn gestreng und hochgelehrten Herrn<rs type="person">Joseph Ignati Englmohr, von Aufkhirchen zu
+                        Mohregg</rs>, beeder Rechten lit. ooe. Regimentsadvocaten, auch Pfleger und
+                    Landtrichter, der Herrschafft <rs type="place">Sanct
+                        Michaelspurg</rs>.</p>
+                <p>Zugegen des wohledlen Herrn<rs type="person">Franz Michael
+                        Marchner</rs> geistlichen Commission und Ambt Gerichtschreibern zu <rs type="place">Brunegg</rs>.</p>
+                <p>Demnach aus Göttlicher zuelass so der Verordnung, an dem kurz verwichenen<pb n="55v"/> Herbst alhie eingerissenen
+                    Hizigen Tisl unter andern auch der hoch erwirdig edl und hochgelehrte Herr <rs type="person">Jacob Christoph Mitterdorffer</rs> damahlig eltiste
+                    Cooperator alhie zu <rs type="place">Sanct Lorenzen</rs>, in
+                    Ausyebung der Seelsorg, ergriffen wurde, und nach ausgestandener 9tegiger
+                    Ohnbessligkheit, das Zeitliche mit dem ebigen und sonders Zweifl besseren Leben
+                    verwexlet, und ebenfalls daran zu allmeniglichen Betauren verstorben, welch
+                    diser und all ybrig in Gott verschidenen Seelen der Allerhegste mit Gnaden
+                    pflögen und am Tag des Jüngst und Letsten Gerichts ein frelichn Urstent und
+                    erwintschten Eingang in die immerwerende Freidt und Seeligkheit aller mildist
+                    vorleifig von Seiten der gnedig geistlichen Comission und weltlichen Obrigkeit
+                    angelegter Secretur und zu Hilf und Trost der abgeleibten Seel abgehaltenen
+                    gewohnlichen Heiligen Gottsdienst, vor hochgemelt gnedigen Herrn Herrn <rs type="person">Comissorio</rs> und loblich weltlicher Obrigkeit in
+                    Gehorsamb beikhumben, des Herrn Ableibers seel. eheleibliche <rs type="person">Vater der wohlfirnemb Mathes Mitterdorffer</rs>
+                    Gerichtsausschuss auch Würth und Gastgeb zu <rs type="place">Tilliach</rs>, dan dessen <pb n="56r"/>
+                    eheleiblicher <rs type="person">Brueder Lucäs</rs> und Jungfrau <rs type="person">Schwester Hellena Mitterdorfferin</rs>, woraus der
+                    Brueder fir sich selbs, die Schwester <hi rend="strikethrough">Maria M</hi> aber
+                    mit Rath des Vatern ernents <rs type="person">Mathesen Mit</rs>
+               <hi rend="strikethrough">terhof</hi>
+               <rs type="person">terdorffer</rs>s gehandlet, und er Vater auch die noch ibrigen <rs type="person">vier abwesigen Geschwistriget, Mathes, Agnes,
+                        Teresia, und Maria</rs> vertretten, mit demiettig gehorsamber Bitt, des
+                    herrn briederlich ihnen nattirlichen Rechtens erblichen zue und angefahlene
+                    Vermigen in gebreichige Beschreibung Taxierung und Ergenzung zu bringen, und
+                    sovorth dasselbe unter sie zu verthaillen auch an und auszuweisen, wan man nur
+                    von Seiten der gnedig geistlichen Commission und weltlichen Obrigkeit disen
+                    ihren billichmessigen Begehrn zu deferieren keine bedenckhen getragen, als wurde
+                    demnach zu solchem Ende auf anheut dato Anstalt ernent, und bei nit erfundenen
+                    Testament yber vorleifige Eröffnung der Secretur ainsmahl vorgenomben,
+                    nachvolgende</p>
+                <p>Inventur</p>
+                <p>Und zwar erstlichen ain Komoth Casten mit drei Tatten und sovil Schlesser pr 3 f
+                    0 x</p>
+                <p>
+               <pb n="56v"/> Darinen</p>
+                <p>Ain schwarz hollendisch Claidt Rockh und Camisol per 18 f 0 x</p>
+                <p>Ain purpur plauer gewenter Rockh, mit schwarzen Crepinlen und dergleichen Päntlen
+                    eingefast per 7 f 0 x</p>
+                <p>Ain schwarz sambetens Camisol die hintere Thail aber mit Tuech 5 f 0 x</p>
+                <p>Ain neu kumber zeigener schwarzer Rockh und Camisol mit plauen Unterfuetter per
+                    16 f 0 x</p>
+                <p>Mehr ain alt schwarzer Rockh und Camisol 6 f 0 x</p>
+                <p>Ittem 2 schwarz abgetragene schlechte Reckh per 3 f 0 x</p>
+                <p>Ain grau tirchener deto mit schwarzen Crepinlen pr 1 f 30 x</p>
+                <p>Ain plauer Pudl Rockh mit schwarzen Crepinen per 4 f 0 x</p>
+                <p>Ain praun hauszeigener<unclear>Cossegeng</unclear> per 1 f 30
+                    x</p>
+                <p>Auch zwo deto vordere Thail pr 30 x</p>
+                <p>Ain grau tirchener Rockholohr 3 f 0 x</p>
+                <p>Latus 65 f 30 x</p>
+                <p>
+               <pb n="57r"/>
+            </p>
+                <p>Ain cämelotener schlechter Mantl per 30 x</p>
+                <p>Ain callemoggener Schloff Rockh mit flanellen Unterfueter per 4 f 0 x</p>
+                <p>Ain schwarz cämelottenes Camisol ohne Erbl per 2 f 0 x</p>
+                <p>Drei Par yrchene Hosen pr 4 f 30 x</p>
+                <p>Zwai schwarze Hieth per 1 f 20 x</p>
+                <p>Zwai sambetene Heiblen per 40 x</p>
+                <p>Mehr ain neu schwarz sambetens Käppl und ain anders deto pr 25 x</p>
+                <p>Zwai schwarze Krägen pr 30 x</p>
+                <p>Drei Par schlecht gewegglete seidene Strimpf per 20 x</p>
+                <p>5 Par andere schwarze deto pr 1 f 0 x</p>
+                <p>5 Par weise Unter Strimpf pr 45 x</p>
+                <p>Ain schlechter sambetener Schliefer und ain Par deto Stuzen pr 20 x</p>
+                <p>Zwai Par ledene Handt Schuech pr 30 x</p>
+                <p>Zwai Par weise deto 12 x</p>
+                <p>Latus 17 f 2 x</p>
+                <p>
+               <pb n="57v"/>
+            </p>
+                <p>21 schwarz und weise Krägelen per 24 x</p>
+                <p>12 härbene besser und schlechtere Hemater zu 30 x thuet 6 f 0 x</p>
+                <p>Aber zwo deto pr 1 f 0 x</p>
+                <p>4 Schnupftiechlen pr 30 x</p>
+                <p>Ain Par neu und ain Par alte Schuech pr 1 f 0 x</p>
+                <p>Ain Par Tschischmä 36 x</p>
+                <p>Ain Par Puntoffl 20 x</p>
+                <p>Ain weise Hauben mit Spiz und Tofetpenter per 20 x</p>
+                <p>Zwai andere deto 6 x</p>
+                <p>Zechen Ellen härbens Tuech zu 18 x thuet 3 f 0 x</p>
+                <p>Ain gresser und ain cleners neues auf Tagmaschg gewirckhtes Tischtuech per 1 f 30
+                    x</p>
+                <p>Aber zwei schlechtere deto per 40 x</p>
+                <p>Ain Tisch Manipele zwai Parbier Tischer und 2 weise Firheng 30 x</p>
+                <p>Mehr ain grien und ain cartaner Firhang sambt den Eisen Stängl 1 f 30 x</p>
+                <p>Ain neu schener Preslaurer Tepich 3 f 0 x</p>
+                <p>Latus 20 f 26 x</p>
+                <p>
+               <pb n="58r"/>
+            </p>
+                <p>Ittem ain neu schener Welsperger Tischtepich pr 48 x</p>
+                <p>Ain schlechterer deto 24 x</p>
+                <p>Ain kupferener Wasser Sprizer per 2 f 0 x</p>
+                <p>Zwai kupferene Teslen per 1 f 0 x</p>
+                <p>Ain kupferens Ober und Unter Giespeckhet per 1 f 30 x</p>
+                <p>Zwai kupferene Cove Kandl pr 1 f 30 x</p>
+                <p>Ain schenne Stockh Uhr sambt den Cästl 20 f 0 x</p>
+                <p>Ain zinene Parbier Schissl per 30 x</p>
+                <p>Zwei zinene Leichter pr 30 x</p>
+                <p>Zwei zinene Täller per 1 f 0 x</p>
+                <p>Ain gewandt Pirsten per 15 x</p>
+                <p>Drei Par zinggene Mösser und Gabl per 36 x</p>
+                <p>Ain Schrett Pix mit ain Zellin Schloss pr 2 f 0 x</p>
+                <p>Ain Scheiben Pix pr 6 f 0 x</p>
+                <p>Ain Pustollen pr 1 f 0 x</p>
+                <p>Latus 39 f 3 x</p>
+                <p>
+               <pb n="58v"/>
+            </p>
+                <p>Ain Spänisch Rohr mit ain silberen Refl per 1 f 0 x</p>
+                <p>Vier gresser und clenner Glesser per 12 x</p>
+                <p>Drei Lain Sössl pr 3 f 0 x</p>
+                <p>Ain Fiolin Geigen pr 1 f 0 x</p>
+                <p>Ain silberfarb angestrichnes Buldt mit Schloss und Pandt per 45 x</p>
+                <p>Ain Sanct Aloisi Tafl, sambt der Ramb pr 2 f 0 x</p>
+                <p>Ain Tafl Die Genembaus<hi rend="background(lightGray)">[Emmausgang]</hi>
+                    vorstellendt 30 x</p>
+                <p>Ain spiegl glesserene Hieronimus und Antoni Tafl per 2 f 0 x</p>
+                <p>Vier clenere dergleichen deto per 48 x</p>
+                <p>Vier Landtschöfftlen per 1 f 0 x</p>
+                <p>6 klaine Täfelen mit Glesser per 1 f 0 x</p>
+                <p>Und die Vahrnüssen so Herr Ableiber seel. in<rs type="place">Jempach</rs> zum Aufbehalt hat, betröffen laut der von Herren Curat daselbs
+                        <rs type="person">Sebastian Waiz</rs> abgebener und denen Erben
+                    behendigter Specification 15 f 11 x</p>
+                <p>Latus 28 f 36 x</p>
+                <p>
+               <pb n="59r"/>
+            </p>
+                <p>
+               <rs type="book">Piecher in Folio</rs>
+            </p>
+                <p>P. Hunoldt 6 thomi in franzesischen Pundt pr 8 f 0 x</p>
+                <p>Marianische Exempl per 1 f 20 x</p>
+                <p>P. Hëger 4 thom seint aber dem<rs type="person">Herrn Cooperatore
+                        Steeger</rs> fir seine gehabte extra Miehe gelassen pr 2 f 0 x</p>
+                <p>P. Hobat 2 thomi per 2 f 0 x</p>
+                <p>Boetius 3 thomi so aber dem andern<rs type="person">Herrn Cooperatore
+                        Feichter</rs> auch fir seiner Miehe gelassen worden,</p>
+                <p>Bibliae Sacrae germana et latina pr 2 f 30 x</p>
+                <p>Aber Biblia Sacra per 1 f 24 x</p>
+                <p>Missalle Romanum pr 40 x</p>
+                <p>Kheller Hans: 3 thomi per 2 f 20 x</p>
+                <p>P.<unclear>Lajmon</unclear>
+               <note>
+                  <p rend="footnote text">
+                            https://www.zvab.com/servlet/SearchResults?kn=theologia+moralis+laymann&amp;sts=t</p>
+               </note>
+                    pr 1 f 0 x</p>
+                <p>Brev. Rom. in folio 20 x</p>
+                <p>Ius Canonicus P. Pichler 1 thomi pr 3 f 0 x</p>
+                <p>Latus 24 f 34 x</p>
+                <p>
+               <pb n="59v"/>
+            </p>
+                <p>P. Roberti 3 thom per 2 f 0 x</p>
+                <p>P. Reifenstuel Theol. Moralis<note>
+                  <p rend="footnote text">
+                            <hi rend="background(lightGray)">https://www.zvab.com/servlet/BookDetailsPL?bi=13974500154&amp;searchurl=hl%3Don%26tn%3Dtheologia%2Bmoralis%26sortby%3D20%26an%3Dreiffenstuel</hi>
+                  </p>
+               </note>
+                    per 51 x</p>
+                <p>Lacroix 2 thom pr 1 f 24 x</p>
+                <p>P. Hechel Predigen per 1 f 0 x</p>
+                <p>P. Reichardt Lob und Leich Predigen 24 x</p>
+                <p>Hermonie Comentorius per 24 x</p>
+                <p>
+               <rs type="book">Quartisten</rs>
+            </p>
+                <p>Vieria 3 thom pr 1 f 30 x</p>
+                <p>P. Prigl centi folium 2 thom pr 1 f 0 x</p>
+                <p>P. Schmidt Cathecismus 2 thom pr 1 f 0 x</p>
+                <p>Strobl Ovum Paschale<hi rend="Fußnotenanker">
+                  <note>
+                     <p rend="Fußnote">
+                                <ref target="http://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10366091_00024.html">
+                           <hi rend="background(lightGray)">http://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10366091_00024.html</hi>
+                        </ref>
+                        <hi rend="background(lightGray)" xml:space="preserve"> und </hi>https://books.google.at/books?id=_MFPAAAAcAAJ&amp;pg=PA96&amp;lpg=PA96&amp;dq=wein+pippen&amp;source=bl&amp;ots=QYnrOy0_kA&amp;sig=AfX2oFhwPa_gyNRDreCXVaohJ3E&amp;hl=de&amp;sa=X&amp;ved=0ahUKEwjz8IXuu7PWAhWE7hoKHWsPA3wQ6AEITjAO#v=onepage&amp;q=wein%20pippen&amp;f=false</p>
+                  </note>
+               </hi>
+                    per 40 x</p>
+                <p>P. Hofer Promptuarium Philosophicum<hi rend="Fußnotenanker">
+                  <note>
+                     <p rend="Fußnote">
+                        <hi rend="background(lightGray)">
+                                    https://www.digitale-sammlungen.de/index.html?c=autoren_werke&amp;ab=Hofer,%20Johann&amp;l=de</hi>
+                     </p>
+                  </note>
+               </hi>
+                    pr 24 x</p>
+                <p>Schaz Camer des H. Rossen Cranz per 24 x</p>
+                <p>P. De Tejune Predigen pr 30 x</p>
+                <p>P. Buceleni Festivale 24 x</p>
+                <p>Latus 11 f 55 x</p>
+                <p>
+               <pb n="60r"/>
+            </p>
+                <p>P. Leselvo Agnus Apostolicus<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://books.google.at/books?id=-7QkWaib3CgC&amp;pg=PA89&amp;lpg=PA89&amp;dq=agnus+apostolicus&amp;source=bl&amp;ots=lipJ9k2_Hp&amp;sig=oDZVdUAXiIT5d3mHGuu9UtVmNwc&amp;hl=de&amp;sa=X&amp;ved=0ahUKEwiso7TAr6TWAhXJmLQKHUScD-UQ6AEIMDAD#v=onepage&amp;q=agnus%20apostolicus&amp;f=false</hi>
+                  </p>
+               </note>
+                    per 24 x</p>
+                <p>Ches Comentarius ad Institut per 36 x</p>
+                <p>P. Felsenegger Cotachismus Predigen per 48 x</p>
+                <p>P. Geminianus Geist(licher) Weegweiser pr 36 x</p>
+                <p>Speculum Exemplorum per 24 x</p>
+                <p>P. Venedien Predigen 2 thom per 48 x</p>
+                <p>Cornu copia Kirschen<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://www.zvab.com/buch-suchen/autor/kirsch-adam-friedrich/</hi>
+                  </p>
+               </note>
+                    45 x</p>
+                <p>P. Perkhmayr Unterrichtung per 17 x</p>
+                <p>Sacerdot. Prix. pr 30 x</p>
+                <p>P. Drexely 2 thom 2 f 0 x</p>
+                <p>P. Auriema Märiänische Schaupinen 30 x</p>
+                <p>P. Hueber Märianischer Lustgartten 36 x</p>
+                <p>Penziger Coreiores per 30 x</p>
+                <p>P. Amandi Dominicale 2 thom pr 1 f 0 x</p>
+                <p>Latus 9 f 44 x</p>
+                <p>
+               <pb n="60v"/>
+            </p>
+                <p>P. Engl Ius Canonicum pr 30 x</p>
+                <p>P. Viva Theologia 2 thom 1 f 30 x</p>
+                <p>Karchel 2 thom 45 x</p>
+                <p>Marianisches Jubl Jahr per 20 x</p>
+                <p>Thraur Predigen 21 x</p>
+                <p>
+               <rs type="book">8tavisten</rs>
+            </p>
+                <p>P. Colini 7 thom pr 3 f 0 x</p>
+                <p>Geistliches Kranckhen Puech per 24 x</p>
+                <p>P. Pichler Polemico per 24 x</p>
+                <p>Vernunfft Truz 2 thom 40 x</p>
+                <p>Manuale Parrihiale Engl 2 thom 24 x</p>
+                <p>P. Crasset 3 thom 40 x</p>
+                <p>P. Elbls 9 thom pr 4 f 30 x</p>
+                <p>Modicum et hoc bonum pr 16 x</p>
+                <p>2 alte Praevier 36 x</p>
+                <p>Die ybrigen klaine Piechln seint in keiner Beschriebung gebracht worden,</p>
+                <p>Latus 14 f 20 x</p>
+                <p>
+               <pb n=""/>
+            </p>
+                <p>Und nach Sag vor allegierter
+                    Specification von<rs type="person">Herrn Curat</rs> in <rs type="place">Jempach</rs> betröffen die daselbs habende
+                    Piecher 15 f 0 x</p>
+                <p>Thuet vorige Inventurs Beschreibung sambt denen<rs type="book">Piechern</rs> zusamben 249 f 0 x</p>
+                <p>Silber Gschmeidt</p>
+                <p>Ain Jerusalem Creuz mit Perl Mueter eingelegt, nebst einen daran hangenden
+                    silberen Unser Lieben Herrn, welches die Erben aber den jenigen widerumben
+                    anrugg zu verehrn willens sein, woher es gekhumben ist, und mithin ohne Tax
+                    gelassen worden,</p>
+                <p>Ain silberene Sackh Uhr per 16 f 0 x</p>
+                <p>Ain silberene Tubaggier per 4 f 10 x</p>
+                <p>Ain deto ganz schlechte so aber den Vatern gelassen worden,</p>
+                <p>Ain Mösser bsteckhet mit silberen Hefftern und ain dergleichen Lefl pr 6 f 0
+                    x</p>
+                <p>Ain Par silberene Schuech Schnallen mit dergleichen Dorn pr 1 f 30 x</p>
+                <p>
+               <pb n="61v"/>
+            </p>
+                <p>Auch ain Par deto sambt der gleichen Hosen Schnällelen per 2 f 30 x</p>
+                <p>Zwai Par silberene Hemath Knöpflen mit Schreckhstain besezt per 1 f 0 x</p>
+                <p>Ain silberens Cavee Lefele per 20 x</p>
+                <p>und etwas weniges Pruchsilber pr 30 x</p>
+                <p>Macht das Silber Geschmeidt</p>
+                <p>
+               <hi rend="background(lightGray)">[Summa]</hi> 32 f 0 x</p>
+                <p>Paarschafft</p>
+                <p>Ain Topleter Dugaten pr 8 f 15 x</p>
+                <p>5 Cramizer ain Khayserlicher und ain Hollender Dugaten pr 29 f 17 x</p>
+                <p>Ain Cechini pr 4 f 12 x</p>
+                <p>Ain Lidenburgische Silberner Lidalia pr 4 f 0 x</p>
+                <p>5 Species Thaller 10 f 0 x</p>
+                <p>Und in anderer unterschidlicher Silber Minz sambt was von der Cooperatur darzue
+                    kumben 100 f 50 x</p>
+                <p>
+               <pb n="62r"/>
+            </p>
+                <p>Betrifft die Paarschafft</p>
+                <p>
+               <hi rend="background(lightGray)">[Summa]</hi> 162 f 34 x</p>
+                <p>Schulden herein</p>
+                <p>
+               <rs type="person">Johanes Planer</rs> Satler alhier solle an
+                    empfangenen Sambl Roggen von vier Stär 3 f 12 x</p>
+                <p>Ittem<rs type="person">Andree Stieger</rs> Schuechmacher auch willen
+                    empfangenen Roggen, iber seiner arbeith noch 2 f 0 x</p>
+                <p>Und an noch weitteren Sambl Roggen seint verhanden 11 Stär zu 44 x thuet 8 f 4
+                    x</p>
+                <p>Betragen die Schildelen herein</p>
+                <p>
+               <hi rend="background(lightGray)">[Summa]</hi> 13 f 16 x</p>
+                <p>Summa des ganz und velligen Vermigens</p>
+                <p>
+               <hi rend="background(lightGray)">[Summa]</hi> 456 f 50 x</p>
+                <p>Dargegen seint verhanden volgende</p>
+                <p>Schulden hinaus</p>
+                <p>No 1: Der Funeral Conto betragt laut Schein 12 f 27 x</p>
+                <p>No 2: Den geistlichen<rs type="person">Herrn Manucredo</rs> wegen <pb n="62v"/> vor Herrn Ableiber seel. alhier
+                    und zu <rs type="place">Reischach</rs> gelesene Heilige Mässen 1 f
+                    6 x</p>
+                <p>No 3: Zugleichen den<rs type="person">Herrn Supernumerarius Blasy
+                        Schiferle</rs> sambt 4 stipendiae fir <rs type="person">Herrn
+                        Caplan</rs> zu <rs type="place">Sonnburg</rs> 5 f 36 x</p>
+                <p>Sodan den P. Capucinern zu<rs type="place">Brunegg</rs> vor
+                    gelesene Heilige Mässen 2 f 48 x</p>
+                <p>Ittem bei der Begrebnus denen geistlichen Herrn willen gelesenen Heilige Mässen 3
+                    f 0 x</p>
+                <p>No 4: Den<rs type="person">Joseph Pergmaister</rs> Schneider vor
+                    gethaner Auswarttung sambt, was dabei beriert laut Schein 7 f 38 x</p>
+                <p>No 5: Zugleichen den anderen Wartter<rs type="person">Andree
+                        Walder</rs> 2 f 0 x</p>
+                <p>No 6: Den<rs type="person">Herrn Doctor Perger</rs> Sag Schein vor
+                    gemachte Visiten und hergebene Medicin 8 f 45 x</p>
+                <p>Den<rs type="person">Andree Nagler</rs> Parbierer 3 f 0 x</p>
+                <p>No 7: Herrn<rs type="person">Johan Harberstro</rs> Handlsman alhier
+                    vor ausgenombenen Laden Wahrn 7 f 20 x</p>
+                <p>
+               <pb n="63r"/>
+            </p>
+                <p>Der<rs type="person">Magdalena Prunerin</rs> Cramerin 47 x</p>
+                <p>
+               <rs type="person">Jacoben Helweger</rs> 1 f 50 x</p>
+                <p>No 8: Den<rs type="person">Antoni Salcher</rs> Schuelmaister zu <rs type="place">Brunegg</rs> 1 f 54 x</p>
+                <p>Der loblichen<rs type="place">Pfarr Kirchen</rs> alhier willen in
+                    Grab gegebenen Paramentae und in Sarch gethaner Begrebnus 22 f 0 x</p>
+                <p>Der<rs type="person">Jungfrau Heiserin</rs> in <rs type="place">Pfarr Widums</rs> auch Diern und Poschi noch
+                    ausstendiges Neu Jahr Regal 2 f 0 x</p>
+                <p>Den<rs type="person">Päntl Maurer</rs> fir Eröffnung und Zuemachung
+                    des Sarchs 1 f 30 x</p>
+                <p>Den gewesten Schuellern willen vor ihnen eingenambenen Verdenstnisen 5 f 4 x</p>
+                <p>Den<rs type="person">Michael Stieger</rs> Tischler fir gemachten
+                    Todten Truch und Grab Kreuz 2 f 12 x</p>
+                <p>Ihro gstreng dem<rs type="person">Herrn Pfleger alhier</rs> fir ain
+                    halb Stär Rendl Gersten 3 Mas Wein und ain Mas Essich 1 f 39 x</p>
+                <p>
+               <pb n="63v"/>
+            </p>
+                <p>In Bedenckhung Herr Ableiber seel. noch ain und andere Messen zu lesen ausstendig
+                    sein derfften, werden in solcher Absicht ausgesteckht 12 f 0 x</p>
+                <p>Den<rs type="person">Herrn Cooperatore</rs> zu <rs type="place">Brunegg</rs> willen gelesenen Heilige Mässen 3 f
+                    0 x</p>
+                <p>Den<rs type="person">Pfarr Kirch Probst alhier Hansen Oberhamber</rs>
+                    wegen an seiner statt von der Jungfrauen Verpindtnus eingenambenen 48 x</p>
+                <p>Den<rs type="person">Andree Leitner</rs>
+                    <hi rend="background(cyan)">Wirth an der Sonen</hi> alhier 1 f 45 x</p>
+                <p>Der<rs type="person">Christina Eypergerin</rs> in <rs type="place">Jempach</rs> Capitäl 25 f 0 x</p>
+                <p>Einiche Interesse hievon selbe nit verlangt,</p>
+                <p>Der<rs type="person">Appollonia Nottburg Toschin sogenante Schuester
+                        Purgl</rs> zugleichen Capitäl 50 f 0 x</p>
+                <p>Wieviel aber Interesse hievon ausstendig, ist nit bewust, und mithin in bianco
+                    und von ausgesteckhten Geldt die Ab<hi rend="strikethrough">fiehren</hi>fiehrung
+                    zu thuen gelassen worden,</p>
+                <p>Und yber gegenwertiger Vermigens Abhandlung<pb n=""/> wirdt auf Commission- Gerichts- Würths- Schreiberei und Siglgelts
+                    Uncösten, auch ohnbewusten Schildelen hinaus gegen Raittung halten ausgesteckht
+                    80f 53 x</p>
+                <p>Summä der Schulden hinaus</p>
+                <p>
+               <hi rend="background(lightGray)">[Summa]</hi> 266 f 2 x</p>
+                <p>Hieryber verbleibt noch briederlich<rs type="person">Herr Jacob
+                        Christoph Mitterdorffer</rs>isches Vermigen vorstendig,</p>
+                <p>
+               <hi rend="background(lightGray)">[Summa]</hi> 190 f 48 x</p>
+                <p>Darzue seint sechs Geschwistriget verhanden, gebihrt also ainen zur sechster
+                    Portion</p>
+                <p>
+               <hi rend="background(lightGray)">[Summa]</hi> 31 f 48 x</p>
+                <p>Welich dies 31 f 48 x ain jedes Geschwistrigeth<rs type="person">Lucas, Mathes, Hellena, Agnes, Theresia und Maria</rs> aus voriger Inventur
+                    und ybriger Verlassenschafft hinmit assigniertermassen zu empfangen, dieselbe
+                    dargegen schuldig und verpunden sein sollen, all hievorbeschribene Abzüg und
+                    Schulden hinaus, sambt denen allenthalbigen uncösten zu ibernemben, und solche
+                    an seiner <pb n="64v"/> Geherde abzufiehren
+                    und zu bezahlen; Umb damit aber die gnedig geistliche Commission und weltliche
+                    Obrigkeit umb sothaner Ybernembung sowohl- als umb Willen der zugleich
+                    anverlangter Extrodierung des Vermigens nit etwa angefochten, sondern in
+                    Sicherheit gesezt werde, und verbleiben mege, sollen sie <rs type="person">Geschwistriget</rs> nebst dero eheleiblichen <rs type="person">Vater</rs>, und zwar all insgesambt- und indes zu
+                    Sonderheit unter Verpfendung ihres Vermigens, da und zum Fall wider Verhofen,
+                    was wüdrigens iber kurz oder lang heraus khumben solt, vor dissortigen foro ohne
+                    mindist machende Exception, Redt und Antworth und allenfahlige Satisfaction zu
+                    geben schuldig, denenselben dargegen ebenfahls die noch in <rs type="place">Jempach</rs> ausligen sollende 100 f und
+                    respective annoch weitteres Vermigen unter sich selbst verthaillen zu khenen
+                    yberlassen sein.</p>
+                <p>Allermassen nach beschechner Ablesung, auch<hi rend="strikethrough">hiemit wegen
+                        spruchermassen</hi> ein solches <pb n=""/> zu thuen und respective nachzukhumben, der gnedig geistlichen
+                    Commission und loblich weltlichen Obrigkeit, mehr widerholter <rs type="person">Vater Mathes Mitterdorffer</rs>, dan der <rs type="person">Sohn und Brueder Lucäs</rs>, und die <rs type="person">Tochter Hellena Mitterdorfferin</rs> und zwar dies
+                    mit rath und neben dern <rs type="person">Vatern</rs>, und mehr er
+                    <rs type="person">Vater </rs>in Namen und
+                    anstatt der
+                        <rs type="person">ybrigen 4 Khinder und </rs>
+               <hi rend="strikethrough background(green)">gestri</hi>
+                    <rs type="person">geschwistrigeth</rs>
+                    <hi rend="strikethrough">unter Verpfendung dero Vermigenheiten</hi> in Gehorsamb
+                    und Demueth das Handt Anloben und zu Ausfertigung aines solchen Instruments, die
+                    Sigl Pith erstatt haben.</p>
+                <p>Testes<rs type="person">Johan Kherschpaumber
+                        Landtgerichtschreiber</rs>, und <rs type="person">Joseph Steeger
+                        Schreiber</rs> etc. beedt alhier zu <rs type="place">Sanct
+                        Lorenzen</rs>.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

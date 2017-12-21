@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>1766 VIII 11, Dietenheim [Pichler Joseph (Kaplan), fol. 245r-250r]</title>
+            <respStmt>
+               <resp>Transkription und Annotation</resp>
+               <name>
+                  <rs type="person" ref="#prokosch_michael">Michael Prokosch</rs>
+               </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Reading in the Alps</publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+                  <p>The (CC BY-SA 4.0)-License applies to this document.</p>
+                  <p>You are allowed to share (copy and redistribute the material in any medium or format) and adapt (remix, transform, and build upon the material) for any purpose, even commercially.</p>
+                  <p>You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</p>
+                  <p>ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc type="invetory">
+               <msIdentifier>
+                  <institution>Südtiroler Landesarchiv (SLA)</institution>
+                  <repository>Verfachbücher Landgericht St. Michaelsburg</repository>
+                  <idno>1762 I 28</idno>
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+                     <locus from="245r" to="250r"/>
+                     <note>
+                        <rs type="skos" ref="#inventar">Inventar</rs>
+                     </note>
+                  </msItem>
+               </msContents>
+               <history>
+                  <origin notBefore="1762-01-28" notAfter="1762-01-28">
+                     <rs type="place" ref="#st_lorenzen">St. Lorenzen</rs>
+                  </origin>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>
+            <listPerson xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="listperson">
+            <person xml:id="prokosch_michael">
+               <persName>
+                  <forename>Michael</forename>
+                  <surname>Proksch</surname>
+               </persName>
+               <idno type="URL">VIAF | OCRID</idno>
+            </person>
+            <person xml:id="span_michael">
+               <persName>
+                  <forename>Michael</forename>
+                  <surname>Span</surname>
+               </persName>
+               <idno type="URL">VIAF</idno>
+            </person>
+            <person xml:id="andorfer_peter">
+               <persName>
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+               </persName>
+               <idno type="URL">VIAF</idno>
+            </person>
+         </listPerson>
+               
+            
+            <listPlace xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="listplace">
+            <place xml:id="dietenheim">
+               <placeName>Dietenheim</placeName>
+               <location>
+                  <geo decls="#LatLng"/>
+               </location>
+               <idno type="URL"/>
+            </place>
+            <place xml:id="st_georgen">
+               <placeName>St. Georgen</placeName>
+               <location>
+                  <geo decls="#LatLng"/>
+               </location>
+               <idno type="URL"/>
+            </place>
+            <place xml:id="st_lorenzen">
+               <placeName>St. Lorenzen</placeName>
+               <location>
+                  <geo decls="#LatLng">24.46861 39.6141</geo>
+               </location>
+               <idno type="URL">http://sws.geonames.org/109223</idno>
+            </place>
+         </listPlace>
+               
+            
+         </p>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <p>
+               <pb n="245r"/>
+            </p>
+            <p>
+               <hi rend="background(lightGray)">[Rubrum:]</hi> Vermigens-Ergenzung und Einräummung</p>
+            <p>Wylande<rs type="person">Ihro Hochehrwirden Herr Josephen Pichlers</rs> seel.</p>
+            <p>
+               <hi rend="background(lightGray)">[Aktenvermerk:]</hi> Exped. 1 <hi rend="background(lightGray)">[mal]</hi>
+            </p>
+            <p>Actum<rs type="place">Dietenheim</rs> den 11ten Augusti, änno 1766.</p>
+            <p>Vor Ihro Hochwürden und Gnaden, dem hochedlgebohrn und hochgelehrten Herrn Herren<rs type="person">Joseph Mathias Ingram zu Liebenrain und Fragburg</rs>, Tyrolischen Herrn und Landtmann, S.S. Theol. Dri. hochfürstlich Brixnerisch<hi rend="strikethrough">en</hi> würckhlichen Consistorial Rath, auch Dechand und Pfarrherrn zu <rs type="place">Brunegg</rs>, als von hochgeistlicher Obrigkheit verordneten Commissario, dann dem wohl edlgebohrnen gestrengen und hochgelehrten Herrn <rs type="person">Joseph Ignäti Englmohr von Aufkhirchen zu Mohregg</rs>, beeden rechten Lit. ooe. Regimendts Advocaten, auch Pfleger und Landtrichtern der Herrschaft <rs type="place">Sanct Michaelspurg</rs>.</p>
+            <p>Zugegen des wohl edlen Herrn<rs type="person">Franz Michaelen Marchner</rs> Amtgericht- und Commission Schreiber zu <rs type="place">Brunegg</rs>, und des Herrn <hi rend="strikethrough">La</hi> Johann Kerschpaummer Landtgerichtschreiber zu <rs type="place">Sanct Michaelspurg</rs>.</p>
+            <p>Demnach es dem Allerhöchsten abermahlen gefahlen, seinen Göttlichen Willen zu vollziechen, und weylande dem hochehrwürdigen edlen und hochgelehrten Herrn<rs type="person">Joseph Pichler</rs> hochfreyherrlich <rs type="person">von Sternpach</rs>ischen Caplanum alhie in <rs type="place">Dietenhaim</rs> nach ausgestandener langwirigen Leibs Indisposition und all vorhero empfangenen Heiligen Sacramenten, von diser zergenglichen Weldt ab- und der angezweifleten Hofnung, zu sich in die himelische Freydt aufzunemmen, welch diser und all ybrig in Gott verschidenen christglaubigen Seelen, der Allerhöchste mit Gnaden Pfleger und am Tag <pb n="245v"/> des Jüngst und Lezten Gerichts, ain freliche Arständtang und beglickhten Eingang in das ewige Leben, nebst all ybrig Auserwölten allergnedigist verleichen wolle, so wurde all vorderist ainsmahl von Seithen der gnedig geistlichen Commission und weltlichen Obrigkheit die gwohnliche Secretur angelegt, von der loblichen Geistlichkheit aber, den anderen Tag darauf die Bestättnus gehalten. Und da zu gleich anheut däto die weitere Heilige Gottes Denst, als sibend- und 30ist zu Hilf und Trost der abgeleibten Seel, dem christ-cätholischen Gebrauch nach celebriert wurden, und hiernegst auch des Herrn Ableibers seel. zurugg gelassene <rs type="person">einzige Schwester und Erbin, die edle Jungfrau Theresia Pichlerin</rs>, so sich dermahlen zu <rs type="place">Yhnsprugg</rs> in Diensten einfindet, und in assistentia <rs type="person">ihres Vetter Josephen Haaberstroo</rs> burgerlichen Saillermaisters zu <rs type="place">Brunegg</rs>, als hierzue verpflichten Anweisers gehandlet, beykhommen, mit demüethiger Bitt, das deroselben angefahlen Herr brüederliche Vermigen in gebreichige Beschreibung, Taxierung und Ergenzung zu bringen, und sofort dasselbe ihro einzuräummen, als wurde, auch zu dem Ende auf anheut däto Anstalt ernennt, die Secretur eröffnet, und sohin ainsmahlen vorgenohmen hernachbeschribene</p>
+            <p>Inventur.</p>
+            <p>
+               <pb n="246r"/>
+            </p>
+            <p>Und zwahr in Zimmer, alwo Herr Ableiber verschiden:</p>
+            <p>Ain gmahlen Tafl die Gebuhrt Christi vorställend mit ainer schwarzen Ram per	3 f 0 x</p>
+            <p>Item ain Tafl die Muetter Gottes mit dem Kindl auf Kupfer gemahlen, per	1 f 30 x</p>
+            <p>Mehr ain Unser Frauen Tafl von guethen Rath, mit ainen Glas, per	1 f 0 x</p>
+            <p>Und 10 unterschidliche gmahlen Tafl, und 10 claine deto, samt etlich Kupferstich, per	3 f 0 x</p>
+            <p>Ain<rs type="book">Schreibpult, mit Schlos und Pant</rs>, per	1 f 0 x</p>
+            <p>6 silberene alte Löfl zu 1 f 30 x thuet	9 f 0 x</p>
+            <p>Ain silberens Kölch Löfele per	18 x</p>
+            <p>Zway silberene Tubagg Bichsen, per	4 f 0 x</p>
+            <p>Ain Sackh Uhr mit ain silberen Geheis und Kötl, per	25 f 0 x</p>
+            <p>Zway schlecht silberene Schuech Schnallen, per	1 f 0 x</p>
+            <p>48 f 48 x</p>
+            <p>
+               <pb n="246v"/>
+            </p>
+            <p>Ain plau sametener Geldtpeitl mit silberen Kötlen eingefasst per	3 f 0 x</p>
+            <p>Ain aufstehendts clains schlechts Gwandt Cästl, mit Schloss und Pandt per	20 x</p>
+            <p>Darinen</p>
+            <p>Ain schwarzer Rockh, und Camusol, von hollendischen Tuech mit Seiden Knöpf	10 f 0 x</p>
+            <p>Aber ain schlechter deto Rockh, und Camusol, per	2 f 0 x</p>
+            <p>Mehr ain dergleichen schlechter deto, und Camusol pr	2 f 0 x</p>
+            <p>Verer ain praun tiechener Rockh, per	1 f 30 x</p>
+            <p>Ain grauer Rockholor, pr	2 f 0 x</p>
+            <p>Ain rothgeplaimter Schlaf Rockh, per	1 f 30 x</p>
+            <p>Ain Par schwarz tiechene und 2 Par liderene Hosen, per	2 f 0 x</p>
+            <p>Ain schlecht tiechener, und ain somerzeigener Mantl, per	5 f 0 x</p>
+            <p>Ain Par schwarze Winterstrimpf per	20 x</p>
+            <p>29 f 40 x</p>
+            <p>
+               <pb n="247r"/>
+            </p>
+            <p>6 harbene Hemater	6 f 0 x</p>
+            <p>Ain grosses Raisfehleisen per	5 f 0 x</p>
+            <p>Zway aufstehende Cässtlen mit Schlos und Pant, per	1 f 0 x</p>
+            <p>Darinen</p>
+            <p>12 unterschidliche Schnupf Tiechlen à 30 x thuet	6 f 0 x</p>
+            <p>Ain Spänisches Rohr mit ain dinen gulden Raifl, und mehr ain deto mit tombaggen Knopf, per	2 f 30 x</p>
+            <p>Ain Schretpichs, mit ain märtelet Schloss, per	2 f 0 x</p>
+            <p>So sind auch einiche Yber- und Unterpöther, nebst Pölster, Kisser et Teckhen<hi rend="strikethrough">und</hi> verhanden, weillen aber die Helffte hieraus der <rs type="person">Jungfrau Schwester</rs> gehörig, als wirdet die ybrig alhero gehörige Helffte yberhaubts angeschlagen, per	20 f 0 x</p>
+            <p>Ain grosse Gwandt Truchen mit Schloss, und Pandt, pr	2 f 0 x</p>
+            <p>Aber ain gar clains Trüchele per	15 x</p>
+            <p>Darinen,</p>
+            <p>Einiches Tisch- Leingwandt- Zin- Kupfer- auch etwas</p>
+            <p>44 f 45 x</p>
+            <p>
+               <pb n="247v"/> eisener Kuchlzeig, worvon ebenfahls die Helffte des Herrn Ableibers <rs type="person">Jungfrau Schwester</rs> gebührig, die ybrige Helffte aber auch alda yberhaubts <hi rend="strikethrough">alda</hi> angeschlagen wirdt, pr	50 f 0 x</p>
+            <p>Die<rs type="book">samentlich verhandene Piecher</rs> per	20 f 0 x</p>
+            <p>Latus	70 f 0 x</p>
+            <p>Summä vorbeschribner Inventur</p>
+            <p>193 f 13 x</p>
+            <p>Baarschafft.</p>
+            <p>Zway Topplete Kayserliche Taller	8 f 24 x</p>
+            <p>Ain ainfacher deto, pr	2 f 6 x</p>
+            <p>Ain Florentinische Piaster	2 f 28 x</p>
+            <p>Ain Päbstliche deto	2 f 26 x</p>
+            <p>Ain Föderthaller	2 f 22</p>
+            <p>13 Achtzechner	3 f 54 x</p>
+            <p>Und in anderer Minz	6 f 20 x</p>
+            <p>Summa der verhandenen Baarschafft	28 f 0 x</p>
+            <p>Ligendts Gueth.</p>
+            <p>Nemlichen ain<hi rend="background(cyan)">Äckherle hinter den Cäpuciner Closter</hi> beyleüfig von ainen Samstag Jauch gros, so in des Herrn Ableibers</p>
+            <p>
+               <pb n="248r"/>
+            </p>
+            <p>
+               <rs type="person">Muettern Maria Grätscherin</rs> am 6ten Frebruar 1753 vor der loblichen Stattgerichts Obrigkheit zu <rs type="place">Brunegg</rs> etc. vorbeygangenen Abhandlung per 140 f erkhaufft worden zu seyn Einkhommen, weillen aber hieraus eben die Helffte des Ableibers <rs type="person">Jungfrau Schwester Theresia Pichlerin</rs> angebührig, als wurde nur allein die ybrige Helffte alda per Vermigen zu tragen seyn, mit	70 f 0 x</p>
+            <p>Summä des Ligenden Gueths	per se</p>
+            <p>Schulden herein.</p>
+            <p>Ihro hochfreyherrlich Gnaden Herrn Herrn<rs type="place">Baron Andree v. Sternpach</rs> titl. etc. sollen Capital ohne verhandenen Instruments	600 f 0 x</p>
+            <p>Die Interesse hievon bis, und mit Einschluss verflossenen Liechtmössen 1766 à 3½ pro Cento verfahlen, kommet hienach in der Raittung ein.</p>
+            <p>Weiters sollen hochdieselben etc. an, wie gemelt, verfahlenen Interessen, Wochen Gulden, und gelessenen Stüfft Mössen, doch yber Abzug des baar erlegten Geldts, und zum Thaill bestrittenen Todtfahls Spesen, nach laut der anheut däto vorgenommenen, und der Erbin behendigten Abraittung.	129 f 1 x</p>
+            <p>Des Ableibers<rs type="person">Jungfrau Schwester Theresia Pichlerin</rs> solle selbsten die von hochbelobten Herrn Herrn <rs type="person">Baron v. Sternpach</rs> däto in der Abraittung empfangene	100 f 0 x</p>
+            <p>829 f 1 x</p>
+            <p>
+               <pb n="248v"/>
+            </p>
+            <p>Und titl. etc. Herr<rs type="person">Johann Martin Wenzl</rs> alda zu <rs type="place">Dietenheim</rs> solle auch wegen von einichen Jahren her gelesenen 106 Stüfft- und Quatember Mössen sovill Gulden, worinen er auch ein Schuldner zu seyn einbekhendt hat, id est	106 f 0 x</p>
+            <p>Summä der Schulden herein</p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	935 f 1 x</p>
+            <p>Summä Summärum des ganzen und volligen Vermigens	1226 f 14 x</p>
+            <p>Dargegen seind verhanden folgende Abzüg, und</p>
+            <p>Schulden hinauß.</p>
+            <p>No 1: Die Funeralien betröffenden zwahr vermög eingebenen Conto 22 f, weillen aber der Herr Ableiber keine adeliche Persohn, als in Ansöchung dessen solcher gestolt war, und mithin ybersozt, als werden doch gleichwollen sich nit beschweren zu kennen, in allen passiert	19 f 0 x</p>
+            <p>Ingleichen dem<rs type="person">Mösner</rs> zu <rs type="place">Dietenheim</rs>	9 f 0 x</p>
+            <p>No 2: Dem<hi rend="strikethrough">Mösner</hi> 
+               <rs type="person">Pfarrmösner</rs> zu <rs type="place">Brunegg</rs> laut Conto	36 x</p>
+            <p>Dem<rs type="person">Martin Seyr</rs> so dem Herrn Ableiber 30 Tag, und Nächt ausgewarthet, yber der genossenen Cost, des Tags 18 x, thuet	9 f 0 x</p>
+            <p>Zum<rs type="person">Maurer</rs> für Auf- und Zuemachung des Sarchs	1 f 0 x</p>
+            <p>38 f 36 x</p>
+            <p>
+               <pb n="249r"/>
+            </p>
+            <p>Item den<rs type="person">Grabmachern</rs>	1 f 0 x</p>
+            <p>No 3: Dem Herrn<rs type="person">Doctor Vogl</rs> zu <rs type="place">Brunegg</rs> für gemachten Visit und vorgeschribenen Medicinalien laut Conto	26 f 0 x</p>
+            <p>No 4: Ingleichen dem<rs type="person">Herrn Äpoteckher</rs> 
+               <rs type="place">daselbs</rs> Sag Conto an abgebenen Medicinen	15 f 40 x</p>
+            <p>No 5:<rs type="person">Franzen Lähner Schneider</rs> zu <rs type="place">Dietenhaim</rs> für angesagten Todtfahl, laut Schein	24 x</p>
+            <p>No 6:<rs type="person">Franz Xaveri Ripperer</rs> von <rs type="place">Brunegg</rs>, als derweilligen <rs type="person">Burgermaister</rs> ausstendige Georgi Steyr, samt der Extra von <hi rend="background(cyan)">hievor beschribenen Äckherle</hi> vigore Scheindl	54 x</p>
+            <p>No 7: Dem<rs type="person">Thomas Oberthaller</rs> Stattgerichts dener zu <rs type="place">Brunegg</rs> auch willen solchen <hi rend="background(cyan)">Äckherle</hi> ausstendigen Vorspans Beytrag	1 f 12 x</p>
+            <p>Es hette zwahr auch die<rs type="person">Maria Obermayrin</rs> zu <rs type="place">Brunegg</rs> bey 70 f an dem Herren Ableiber willen in Behalt gebenen Geldt ainsmahlen zu begehrn, weillen aber wohl derselbe etc. Ihro zu deren Unterhaltung von einichen Jahren her yber die Helffte hieran bezalt haben dörffte, als hat sie <rs type="person">Jungfrau Schwester, und Erbin</rs> dises mit derselben allein auszumachen ybernohmmen, und</p>
+            <p>45 f 10 x</p>
+            <p>
+               <pb n="249v"/>
+            </p>
+            <p>Mithin alda nichts auszuwerfen verlangt, so zu Bericht angemeldt wirdet.</p>
+            <p>Der gnedig geistlichen Commission etc. willen diser Verabhandlung, laut Commissions statt,	11 f 42 x</p>
+            <p>Item der Landtgerichts Obrigkheit zu<rs type="place">Michaelspurg</rs> etc. destwegen samt den Schreib- und Siglgelt, auch Pferdt- und Wegele Lohn	17 f 52 x</p>
+            <p>Und däto erloffene Würths Zöhrung	1 f 45 x</p>
+            <p>31 f 19 x</p>
+            <p>Summä der Schulden hinaus	115 f 5 x</p>
+            <p>Yber deren Abzug verbleibt noch Herr<rs type="person">Joseph Pichler</rs>isches Vermigen vorstendig</p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	1111 f 9 x</p>
+            <p>Und gleichwie zu solche restierenden Vermigen, wie eingangs gemelt, ain ainzige Jungfrau Schwester<rs type="person">Theresia Pichlerin</rs> verhanden, welcher dises Vermigen vatterlichen Rechtens erblichen zue- und angefahlen, und mithin auch selbe hierinen investiert zu werden demüethig gebethen.</p>
+            <p>Als wurde auch sohin vor gnedig geistlicher Commission, und weldtlicher Obrigkheit etc. Ihro widerholter Jungfrau<rs type="person">Theresia Pichlerin</rs>, und zum Fahl dero Erben, <pb n="250r"/> das ganz und völlig brüederlich Herr <rs type="person">Joseph Pichler</rs>ische Vermigen an ligenden und fahrenden, es seye hievorn einkhommen, beschriben oder nit, bewusst und ohnbewusst, hievon nichts ausgenohmen, hiemit und in khrafft dis, zum würckhlichen Besiz und Aigenthum, umb anmit willkhurlichen disponieren zu khennen, eingeraumt und yberlassen.</p>
+            <p>Das dieselbe dargegen schuldig und verpunden seyn solle, alle hievor beschribene Abzüg und Schulden hinaus, samt was allenfahls an dergleichen noch weiters in Vorschein khommen möchte, davon ebenfahls kheine ausgenommen, angehörde, nebst denen erloffenen Commission- und Gerichts Unkosten, auch Würthszöhrung abzufiehren, und zu bezahlen. Und sofort die gnedig geistliche Commission sowohl, als auch die weldtliche Obrigkheit dieser ihrer beschechener Immission halber jetzt alsdan, und dan für jetzt ohne Nachtheill und Schaden zu halten, welch auch allen nachbeschechener Ablesung nachzukhommen, sie Jungfrau<rs type="person">Theresia Pichlerin</rs>, nebst demüethigster Danckhs Abstattung der Immission halber, unter Verpfendung ihres Vermigens zuegesagt und mit Rath und neben deren <rs type="person">Anweiser Joseph Haaberstroo</rs> der gnedig geistlichen Commission und weltlichen Obrigkheit etc. das Handt Anloben erstatt hat.</p>
+            <p>Testes die geist- und weltliche Herrn Actuary und<rs type="person">Joseph Steeger</rs> Schreiber.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

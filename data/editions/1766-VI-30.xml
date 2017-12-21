@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>1766 VI 30, St. Lorenzen [Sigmayr Andreas (Kooperator), fol. 217r-226r]</title>
+            <respStmt>
+               <resp>Transkription und Annotation</resp>
+               <name>
+                  <rs type="person" ref="#prokosch_michael">Michael Prokosch</rs>
+               </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Reading in the Alps</publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+                  <p>The (CC BY-SA 4.0)-License applies to this document.</p>
+                  <p>You are allowed to share (copy and redistribute the material in any medium or format) and adapt (remix, transform, and build upon the material) for any purpose, even commercially.</p>
+                  <p>You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</p>
+                  <p>ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc type="invetory">
+               <msIdentifier>
+                  <institution>Südtiroler Landesarchiv (SLA)</institution>
+                  <repository>Verfachbücher Landgericht St. Michaelsburg</repository>
+                  <idno>1762 I 28</idno>
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+                     <locus from="217r" to="226r"/>
+                     <note>
+                        <rs type="skos" ref="#inventar">Inventar</rs>
+                     </note>
+                  </msItem>
+               </msContents>
+               <history>
+                  <origin notBefore="1762-01-28" notAfter="1762-01-28">
+                     <rs type="place" ref="#st_lorenzen">St. Lorenzen</rs>
+                  </origin>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>
+            <listPerson xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="listperson">
+            <person xml:id="prokosch_michael">
+               <persName>
+                  <forename>Michael</forename>
+                  <surname>Proksch</surname>
+               </persName>
+               <idno type="URL">VIAF | OCRID</idno>
+            </person>
+            <person xml:id="span_michael">
+               <persName>
+                  <forename>Michael</forename>
+                  <surname>Span</surname>
+               </persName>
+               <idno type="URL">VIAF</idno>
+            </person>
+            <person xml:id="andorfer_peter">
+               <persName>
+                  <forename>Peter</forename>
+                  <surname>Andorfer</surname>
+               </persName>
+               <idno type="URL">VIAF</idno>
+            </person>
+         </listPerson>
+               
+            
+            <listPlace xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="listplace">
+            <place xml:id="dietenheim">
+               <placeName>Dietenheim</placeName>
+               <location>
+                  <geo decls="#LatLng"/>
+               </location>
+               <idno type="URL"/>
+            </place>
+            <place xml:id="st_georgen">
+               <placeName>St. Georgen</placeName>
+               <location>
+                  <geo decls="#LatLng"/>
+               </location>
+               <idno type="URL"/>
+            </place>
+            <place xml:id="st_lorenzen">
+               <placeName>St. Lorenzen</placeName>
+               <location>
+                  <geo decls="#LatLng">24.46861 39.6141</geo>
+               </location>
+               <idno type="URL">http://sws.geonames.org/109223</idno>
+            </place>
+         </listPlace>
+               
+            
+         </p>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <p>
+               <pb n="217r"/>
+            </p>
+            <p>
+               <hi rend="background(lightGray)">[Rubrum:]</hi> Vermigens Abhandlung</p>
+            <p>Weillend Herrn<rs type="person">Andree Sigmayr</rs> gewester Cooperatore alhier seel.</p>
+            <p>
+               <hi rend="background(lightGray)">[Aktenvermerk:]</hi> Exped.</p>
+            <p>Actum in<rs type="place">Pfarrwidum zu Sanct Lorenzen</rs>, den 30isten Juny änno 1766.</p>
+            <p>Vor Ihro Hochwürden und Gnaden, dem hochedl gebohrn Herrn Herrn<rs type="person">Joseph Mathias Ingram, zu Liebenrain und Fragburg</rs>, Tyrolischen Herrn und Landtmann, S.S. Theol. Dri. hochfürstlich Brixnerisch wirckhlichen Consistorial Rath, auch Dächand und Pfarrherrn zu <rs type="place">Brunegg</rs>, dann dem wohl edlgebohrn gestreng und hochgelehrten Herrn <rs type="person">Joseph Ignäti Englmohr von Aufkhirchen zu Mohregg</rs>, beeden rechten lit. ooe. Regimendts Advocaten, auch Pfleger und Landtrichtern der Herrschaft <rs type="place">Sanct Michaelspurg</rs>.</p>
+            <p>Zugegen des wohl edlen Herrn<rs type="person">Franz Michael Marchner</rs> Amtgericht- und Commission Schreiber zu <rs type="place">Brunegg</rs>, und des Herrn <rs type="person">Johann Kerschpaumer</rs> Landtgerichtschreiber der Herrschafft <rs type="place">Sanct Michaelspurg</rs>.</p>
+            <p>Nachdeme Gott dem Allmechtigen abermahlen gefahlen, seinen Allerheiligisten Willen zu vollziechen, und andurch weylande dem wohl ehrwürdig edlen und wohlgelehrten Herrn<rs type="person">Andreas Sigmayr</rs> gewesten Cooperatore alhier zu <rs type="place">Sanct Lorenzen</rs> nach aufgestandener langwirigen Leibs <hi rend="strikethrough">k</hi> Indisposition, und all vorhero empfangenen Hochheiligen Sacramenten von diser zergenglichen Welt<hi rend="Fußnotenanker">
+                  <note>
+                     <p rend="Fußnote">	
+                        <hi rend="italic">Welt</hi> über der Zeile eingefügt.</p>
+                  </note>
+               </hi> ab- und der ungezweifleten Hofnung zu sich in die himelische Freydt und Glickhseeligkheit aufzunemmen, welch diser, und all ybrig in Gott verschidenen christglaubigen Seelen der Allerhöchste <pb n="217v"/> mit Gnaden pflegen, und am Tag des Jüngst und Lezten Gerichts ain freliche Aufersteheung und beglickhten Eingang zum ewig himelischen Wohl Leben allergnedigst mitthaillen und verleichen wolle, wurde all vorderist ainsmahlen von der gnedig geistlichen Commission und weldtlichen Obrigkheit die gewohnliche Secretur angelegt. Und weillen er Herr Ableiber seel. nur zwo eheleibliche <rs type="person">Gebrüedern Bartlmee und Michael Sigmayr</rs> in Kärnten und ausser Landtes verlassen, und vor seinen Hinscheiden, wie ihro wohl Ehrwürden Herr <rs type="person">Leopoldt Niclaus Steeger</rs> Beneficiat <rs type="place">bey dem Heiligen Creuz alhier</rs> vorgetragen, die mindtliche Verschafung gethann, das dessen ybrig verbleibendes Vermigen zu seiner Seelen Hayl angewendet, seinen Brüedern aber hievon ain Gedenckhzaichen gegeben werden solle, desselben zurugg gelassene Vermigen, yber zuvor der abgeleibten Seelen zu Hilf und Trost abgehaltenen Heilige Gottes Denst, in gebreichige Beschreibung, Taxierung Ergenzung und Verhandlung gebracht, wie mehrers hernach zu vernemmen und folgt vor allen die</p>
+            <p>Inventur</p>
+            <p>Als ain grienes guets Pult mit guethen Schloss und Pandt pr	1 f 30 x</p>
+            <p>Darinen.</p>
+            <p>Latus	per se</p>
+            <p>
+               <pb n="218r"/>
+            </p>
+            <p>Ain silberene Tubagg Bichsen pr	3 f 30 x</p>
+            <p>Ain silberener Löfl, per	2 f 15 x</p>
+            <p>Ain Par silberene Schuech und ain Par deto Hosen Schnällelen per	3 f 0 x</p>
+            <p>Ain silberene Sackh Uhr mit deto Geheis, auch silberen durchprochen Kotl, und seiden Uhrpandt, per	20 f 0 x</p>
+            <p>Zway gresser und zway clenere mössinge Schnallen, ain furnems Nadl, und ain deto Zantstirer Pichsl per	18 x</p>
+            <p>Zwey weis und zway gelbe Wachs Körzen, wägen 1 pf, und ain Wachs Täschl, per	49 x</p>
+            <p>Ain Stängl Spänisch Wachs, per	9 x</p>
+            <p>Ain grosse schwarze Petten, mit ain mössing Pfenning, pr	6 x</p>
+            <p>Ain<hi rend="background(blue)">Perspectiv</hi> mit fünf Züg, pr	30 x</p>
+            <p>Vier Tuzet gresser und drey Tuzet clenere schwarz pöchene Knöpf per	54 x</p>
+            <p>Ain grosses aus- und inwendig gfietterts Fehl Eisen, mit zway Schlösslen, per	3 f 30 x</p>
+            <p>Darinen</p>
+            <p>Sechs neue härbene Hemater zu 1 f, thuet	6 f 0 x</p>
+            <p>Item 10 etwas abgetragene härbene Hemater, zu 27 x thuet	4 f 30 x</p>
+            <p>Latus	45 f 31 x</p>
+            <p>
+               <pb n="218v"/>
+            </p>
+            <p>Drey neue und drey schlechte porchetene Leiblen zu 18 x thuet	1 f 48 x</p>
+            <p>Acht weis päm wollene Schlaf Hauben, per	1 f 4 x</p>
+            <p>Zechen Par leimatene Vor Erbelen, per	1 f 0 x</p>
+            <p>Fünf Par zwirenen Unterstrimpf, à 18 x thuet	1 f 30 x</p>
+            <p>Fünf weis leimatene Schnupf Tüechlen, zu 12 x thuet	1 f 0 x</p>
+            <p>Zway Tisch Salviet per	12 x</p>
+            <p>Mehr fünf halbseidene alt und neue Schnupf Tiechlen zu 36 x thuet	3 f 0 x</p>
+            <p>Zechen alte claine unterschidliche deto Tiechlen à 10 x thuet	1 f 40 x</p>
+            <p>Sechs Ellen schwarzes paduäner Tuech zu 2 f 40 x thuet	16 f 0 x</p>
+            <p>Ain bereits neuer schwarz tiechener Rockh, Cammusol und Hosen mit schwarz aggstainen Knöpf, per	10 f 0 x</p>
+            <p>Ain grau tiechener Rockh mit Schlingen, per	5 f 0 x</p>
+            <p>Aber ain schwarz hauseigener schlechter Rockh und Camusol per	2 f 0 x</p>
+            <p>Latus	44 f 14 x</p>
+            <p>
+               <pb n="219r"/>
+            </p>
+            <p>Ain somer zeigener schwarzer Rockh und Camusol samt Hosen, per	2 f 16 x</p>
+            <p>Ain schwarz tiechens Camusol, per	1 f 12 x</p>
+            <p>Mehr ain schlechter Rockh und Camusol, per	2 f 0 x</p>
+            <p>Ain schlecht zeigener Cosegeng per	1 f 0 x</p>
+            <p>Ain plau gstraiffter Schlaafrockh per	48 x</p>
+            <p>Ain roth und ain plau flänelens Leibl per	20 x</p>
+            <p>Ain grienseidener Hosen Höber per	15 x</p>
+            <p>Ain schlechter Rockholor, per	48 x</p>
+            <p>Ain sametes Heibl, per	21 x</p>
+            <p>21 Krägelen, per	1 f 3 x</p>
+            <p>Ain rauche plurschene Hauben, per	1 f 30 x</p>
+            <p>Ain deto Schlüeffer mit kinigl Verschuss, per	51 x</p>
+            <p>Ain Par neue Schuech, pr	1 f 0 x</p>
+            <p>
+               <hi rend="strikethrough">Ain</hi> 9 Par unterschidliche wollene schwarze Strimpf, per	1 f 48 x</p>
+            <p>Acht unterschidliche weis leimatene kluege Fürheng, samt vier deto Crenz, pr	8 f 0 x</p>
+            <p>Latus	23 f 12 x</p>
+            <p>
+               <pb n="219v"/>
+            </p>
+            <p>Sechs neue Tisch Salvieter per	1 f 12 x</p>
+            <p>Item 6 schlechtere deto, per	36 x</p>
+            <p>16 ½ Ellen schmahls halb Tuech à 22 x thuet	6 f 3 x</p>
+            <p>17 ½ Ellen gweggleter Zeig zu Handttiecher à 14 x thuet	4 f 5 x</p>
+            <p>Ain gwegglts grobs Tisch Tuech per	36 x</p>
+            <p>Drey deto Handt Tiecher, per	1 f 30 x</p>
+            <p>Ain feiner Tisch Töppich, per	1 f 0 x</p>
+            <p>Ain schlechterer deto, per	24 x</p>
+            <p>Ain Par Tränschier- und siben Par clenere Mösser und Gabl mit painen Höfftern, per	1 f 30 x</p>
+            <p>Ain Haus Uhr samt Schlagwerckh und kleine Gewichtern, per	9 f 0 x</p>
+            <p>Ain deto Weckher, per	4 f 0 x</p>
+            <p>Ain Spänisch Rohr mit gaggezen Knopf, silberen Raifl und seiden Pandt, per	3 f 0 x</p>
+            <p>Ain mössings Glueth Pfändl, per	15 x</p>
+            <p>Ain kupferene Cavee Kändl und ain weisplöchene deto Bichs, per	54 x</p>
+            <p>Latus	34 f 5 x</p>
+            <p>
+               <pb n="220r"/>
+            </p>
+            <p>Zway Cavee Mühlen, die aine mit Mössing beschlagen, per	1 f 0 x</p>
+            <p>Ain mössings Lutterl per	9 x</p>
+            <p>Ain Par claine Fues Eisen per	10 x</p>
+            <p>Zway auf glass gemahlen Köpf samt die Ram, per	1 f 12 x</p>
+            <p>
+               <rs type="book">An Büechern.</rs>
+            </p>
+            <p>
+               <rs type="book">Folianten.</rs>
+            </p>
+            <p>Die Teusche Bibel in französischen Einpundt, per	3 f 0 x</p>
+            <p>Barcia Seelen Weckher in schweinen Einpundt, per	1 f 36 x</p>
+            <p>Pater Ruef Von Feyr- und Fösstäglichen Prödigen, pr	2 f 36 x</p>
+            <p>Pater Raphael Sanct Joseph in französischen Einpunt	45 x</p>
+            <p>Pater Hueber Von Feyrtag Prödigen, in französischen Einpundt, per	45 x</p>
+            <p>Pater Stainmayr Lauretänischen Voglgarthen, mit obigen Einpundt, per	48 x</p>
+            <p>Freythamer Sonn- und Feyrtägliche Feyrtag Prödigen	1 f 0 x</p>
+            <p>Latus	13 f 1 x</p>
+            <p>
+               <pb n="220v"/>
+            </p>
+            <p>Pater Johanneser Prödigen, per	1 f 0 x</p>
+            <p>Pater Miel Sonn- Und Feyrtag Prödigen, per	1 f 0 x</p>
+            <p>Kiesewerter Ex Ordinari Prödigen, per	51 x</p>
+            <p>Claus Gasstprödiger pr	1 f 0 x</p>
+            <p>
+               <rs type="book">Quartisten</rs>
+            </p>
+            <p>P. Sender Domo Christiani pr	48 x</p>
+            <p>Neuburger Conciodes Moralis driter Thaill pr	30 x</p>
+            <p>Dolog. Moralis pr	24 x</p>
+            <p>P. Engl Ius Canonici pr	45 x</p>
+            <p>P. Franz Bojerus Dreyfache Cron 2 thomae pr	1 f 0 x</p>
+            <p>P. Prugger Christien Lehr pr	42 x</p>
+            <p>Höchlschmit Der Büeßende Zächeus, per	40 x</p>
+            <p>P. Riga Achti Platationi pr	45 x</p>
+            <p>Lavitan Fastenprödigen pr	32 x</p>
+            <p>Sacert. Prixinensi pr	24 x</p>
+            <p>Libra Appolipticas	21 x</p>
+            <p>Justus Joseph Meditatioes pr	18 x</p>
+            <p>Oberleiter Simplicium Legis per	24 x</p>
+            <p>Latus	11 f 24 x</p>
+            <p>
+               <pb n="221r"/>
+            </p>
+            <p>Fosa Juvavium<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://books.google.at/books/about/JUVAVIUM_ANIMARUM_IN_PURGATORIO_Das_ist.html?id=mjFjAAAAcAAJ&amp;redir_esc=y</hi>
+                  </p>
+               </note>, per	24 x</p>
+            <p>Pëckher Schuldigistes Andenckhen per	22 x</p>
+            <p>Geschribenes Recept Buech	18 x</p>
+            <p>
+               <rs type="book">Octav.</rs>
+            </p>
+            <p>Proviarium in vier Thaill, per	3 f 30 x</p>
+            <p>Adurnal per	24 x</p>
+            <p>Schlechte alte Braevier, in vier Thaill, per	24 x</p>
+            <p>P. Graditensis Concianes in drey Thaill, per	1 f 12 x</p>
+            <p>Paetivil Prödigen in drey Thaill, per	1 f 12 x</p>
+            <p>Catecismus Romanus, per	1 f 30 x</p>
+            <p>P. Waldner Handt- und Beth Buech, per	24 x</p>
+            <p>P. Padu Von Den Vier Lezten Dingen, per	28 x</p>
+            <p>P. Hetti Heiliger Ehestandt, pr	24 x</p>
+            <p>Vollkhommene Closter Frau per	30 x</p>
+            <p>Scuppuli Geistlicher Streit, per	24 x</p>
+            <p>P. Sigl Diester Gwaldt Zum Todt, per	24 x</p>
+            <p>Latus	11 f 52 x</p>
+            <p>
+               <pb n="221v"/>
+            </p>
+            <p>P. Vogl Veritates et Terne, pr	30 x</p>
+            <p>P. Steinhies Aphorismus Juris	21 x</p>
+            <p>P. Neumayr Vier Apostolicus<note>
+                  <p rend="footnote text">
+                     <hi rend="background(lightGray)" xml:space="preserve"> https://www.zvab.com/buch-suchen/titel/vir-apostolicus-sive-doctrina/autor/neumayr/</hi>
+                  </p>
+               </note> per	24 x</p>
+            <p>Idem Ideo Poesias et de Idearo Rhethorico zwo Piecher, pr	48 x</p>
+            <p>Philote, per	48 x</p>
+            <p>Das Thall Der Demueth pr	24 x</p>
+            <p>Mörckhs Paur von P. Peer pr	18 x</p>
+            <p>P. Peer Die Angelica Wurzen per	20 x</p>
+            <p>Unterschidliche Discurs pr	21 x</p>
+            <p>P. Zillis pr	21 x</p>
+            <p>P. Lohner, pr	21 x</p>
+            <p>Zwayundtreissig andere unterschidliche claine Piechlen, per	3 f 0 x</p>
+            <p>Latus	7 f 56 x</p>
+            <p>Betrifft hievon beschribene Inventur, samt den<rs type="book">Piechern</rs>
+            </p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	192 f 45 x</p>
+            <p>Baarschafft.</p>
+            <p>Ain Kremnizer Duccatten, pr	4 f 24 x</p>
+            <p>
+               <pb n="222r"/>
+            </p>
+            <p>Zwo Föder Thaller	4 f 44 x</p>
+            <p>Fünf Payrische Taller	10 f 30 x</p>
+            <p>Ain Philipp, per	2 f 12 x</p>
+            <p>In anderen Minz	29 f 47 x</p>
+            <p>Und an weitern baaren Geldt ist verhanden von<rs type="person">Ihro Hochfreylich Gnaden Herrn Pfarrer</rs> an bezalten Wochen Gulden, und erkhaufften Tischgwandt, und noch extra für ain Spänisch Rohr zusamen	18 f 0 x</p>
+            <p>Thuet die Baarschafft	69 f 37 x</p>
+            <p>Schulden herein.</p>
+            <p>Das ratum betrifft für Herrn Ableiber seel. seit Neu Jahr bis Heilige Dreyfaltigkheit Sonntag als erfolgten Todtfahl von fünf Monater aus 43 f 24 x jehrliche Betragnus	18 f 5 x</p>
+            <p>Wie aus den von<rs type="person">Herrn Curat zu </rs>
+               <rs type="place">Strengen in Oberinthall</rs> 
+               <rs type="person">Joseph Wöchner</rs> an Ihro Hochwürden und Gnaden <rs type="person">Herrn Döchand</rs> yberschribenen Misiv Brief zu ersöchen, seind die daselbs den Herrn Ableiber zuegehörig geweste Mobilien verkhaufft, und yber 6 f Abzug, für einer <rs type="person">daselbs befündlichen gewisen Jungfrauen</rs>, noch an Geldt einzulangen vorstendig verbleiben 29 f, welche aber allererst den negsten Hörbst bezalt werden, id est	29 f 0 x</p>
+            <p>
+               <pb n="222v"/>
+            </p>
+            <p>Machen die Schulden herein</p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	47 f 5 x</p>
+            <p>Summa des ganz und völligen vermigens</p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	309 f 27 x</p>
+            <p>Dargegen seind verhanden folgende Abzüg und</p>
+            <p>Schulden hinaus.</p>
+            <p>No 1: Deto Der Funeral Conto betrifft	12 f 33 x</p>
+            <p>Deto Dem<rs type="person">Andree Walder</rs> für gethanner Auf- und Auswartung samt Blinderung der Fohrnussen	2 f 34 x</p>
+            <p>Deto Mehr<rs type="person">deme</rs> samt seinen zwo Gspänn für Anlegung der Leich, und per <rs type="place">Reischach</rs> umb das Möss Gwandt verrichten Gang	51 x</p>
+            <p>Deto Denen Grabmachern	36 x</p>
+            <p>Deto Für die in das Grab gegebene Paramenta der<rs type="place">Reischacher</rs> Kirchen	4 f 0 x</p>
+            <p>No 2: Deto Der Jungfrau<rs type="person">Cäthärinä Mitterhoferin</rs> an erlossener Todtfahls Zöhrung vigore Schein	4 f 4 x</p>
+            <p>Deto Dem<rs type="person">Michael Stieger</rs> Tischler für gemachter Todten Truch und Creuz	1 f 44 x</p>
+            <p>Deto Dem<rs type="person">Herrn Nidergötscher</rs> wegen für Herrn Ableiber seel. gelesenen Heilige Mässen, und extra gethaner Verrichtung	3 f 0 x</p>
+            <p>Latus	29 f 22 x</p>
+            <p>
+               <pb n="223r"/>
+            </p>
+            <p>Deto Ingleichen dem<rs type="person">Herrn Manucredo</rs> für gelesenen fünf Heilige Mässen	2 f 24 x</p>
+            <p>Deto Dem Herrn<rs type="person">Doctor Vogl</rs> zu <rs type="place">Brunegg</rs> willen gegebenen Visiten	6 f 10 x</p>
+            <p>Deto In der<rs type="place">Äppotekhen daselbs</rs>	10 f 14 x</p>
+            <p>Deto Dem<rs type="person">Barbierer</rs> alhier	1 f 43 x</p>
+            <p>No 3: Deto Dem<rs type="person">Pauln Schranz</rs> Würth zu <rs type="place">Wenz in Ober Yhnthall</rs> laut Misiv Schreiben	7 f 28 x</p>
+            <p>No 4: Deto Ihro gestreng dem<rs type="person">Herrn Pfleger</rs> zu <rs type="place">Räsen</rs> Haubtsach laut Schultschein	50 f 0 x</p>
+            <p>Deto Interesse hievon seit 24ten Februar 1752 bis heut dato geraith, ab 14⅓tl Jahr	28 f 40 x</p>
+            <p>No 5: Deto Herrn<rs type="person">Johann Haaberstroo</rs> Burger und Handlsmann alhier, an abgebenen Laaden Waaren Sach Conto yber den Empfang, noch	14 f 14 x</p>
+            <p>Deto Dem<rs type="person">Jacob Helweger</rs> weegen von <rs type="place">Brunegg</rs> herab- und widerumb hinauf gefiehrten <rs type="person">Herrn Doctor</rs>	1 f 0 x</p>
+            <p>Deto Dem<rs type="person">Gregori Rungger</rs> 
+               <rs type="place">Yhnsprugger</rs> Pothen, wegen herein gefiehrten Mobilien, und yber ain Tag gethaner Zuewarthung	2 f 30 x</p>
+            <p>Latus	124 f 23 x</p>
+            <p>
+               <pb n="223v"/>
+            </p>
+            <p>No 6: Deto Der<rs type="person">Maria Mayrin</rs> Weeberin alhier laut Schein willen von zwo Jahr hergethaner Wasch und Pöglung des Leingwants	2 f 0 x</p>
+            <p>No 7: Deto Dem Herrn Pfarrer zu<rs type="place">Telfes</rs> 
+               <rs type="person">Franz de Paula Penz</rs>, wegen daselbs den Herrn Ableiber gehaltenen Funeral Gottesdienst mit Einschluss der Bitten und Jahrtag, laut Schein	5 f 26 x</p>
+            <p>Deto An ruggständigen Heiligen Mässen seind zu lesen, worvon Herr Ableiber das Stipendium empfangen 28 dato zu 30 x thuet	14 f 0 x</p>
+            <p>Deto Und 49 Heilige Mässen zu 24 x thuet	19 f 36 x</p>
+            <p>Deto Dem<rs type="person">Herrn Haslmayr</rs> zu <rs type="place">Yhnsprugg</rs> wegen yberschickhten und lesen gelassenen <rs type="book">Zeitungen</rs>	3 f 45 x</p>
+            <p>Deto Ingleichen dem<rs type="person">Herrn Steyrer</rs> zu <rs type="place">Brunegg</rs> von ¾tl Jahr	45 x</p>
+            <p>Deto Der<rs type="person">Freyeln Heiserin</rs> zu einer geringen Erkhandtligkheit	1 f 30 x</p>
+            <p>Deto Denen<rs type="person">zwo Diernen</rs>	2 f 0 x</p>
+            <p>Deto Der<rs type="person">Bedenten</rs>	54 x</p>
+            <p>Deto Der gnedig geistlichen Commission willen diser Abhandlung	10 f 6 x</p>
+            <p>Deto Und der weltlichen Obrigkheit destwegen samt den Schreib- und Siglgeldt	13 f 36 x</p>
+            <p>Summä der Abzüg und Schulden hinaus</p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	227 f 23 x</p>
+            <p>
+               <pb n="224r"/>
+            </p>
+            <p>Yber deren Abzug verbleibt noch Herr<rs type="person">Andreäs Sigmayrisches</rs> Vermigen vorstendig</p>
+            <p>
+               <hi rend="background(lightGray)">[Summa]</hi>	82 f 4 x</p>
+            <p>Zu welch disen restierenden Vermigen zway<rs type="place">in Cärnten sich befündende</rs> 
+               <rs type="person">Gebrüedern Bartlmee und Michael Sigmayr</rs> mit Namen verhanden, denen solches ansonst, und in Nachgang der gemain, und Tyrolischen Landts Rechten erblichen zue- und angefahlen were. All dieweillen aber er Herr Ableiber seel. wie vor gemelt, in seiner lezten Krankheit verordnet, und müntlichen hinterlassen, das denen selben in Bedenckhung sie <rs type="person">zway Gebrüedern</rs> sich ausser Landts befünden, und er mithin selbe gar auszuschlüessen befuegt gewesen were, nur ain Gedenckhzaichen verabgefolgt, das ybrig wenige aber, ad pias causas angewendet werden solle, als wurde auch in Conformitet dis seines Lezten Willens, von Seithen der angeordnet gnedig geistlichen Commission und weltlicher Obrigkheit etc. ihnen zway Gebrüedern, ohngeacht des sich erzeigeten cleinen Vermigens Standts, nichts destoweniger in den deren drey Duccatten zu einen verschaffenen Gedenckhzaichen, und mithin beeden zusammen sechs Duggaten geschöpfft, wohlfolgsam das ganz und völlig <pb n="224v"/> verhandene Vermigen dem <rs type="person">Herrn Landtgerichtschreiber alhier, Johann Kerschpaummer</rs>, als ersuechten Gemainschafft Fiehrer mit deme bestölt, und respective yberlassen, das selber die annoch verhandene Mobilien böst möglichist zu versilberen, all vorderist hievon, samt den ybrigen Vermigen die allseitig verhandene Abzüg und Schulden hinaus, nebst dem geschöpfften Gedenckhzaichen abzufiehren und zu bezahlen, und sofort aus dem verbleibenden Vorstandt die Helffte hievon denen haus armen Leuthen auszuthaillen, und die ybrige Helffte zu Heiligen Mössen zu applicieren bedacht, und respective gehalten seyn solle, deme auch selber nachzukhommen zuegesagt, und der gnedig geistlichen Commission und weldtlichen Obrigkheit das Handt Anloben erstatt hat.</p>
+            <p>Testes Ihro wohl<rs type="person">Ehrwürden Herr Leopoldt Niclaus Steeger Beneficiat</rs> bey dem <rs type="place">Heiligen Creuz auf der </rs>
+               <hi rend="background(cyan)">Fronewisen</hi>, und <rs type="person">Joseph Steeger Schreiber alhier</rs>.</p>
+            <p>Actum<rs type="place">Sanct Lorenzen</rs> den 31isten December 1766: Wie vor zu söchen, ist zwahr beschlossen worden, das das Herrn Ableibers seel(igem) zwoen <rs type="person">Gebrüedern Bartlmee und Michael Sigmayr</rs> jeden drey Duggaten zu ainen brüederlichen Gedenckhzaichen gegeben, und das ybrig verbleibende Vermigen zu des Herrn Ableibers Seelen Hayl angewendet und appliciert werden solle. All <pb n="225r"/> dieweillen aber die däto anhero bey gekhommene <rs type="person">Gebrüedern Bartlmee und Michael Sigmayr</rs> vermig den von der loblichen Obrigkheit zu <rs type="place">Alträsen</rs> beygebrachten vidimierten Extract von ersten December anno 1766, so auf dessen verstorbenen <rs type="person">Vattern Andreen Sigmayr</rs> seeligen Verabhandlung von 20ten May anno 1743 gezochen worden, dargethan und erwisen, das denenselben der abgeleibte Herr Brueder <rs type="person">Andree Sigmayr</rs> seelige noch von Studieren per 128 f 41 x richtig schuldig verbliben seyn, und mithin das völlig restierende Vermigen anbegehrt. Vorwider man von Seithen der gdg geistlichen Commission und weldtlichen Obrigkheit an dessen Ausfolglassung bis auf 10 f umbsoweniger Bedenckhen getragen, als ohnedeme solches zu Contentierung ihrer Praetension nit zue lenckhlich ware, die 10 f aber zu Vergnüegung des inzwischen in Vorschein kommen und dem <rs type="person">Herrn Mathias Baldtauf</rs> noch schuldigen Yberpoths anrugg zu verbleiben haben sollen. Als wurde sohin auch von den Gemainschafftfiehrer Herrn <rs type="person">Johann Kerschpaummer</rs> ihnen <rs type="person">zwo Gebrüedern</rs> das noch restierende Vermigen, yedoch wie gemelt, yber Abzug der 10 f mit denen noch be-<pb n="225v"/>tröffenden 72 f 4 x dato baar ausgezolt, erlegt, und bezalt, welche sie <rs type="person">Gebrüedern Bartlmee und Michael Sigmayr</rs> auch baar eingenommen und empfangen zu haben bekhennen, darumm er selbe, für sie und ihre Erben, ernenter <rs type="person">Herrn Gemainschafft Fiehrer</rs>, und wem es weiters beriert, auf ewig quittiert, frey, ledig und losgesprochen, und demenach zukhommen, Ihro gestreng dem <rs type="person">Herrn Pfleger Lit. v. Englmohr etc.</rs> das Handt Anloben erstatt haben. In Beyseyn als Gezeugen Ihro wohl Ehrwürden des Herrn Beneficiaten <rs type="place">bey dem Heiligen Creuz</rs>, <rs type="person">Leopoldt Niclaus Steeger</rs>, und <rs type="person">Josephen Steeger</rs> Schreibers alda zu <rs type="place">Sanct Lorenzen</rs>.</p>
+            <p>Actum<rs type="place">Sanct Lorenzen</rs>, den 9ten December, anno 1767.</p>
+            <p>Es seind zwahr, wie kurz gemelt, für Herrn<rs type="person">Mathes Waldtauf</rs> zu Bezahlung des den Herrn Ableiber abgegeben haben sollenden Peth 10 f anrugg behalten worden, weillen aber selber <hi rend="strikethrough">de</hi> auf der von Ihro Hochwürden und Gnaden <rs type="person">Herrn Döchand </rs>demselben beschechner Zuschreibung bis zu däto kein Antworth gegeben, mithin abzunemmen seye, das er solche nitmehr anzubegehren haben dörffte, hievon aber 57 x so von <pb n="226r"/> ratum weniger und 18 x dem <rs type="person">Herrn Döhand</rs> bezalt worden, abzuziechen kommen, mithin noch 8 f 45 x restierend verbleiben, als hat auch <hi rend="strikethrough">wo</hi> hoch gemelt <rs type="person">Herr Döhand</rs> solche denen <rs type="person">zwo gebrüedern</rs> ausfolgen zu lassen verwilliget. Und gleichwie auch der anheut däto beygekommene <rs type="person">Brueder Michael Sigmayr</rs> dise 8 f 45 x von dem Herrn <rs type="person">Johann Kerschpaummer</rs> par eingenommen und empfangen zu haben bekhendt, als hat derselbe für sich und nomine seines <rs type="person">Bruedern Bartlmee Sigmayrs</rs> ihnen hierummen quittiert und zu Bekhräfftigung dessen sich alda aigenhendig unterschriben. Actum ut supra.</p>
+            <p>
+               <hi rend="background(lightGray)">[eigenhändige Unterschrift]</hi> 
+               <rs type="person">Michael Sigmayr</rs> bekhene wie obsteth</p>
+         </div>
+      </body>
+   </text>
+</TEI>

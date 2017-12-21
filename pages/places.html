@@ -2,7 +2,7 @@
 <div data-template="templates:surround" data-template-with="templates/datatable.html" data-template-at="datatable">
     <div class="panel panel-default">
         <div class="panel-heading" style="text-align:center;">
-            <h1>Places</h1>
+            <h1>Ortsregister</h1>
         </div>
         <div class="panel-body">
             <div id="map"/>     
@@ -17,6 +17,15 @@
                             <th>Lng</th>
                         </tr>
                     </thead>
+                    <tfoot style="display:none">
+                        <tr>
+                            <th class="header"> Ortsname (normalisiert) </th>
+                            <th>Alternative Schreibweisen</th>
+                            <th>Normdata</th>
+                            <th>Lat</th>
+                            <th>Lng</th>
+                        </tr>
+                    </tfoot>
                     <tbody id="myTableBody" style="display:none">
                         <tr data-template="app:listPlace"/>
                     </tbody>
@@ -31,17 +40,17 @@
     <script src="https://unpkg.com/leaflet.markercluster@1.2.0/dist/leaflet.markercluster.js"/>
     <script>$("#map").css("height", "500px");
         var table = $('#myTable').DataTable({
-            dom: 'Bfrtip',
-            keepConditions: true,
-            buttons: [
-                'copy', 'excel', 'pdf'
-            ]
+        dom: 'Bfrtip',
+        keepConditions: true,
+        buttons: [
+        'copy', 'excel', 'pdf'
+        ]
         });
         var tiles = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-            attribution: 'Map data &amp;copy;<a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-            maxZoom: 18,
-            id: 'mapbox.light',
-            accessToken: 'pk.eyJ1Ijoic2VubmllcmVyIiwiYSI6ImNpbHk1YWV0bDAwZnB2dW01d2l1Y3phdmkifQ.OljQLEhqeAygai2y6VoSwQ'
+        attribution: 'Map data &amp;copy;<a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox.light',
+        accessToken: 'pk.eyJ1Ijoic2VubmllcmVyIiwiYSI6ImNpbHk1YWV0bDAwZnB2dW01d2l1Y3phdmkifQ.OljQLEhqeAygai2y6VoSwQ'
         });
         var map = L.map('map').addLayer(tiles);
         var markers = L.markerClusterGroup();
@@ -49,78 +58,98 @@
         var currentGeoJson = createGeoJson(currentTableData);
         console.log(currentGeoJson);
         var startLayer = L.geoJson(currentGeoJson, {
-            onEachFeature: function (feature, layer) {
-                layer.bindPopup(feature.properties.name);
-            }
+        onEachFeature: function (feature, layer) {
+        layer.bindPopup(feature.properties.name);
+        }
         });
         markers.addLayer(startLayer);
         map.addLayer(markers);
+        try {
         map.fitBounds(markers.getBounds());
+        }catch(err) {
+        console.log(err);
+        }
         
         $(document).ready(function() {
-            $("#myTableBody").show();
+        $("#myTableBody").show({});
+        $('#myTable tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text"/>' );
+        });
+        $("#myTable tfoot").show();
+        table.columns().every( function () {
+        var that = this;
+        
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+        if ( that.search() !== this.value ) {
+        that
+        .search( this.value )
+        .draw();
+        }
         } );
+        } );
+        });
         
         table.on( 'search.dt', function () {
-            //markers.removeLayer(startLayer);
-            markers.clearLayers();
-            var currentTableData = getTableData(table);
-            var currentGeoJson = createGeoJson(currentTableData);
-            console.log(currentGeoJson);
-           var geoJsonLayer = L.geoJson(currentGeoJson, {
-                onEachFeature: function (feature, layer) {
-                    layer.bindPopup(feature.properties.name);
-                }
-            });
-            markers.addLayer(geoJsonLayer);
-            map.addLayer(markers);
-            try {
-                map.fitBounds(markers.getBounds());
-            }
-            catch(err) {
-                console.log(err);
-            }
+        //markers.removeLayer(startLayer);
+        markers.clearLayers();
+        var currentTableData = getTableData(table);
+        var currentGeoJson = createGeoJson(currentTableData);
+        console.log(currentGeoJson);
+        var geoJsonLayer = L.geoJson(currentGeoJson, {
+        onEachFeature: function (feature, layer) {
+        layer.bindPopup(feature.properties.name);
+        }
+        });
+        markers.addLayer(geoJsonLayer);
+        map.addLayer(markers);
+        try {
+        map.fitBounds(markers.getBounds());
+        }
+        catch(err) {
+        console.log(err);
+        }
         } );
         
         function getTableData(table) {
-            const dataArray = [],
-            placesArray = [];
-            // loop table rows
-            table.rows({ search: "applied" }).every(function() {
-                const data = this.data();
-                if( data[3]){
-                    placesArray.push(data);
-                }
-            });
-            // store all data in dataArray
-            dataArray.push(placesArray);
-            return dataArray;
+        const dataArray = [],
+        placesArray = [];
+        // loop table rows
+        table.rows({ search: "applied" }).every(function() {
+        const data = this.data();
+        if( data[3]){
+        placesArray.push(data);
+        }
+        });
+        // store all data in dataArray
+        dataArray.push(placesArray);
+        return dataArray;
         };
         
         function createGeoJson(data){
-            var geojsonArray = [];
-            data[0].forEach(function(element, i) {
-                var geojson = new Object();
-                geojson.id = i;
-                geojson.type = "Feature";
-                geojson.geometry = {
-                    "type": "Point",
-                    "coordinates": [
-                        element[4],
-                        element[3]
-                    ]
-                };
-                geojson.properties = {
-                    "name": element[0]
-                };
-                geojsonArray.push(geojson);
-            });
-            return geojsonArray;
+        var geojsonArray = [];
+        data[0].forEach(function(element, i) {
+        var geojson = new Object();
+        geojson.id = i;
+        geojson.type = "Feature";
+        geojson.geometry = {
+        "type": "Point",
+        "coordinates": [
+        element[4],
+        element[3]
+        ]
+        };
+        geojson.properties = {
+        "name": element[0]
+        };
+        geojsonArray.push(geojson);
+        });
+        return geojsonArray;
         };
         function onEachFeature(feature, layer) {
-            layer.bindPopup(feature.properties.name);
+        layer.bindPopup(feature.properties.name);
         };
-    
+        
     </script>
-
+    
 </div>

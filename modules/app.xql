@@ -181,12 +181,12 @@ for $title in ($entities, $terms)
  :)
 declare function app:listPers($node as node(), $model as map(*)) {
     let $hitHtml := "hits.html?searchkey="
-    for $person in doc(concat($config:app-root, '/data/indices/listperson.xml'))//tei:listPerson/tei:person
+    for $person in doc($app:personIndex)//tei:listPerson/tei:person
     let $gnd := $person/tei:note/tei:p[3]/text()
     let $gnd_link := if ($gnd != "no gnd provided") then
         <a href="{$gnd}">{$gnd}</a>
         else
-        $gnd
+        "-"
         return
         <tr>
             <td>
@@ -206,7 +206,7 @@ declare function app:listPers($node as node(), $model as map(*)) {
  :)
 declare function app:listPlace($node as node(), $model as map(*)) {
     let $hitHtml := "hits.html?searchkey="
-    for $place in doc(concat($config:app-root, '/data/indices/listplace.xml'))//tei:listPlace/tei:place
+    for $place in doc($app:placeIndex)//tei:listPlace/tei:place
     let $lat := tokenize($place//tei:geo/text(), ' ')[1]
     let $lng := tokenize($place//tei:geo/text(), ' ')[2]
         return
@@ -222,20 +222,6 @@ declare function app:listPlace($node as node(), $model as map(*)) {
 };
 
 
-(:~
- : creates a basic term-index derived from the all documents stored in collection'/data/editions'
- :)
-declare function app:listTerms($node as node(), $model as map(*)) {
-    let $hitHtml := "hits.html?searchkey="
-    for $term in distinct-values(collection(concat($config:app-root, '/data/editions/'))//tei:term)
-    order by $term
-    return
-        <tr>
-            <td>
-                <a href="{concat($hitHtml,data($term))}">{$term}</a>
-            </td>
-        </tr>
- };
 (:~
  : creates a basic table of content derived from the documents stored in '/data/editions'
  :)
