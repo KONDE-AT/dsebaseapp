@@ -59,8 +59,6 @@ declare function nlp:tokenize($input as node()){
 declare function nlp:clean-encoding($input as node()){
     let $from := ('Ã¼', 'Á¤', 'Á¶', 'ÁŸ', 'Áœ','â', 'Á')
     let $to :=   ('ü', 'ä', 'ö', 'ß', 'Ü', '–', 'ß')
-(:    let $from := ():)
-(:    let $to := ():)
     let $string := util:serialize($input, $nlp:serialiserParams)
     let $new := functx:replace-multi($string, $from, $to)
     let $fromCp := $nlp:codepoints//tei:cell[@n="2"]/text()
@@ -69,6 +67,7 @@ declare function nlp:clean-encoding($input as node()){
     return 
         util:parse($newer)
 };
+
 
 (:~
  : Sends a TEI-Document to the tokenizer web-service and stores the result
@@ -90,6 +89,22 @@ declare function nlp:tokenize-and-save($input as node()){
         $stored
 };
 
+
+(:~
+ : Bulk tonenizes all TEI-Documents found in the passed in collection
+ :
+ : @param $collection The URI of a collection to process 
+ : @return The path of the stored documentst
+:)
+
+declare function nlp:bulk-tokenize($collection as xs:string){
+    for $x in collection($collection)//tei:TEI
+        let $name := util:document-name($x)
+        let $docUri := $collection||$name
+        let $input := doc($docUri)
+        let $tokenized := nlp:tokenize-and-save($input)
+            return $tokenized
+};
 
 
 
