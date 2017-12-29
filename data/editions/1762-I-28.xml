@@ -32,7 +32,7 @@
                </msIdentifier>
                <msContents>
                   <msItem>
-                     <locus from="53r" to=""/>
+                      <locus from="53r" to="65r"/>
                      <note>
                         <rs type="skos" ref="#inventar">Inventar</rs>
                      </note>
@@ -46,60 +46,7 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
-      <encodingDesc>
-         <p>
-            <listPerson xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="listperson">
-            <person xml:id="prokosch_michael">
-               <persName>
-                  <forename>Michael</forename>
-                  <surname>Proksch</surname>
-               </persName>
-               <idno type="URL">VIAF | OCRID</idno>
-            </person>
-            <person xml:id="span_michael">
-               <persName>
-                  <forename>Michael</forename>
-                  <surname>Span</surname>
-               </persName>
-               <idno type="URL">VIAF</idno>
-            </person>
-            <person xml:id="andorfer_peter">
-               <persName>
-                  <forename>Peter</forename>
-                  <surname>Andorfer</surname>
-               </persName>
-               <idno type="URL">VIAF</idno>
-            </person>
-         </listPerson>
-               
-            
-            <listPlace xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="listplace">
-            <place xml:id="dietenheim">
-               <placeName>Dietenheim</placeName>
-               <location>
-                  <geo decls="#LatLng"/>
-               </location>
-               <idno type="URL"/>
-            </place>
-            <place xml:id="st_georgen">
-               <placeName>St. Georgen</placeName>
-               <location>
-                  <geo decls="#LatLng"/>
-               </location>
-               <idno type="URL"/>
-            </place>
-            <place xml:id="st_lorenzen">
-               <placeName>St. Lorenzen</placeName>
-               <location>
-                  <geo decls="#LatLng">24.46861 39.6141</geo>
-               </location>
-               <idno type="URL">http://sws.geonames.org/109223</idno>
-            </place>
-         </listPlace>
-               
-            
-         </p>
-      </encodingDesc>
+      
    </teiHeader>
     <text>
         <body>

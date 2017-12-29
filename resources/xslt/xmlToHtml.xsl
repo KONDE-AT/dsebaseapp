@@ -300,7 +300,7 @@
         </xsl:choose>
     </xsl:template><!-- resp -->
     <xsl:template match="tei:respStmt/tei:resp">
-        <xsl:apply-templates/>&#160;
+        <xsl:apply-templates/> 
     </xsl:template>
     <xsl:template match="tei:respStmt/tei:name">
         <xsl:for-each select=".">

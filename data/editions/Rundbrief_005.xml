@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0">
+      <fileDesc>
+         <titleStmt>
+            <title type="main"> Digitale Edition Rundbriefe des Zentralinstitutes für
+               Theaterwissenschaft an der Universität Wien 1944-45</title>
+            <title type="sub">Digitale Edition des 5. Rundbriefs 1944</title>
+            <principal>
+               <rs ref="#reiter_vicky" type="person">Vicky Reiter</rs>
+            </principal>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <rs ref="#reiter_vicky" type="person">Vicky Reiter</rs>
+            </publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+                  <p> The (CC BY-SA 4.0)-License applies to this document. </p>
+                  <p> You are allowed to share (copy and redistribute the material in any medium or
+                     format) and adapt (remix, transform, and build upon the material) for any
+                     purpose, even commercially. </p>
+                  <p> You must give appropriate credit, provide a link to the license, and indicate
+                     if changes were made. You may do so in any reasonable manner, but not in any
+                     way that suggests the licensor endorses you or your use. </p>
+                  <p> ShareAlike — If you remix, transform, or build upon the material, you must
+                     distribute your contributions under the same license as the original. </p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <institution>Archiv Institut Theater-, Film- und
+                     Medienwissenschaften</institution>
+                  <repository>Nachlass Kindermann</repository>
+                  <idno>Signatur efef13 Schachtel 7 Mappe 5 Zahl 37</idno>
+               </msIdentifier>
+               <history>
+                  <origin when="1944-12"/>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../indices/listperson.xml" xpointer="listperson">
+               <fallback xmlns="http://www.w3.org/2001/XInclude">File to include couldn't be
+                  found</fallback>
+            </xi:include>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../indices/listplace.xml" xpointer="listplace">
+               <fallback xmlns="http://www.w3.org/2001/XInclude">File to include couldn't be
+                  found</fallback>
+            </xi:include>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../indices/listorg.xml" xpointer="listorg">
+               <fallback xmlns="http://www.w3.org/2001/XInclude">File to include couldn't be
+                  found</fallback>
+            </xi:include>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../indices/listwork.xml" xpointer="listwork">
+               <fallback xmlns="http://www.w3.org/2001/XInclude">File to include couldn't be
+                  found</fallback>
+            </xi:include>
+         </p>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <pb n="1"/>
+         <head type="main" style="text-align:center" rend="underline">Rundbrief</head>
+         <!-- underline stimmt ned ganz, weil nicht durchgängig unterstrichen -->
+         <head type="sub" style="text-align:center">des <rs ref="#zentralinstitut">Zentralinstituts
+               für Theaterwissenschaft</rs> an der Universität <hi rend="letterspace">Wien</hi>.</head>
+         <head type="sub">
+            <date when="1944-12">Dezember 1944.</date>
+            <num>No. 5</num> erscheint jährlich viermal</head>
+         <div type="letter" n="1">
+            <salute>Liebe Kameraden !</salute>
+            <p>Bald wird es <date when="1944-12-24" type="holiday" subtype="christmas">Weihnachten</date>. Da wandern unsere Gedanken wieder besonders herzlich zu
+               <!-- Lösung für Einzug d. 1. Zeile? --> Euch allen hinaus. Viele von Euch haben in
+               ihren Antworten auf unseren letzten Rundbrief voll freundlicher Sorge gefragt, ob
+               unser <rs ref="#zentralinstitut" type="org">Zentralinstitut</rs> vom totalen
+               Kriegseinsatz schwerer betroffen wurde. Natürlich haben auch wir unseren Tribut
+               geleistet. Da aber die <orgName type="university" subtype="faculty">Philosophische
+                  Fakutltät</orgName> der <orgName type="university">Wiener Universität</orgName>
+               weiter <!-- Kategorisierung? Uni > Fakultät > Institut? --> aufrecht erhalten wurde,
+               durften auch wir unsere Arbeit im wesentlichen weiterführen.</p>
+            <p>Die Zahl unserer Institutsmitglieder ist freilich viel kleiner geworden. Die jungen
+               und mittleren Semester sind zum grossen Teil in den Rüstungseinsatz gegangen.
+               Verblieben sind, gemäss den Richtlinien des <rs ref="#reichserziehungsministerium" type="org">Reichserziehungsministeriums</rs>, die Examenskandidaten, die bis zum
+                  <date when="1944-05-01">1. Mai 1945</date> ihre Doktorexamina abzuschliessen
+               vermögen, die Versehrten, die überhaupt weiterstudieren dürfen, die Rekonvaleszenten
+               unter den Wehrdienstpflichtigen, die etwa für mehrere Monate in Lazarettbehandlung
+               sind und während dieser Zeit studieren dürfen, Kriegerwitwen, einige aus
+               gesundheitlichen Gründen vom Wehr- und Arbeitseinsatz Befreite und im sogenannten
+               nebenberuflichen Studium einige weibliche Studierende, die tagsüber in der
+               Rüstungsindustrie arbeiten, <time notBefore="17:00:00">nachmittags ab 17 Uhr</time>
+               aber dann Vorlesungen un Uebungen besuchen dürfen.</p>
+            <pb n="2"/>
+            <fw type="pageNum" style="text-align:center">– 2 –</fw>
+            <p>Gerade mit Rücksicht auf die letztgenannten Studierenden und im Hinblick auf die in
+               die Mittagsstunden fallende Alarme wurde diesmal auch die Hauptvorlesung auf
+               Nachmittag verlegt. Auch finden diese Vorlesungen nicht mehr, wie bisher, im
+                  <placeName type="room">Auditorium Maximum</placeName>, sondern im schönen
+                  <placeName type="room">Kainzraum, also dem eigenen Hörsaal des Zentralinstituts in
+                  der Hofburg</placeName> statt, der zu diesem Zweck mit einem Projektionsapparat
+               ausgestattet wurde.</p>
+            <p>Viele von den Fernbetreuten - und ihre Anzahl ist indessen auf <num type="cardinal">399</num> gestiegen, weil nach einem Erlass des
+                  <roleName>Reichserziehungsministers</roleName> auch die zum Rüstungseinsatz
+               Einberufenen fernbetreut werden sollen - fragten bei uns an, ob <rs ref="#zentralinstitut" type="org">unser Institut</rs> bei den Luftangriffen auf
+                  <rs ref="#wien" type="place">Wien</rs> Schaden genommen habe. Gottlob ist das
+               bisher nicht in erheblichem Masse der Fall gewesen. Am <date when="1944-09-10">10.
+                  September 1944</date> waren freilich zwei schwere Bomben auf den altehrwürdigen
+                  <rs ref="#michaelerplatz" type="place">Michaelerplatz</rs>, dicht vor unseren
+               Fenstern, niedergegangen. Da gab es nun gar viele zerbrochene Fensterscheiben und aus
+               den Angeln gehobene Fensterrahmen. Aber auch dieser Schaden ist dank der
+               unermüdlichen Selbsthilfe unserer Assistentinnen und Studierenden zum grössten Teil
+               wieder behoben. Auch das <rs ref="#burgtheater" type="org">Burgtheater</rs> und die
+                  <rs ref="#staatsoper" type="org">Staatsoper</rs> stehen noch unversehrt. <date when="1944-12-12">(12.XII.1944)</date>
+            </p>
+            <p>Sehr herzlich begrüssen wir nun alle die neu hinzugekommenen Fernbetreuten - die an
+               der Front und die in der Rüstung - und bitten sie, sich unserm Kreis so eng
+               einzufügen, wie dies bisher schon fast alle die andern taten, mit denen wir nun in
+               eineinhalbjährigem Gedankenaustausch stehen. Die von der Rüstung sind uns ja alle
+               vertraut, weil sie bisher aktive Institutsmitglieder waren und unsere Arbeit deshalb
+               besonders genau kennen. Sie mögen durch dieses Rundbriefe in der altgewohnten Weise
+               an unserem Tun und Treiben teilnehmen, damit sie einst <pb n="3"/>
+               <fw type="pageNum" style="text-align:center">– 3 –</fw> bei ihrer Wiederkehr dort
+               wieder beginnen können, wo sie einmal aufhören mussten.</p>
+            <p>In diesem <date>Wintersemester 1944/45</date> hält <hi rend="underline">
+                  <rs ref="#kindermann_heinz" type="person" subtype="acting">Prof. Kindermann</rs>
+               </hi> ein dreistündiges Hauptkolleg über <hi rend="underline">"Das deutsche und
+                  europäische Barockheater"</hi>. Im Proseminar wird diesmal die <hi rend="underline">Geschichte des Bühnenbildes</hi> in einer Reihe von Referaten
+               durchgearbeitet, die vom Theater der griechischen Antike bis zum deutschen
+               Gegenwartstheater führen. Und im Hauptseminar gelten die Referate dem <hi rend="underline">Wesen und der Geschichte der Dramaturgie</hi>, wobei ebenfalls
+               die Entwicklungslinien von <rs ref="#aristoteles" type="person" subtype="mentioned">Aristoteles</rs> bis zu den allerjüngsten dramaturgischen Bemühungen gezogen
+               werden. Wir werden Euch dann im nächsten Rundbrief, zu <date>Semesterende</date>,
+               genauere Berichte und Inhaltsangaben über den Verlauf des Hauptkollegs und der
+               Seminare vorlegen.</p>
+            <p>
+               <rs ref="#börge_" type="person" subtype="acting">Dozent Dr. Börge </rs>hält diesmal
+               sein dramaturgisches Kolloquium über <hi rend="underline">"Rollenpsychologie"</hi>.
+               Daneben hält er ein filmkundliches Kolloqium über den <hi rend="underline">"Film als
+                  Gesamtkunstwerk"</hi>. Dazu kommt seine einstündige Vorlesung über <hi rend="underline">"Die Bühnengestalt der klassischen Hauptwerke des deutschen
+                  Spielplans".</hi> Es handelt sich um eine zyklische Vorlesung deren erster Teil in
+               diesem Semester mit der Entwicklung von <rs ref="#kalidasa" type="person" subtype="mentioned">Kalidasa</rs> bis <rs ref="#shakespeare_william" type="person" subtype="mentioned">Shakespeare</rs> befasst ist.</p>
+            <p>
+               <hi rend="underline">
+                  <rs ref="#niederführ_" type="person" subtype="acting">Prof. Niederführ</rs>
+               </hi> widmete sein in zwei Stufen durchgeführtes Kolloquium über praktische
+               Bühnenkunde diesmal Problemen der <hi rend="underline">Regiebuch-Gestaltung und</hi>
+               des <hi rend="underline">Spielplan - Aufbaues.</hi> Auch über den Verlauf der
+               Vorlesungen und Uebungen von <rs ref="#börge_" type="person" subtype="acting">Dozent
+                  Börge</rs> und <rs ref="#niederführ_" type="person" subtype="mentioned">Prof.
+                  Niederführ</rs> werden wir im nächsten Rundbrief genau berichten.</p>
+            <p>Neu augenommen wurde für einen engen Kreis reifster Studierender ein <hi rend="underline">Arbeitskreis über Prinzi- <pb n="4"/>
+                  <fw type="pageNum" style="text-align:center">– 4 –</fw>pien der Regie,</hi> den
+               der <rs ref="#waniek_herbert" type="person" subtype="acting">Oberregisseur des
+                  Burgtheaters Herbert Waniek</rs> leitet. Er setzte überaus lebending mit einem
+               köstlichen Regie-Experiment ein und verspricht viel Gutes für unsere
+               Institutsmitglieder. Wir geben im nächsten Rundbrief dann einen Sonderbericht über
+               diesen Arbeiterkreis.</p>
+            <p>Die <hi rend="underline">Ringvorlesung</hi> soll mit Rücksicht auf eine Reihe von
+               Studierenden, die augenblicklich in einem kurzfristigen Arbeitseinsatz stehen, erst
+               im <date when="1944-01">Januar</date> beginnen. Doch wurde wenigstens ein Vortrag
+               schon vorweggenommen, der zugleich als Sonderveranstaltung galt, ein Vortrag von dem
+               bekannten <roleName>Bühnenbildner</roleName>
+               <rs ref="#niedermoser_" type="person" subtype="acting">Prof. <hi rend="underline">Niedermoser</hi>
+                    </rs> (<orgName type="university">Reichshochschule für
+                  angewandte Kunst</orgName>), von dem unten gleich genauer die Rede sein wird.</p>
+            <p>Unsere besonderen Veranstaltungen werden nun, im Zeichen des totalen Kriegseinsatzes,
+               natürlich nur mehr im engsten Rahmen unseres Instituts, also auch in unserem
+                  <placeName type="room">Kainzraum</placeName>, durchgeführt. So fang in diesem
+               Rahmen anlässlich des <date type="occasion">450.Geburtstages</date> des grossen
+                  <roleName>Meistersingers von Nürnberg</roleName>
+               <!-- roleName passt eigentlich nicht... --> eine wohlgelungene <hi rend="underline">Hans-Sachsfeier</hi> am <date when="1944-11-21">21. November 1944</date> statt.Zu
+               Beginn sprach <rs ref="#weinberger_hilde" type="person" subtype="acting">Hilde <hi rend="underline">Weinberger</hi> (die bekannte junge Vortragskünstlerin</rs>,
+               die <rs ref="#zentralinstitut" type="org">unserm Institut</rs> als Mitglied angehört)
+                  <rs ref="#goethe_johann" type="person" subtype="mentioned">Goethes</rs>
+               <rs ref="#hans_sachsens_poetische_sendung" type="work">Hymnus "Hans Sachsens
+                  poetische Sendung"</rs>. Dann nahm <rs ref="#kindermann_heinz" type="person" subtype="acting">Prof. <hi rend="underline">Kindermann</hi>
+                    </rs> das Wort zu
+               seinem Einführungsvortrag über "Hans Sachs und das deutsche Theater", in dem er etwa
+               ausführte:</p>
+            <q type="spoken">
+               <p>"Nur wenige deutsche Dramatiker können das Recht für sich in Anspruch nehmen, in
+                  jedem Sinn Volksdichter gewesen zu sein, also Dichter aus der Mitte des Volkes und
+                  Dichter zugleich für alles Volk. Unter diesen wenigen aber nimmt <rs ref="#sachs_hans" type="person" subtype="mentioned">Hans Sachs</rs>, dessen
+                     <date type="occasion">450. Geburtstag</date>
+                  <pb n="5"/>
+                  <fw type="pageNum" style="text-align:center">– 5 –</fw> wir nun feiern, einen ganz
+                  besonderen Ehrenplatz ein, denn <rs ref="#sachs_hans" type="person" subtype="mentioned">Hans Sachs</rs> ist ja zudem der einzige Dichter des <date notBefore="1500" notAfter="1599">16. Jhdts.</date>, der heute noch volkstümlich
+                  ist, der heute noch hundertfach aufgeführt wird. Ja, wenn wir uns fragen, was denn
+                  von einmalig geformter Dichtung (also das Volkslied, Märchen und Sagen
+                  ausgenommen) aus weit zurückliegenden Jahrhunderten heute noch im Bewusstsein
+                  unseres ganzen Volkes, jenseits des blossen Bildungskodex, lebendig ist und über
+                  alle Zwischenzeiten hinüber wirksam blieb, dann erscheint uns <rs ref="#sachs_hans" type="person" subtype="mentioned">Hans Sachs</rs> mit seiner
+                  köstlich farbensatten Schwank- und Fastnachtsspiel-Welt fast die weitest
+                  zurückliegende Insel voll dauern gültiger Gestalten und Weisheiten, voll des
+                  sprühenden Humors und voll teifer Menschlichkeit.</p>
+               <p>Fragen wir uns nach dem Warum dieser beglückenden Dauer inmitten all des
+                  flüchtigen Wechsels der Erscheinungen, dann fällt die Antwort nicht ganz so
+                  einfach aus, als es im ersten Augenblick anmuten möchte.</p>
+               <p> Zunächst ist diese Welt der Schwänke und Fastnachtsspiele inmitten des
+                  Gesamtwerks vo <rs ref="#sachs_hans" type="person" subtype="mentioned">Hans
+                     Sachs</rs> nur ein bescheidener Bruchteil. Sie werden ja zahlenmässig von all
+                  den tausenden Meistergesängen, von all den Streitschriften im Dienst der
+                  Lutherischen Reformation und von all den hunderten von Tragödien weit überboten.
+                  Aber gerade in diese Schwänke und Fastnachtsspiele ist mehr als in die wesentlich
+                  konstruktiveren übrigen Dichtungen <rs ref="#sachs_hans" type="person" subtype="mentioned">Sachsens</rs> ein Jahrtausenderbe deutschen und
+                  germanischen Brauchtums, deutscher und germanischer Menschensicht hineingewachsen.
+                  Wir wissen nun aus den Forschungen von <rs ref="#stumpfl_" type="person" subtype="mentioned">Stumpfl</rs>, wie gerade dieses charakteristische und
+                  sozialkriti- <pb n="6"/>
+                  <fw type="pageNum" style="text-align:center">– 6 –</fw>sche Profeil der
+                  Festnachtsspiele auf uralt-germanische Vorformen der Rüge-und Gerichtsspiele sowie
+                  der Fruchtbarkeitsriten zurückgeht, sodass <rs ref="#sachs_hans" type="person" subtype="mentioned">Hans Sachs</rs> , der wieder innerhalb der Fastnachtsspiel
+                  - Welt des <date notBefore="1500-01-01" notAfter="1599-12-31">16.
+                     Jahrhunderts</date> nicht ein Anfänger, sondern ein Vollender nach vielen
+                  Vorstufen war, das Endglied einer unendlich langen Kette ist. In seinem
+                  Fastnachtsspiel - Bereich fliesst gleichsam das Beste dieser ganzen Gattung,
+                  gepaart mit der Volksweisheit und dem Volkshumor aus Jahrtausenden noch einmal zu
+                  einer prachtvollen Summe des Lebens, zu einer Revue menschlicher Schwäche und
+                  Torheiten im Spiegel germanisch - deutscher Sicht zusammen.</p>
+               <p>
+                  <rs ref="#sachs_hans" type="person" subtype="mentioned">Der Nürnberger
+                     Schneidersohn Hans Sachs</rs> war dabei nicht bloss auf den Horizont seiner
+                  Vaterstadt angewiesen. Dieser <rs ref="#nürnberg" type="place">Nürnberger</rs>
+                  Horizont des <date notBefore="1500-01-01" notAfter="1599-12-31">16.
+                     Jahrhunderts</date> war freilich allein schon reich genug; denn als
+                  Schnittpunkt norsüdlicher Handelsbeziehungen floss hier vieles an Einsichten aus
+                  halb Europa vorbei, was sonst nicht leicht in solcher Fülle an einer Stelle
+                  sichtbar gewesen wäre. Und da <rs ref="#nürnberg" type="place">Nürnberg</rs>
+                  zugleich Hochburg des Humanismus, Residenz des <rs ref="pirckheimer_willibald" type="person" subtype="mentioned">Erzhumanisten Pirckheimer</rs> war, in dessen
+                  Diplomatenhaus die berühmtesten Männer der ganzen Eproche ein- und ausgingen,
+                  fehlte es nicht daran, dass auch der Lateinschüler <rs ref="#sachs_hans" type="person" subtype="mentioned">Sachs</rs> viel von dieser neu erarbeiteten
+                  Welt in seinen Handwerker-Horizont bannte. Und was sagt uns nicht für seine
+                  Holzschnitt-Manier das Gegenüber von <rs ref="#sachs_hans" type="person" subtype="mentioned">Hans Sachs</rs> und <rs ref="#dürer_albrecht" type="person" subtype="mentioned">Albrecht Dürer</rs> , <rs ref="#kraft_adam" type="person" subtype="mentioned">Adam Kraft</rs> und <rs ref="#vischer_peter" type="person" subtype="mentioned">Peter Vischer</rs> im gleichen <rs ref="#nürnberg" type="place">Nürnberg</rs> dieser Zeit! Es gibt nicht leicht eine gesättigtere
+                  Kulturatmosphäre, aus der die Gestalter des Volkes aufsteigen können.</p>
+               <pb n="7"/>
+               <fw type="pageNum" style="text-align:center">– 7 –</fw>
+               <p> Aber <rs ref="#sachs_hans" type="person">der Handwerksbursche Hans Sachs</rs>
+                  hatte ja auch die Welt gesehen, oder zumindest sein weites, schönes deutsches
+                  Vaterland. Er hatte Land und Leute erwandert. Mit <num type="cardinal">17</num>
+                  Jahren war der Geselle über <rs ref="#regensburg" type="place">Regensburg</rs>
+                  nach <rs ref="#tirol" type="place">Tirol</rs> gekommen und in <rs ref="#innsbruck" type="place">Innsbruck</rs> in die Dienste <rs ref="#von_Habsburg_Maximilian">Kaiser Maximilians, des letzten Ritters</rs>, getreten. Dann führte sein Weg
+                  durch <rs ref="#bayern" type="place">Bayern</rs> und <rs ref="#franken" type="place">Franken</rs> an den Rhein, über <rs ref="#koblenz" type="place">Koblenz</rs> und <rs ref="#köln" type="place">Köln</rs> nach <rs ref="#aachen" type="place">Aachen</rs>. Ueberall finden wir ihn in den Singschulen der
+                  Meister. Mit <num type="cardinal">19</num> Jahren treffen wir ihn in <rs ref="#wels" type="place">Wels</rs> - und dort beschloss er, sich der Dichtkunst
+                  zu widmen. In einer Münchner Singschule trug er seine ersten Meistergesänge vor.
+                  Und noch weitere drei Jahre ging er landauf und landab, nördlich bis nach <rs ref="#lübeck" type="place">Lübeck</rs>, sündlich bis zu uns nach <rs ref="#wien" type="place">Wien</rs>. Erst <date notBefore="1516-11-05" notAfter="1516-12-31">1516</date>, also mit 22 Jahren, machte er sich in <rs ref="#nürnberg" type="place">Nürnberg</rs> sesshaft:</p>
+               <p> Als er aber nun seine Dichtungen immer selbstständiger aufbaute, als er in ihnen
+                  die Welt seiner Erfahrungen ausbreitete und dafür eine unheimliche Fülle der
+                  Stoffe aus der Antike, aus dem <rs ref="#il_decamerone" type="work">Dekamerone</rs>, aus den Heldensagen und Volksbüchern, kurz aus allem, was
+                  überhaupt bis dahin die Weltliteratur geboten hatte, in Anspruch nahm, da war es
+                  nur selbstverständlich, dass er bald aus der Reihe tanzte. Die Zäune der
+                  Meistersinger-Regeln wurden ihm rasch zu eng und so verband er mit der Vollendung
+                  der Meistersinger-Welt auch schon ihre Ueberwindung. Denn ihre allzu konstruktive
+                  Gesetzmässigkeit erfüllte er mit dem Organismus des Gewachsenen, des Vollblütigen
+                  und Lebendigen, des scharf Zupackenden und, wo nötig, auch des Karikierenden.</p>
+               <p> Und er bot immer wieder eine Uebertragung all dieser vershiedenartigen Vorwürfe
+                  nicht nur </p>
+            </q>
+         </div>
+         <div type="letter" n="2">
+            <fw type="pageNum" style="text-align:center">– 26 –</fw>
+            <salute>Liebe Kameraden !</salute>
+            <p>Wenn ich Euch diesmal die Grüsse der <orgName>Fachschaft</orgName> und somit der noch
+               studierenden Kollegen übermittle, so geschieht das unter ganz anderen Voraussetzunen
+               als es noch im letzten Rundbrief möglich war. Der totale Kriegseinsatz hat auch bei
+               uns die Reihen stark gelichtet. Der Grossteil der im letzten Semester hörenden
+               Kollegen steht heute im Rüstungseinsatz oder ist wieder zur
+                  <orgName>Wehrmacht</orgName> zurückberufen worden. Somit ist es also nur einer
+               kleinen Gruppe möglich, das Studium fortzusetzen. Es ist ganz selbstverständlich,
+               dass wir, die wir diese Möglichkeit noch besitzen, die in den vergangenen Semester
+               geleistete Arbeit womöglich noch zu intensivieren suchen. Durch die einschneidenden
+               Massnahmen des totalen Krieges ist es mir niht mehr möglich, die geplanten
+               Veranstaltungen in diesem Semester voll durchzufürhen. Aber auch hier hat sich ein
+               Ausgleich finden lassen, indem die <orgName>Fachschaft</orgName> Theater in
+               Kulturabenden die kulturelle und schöngeistige Betreuung der Studierenden un der im
+               Rüstungseinsatz stehenden Kollegen aufnimmt. Die Kulturabende, die in diesem Semester
+               zur Durchführung gelangen, beschäftigen sich vor allem mit den dramatischen
+               Dichtungen der deutschen Klassiker die in Form von Lesungen abgehalten werden. Im
+               Rahmen dieser Lesungen können sich die Kollegen der Theaterwissenschaft betätigen,
+               die gleichzeitig auch die Schauspiellaufbahn einschlagen wollen. Es ist zwar nur ein
+               kleiner Ausgleich, aber schon die erste Lesung (<rs ref="#grillparzer_franz" type="person" subtype="mentioned">Grillparzer</rs> - Abend) hat bewiesen, welche
+               Freude und Anregung uns die Gestaltung dieser Lesung geben kann.</p>
+            <p>Nun bitte ich Euch, liebe Kameraden, nicht ungehalten zu sein, dass ich mit dem
+               Briefwechsel Front und Heimat nicht so einsetzen kann, wie es <pb n="27"/>
+               <fw type="pageNum" style="text-align:center">– 27 –</fw> mir im letzten Semester
+               vorgeschwebt hat. Aber die geringe Anzahl der Studierenden und die zunehmende Anzahl
+               der fernbetreuten Kameraden lassen diesen Briefwechsel im gedachten Ausmass nicht zur
+               Durchführung gelangen. ich bin jedoch nach wie vor bemühr
+               <!-- sic - das wurde wohl nicht korrigiert -->, diese Schwierigkeiten zu überbrücken,
+               nur bitte ich Euch um Verständnis.</p>
+            <p>Liebe Kameraden! Ich möchte Euch, so weit es uns die momentan schwere Kampfphase
+               ermöglicht, trotzdem ein recht frohes Fest wünschen.</p>
+            <salute rend="letterspace">Heil Hitler!</salute>
+            <lb/>
+            <signed style="text-align:center">Euer<lb/>
+               <rs ref="#zeckl_alfred" type="person"> Fachschaftsleiter <lb/> A. Zeckl</rs>
+            </signed>
+         </div>
+      </body>
+   </text>
+</TEI>

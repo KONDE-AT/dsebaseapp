@@ -2,14 +2,14 @@
 <meta xmlns="http://exist-db.org/xquery/repo">
     <description>This is a eXist-db based application to bootstrap the developement process of a digital edition web application</description>
     <author ref="http://d-nb.info/gnd/129199176">Peter Andorfer</author>
-    <website/>
+    <repo:website xmlns:repo="http://exist-db.org/xquery/repo"/>
     <status>alpha</status>
-    <license>GNU-LGPL</license>
-    <copyright>true</copyright>
+    <repo:license xmlns:repo="http://exist-db.org/xquery/repo">GNU-LGPL</repo:license>
+    <repo:copyright xmlns:repo="http://exist-db.org/xquery/repo">true</repo:copyright>
     <type>application</type>
-    <target>dsebaseapp</target>
+    <repo:target xmlns:repo="http://exist-db.org/xquery/repo">dsebaseapp</repo:target>
     <prepare>pre-install.xql</prepare>
-    <finish>post-install.xql</finish>
-    <permissions xmlns:repo="http://exist-db.org/xquery/repo" password="" user="admin" group="dba" mode="rw-rw-r--"/>
+    <repo:finish xmlns:repo="http://exist-db.org/xquery/repo">post-install.xql</repo:finish>
+    <permissions xmlns:_5="http://www.w3.org/2000/xmlns/" xmlns:repo="http://exist-db.org/xquery/repo" password="" user="admin" group="dba" mode="rw-rw-r--" _5:#unknown="http://exist-db.org/xquery/repo"/>
 
 </meta>

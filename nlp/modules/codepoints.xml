@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A TEI file automatically converted from CSV</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>No publication statement</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>A TEI file automatically converted from a CSV file.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <table>
+         <row>
+                <cell n="1">ö</cell>
+                <cell n="2">Á¶</cell>
+            </row>
+            <row>
+                <cell n="1">Universität</cell>
+                <cell n="2">UniversitÁ¤t</cell>
+            </row>
+            <row>
+               <cell n="1">€</cell>
+               <cell n="2">â‚¬</cell>
+            </row>
+            <row>
+               <cell n="1">‚</cell>
+               <cell n="2">â€š</cell>
+            </row>
+            <row>
+               <cell n="1">ƒ</cell>
+               <cell n="2">Æ’</cell>
+            </row>
+            <row>
+               <cell n="1">„</cell>
+               <cell n="2">â€ž</cell>
+            </row>
+            <row>
+               <cell n="1">…</cell>
+               <cell n="2">â€¦</cell>
+            </row>
+            <row>
+               <cell n="1">†</cell>
+               <cell n="2">â€</cell>
+            </row>
+            <row>
+               <cell n="1">‡</cell>
+               <cell n="2">â€¡</cell>
+            </row>
+            <row>
+               <cell n="1">ˆ</cell>
+               <cell n="2">Ë†</cell>
+            </row>
+            <row>
+               <cell n="1">‰</cell>
+               <cell n="2">â€°</cell>
+            </row>
+            <row>
+               <cell n="1">Š</cell>
+               <cell n="2">Å</cell>
+            </row>
+            <row>
+               <cell n="1">‹</cell>
+               <cell n="2">â€¹</cell>
+            </row>
+            <row>
+               <cell n="1">Œ</cell>
+               <cell n="2">Å’</cell>
+            </row>
+            <row>
+               <cell n="1">Ž</cell>
+               <cell n="2">Å½</cell>
+            </row>
+            <row>
+               <cell n="1">‘</cell>
+               <cell n="2">â€˜</cell>
+            </row>
+            <row>
+               <cell n="1">’</cell>
+               <cell n="2">â€™</cell>
+            </row>
+            <row>
+               <cell n="1">“</cell>
+               <cell n="2">â€œ</cell>
+            </row>
+            <row>
+               <cell n="1">”</cell>
+               <cell n="2">â€</cell>
+            </row>
+            <row>
+               <cell n="1">•</cell>
+               <cell n="2">â€¢</cell>
+            </row>
+            <row>
+               <cell n="1">–</cell>
+               <cell n="2">â€“</cell>
+            </row>
+            <row>
+               <cell n="1">—</cell>
+               <cell n="2">â€”</cell>
+            </row>
+            <row>
+               <cell n="1">˜</cell>
+               <cell n="2">Ëœ</cell>
+            </row>
+            <row>
+               <cell n="1">™</cell>
+               <cell n="2">â„¢</cell>
+            </row>
+            <row>
+               <cell n="1">š</cell>
+               <cell n="2">Å¡</cell>
+            </row>
+            <row>
+               <cell n="1">›</cell>
+               <cell n="2">â€º</cell>
+            </row>
+            <row>
+               <cell n="1">œ</cell>
+               <cell n="2">Å“</cell>
+            </row>
+            <row>
+               <cell n="1">ž</cell>
+               <cell n="2">Å¾</cell>
+            </row>
+            <row>
+               <cell n="1">Ÿ</cell>
+               <cell n="2">Å¸</cell>
+            </row>
+            <row>
+               <cell n="1">¡</cell>
+               <cell n="2">Â¡</cell>
+            </row>
+            <row>
+               <cell n="1">¢</cell>
+               <cell n="2">Â¢</cell>
+            </row>
+            <row>
+               <cell n="1">£</cell>
+               <cell n="2">Â£</cell>
+            </row>
+            <row>
+               <cell n="1">¤</cell>
+               <cell n="2">Â¤</cell>
+            </row>
+            <row>
+               <cell n="1">¥</cell>
+               <cell n="2">Â¥</cell>
+            </row>
+            <row>
+               <cell n="1">¦</cell>
+               <cell n="2">Â¦</cell>
+            </row>
+            <row>
+               <cell n="1">§</cell>
+               <cell n="2">Â§</cell>
+            </row>
+            <row>
+               <cell n="1">¨</cell>
+               <cell n="2">Â¨</cell>
+            </row>
+            <row>
+               <cell n="1">©</cell>
+               <cell n="2">Â©</cell>
+            </row>
+            <row>
+               <cell n="1">ª</cell>
+               <cell n="2">Âª</cell>
+            </row>
+            <row>
+               <cell n="1">«</cell>
+               <cell n="2">Â«</cell>
+            </row>
+            <row>
+               <cell n="1">¬</cell>
+               <cell n="2">Â¬</cell>
+            </row>
+            <row>
+               <cell n="1">®</cell>
+               <cell n="2">Â®</cell>
+            </row>
+            <row>
+               <cell n="1">¯</cell>
+               <cell n="2">Â¯</cell>
+            </row>
+            <row>
+               <cell n="1">°</cell>
+               <cell n="2">Â°</cell>
+            </row>
+            <row>
+               <cell n="1">±</cell>
+               <cell n="2">Â±</cell>
+            </row>
+            <row>
+               <cell n="1">²</cell>
+               <cell n="2">Â²</cell>
+            </row>
+            <row>
+               <cell n="1">³</cell>
+               <cell n="2">Â³</cell>
+            </row>
+            <row>
+               <cell n="1">´</cell>
+               <cell n="2">Â´</cell>
+            </row>
+            <row>
+               <cell n="1">µ</cell>
+               <cell n="2">Âµ</cell>
+            </row>
+            <row>
+               <cell n="1">¶</cell>
+               <cell n="2">Â¶</cell>
+            </row>
+            <row>
+               <cell n="1">·</cell>
+               <cell n="2">Â·</cell>
+            </row>
+            <row>
+               <cell n="1">¸</cell>
+               <cell n="2">Â¸</cell>
+            </row>
+            <row>
+               <cell n="1">¹</cell>
+               <cell n="2">Â¹</cell>
+            </row>
+            <row>
+               <cell n="1">º</cell>
+               <cell n="2">Âº</cell>
+            </row>
+            <row>
+               <cell n="1">»</cell>
+               <cell n="2">Â»</cell>
+            </row>
+            <row>
+               <cell n="1">¼</cell>
+               <cell n="2">Â¼</cell>
+            </row>
+            <row>
+               <cell n="1">½</cell>
+               <cell n="2">Â½</cell>
+            </row>
+            <row>
+               <cell n="1">¾</cell>
+               <cell n="2">Â¾</cell>
+            </row>
+            <row>
+               <cell n="1">¿</cell>
+               <cell n="2">Â¿</cell>
+            </row>
+            <row>
+               <cell n="1">À</cell>
+               <cell n="2">Ã€</cell>
+            </row>
+            <row>
+               <cell n="1">Á</cell>
+               <cell n="2">Ã</cell>
+            </row>
+            <row>
+               <cell n="1">Â</cell>
+               <cell n="2">Ã‚</cell>
+            </row>
+            <row>
+               <cell n="1">Ã</cell>
+               <cell n="2">Ãƒ</cell>
+            </row>
+            <row>
+               <cell n="1">Ä</cell>
+               <cell n="2">Ã„</cell>
+            </row>
+            <row>
+               <cell n="1">Å</cell>
+               <cell n="2">Ã…</cell>
+            </row>
+            <row>
+               <cell n="1">Æ</cell>
+               <cell n="2">Ã†</cell>
+            </row>
+            <row>
+               <cell n="1">Ç</cell>
+               <cell n="2">Ã‡</cell>
+            </row>
+            <row>
+               <cell n="1">È</cell>
+               <cell n="2">Ãˆ</cell>
+            </row>
+            <row>
+               <cell n="1">É</cell>
+               <cell n="2">Ã‰</cell>
+            </row>
+            <row>
+               <cell n="1">Ê</cell>
+               <cell n="2">ÃŠ</cell>
+            </row>
+            <row>
+               <cell n="1">Ë</cell>
+               <cell n="2">Ã‹</cell>
+            </row>
+            <row>
+               <cell n="1">Ì</cell>
+               <cell n="2">ÃŒ</cell>
+            </row>
+            <row>
+               <cell n="1">Í</cell>
+               <cell n="2">Ã</cell>
+            </row>
+            <row>
+               <cell n="1">Î</cell>
+               <cell n="2">ÃŽ</cell>
+            </row>
+            <row>
+               <cell n="1">Ï</cell>
+               <cell n="2">Ã</cell>
+            </row>
+            <row>
+               <cell n="1">Ð</cell>
+               <cell n="2">Ã</cell>
+            </row>
+            <row>
+               <cell n="1">Ñ</cell>
+               <cell n="2">Ã‘</cell>
+            </row>
+            <row>
+               <cell n="1">Ò</cell>
+               <cell n="2">Ã’</cell>
+            </row>
+            <row>
+               <cell n="1">Ó</cell>
+               <cell n="2">Ã“</cell>
+            </row>
+            <row>
+               <cell n="1">Ô</cell>
+               <cell n="2">Ã”</cell>
+            </row>
+            <row>
+               <cell n="1">Õ</cell>
+               <cell n="2">Ã•</cell>
+            </row>
+            <row>
+               <cell n="1">Ö</cell>
+               <cell n="2">Ã–</cell>
+            </row>
+            <row>
+               <cell n="1">×</cell>
+               <cell n="2">Ã—</cell>
+            </row>
+            <row>
+               <cell n="1">Ø</cell>
+               <cell n="2">Ã˜</cell>
+            </row>
+            <row>
+               <cell n="1">Ù</cell>
+               <cell n="2">Ã™</cell>
+            </row>
+            <row>
+               <cell n="1">Ú</cell>
+               <cell n="2">Ãš</cell>
+            </row>
+            <row>
+               <cell n="1">Û</cell>
+               <cell n="2">Ã›</cell>
+            </row>
+            <row>
+               <cell n="1">Ü</cell>
+               <cell n="2">Ãœ</cell>
+            </row>
+            <row>
+               <cell n="1">Ý</cell>
+               <cell n="2">Ã</cell>
+            </row>
+            <row>
+               <cell n="1">Þ</cell>
+               <cell n="2">Ãž</cell>
+            </row>
+            <row>
+               <cell n="1">ß</cell>
+               <cell n="2">ÃŸ</cell>
+            </row>
+            <row>
+               <cell n="1">à</cell>
+               <cell n="2">Ã</cell>
+            </row>
+            <row>
+               <cell n="1">á</cell>
+               <cell n="2">Ã¡</cell>
+            </row>
+            <row>
+               <cell n="1">â</cell>
+               <cell n="2">Ã¢</cell>
+            </row>
+            <row>
+               <cell n="1">ã</cell>
+               <cell n="2">Ã£</cell>
+            </row>
+            <row>
+               <cell n="1">ä</cell>
+               <cell n="2">Ã¤</cell>
+            </row>
+            <row>
+               <cell n="1">å</cell>
+               <cell n="2">Ã¥</cell>
+            </row>
+            <row>
+               <cell n="1">æ</cell>
+               <cell n="2">Ã¦</cell>
+            </row>
+            <row>
+               <cell n="1">ç</cell>
+               <cell n="2">Ã§</cell>
+            </row>
+            <row>
+               <cell n="1">è</cell>
+               <cell n="2">Ã¨</cell>
+            </row>
+            <row>
+               <cell n="1">é</cell>
+               <cell n="2">Ã©</cell>
+            </row>
+            <row>
+               <cell n="1">ê</cell>
+               <cell n="2">Ãª</cell>
+            </row>
+            <row>
+               <cell n="1">ë</cell>
+               <cell n="2">Ã«</cell>
+            </row>
+            <row>
+               <cell n="1">ì</cell>
+               <cell n="2">Ã¬</cell>
+            </row>
+            <row>
+               <cell n="1">í</cell>
+               <cell n="2">Ã­</cell>
+            </row>
+            <row>
+               <cell n="1">î</cell>
+               <cell n="2">Ã®</cell>
+            </row>
+            <row>
+               <cell n="1">ï</cell>
+               <cell n="2">Ã¯</cell>
+            </row>
+            <row>
+               <cell n="1">ð</cell>
+               <cell n="2">Ã°</cell>
+            </row>
+            <row>
+               <cell n="1">ñ</cell>
+               <cell n="2">Ã±</cell>
+            </row>
+            <row>
+               <cell n="1">ò</cell>
+               <cell n="2">Ã²</cell>
+            </row>
+            <row>
+               <cell n="1">ó</cell>
+               <cell n="2">Ã³</cell>
+            </row>
+            <row>
+               <cell n="1">ô</cell>
+               <cell n="2">Ã´</cell>
+            </row>
+            <row>
+               <cell n="1">õ</cell>
+               <cell n="2">Ãµ</cell>
+            </row>
+            <row>
+               <cell n="1">ö</cell>
+               <cell n="2">Ã¶</cell>
+            </row>
+            <row>
+               <cell n="1">÷</cell>
+               <cell n="2">Ã·</cell>
+            </row>
+            <row>
+               <cell n="1">ø</cell>
+               <cell n="2">Ã¸</cell>
+            </row>
+            <row>
+               <cell n="1">ù</cell>
+               <cell n="2">Ã¹</cell>
+            </row>
+            <row>
+               <cell n="1">ú</cell>
+               <cell n="2">Ãº</cell>
+            </row>
+            <row>
+               <cell n="1">û</cell>
+               <cell n="2">Ã»</cell>
+            </row>
+            <row>
+               <cell n="1">ü</cell>
+               <cell n="2">Ã¼</cell>
+            </row>
+            <row>
+               <cell n="1">ý</cell>
+               <cell n="2">Ã½</cell>
+            </row>
+            <row>
+               <cell n="1">þ</cell>
+               <cell n="2">Ã¾</cell>
+            </row>
+            <row>
+               <cell n="1">ÿ</cell>
+               <cell n="2">Ã¿</cell>
+            </row>
+         </table>
+      </body>
+   </text>
+</TEI>

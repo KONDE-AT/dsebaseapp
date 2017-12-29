@@ -166,7 +166,7 @@
         <xsl:apply-templates/>
     </xsl:template><!-- resp -->
     <xsl:template match="tei:respStmt/tei:resp">
-        <xsl:apply-templates/>&#160;
+        <xsl:apply-templates/> 
     </xsl:template>
     <xsl:template match="tei:respStmt/tei:name">
         <xsl:for-each select=".">
@@ -309,7 +309,7 @@
     </xsl:template>
     <xsl:template match="tei:monogr">
         <xsl:for-each select="child::node()">
-            <xsl:apply-templates/>&#160;</xsl:for-each>
+            <xsl:apply-templates/> </xsl:for-each>
     </xsl:template>
     <xsl:template match="tei:title">
         <i>

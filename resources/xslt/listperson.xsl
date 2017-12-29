@@ -10,7 +10,7 @@
                             <span class="fa fa-times"/>
                         </button>
                         <h4 class="modal-title">
-                            <xsl:value-of select="//tei:person[@xml:id=$entiyID]//tei:forename"/>&#160; 
+                            <xsl:value-of select="//tei:person[@xml:id=$entiyID]//tei:forename"/>  
                             <xsl:value-of select="//tei:person[@xml:id=$entiyID]//tei:surname"/>
                         </h4>
                     </div>
