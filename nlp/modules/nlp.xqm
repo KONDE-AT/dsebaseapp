@@ -4,6 +4,7 @@ xquery version "3.1";
  : This module contains functions needed for tokenization and lemmatization of TEI files.
  :  Be aware that this module does NOT provide any nlp-functionality by itself but it eases the interaction
  : between NLP-Web-Services and TEI-Docs stored in eXist-db
+ : @author Peter Andorfer 
 :)
  
 module namespace nlp="http://www.digital-archiv.at/ns/dsebaseapp/nlp";
@@ -17,7 +18,12 @@ import module namespace xmldb = "http://exist-db.org/xquery/xmldb";
 declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
 declare namespace tei="http://www.tei-c.org/ns/1.0";
 
-declare variable $nlp:tokenizerEnpoint := xs:anyURI("http://openconvert.clarin.inl.nl/openconvert/text");
+declare variable $nlp:tokenizerEnpoint := 
+xs:anyURI("http://openconvert.clarin.inl.nl/openconvert/text");
+
+declare variable $nlp:lemmatizerEndpoint := 
+xs:anyURI("http://127.0.0.1:8000/query/lemma?token=");
+
 declare variable $nlp:serialiserParams := 
         <output:serialization-parameters>
           <output:omit-xml-declaration value="yes"/>
@@ -30,7 +36,7 @@ declare variable $nlp:codepoints := doc('codepoints.xml');
 
 (:~
  : Sends a TEI-Document to the tokenizer web-service
- : @see http://openconvert.clarin.inl.nl/openconvert/web/help.html
+ : http://openconvert.clarin.inl.nl/openconvert/web/help.html
  :
  : @param $input An xml docuemnt which validates against the TEI-schema 
  : @return The tokenized (tei:w-tags) xml document
@@ -43,7 +49,9 @@ declare function nlp:tokenize($input as node()){
         <headers>
             <header name="Content-Type" value="application/x-www-form-urlencoded"/>
         </headers>
-    let $request := httpclient:post($nlp:tokenizerEnpoint, $content, true(), $request-headers)
+    let $request := httpclient:post(
+            $nlp:tokenizerEnpoint, $content, true(), $request-headers
+        )
     let $tei := $request
     return 
         $tei
@@ -99,6 +107,7 @@ declare function nlp:tokenize-and-save($input as node()){
 
 declare function nlp:bulk-tokenize($collection as xs:string){
     for $x in collection($collection)//tei:TEI
+        let $wait := util:wait(5000)
         let $name := util:document-name($x)
         let $docUri := $collection||$name
         let $input := doc($docUri)
@@ -106,5 +115,40 @@ declare function nlp:bulk-tokenize($collection as xs:string){
             return $tokenized
 };
 
+(:~
+ : Fetches POS-Information from a web service and adds this information
+ : as type-, lemma- and ana-attributes to the tei:w element
+ :
+ : @param $input A TEI document with tei:w tags ready for pos-tagging 
+ : @return The with POS-tags enriched tei:w element
+:)
 
+declare function nlp:pos-tagging($input as node()){
+    let $request-headers :=
+            <headers>
+                <header name="Accept" value="application/json"/>
+            </headers>
+    
+    for $word in $input//tei:w
+        let $token := functx:trim(string-join($word//text(), ''))
+        let $url := xs:anyURI($nlp:lemmatizerEndpoint||escape-uri(
+            $token, true())
+        )
+        let $request := httpclient:get($url, true(), $request-headers)
+        let $json :=   try {
+                util:base64-decode($request//httpclient:body/text())
+            } catch * {
+                false()
+            }
+        where $json
+        let $parsed := parse-json($json)
+        let $tag := $parsed?tag
+        let $lemma := $parsed?lemma
+        let $pos := $parsed?pos
+        let $new := update insert attribute type {$tag} into $word
+        let $newer := update insert attribute lemma {$lemma} into $word
+        let $newest := update insert attribute ana {$pos} into $word
+        return
+            $word
+};
 

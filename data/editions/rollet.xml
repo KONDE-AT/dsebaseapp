@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader type="correspondence">
+    <fileDesc>
+      <titleStmt>
+        <title>Alexander Rollett. Seine Welt in Briefen 1844-1903: Korrespondenz des Jahres 1861</title>
+        <editor>Walter Höflechner</editor>
+        <editor>Ingrid M. Wagner</editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Archiv der Universität Graz</publisher>
+        <publisher>Zentrum für Wissenschaftsgeschichte der Universität Graz</publisher>
+        <publisher>Historische Landeskommission für Steiermark</publisher>
+        <authority>Center for Information Modelling in the Humanities, University Graz</authority>
+        <idno type="PID">o:rollett.1861</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <pubPlace>Graz</pubPlace>
+          <date>28.10.2013</date>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="letter" xml:id="L.60" xml:lang="deu">
+        <head>
+          <persName ref="#PN.287" type="creator" xml:id="ID.1">
+            <forename>Carl</forename>
+            <surname>Ludwig</surname>
+          </persName>
+          <persName ref="#PN.392" type="addressee" xml:id="ID.2">
+            <forename>Alexander</forename>
+            <surname>Rollett</surname>
+          </persName>
+        </head>
+        <opener>
+          <dateline>
+            <date when="1861-02">[1861] II 25</date>
+            <name key="Wien" type="place">[Wien]</name>
+          </dateline>
+          <salute>Lieber <persName rend="smallcaps" xml:id="ID.3">Rollett</persName>!</salute>
+        </opener>
+        <p rend="without_indent">Heute Abend wollten einige Verehrer der Schneiderei (Volk. Thm.g...) im
+Josephinum zusammenkommen, um die am Donnerstag und Freitag unterbrochenen Untersuchungen
+fortzusetzen; ich hoffe, dass Sie auch heute von der Partie sein werden. Die Zusammenkunft findet um
+halb acht oder etwas später statt. Ihr</p>
+        <closer>
+          <signed>C. <persName rend="smallcaps" xml:id="ID.4">Ludwig<lb/>
+            </persName>Montag 25. Feb[ruar]</signed>
+        </closer>
+        <note>Zur Datierung: Der Brief ist in die Assistentenzeit <persName rend="smallcaps" xml:id="ID.5">Rollett</persName>s bei <persName rend="smallcaps" xml:id="ID.6">Brücke</persName> zu datieren, als <persName rend="smallcaps" xml:id="ID.7">Ludwig</persName> noch am Josephinum in
+Wien tätig war; auf Grund der Datumsangaben kommt nur das Jahr 1861 in Frage.</note>
+      </div>
+      <div sameAs="R.50" type="letter" xml:id="L.61" xml:lang="deu">
+        <head>
+          <persName ref="#PN.374" type="creator" xml:id="ID.8">
+            <forename>Friedrich
+D.</forename>
+            <nameLink>von</nameLink>
+            <surname>Recklinghausen</surname>
+          </persName>
+          <persName ref="#PN.392" type="addressee" xml:id="ID.9">
+            <forename>Alexander</forename>
+            <surname>Rollett</surname>
+          </persName>
+        </head>
+        <opener>
+          <dateline>
+            <date when="1861-03">1861 III 17</date>
+            <name key="Berlin" type="place">Berlin</name>
+          </dateline>
+          <salute>Hochgeehrter Herr Kollege!</salute>
+        </opener>
+        <p rend="without_indent">Herr Dr. <persName rend="smallcaps" xml:id="ID.10">Kühne</persName> hat mir Ihre Arbeit überreicht,
+welche Sie so gütig waren, mir zuzusenden. Ich glaube aus derselben zu ersehen, daß Sie geneigt
+sind, die <persName rend="smallcaps" xml:id="ID.11">Brücke</persName>sche Theorie des stereoskopischen Sehens als die richtige
+zu betrachten. Da ich nun in neuerer Zeit einige darauf bezügliche Experimente gemacht habe, so
+glaube ich, Sie werden es mir nicht übel nehmen, wenn ich Sie mit der Mitteilung derselben
+belästige. Offen gesagt, würde ich Ihnen allerdings nebenbei zu großem Dank verpflichtet sein, wenn
+Sie mir Ihre Ansichten und Einwände sowie die des Herrn Prof. <persName rend="smallcaps" xml:id="ID.12">Brücke</persName>, der
+sich vielleicht meiner noch erinnern wird, gütigst mitteilen wollten. </p>    
+    <p>Gleich nachdem <persName rend="smallcaps" xml:id="ID.13">Dove</persName> seinen niederschmetternden Artikel veröffentlicht
+hatte und mir erst daraus seine Experimente im Detail bekannt geworden waren, begann ich, sie in der
+festen Überzeugung von ihrer Unrichtigkeit zu wiederholen. Das einzige, welches mir zunächst einer
+genauen Untersuchung würdig schien, war das Experiment mit dem kreisförmig polierten Deckel. Trotz
+aller Mühe konnte ich nur doppelte Lichtstreifen wahrnehmen, ohne einen ausgesprochenen Effekt in
+der Tiefe. Ich suchte daher den Gegenstand von der entgegengesetzten Seite anzufassen und
+nachzuweisen, daß reell vorhandene Tiefendistanzen verschwinden bei der Funkenbeleuchtung, falls
+alle monokularen Hilfsmittel zum körperlichen Sehen aufgehoben waren. Alle Mühe, eine große Zahl von
+Experimenten führte nicht zu dem gewünschten Resultat. Endlich verfiel ich auf folgendes: Läßt man
+eine Lichtflamme auf den beiden Flächen einer bikonvexen Linse von etwa 1 1/2 bis 2 Zoll Radius
+Spiegelbilder entwerfen, so liegen bei der monokularen Betrachtung beide Bilder in einer Ebene,
+falls nicht erhebliche Größendifferenzen zwischen beiden vorhanden sind, bei der Betrachtung mit
+beiden Augen dagegen liegt das Bild der Hinterfläche weit vor, das der vorderen etwas hinter der
+Linse. Nimmt man statt der Flamme den elektrischen Funken, so genügt schon ein einziger, um einem
+jeden ganz denselben großen körperlichen Effekt zu produzieren; es gehört sogar eine große Übung in
+der Beobachtung von Doppelbildern dazu, um solche bei einem der Bilder wahrzunehmen. Erschien mir
+hiernach schon der Einwand <persName rend="smallcaps" xml:id="ID.14">Dove</persName>s gegen die <persName rend="smallcaps" xml:id="ID.15">Brücke</persName>sche Theorie gerechtfertigt, so mußte ich doch noch stereoskopische Figuren bei der
+elektrischen Funkenbeleuchtung untersuchen. Einfache Figuren, solche, welche bei der Betrachtung mit
+einem Auge keinen körperlichen Effekt geben (z. B. die <persName rend="smallcaps" xml:id="ID.16">Dove</persName>schen
+Druckproben, Kreise mit schräg gestellten Pfeilen) hatten früher weder bei mir, noch bei anderen den
+verlangten Erfolg gehabt, mochte das Tachistoskop oder der bei weitem vorzuziehende elektrische
+Funke angewandt werden. Die Schwierigkeit mußte darin liegen, daß die Vereinigung zweier Punkte der
+Bilder nicht bequem genug war. Nimmt man stattdessen zwei je 8 Zoll lange Röhren von 1 Zoll
+Durchmesser, schließt das eine Ende durch eine Pappscheibe, welche je zwei feine Löcher mit
+verschiedenem Abstande enthalten, und verklebt diese Löcher durch Öl getränktes Papier, so kann man
+bei Beleuchtung derselben die vier Lichtpunkte sehr bequem zu zweien mit einer scharfen
+Tiefendistanz vereinigen, wenn man während des Hineinschauens in das offene Ende die Achsen beide
+Röhren sich in einer Entfernung von etwa 12–15 Zoll schneiden lässt. Auch hier genügt häufig ein
+einziger elektrischer Funke, um die Tiefendistanz, höchstens ein wenig vermindert, erkennen zu
+lassen.</p>
+
+        <p>So wenig angenehm diese Resultate unter den obwaltenden Umständen für mich waren, so glaube ich
+doch, hiernach <persName rend="smallcaps" xml:id="ID.17">Dove</persName> zugeben zu müssen, dass eine Veränderung der
+Konvergenzwinkel, eine Vereinigung der Doppelbilder zum stereoskopischen Sehen nicht erforderlich
+ist. Warum dürfen dann aber die Doppelbilder nur horizontal verschoben sein? (ein Umstand, der mir
+früher wesentlich genug schien, um darin einen Beweis für die <persName rend="smallcaps" xml:id="ID.18">Brücke</persName>sche
+Theorie zu finden). Gegenwärtig kann ich nur annehmen, dass wir gewohnt sind, von den uns umgebenden
+Körpern nur horizontal verschobene Doppelbilder zu bekommen, dass wir nur an solchen die
+Körperlichkeit beurteilen und schätzen lernen. Auf welche Weise schätzen wir dann aber die
+Tiefendistanz? Gekreuzte Doppelbilder rufen die Vorstellung von einem diesseits eines einfach
+gesehenen Punktes gelegenen Objekts hervor, gleichzeitige von einem solchen, welches jenseits
+desselben existiert. Die Größe der Tiefendistanzen wird geschätzt aus der Größe der Distanzen der
+Doppelbilder bei einem bestimmten Konvergenzwinkel. Mit dem letzteren muss dann die Tiefe sich etwas
+ändern, was allerdings bei der Beobachtung mit den oben erwähnten Röhren etwas der Fall ist. Ich bin
+mir wohl bewusst, mit diesen Erklärungen keine neue Theorie aufzustellen, sie enthalten nur die
+Zusammenstellung der Tatsachen, wie sie gegenwärtigen nach meiner Meinung liegen. Natürlich wird
+auch die Bedeutung des Konvergenzwinkels für das körperliche Sehen nicht dadurch vermindert, nur
+wird die Ursache des sogenannten stereoskopischen Sehens nicht in einer Schätzung mittels des
+Muskelgefühls, sondern in einer Größenschätzung (also ähnlich dem körperlichen Effekt des
+Gesichtswinkels) gesucht.</p>
+
+        <p>Ich sehe gegenwärtig keinen Weg, diese Ideen experimentell weiter zu verfolgen. Sollte Ihnen bei
+Ihren Untersuchungen diese Mitteilungen gelegen kommen, so würde es mich sehr freuen. Sie würden
+mich sehr verbinden, wenn Sie die Güte haben wollten, dieselben den Herren Professoren <persName rend="smallcaps" xml:id="ID.19">Brücke</persName> und <persName rend="smallcaps" xml:id="ID.20">Ludwig</persName> zukommen lassen. Ich würde, wie
+ich Ihnen wohl nicht mitzuteilen brauche, gewiss hocherfreut sein, wenn Sie mich mit der Mitteilung
+von Einwänden und Zurechtweisungen beglücken wollten, glaube aber nicht, verschweigen zu dürfen,
+dass meine Pflicht gegen <persName rend="smallcaps" xml:id="ID.21">Dove</persName> es erheischt, mit der Veröffentlichung der
+obigen Resultate nicht allzu lange zu warten.</p>
+        <p>Darf ich Sie noch bitten, mich den Herren <persName rend="smallcaps" xml:id="ID.22">Brücke</persName> und <persName rend="smallcaps" xml:id="ID.23">Ludwig</persName> bestens empfehlen? Verzeihen Sie, wenn ich Sie unbekannterweise mit so
+vielen Bitten belästige! Schon im Voraus meinen innigsten Dank!</p>
+        <p>Ganz ergebenst </p>
+        <closer>
+          <signed>Dr. <persName rend="smallcaps" xml:id="ID.24">Recklinghausen</persName>
+          </signed>
+        </closer>
+        <postscript>
+          <p>
+            <hi rend="italic">Für seinen ‚hochverehrten’ Freund Dr. A[lexander] <persName rend="smallcaps" xml:id="ID.25">Rollett</persName> sendet anbei die herzlichsten Grüße Dr. <persName rend="smallcaps" xml:id="ID.26">Kühne</persName>. – Ihren
+Bruder, <persName rend="smallcaps" xml:id="ID.27">Brücke</persName>, <persName rend="smallcaps" xml:id="ID.28">Ludwig</persName>, etc. natürlich auch
+nicht zu vergessen.</hi>
+          </p>
+        </postscript>
+      </div>
+      <div sameAs="R.51" type="letter" xml:id="L.62" xml:lang="deu">
+        <head>
+          <persName ref="#PN.392" type="creator" xml:id="ID.29">
+            <forename>Alexander</forename>
+            <surname>Rollett</surname>
+          </persName>
+          <persName ref="#PN.396" type="addressee" xml:id="ID.30">
+            <forename>Emil</forename>
+            <surname>Rollett</surname>
+          </persName>
+        </head>
+        <opener>
+          <dateline>
+            <date when="1861-08">1861 VIII 11</date>
+            <name key="Venedig" type="place">Venedig</name>
+          </dateline>
+          <salute>Lieber Bruder!</salute>
+        </opener>
+        <p rend="without_indent">Viele Grüße an Dich und alle. Ich kann Dir heute nur ganz im kurzen
+Nachricht geben von dem glücklichen Verlauf meiner Reise. Mehr zu schreiben fehlt mir heute die Zeit
+und gestern hatte ich Mangel an Schreibmaterial. Als ich vorigen Dienstag Baden verließ, hatte ich
+kaum eine Ahnung davon, dass ich auf meiner Reise so viele Bekannte und freundlich gesinnte Leute
+antreffen würde. In Graz erwies sich mir Dr. <persName rend="smallcaps" xml:id="ID.31">Brunn</persName> sehr freundlich,
+Dr. <persName rend="smallcaps" xml:id="ID.32">Petry</persName> nahm mich mit vieler Freude bei sich auf und zeigte mir alle
+medizinischen Anstalten von Graz und gab mir manchen nicht zu unterschätzenden Aufschluss in
+Universitätsangelegenheiten. In Triest wurde ich von <persName rend="smallcaps" xml:id="ID.33">Brettauer</persName>, seiner
+liebenswürdigen Schwester Frau <persName rend="smallcaps" xml:id="ID.34">Bernheimer</persName> und deren Gemahl mit
+Freundlichkeiten sozusagen überschüttet, ich dinierte bei <persName rend="smallcaps" xml:id="ID.35">Brettauer</persName>, bei
+seiner Schwester soupierte ich. Den ganzen Tag über begleitete ich entweder <persName rend="smallcaps" xml:id="ID.36">Brettauer</persName> auf seinen notwendigen Gängen oder er begleitete mich, um mir Interessantes und
+Bemerkenswertes zu zeigen. Nachmittags besuchten wir den Tübinger <persName rend="smallcaps" xml:id="ID.37">Baur</persName>,
+trafen [ihn] mit dem dem Aquarien Simon zusammen und gingen endlich vor dem Soupee noch ins Theater
+Mauroner.</p>
+        <p>In Venedig wohne ich bei Sg. <persName rend="smallcaps" xml:id="ID.38">Fior</persName>, der Apothekerswitwe, an welche mich
+<persName rend="smallcaps" xml:id="ID.39">Brücke</persName> empfohlen, und bin hier sehr gut verpflegt.</p>
+        <p>Nächstens mehr, Dein Bruder</p>
+        <closer>
+          <signed>Alexander</signed>
+        </closer>
+        <postscript>
+          <p>
+            <hi rend="italic">Ich bitte Dich um Nachricht von der Heimat – Bozen, poste restante.</hi>
+          </p>
+        </postscript>
+      </div>
+      <div sameAs="R.52" type="letter" xml:id="L.63" xml:lang="deu">
+        <head>
+          <persName ref="#PN.392" type="creator" xml:id="ID.40">
+            <forename>Alexander</forename>
+            <surname>Rollett</surname>
+          </persName>
+          <persName ref="#PN.396" type="addressee" xml:id="ID.41">
+            <forename>Emil</forename>
+            <surname>Rollett</surname>
+          </persName>
+        </head>
+        <opener>
+          <dateline>
+            <date when="1861-08">1861 VIII 14</date>
+            <name key="Venedig" type="place">Venedig</name>
+          </dateline>
+          <salute>Lieber Bruder!</salute>
+        </opener>
+        <p rend="without_indent">Meinem letzten kurzen Bericht lasse ich nun einen etwas ausführlicheren
+folgen.</p>
+        <p>In einer sternenhellen Nacht machten wir eine schaurige Fahrt bis Graz. In undeutlichen Umrissen
+machten sich die mir bekannten landschaftlichen Szenerien der schönen Semmeringpartie bemerkbar. Ich
+bedauerte oft, dass Luna ihr magisches Lämpchen nicht darüber ausgesteckt hatte, und war, da mir
+kein Schlaf kommen wollte, sehr erfreut, als endlich die Morgendämmerung eintrat, die mir die
+Aussicht in das romantische Murtal eröffnete. Ein enges Tal durch welches sich dicht neben der
+Eisenbahn der gleichnamige Fluss hindurch windet. Viele Quertäler schneiden in das Haupttal ein, und
+die zwischen denselben lagernden Bergformen scheinen in ihrer Mannigfaltigkeit wie zu einer
+ausgesuchten Sammlung hier zusammengelegt. </p>
+        <p>Schloss Pfannberg und der gegenüberliegende Rabenstein lauern an der Ausmündung des Murtales, wo
+der Weg in eine ausgebreitete grüne Ebene führt, in welcher die Hauptstadt der Steiermark mit dem
+mitten aus der Stadt emporragenden, isolierten Schlossberg liegt. </p>
+        <p>Dass ich sogleich nach der Ankunft in Graz auf den Schlossberg ging, habe ich Dir, wie ich
+glaube, schon geschrieben, ebenso dass der Anblick der Stadt vom Schlossberge aus zu den
+prachtvollsten Landschaftsbildern gehört, die man überhaupt haben kann. Die Ebene, in welcher Graz
+liegt, ist von den schönsten Gebirgsketten ummarkt, die Mur bewässert sie. Kornfelder, Wiesen und
+üppiges Gehölz bieten sich den Blicken ringsum dar und dazwischen, weit auseinander gebaut, die
+Häusergruppen der verschiedenen Stadtteile. Die Straßen der Stadt sind aber schlecht gepflastert,
+nicht übertrieben reinlich und das Treiben auf denselben ein seltsames Gemisch von städtischer und
+ländlicher Art.</p>
+        <p>Obst, Gemüse und andere Lebensmittel, die Milch in leichten, dünnen Blechgefäßen, werden meist
+von Weibern in flachen Strohkörben in die Stadt gebracht. Die runden, weiten Körbe werden immer auf
+den Köpfen mit Hilfe eines gepolsterten Kranzes oder auch ohne diesen letzteren mit großer
+Virtuosität balanciert. Merkwürdige Gebäude hat Graz sehr wenige, obwohl in den Reisebüchern
+obligater Weise deren eine ganze Anzahl angeführt wird.</p>
+
+        <p>Neben der Domkirche steht ein aus dem Jahre 59 stammendes Missionskreuz, und eine Tafel daran
+macht bekannt, wie man bei diesem Kreuz teilweise oder vollkommen Ablässe erlangen kann. Ich
+schreibe Dir diese für Graz keineswegs spezifische Erscheinung, weil die besagte Tafel in mir die
+Überzeugung befestigte, dass die jetzigen Päpste uns auf eine viel wohlfeilere Art unser Seelenheil
+garantieren, als dies in älteren, ja selbst in nicht sehr lang verflossener Zeit noch der Fall war.
+Eine Bulle von <persName rend="smallcaps" xml:id="ID.42">Clemens</persName> VII. 1841 schreibt ein bestimmtes Formelwesen von
+Gebeten an diesem Kreuz vor, zur Erlangung eines unvollkommenen Ablasses und gleich darunter ist zu
+lesen, dass <persName rend="smallcaps" xml:id="ID.43">Pius</persName> IX. 1859 für irgendein an diesem Kreuz andächtig
+gesprochenes Gebet einen vollkommenen Ablass gewährt. Ein paar ekelhafter Karmeliter gingen eben auf
+klappernden Sandalen vorüber und immer mehr stieg in mir der Verdacht auf, dass auch in der grünen
+Steiermark der Ultramontanismus noch nicht aus dem Neste gehoben.</p>
+
+        <p>Ich ging, nachdem ich noch die Universität besichtigte, weiter in die Stadt hinein, gelangte zum
+alten Ständehaus und begegnete Dr. <persName rend="smallcaps" xml:id="ID.44">Brunn</persName>.</p>
+
+        <p>Dieser ließ mir durch seinen Diener Kleider und Schuhe reinigen und ersparte mir so den Weg nach
+dem Bahnhof, wo ich beim Portier mein Gepäck abgelegt hatte und mich in einen fashionablen Zustand
+versetzen lassen wollte. Später frühstückte ich mit Dr. <persName rend="smallcaps" xml:id="ID.45">Brunn</persName>, erfuhr von
+ihm die Wohnung des Dr. <persName rend="smallcaps" xml:id="ID.46">Petry</persName> und verabschiedete mich von Dr. <persName rend="smallcaps" xml:id="ID.47">Brunn</persName>, ihm für seine Freundlichkeiten dankend. Leider habe ich ihn abends
+nicht mehr getroffen und ebenso muss ich bedauern, keine Zeit gefunden zu haben, um Louis <persName rend="smallcaps" xml:id="ID.48">Schwarz</persName> zu besuchen. Mit Dr. <persName rend="smallcaps" xml:id="ID.49">Petry</persName> speiste ich, wir
+sprachen viel über Dinge, die da kommen sollen. </p>
+        <p>Nach dem Speisen führte mich Dr. <persName rend="smallcaps" xml:id="ID.50">Petry</persName> nach dem Hilmerteich, einem
+beliebten Vergnügungsort der Grazer, zeigte mir den Rosenberg mit den reizenden Villen und
+begleitete mich endlich wieder nach der Stadt, wo wir die inneren Räumlichkeiten der Universität,
+Sammlungen, Laboratorien, Auditorium etc. in Augenschein nahmen. Ebenso sah ich die Kliniken von <persName rend="smallcaps" xml:id="ID.51">Riegler</persName>, <persName rend="smallcaps" xml:id="ID.52">Rzehaczek</persName> usw. Im Grazer Spitale herrscht
+musterhafte Ordnung trotz der Schwestern, welche die Ökonomie des Spitales leiten.</p>
+
+        <p>Es ist eine äußerst intelligente Oberin, wie man mir sagt, gegenwärtig an der Spitze der
+Kongregation, die Ärzte sind zufrieden, haben sich aber nichts desto weniger gegen die Schwestern,
+wenigstens der Mehrzahl nach, erklärt, weil sie, und zwar mit Recht nicht zugeben können, dass das
+Gedeihen einer Humanitätsanstalt von der Zufälligkeit einer guten oder schlechten Oberin abhängig
+sein solle. Zuletzt machte ich noch einen Besuch im Spitale der Barmherzigen, dem Dr. <persName rend="smallcaps" xml:id="ID.53">Petry</persName> als Primararzt vorsteht. Daselbst sah ich eine sehr praktische
+Einrichtung. Über jedes Bett läuft nämlich ein von zwei senkrechten an der Kopf- und Fußwand
+angebrachten Säulen gestützter Balken, an diesem letzteren aber ist ein Riemen befestigt, den der
+Kranke anfasst, um sich aufzurichten behufs der Auskultation und Percussion am Rücken oder um sich
+die Leibschüssel unterschieben zu lassen etc. Leider verfolgte uns auch hier ein Pfaffentross und
+erfüllte zuletzt beim Suppensegnen die Lokalitäten mit einem rauhen Geheul. Dr. <persName rend="smallcaps" xml:id="ID.54">Petry</persName> von mir über das üppige Wuchern des Ultramontanismus in der grünen Steiermark befragt,
+gab an, dass unter dem jetzigen Bischof G[raf] <persName rend="smallcaps" xml:id="ID.55">v[on]</persName>
+          <persName rend="smallcaps" xml:id="ID.56">Attems</persName>, der ein sehr vertrauter Freund des kalvinistischen Bürgermeisters
+von Graz, Ritter von <persName rend="smallcaps" xml:id="ID.57">Frank</persName>, sein soll, schon eine bedeutende Purifikation
+und Bekehrung zu den liberaleren Ansichten der Jetztzeit eingetreten sei. Möchte die Wahrheit seine
+Worte krönen. Jedenfalls ist Steiermark weit vor Tirol.</p>
+        <p>So viel über Graz. Von Graz bis Marburg ändert sich der landschaftliche Charakter wenig. Man
+sieht wieder von fernen Bergen besäumte Täler bald enger, bald weiter, in welchen aber fast nur die
+verschiedenen Tinten der verschiedenen Getreidefelder dem Reisenden die Fruchtbarkeit des Landes
+offenbaren, während der bei Graz so üppige Baumwuchs der Ebene hinaus an die umsäumenden Berge
+gerückt ist. Von Marburg bis Adelsberg Nacht.</p>
+        <p>Es erfüllte mich mit großem Leid, dass ich an der interessanten Adelsberger Grotte nicht
+haltmachen konnte, sondern sofort den Weg über den Karst nach Triest nehmen musste.</p>
+        <p>Davon werde ich Dir, wenn ich wieder Zeit finde, mehr schreiben. </p>
+        <p>Heute reise ich von Venedig ab, übersättigt von dem unausgesetzten Anstaunen historischer und
+Kunst- und Naturmerkwürdigkeiten, deren erdrückender Reichtum einen schnell dahineilenden Touristen
+schmerzlich seufzen lässt, warum ist’s mir nicht gegönnt, monatelang hier zu verweilen?</p>
+        <p>Über das Leben und Treiben in dieser einzigen Stadt habe ich mir gar Manches, aufgezeichnet,
+davon später. Grüße an alle, Handküsse an die Eltern. Lebe wohl! </p>
+        <closer>
+          <signed>Alexander</signed>
+        </closer>
+      </div>
+      <div sameAs="R.53" type="letter" xml:id="L.64" xml:lang="deu">
+        <head>
+          <persName ref="#PN.392" type="creator" xml:id="ID.58">
+            <forename>Alexander</forename>
+            <surname>Rollett</surname>
+          </persName>
+          <persName ref="#PN.396" type="addressee" xml:id="ID.59">
+            <forename>Emil</forename>
+            <surname>Rollett</surname>
+          </persName>
+        </head>
+        <opener>
+          <dateline>
+            <date when="1861-08">1861 VIII 15</date>
+            <name key="Bozen" type="place">Bozen</name>
+          </dateline>
+          <salute>Lieber Bruder!</salute>
+        </opener>
+        <p rend="without_indent">Das Nichteintreffen des von Dir erbetenen Briefes in Bozen hat eine alte
+Reiseerinnerung in mir wachgerufen. Wie einst in Berlin, so laufe ich auch hier heute schon zweimal
+fruchtlos auf die Post. Heute Abend reise ich von hier wieder fort und Dein Brief muss ohne Gnade
+liegen bleiben.</p>
+        <p>Gerne hörte ich von Baden, was es Neues gibt, denn außer dem Prozess <persName rend="smallcaps" xml:id="ID.60">Tillmetz–Maler</persName>, den ich aus dem Fremdenblatt unter den Arkaden des Markusplatzes mit Dir nicht
+unbekannten Gefühlen meinem Bewusstsein einverleibte, habe ich seit meiner Abreise nichts von Baden
+gehört.</p>
+        <p>Wenn ich nicht irre, habe ich Dir meine Reise bis Adelsberg in schwachen Umrissen gezeichnet.</p>
+        <p>Vernimm das Weitere: Bei Adelsberg sieht man zu beiden Seiten der Eisenbahn merkwürdige
+Felsenformationen. Wie plötzlich erstarrte schäumende Gesteinsmassen sind die Kalkfelsen
+ausgegossen, am Eingang zu dem unwirtlichen Karst. Dieser selbst ist ein vielbehügeltes Hochplateau
+oft mit ansehnlichen Bergen besetzt. Darauf bemerkt man einen verkümmerten Baumwuchs, aus dem sich
+nur hie und da etwas ansehnlichere Stämme, der Bahn zunächst unterschied ich meist Birken und
+Nadelhölzer, hervorheben.</p>
+        <p>Die Birken besitzen aber ein eigentümlich hageres und wenig verzweigtes Ansehen und passen in
+ihrer Verkommenheit zu dem ein wahres Steinmeer darstellenden Boden. Die Orte im Karst, deren es in
+dieser Steinwüste unerwartet viele gibt, tragen neben der italienischen Unsauberkeit das Gepräge
+großer Armut an sich. Sie sind meist aus unbehauenen aus der nächsten Umgebung aufgelesenen Steinen
+zusammengebaut, ungetüncht, die Häuser stehen enge und entbehren schwellender Gärten, die man hier
+im Gegensatz zur Steiermark besonders empfindlich vermisst.</p>
+        <p>So wie man dieser Äußerlichkeit zufolge keine besonders blühenden Bewohner voraussetzen kann, so
+sieht man auch nur hie und da mit groben Wollstoffen bekleidete Hirten oder Straßen- und
+Eisenbahnarbeiter heraustreten. Ihre Gesichtszüge sind slavisch. Ihre Gesichtsfarbe fahl oder
+sonngebräunt. Die Backenknochen vorstehend, die Nase platt, der Körperbau hoch, aber hager.</p>
+        <p>Auffallend sind im Karst die niederen Steinwälle, welche das ganze Terrain in kleine
+unregelmäßige bald mehr bald weniger weit ausgedehnte Felder einteilen. Ich fragte nach dem Grund
+dieser Erscheinung, konnte aber von niemandem Aufschluss erhalten. In mancher dieser Einfriedungen
+sah ich allerdings eine geringe Anzahl von Kühen weiden, in andere war fruchtbare Erde sichtlich
+hineingeschleppt. Ich erinnere mich, daselbst Kartoffel, Weinreben und Mais im Vorbeifahren erkannt
+zu haben.</p>
+        <p>Diese kleinen steinumfangenen Abteilungen sind im Vergleich zu den die wenigen Häuser der
+Karstorte voraussichtlich bewohnenden Menschen ungemein zahlreich, so dass man nicht annehmen kann,
+dass durch jene Steinwälle das Besitztum einzelner voneinander geschieden wird. Es scheint vielmehr
+die Baulust der Menschen, durch die große Menge der herumliegenden Steine verlockt, diese Mauern
+aufgeworfen zu haben, um Besitz und Besitzteile voneinander abzumarken und auf dem öden und
+gleichförmigen Boden in den mannigfach geformten und wallumzogenen Feldern ein Orientierungsmittel
+zu gewinnen. Gewiss schützen aber einige jener niederen Wälle auch die hinter ihnen geborgenen,
+spärlichen Anflüge lockeren Bodens gegen die so oft mit großer Gewalt über den Karst nach dem
+adriatischen Meere wehende Bora. Von Nabresina aus eröffnet sich die Aussicht auf das adriatische
+Meer in bekannter Großartigkeit. Miramare verleiht mit seiner Ritterburg ähnlichen Zinnen [sic]
+dieser Partie einen besonderen Schmuck.</p>
+        <p>Die Bahn selbst bildet einen weiten Bogen dicht an der Küste; in den Abhängen, welche sich bis
+zum Wasserspiegel erstrecken, bemerkte ich auf kolossalen gezimmerten Dreifüßen hoch über das dort
+wachsende Gehölz emporragend verbräunte mit grobem Leinen bekleidete und mit Strohhüten bedeckte
+Männer. Sie saßen mit majestätischer Ruhe, den Blick nach dem Ozean gerichtet. Ich fragte nach ihrem
+Beginnen und erhielt die Auskunft, dass sie den in der See befindlichen Fischern den Fang
+begünstigende Deutungen geben sollen. Woher sie aber selbst ihre Weisheit nehmen, konnte man mir
+nicht sagen, vielleicht finde ich später noch irgendeine Erklärung.</p>
+        <p>Ich habe Dir hier nur einiges von dem geschrieben, was mir auf der Reise nach Triest aufgestoßen.
+Ich werde Dir noch vieles erzählen. Als ich in Triest ankam, fuhr ich sogleich nach d[em] Molo San
+Carlo.</p>
+        <p>Der mastbewaldete Triester Hafen mit einigen der größeren Kauffahrer lag vor meinen Augen. Für
+die nächste Fahrt nach Venedig setzte sich eben der Lloyddampfer Croatia in Stand. An Bord des
+Schiffes wies man mich ins Tergesteum, behufs der Kartenlösung. Da es aber erst wenig über 7:00 Uhr
+war und die Karten erst von 9:00 Uhr an ausgegeben werden, so benutzte ich die Zeit, um zu
+frühstücken.</p>
+        <p>Im Börsencafè von den versammelten Herren Börsianern ob meines Reisegepäckes, welches ich stets
+wachsam an der Seite hielt, wie ich glaube, neugierig angelugt, las ich, während es ringsherum in
+allen Sprachen durcheinander ging, mit stoischer Ruhe einige Zeitungen. Dies schien einem
+ungarischen Juden so zu imponieren, dass er mich fragte, ob ich nicht aus Ungarn käme? Ob ich nicht
+an seinem Tisch Platz nehmen möchte? u.s.w. Da ich ihn mit einiger Bitterkeit abfertigte,
+entschuldigte er sich höflichst, mich verkannt zu haben, und so war auch ich zufrieden. Die
+verschiedenen Trachten, zahlreiche orientalische darunter, fesselten meine Aufmerksamkeit in hohem
+Grade. Alle Nationalitäten waren sozusagen hier vertreten und alle bedienten sich bei ihren
+Geschäften der italienischen Sprache, und dieses ihnen gemeinschaftliche Idiom musste auch ich jetzt
+zum ersten Male in einigen bei meiner geringen Kunde zusammengesuchten Sätzen in Anwendung bringen,
+um von dem Kellner italienischer Zunge die meinem hungrigen Magen schon äußerst erwünschte Zufuhr
+mir verabreichen zu lassen. Ich habe nun die Karte nach Venedig erhalten, und meinen Reisesack, der
+Ehrlichkeit des Kajütenkellners auf gut Glück trauend, an Bord der Croatia gebracht.</p>
+
+        <p>Dann besteige ich eine Barke (Omnibus), um in einer im Triester Hafen befindliche Schwimmschule
+ein Bad zu nehmen. Nachdem ich meinen Körper in den salzigen Fluten des adriatischen Meeres
+erfrischt, gehe ich in die Stadt zu Dr. <persName rend="smallcaps" xml:id="ID.61">Brettauer</persName>. – Freundliche
+Begrüßung. – Nachdem wir die ersten Freuden des Wiedersehens mit einem Gespräch über Wien und Wiener
+Freunde durchwürzt hatten, machte <persName rend="smallcaps" xml:id="ID.62">Brettauer</persName> sogleich einen Plan für den
+Tag.</p>
+        <p>Er hatte vorerst noch einen Brief zu schreiben, dann gingen wir in eine Apotheke, wo <persName rend="smallcaps" xml:id="ID.63">Brettauer</persName> einen Brief abzulegen und einen Triester Kollegen zu erwarten hatte.
+Nachdem der letztere, ein windiges italienisches Bürschchen, dessen Name mir entfallen, abgefertigt
+und <persName rend="smallcaps" xml:id="ID.64">Brettauer</persName>s übrigen Geschäfte bestellt waren, gingen wir in <persName rend="smallcaps" xml:id="ID.65">Brettauer</persName>s Wohnung zurück, wo ich mit einem köstlichen Male bewirtet
+wurde.</p>
+        <p>Die Zeit wird mir zu kurz, ich muss hier abbrechen, ohnedies stören mich die Glocken, welche der
+Probst von Bozen heute in einer Anwandlung von guter Laune, so scheint es, aus allen Tonarten lärmen
+lässt; selbst Eingeborene wissen sich an eine so lärmende Feier der unbefleckten Empfängnis nicht zu
+erinnern. Der Turm, von welchem dieses demonstrative, metallische Klingen die Lüfte erschütternd in
+die Weite dringt, liegt nur etwa sechzig Schritte von dem Tisch, an welchem ich schreibe, daraus
+kannst Du entnehmen, von welcher Intensität mein Trommelfell getroffen wird.</p>
+        <p>Grüße an alle. Handküsse an die Eltern. Lebe (Gott, dieses Geläute!) Lebe wohl! (wollte ich
+sagen), Dein </p>
+        <closer>
+          <signed>Alexander</signed>
+        </closer>
+      </div>
+      <div sameAs="R.54" type="letter" xml:id="L.65" xml:lang="deu">
+        <head>
+          <persName ref="#PN.392" type="creator" xml:id="ID.66">
+            <forename>Alexander</forename>
+            <surname>Rollett</surname>
+          </persName>
+          <persName ref="#PN.396" type="addressee" xml:id="ID.67">
+            <forename>Emil</forename>
+            <surname>Rollett</surname>
+          </persName>
+        </head>
+        <opener>
+          <dateline>
+            <date when="1861-08">1861 VIII 16</date>
+            <name key="Brixen" type="place">Brixen</name>
+          </dateline>
+          <salute>Lieber Bruder!</salute>
+        </opener>
+        <p rend="without_indent">Nachdem ich also mit <persName rend="smallcaps" xml:id="ID.68">Brettauer</persName> gespeist hatte,
+machte ich seine Ambulanz mit. Es erschien eine große Menge von Augenkranken. Darunter auch einige
+operative. Ich glaube, Dir schon Andeutungen darüber gegeben zu haben, dass die älteren Ärzte
+Triest’s keine besonders guten Ophthalmologen sind. <persName rend="smallcaps" xml:id="ID.69">Brettauer</persName> kommt dies
+zustatten, denn er wird nach und nach die ganze ophthalmologische Praxis innehaben. Für die
+Patienten hat es aber oft seine großen Nachteile, so präsentierte sich bei <persName rend="smallcaps" xml:id="ID.70">Brettauer</persName> eben ein junges Mädchen, die im Gefolge einer einfachen, aber verkannten und
+schlecht behandelten Ophthalmia scrophulosa schauderhafterweise auf beiden Augen erblindet war. <persName rend="smallcaps" xml:id="ID.71">Brettauer</persName> will nach Ablauf der Entzündung eine Pupillenbildung versuchen.</p>
+        <p>Nach vollendeter Ordination fuhr ich mit <persName rend="smallcaps" xml:id="ID.72">Brettauer</persName> nach St. Andraea,
+der Weg dahin führt längs der Meeresküste an dem sehenswerten Lloydarsenal vorüber und wird in den
+Abendstunden von den Triestinern ähnlich wie von den Wienern der Prater zu Corsofahrten benützt. In
+St. Andraea wollten wir <persName rend="smallcaps" xml:id="ID.73">Baur</persName> besuchen, der sich schon lange dort aufhält,
+um die merkwürdige Synapta digitata, Joh[annes] M<persName rend="smallcaps" xml:id="ID.74">üller</persName>s Schnecken
+erzeugende Holothurie, zu untersuchen. Wir fanden <persName rend="smallcaps" xml:id="ID.75">Baur</persName> krank, und zwar
+hatte er sich einen leichten Grad von Insolation zugezogen, indem er zu lange auf offener See
+während des brennendsten Sonnenscheines verweilte.</p>
+        <p>Meine Hoffnung, mit <persName rend="smallcaps" xml:id="ID.76">Baur</persName> einige histologische Kapitel durchsprechen zu
+können und mir einiges über seine nun abgeschlossenen Beobachtungen über Synapta sagen zu lassen,
+konnte nicht in Erfüllung gehen, da wir den Kranken in Ruhe lassen mussten.</p>
+        <p>Wir fuhren auch bald wieder in die Stadt zurück und gingen schließlich für einige Zeit ins
+Theatro Mauroner. Gegeben wurde "La Sonnambula", die bekannte italienische Oper. Das Theater ist
+eine geräumige Rotunde. Auf dem Parterre sind nur ein paar Reihen von Sitzplätzen, der größte Teil
+dient dem stehenden Publikum, im Übrigen existieren nur noch amphitheatralisch angeordnete
+Galeriesitze. Letztere waren von Damen dicht besetzt, die ausnahmslos durch ein unermüdet
+Fächerschwenken das ganze Theater förmlich ventilierten. </p>
+        <p>Die Damen reden und schäkern auf ihren Sitzen ganz laut miteinander. Die Herren auf dem Parterre
+ergehen sich auf- und abwandelnd in den lautesten Gesprächen, niemand entblößt sein Haupt. Und
+während dieses Treibens auf dem äußern Schauplatz wird auf der Bühne geschrien, gesungen, gelärmt.
+Kurz, ein Theater nach italienischer Art, welches aber für den Deutschen nicht lange erträglich ist,
+lernte ich hier zum ersten Male kennen. Wir gingen auch bald wieder weg, nachdem wir einige Zeit mit
+deutscher Zunge wacker mitgelärmt und Musterung auf der Galerie der Damen gehalten hatten.</p>
+        <p>
+          <persName rend="smallcaps" xml:id="ID.77">Brettauer</persName> hatte mich inzwischen zu seiner Schwester geladen. Ich wurde
+dort mit sehr viel Zuvorkommenheit aufgenommen. Den feinen Takt und die liebenswürdige
+Unbefangenheit dieser Dame, die mich sozusagen wie in einem Kreis längst bekannter Freunde in ihr
+Haus einführte, wünschte ich gar vielen Hausfrauen. Herr <persName rend="smallcaps" xml:id="ID.78">Bernheimer</persName>, <persName rend="smallcaps" xml:id="ID.79">Brettauer</persName>s Schwager, steht an Liebenswürdigkeit seiner Frau nicht nach. Unter
+heiteren Gesprächen eilte die Zeit leider zu rasch dahin. Ich musste scheiden. <persName rend="smallcaps" xml:id="ID.80">Brettauer</persName> begleitete mich noch ein Stück, dann ging auch er zurück, und ich blieb allein, um
+mit dem befriedigenden Gefühl einer so trefflichen Aufnahme in Triest meine Reise weiter
+fortzusetzen.</p>
+        <p>Ich ging 23:30 Uhr an Bord der Croatia. Das Schiff bemannte sich bald. Und zwar war eine Menge
+von Deutschen unter den Reisenden. Alle frohlockten ob der ruhigen See. An eine Seekrankheit war
+nicht zu denken. Das Wasser war so ruhig und spiegelglatt, wie dies nur selten der Fall ist. Diese
+merkwürdige Ruhe dauerte auch schon durch lange Zeit an und man erzählte mir in Triest, dass kurz
+zuvor ein armer Firscher einen unlängst bei Miramare mit Korn und Geld gesunkenen griechischen
+Kauffahrer auf sehr leichte Weise auffand. Der dritte Teil der Ladung war als Preis für die
+Wiederauffindung ausgesetzt, weil man aus Erfahrung weiß, dass diese gewöhnlich nur nach Überwindung
+zahlreicher Schwierigkeiten gelingt. Unser glücklicher Fischer hatte es leicht, ohne darauf
+auszugehen, sicher zufällig beim Fischen, den Gegenstand jener Preisausschreibung auf dem Grund der
+ruhigen und spiegelglatten See [zu finden].</p>
+        <p>Beim Grauen des Morgens befand ich mich auf dem Deck. Leider verdeckten ferne Wolken die
+aufgehende Sonne und brachten uns so um ein herrliches Schauspiel. Begierig wandten sich aller
+Blicke nach der Seite, wo Venedig zuerst in Sicht kommen sollte. Die Fahrt ist unmittelbar vor
+Venedig sehr langweilig, da man der vielen Windungen halber, die das Fahrwasser macht, sozusagen
+nicht vom Flecke kommt. </p>
+        <p>Zuerst sieht man den Turm von San Giorgio maggiore und Campanella von San Marco. Nächstens von
+Venedig, lebe wohl!</p>
+        <closer>
+          <signed>Alexander</signed>
+        </closer>
+        <postscript>
+          <p>
+            <hi rend="italic">Grüße, Handküsse etc.</hi>
+          </p>
+        </postscript>
+      </div>
+      <div sameAs="R.55" type="letter" xml:id="L.66" xml:lang="deu">
+        <head>
+          <persName ref="#PN.392" type="creator" xml:id="ID.81">
+            <forename>Alexander</forename>
+            <surname>Rollett</surname>
+          </persName>
+          <persName ref="#PN.396" type="addressee" xml:id="ID.82">
+            <forename>Emil</forename>
+            <surname>Rollett</surname>
+          </persName>
+        </head>
+        <opener>
+          <dateline>
+            <date when="1861-08">1861 VIII 17</date>
+            <name key="Lienz" type="place">Lienz</name>
+          </dateline>
+          <salute>Lieber Bruder!</salute>
+        </opener>
+        <p rend="without_indent">Je mehr man sich Venedig nähert, desto mehr Türme dieser kirchenreichen
+Stadt werden sichtbar. Im Ganzen bietet aber der Anblick Venedigs, wenn man mit dem Dampfer anlangt,
+nicht jene Großartigkeit dar, die der Reisende gewöhnlich voraussetzt. Man übersieht eben nur die
+nächsten Häuserreihen und darüber hervorragende Türme. Die ganze großartige Anlage der Inselstadt
+übersieht man erst, wenn man den Glockenturm von San Marco besteigt. Nichts desto weniger bieten
+sich dem Reisenden, wenn das Schiff einmal ganz nahe an die Stadt kommt, schon der Anblick des
+Dogenpalastes, der Säulen der Piazetta, die Einfahrt in den Canale Grande mit der Dogana di Mare mit
+der auf einer kolossalen vergoldeten von Atlanten getragenen Kuppel stehenden Fortuna und der
+prachtvollen Kirche Madonna della Salute, Bilder, welche in hundertfältiger Abbildung durch die
+ganze Welt verbreitet sind, die aber in ihrer großartigen Wirklichkeit etwas unbeschreiblich
+Ergreifendes auf den Ankömmling ausüben. Sobald der Dampfer anlangt, wird er von zahlreichen Gondeln
+und Barken umschwärmt, nichts desto weniger hält es schwer, sich einer derselben zu bedienen, da
+unverschämte Gondoliere zuerst die Geduld der Ankommenden durch einen Wettkampf um das Gepäck der
+Reisenden auf eine harte Probe stellen. Niemand, außer der eingeborenen Venetianer, langt dort an,
+wo er eigentlich ankommen will, da er sich demjenigen Gondoliere schließlich anvertrauen muss, der
+sich seines Gepäckes bemächtigt hat. Gewöhnlich kommen aber dann auf eine Gondel Passagiere für die
+verschiedensten Stadtteile zusammen und man muss eine Reihe von Fahrten mitmachen, um endlich an den
+Ort seiner Bestimmung oder wenigstens nahe davon anzukommen.</p>
+
+        <p>Das Schlimme bei der ganzen Sache ist, dass jene Gondoliere meist von den Wirten nach der Anzahl
+der Gäste, die sie ihnen bringen, belohnt werden. Sie suchen daher dem Reisenden ein bestimmtes
+Gasthaus aufzudrängen und derjenige, der sich damit nicht zufrieden gibt, sondern in ein Privathaus
+will, hat seine schwere Not mit diesem miserablen Gesindel. Ich wollte nach der Piazetta, wo der
+bekannte Löwe von San Marco mit nach Osten, dem Schauplatz ruhmvoller Kriege der einstigen Republik,
+gewendetem Gesicht seine Flügel entfaltet, gelangte aber zum Hotel Luna und musste zu Fuß nach dem
+Marcusplatz wandern. Ein dienstwilliger Stiefelputzer nahm mir dort meinen Reisesack ab und führte
+mich nach Campo San Fantin zu Sg. <persName rend="smallcaps" xml:id="ID.83">Fior</persName>. Die Dame spricht deutsch; ich
+sagte ihr, dass mir ihr Haus von Professor <persName rend="smallcaps" xml:id="ID.84">Brücke</persName> empfohlen wurde, und sie
+nahm mich mit großer Liebenswürdigkeit auf.</p>
+
+        <p>Bald befand ich mich in einem echten venetianischen Gemach mit marmornem Fußboden und dicken
+leicht geöffneten Fensterläden, um die Hitze des Tages möglichst abzuhalten. Wirklich hatte der
+Eintritt in diese kühle Dunkelkammer anfangs etwas Erquickendes, ich erhielt auch frisches Wasser,
+in Venedig etwas besonders Erwähnenswertes. Nach kurzer Rast begab ich mich, den Plan der Stadt in
+der Hand, wieder auf die Gasse, allein ich machte viele Umwege in den meist nur ein paar Schuh
+breiten, labyrinthartig verzweigten Gassen der Stadt, um endlich auf den Marcusplatz zu gelangen.
+Ich nahm meinen ‚Führer von Vendig’ von <persName rend="smallcaps" xml:id="ID.85">Münster</persName> zur Hand und studierte nun
+zuerst den Markusplatz und seine Umgebungen durch. Ich müsste ganze Bogen anschreiben, wollte ich
+Dir die Fülle der Sehenswürdigkeiten dieses Platzes schildern. Jeder Blick belehrt hier auf die
+einstige Größe der Venetianischen Republik. Es hat vielleicht kein Volk in dem hohen Grade als die
+Venetianer verstanden, seine Geschichte durch die erhabendsten Kunstwerke zu verewigen. Was die
+siegreichen Dogen und Feldherren aus dem fernen Osten als stolze Trophäen heimgeschleppt, ist hier
+in der glücklichsten Anordnung in die Wesenheit jener Kunstwerke hineingesetzt, welche den
+Intentionen der größten Geister entsprungen und mit einer Pracht und einem Reichtum, die beim ersten
+Anblick förmlich blendend wirken, ausgestattet sind. Wie weit die Macht Venedigs sich erstreckte, wo
+es seine Kriege geführt, wo es gesiegt, was es erbeutet, wie es selber die größten Künstler erzeugt,
+gebildet und mit stolzem Bewusstsein zur Verherrlichung seiner Macht für kommende Jahrhunderte tätig
+sein ließ, das alles verkünden uns Bauten, Skulpturen und Gemälde mit der gewaltigsten
+Eindringlichkeit. Ich kann Dir so wie vom Marcusplatz auch von den übrigen Teilen Venedigs vorläufig
+nur ganz allgemeine Eindrücke wiedergeben. Das Spezielle werde ich Dir später erzählen. </p>
+
+        <p>Ich hielt mich sechs Tage in Venedig auf. Besah mir der Reihe nach die verschiedenen Kirchen, den
+Dogenpalast, die Paläste am Canale Grande, meist nur das Äußere, machte Gondelfahrten nach den
+umliegenden Inseln, bestieg den Glockenturm von San Marco, besuchte die Akademie der Künste, den
+Palast <persName rend="smallcaps" xml:id="ID.86">Giovanelli</persName> u.a.m. Eines Nachmittags machte ich einen Ausflug nach
+Padua und besuchte Professor <persName rend="smallcaps" xml:id="ID.87">Vintschgau</persName>. Er lässt Dich grüßen und Dir zu
+Deiner neuen Stelle gratulieren.</p>
+
+        <p>In Padua sah ich die Universität, den reichen Promotionssaal, die verschiedenen Sammlungen,
+darunter die physikalische, wegen ihrer alten Apparate, deren einige von <persName rend="smallcaps" xml:id="ID.88">Galileo Galilei</persName> herstammen sollen, besonders interessant, den botanischen Garten, der ein
+Muster von Eleganz, die berühmte Palma di <persName rend="smallcaps" xml:id="ID.89">Goethe</persName>, enthält und für welchen
+nach <persName rend="smallcaps" xml:id="ID.90">Vintschgau</persName>s Aussage, die Regierung jährlich mehr auslegt, als für die
+ganze übrige Universität. Mit <persName rend="smallcaps" xml:id="ID.91">Vintschgau</persName> speiste ich um 17:00 Uhr bei
+Pedrovecchi, in dem durch ganz Italien berühmten Kaffee- und Gasthause. Nach Tisch besah ich mir
+noch die Antoniuskirche und <persName rend="smallcaps" xml:id="ID.92">Vintschgau</persName>s Laboratorium. Dasselbe befindet
+sich in einem aufgehobenen Kloster und besteht aus großen, luftigen, mit Marmor gepflasterten Sälen,
+drei an [der] Zahl, sie haben herrliches Licht und ich möchte <persName rend="smallcaps" xml:id="ID.93">Vintschgau</persName>
+fast um diese schönen Arbeitszimmer beneiden.</p>
+
+        <p>Er zeigte mir auch seine Tierställe. Einige optische Versuche, die er eben anstellte, ferner ein
+Huhn, bei dem nach Verwundung des kleinen Gehirns die von <persName rend="smallcaps" xml:id="ID.94">Felourens</persName> nach
+dieser Operation beschriebenen, unsteten und regelwidrigen Bewegungen eingetreten waren. Dieses Tier
+zu sehen, machte mir viel Freude, da mir selbst die Operation schon wiederholte Male misslang.</p>
+        <p>Ich teilte <persName rend="smallcaps" xml:id="ID.95">Vintschgau</persName> dagegen einiges Neues mit, was er noch nicht zu
+erfahren Gelegenheit hatte, und wir stellten sogar einige Versuche miteinander an. So verlief der
+Tag angenehm bis ich [am] Abend wieder nach Venedig zurückkehrte.</p>
+        <p>Ich breche hier ab, um Dir nächstens wieder andere Wahrnehmungen über Venedig und Italien
+überhaupt mitzuteilen.</p>
+      </div>
+      <div corresp="#L.66" type="hidden" xml:lang="deu">
+        <head>
+          <persName ref="#PN.392" type="creator" xml:id="ID.96">
+            <forename>Alexander</forename>
+            <surname>Rollett</surname>
+          </persName>
+          <persName ref="#PN.396" type="addressee" xml:id="ID.97">
+            <forename>Emil</forename>
+            <surname>Rollett</surname>
+          </persName>
+        </head>
+        <opener>
+          <dateline>
+            <date when="1861-08">1861 VIII 19</date>
+            <name key="Obervellach" type="place">
+Obervellach </name>
+          </dateline>
+        </opener>
+        <p rend="without_indent">Von Brixen durchwanderte ich das schöne Pustertal bis Lienz, dort machte
+ich kurze Rast und brach am 18. früh um 3:30 Uhr wieder auf. Es war der schönste Morgen, als ich von
+einem Tiroler Bäuerlein begleitet den Iselsberg an der Grenze zwischen Tirol und Kärnten
+überschritt, ihr habt euch wohl noch alle im süßen Schlummer gewiegt. Um 6:30 Uhr traf ich in
+Winklern, dem ersten kärntnerischen Orte, ein. Von hier ging es durch das Mölltal, mit einer ganzen
+Reihe schöner Einzelheiten, nach Obervellach. Bald nachdem meine Ankunft daselbst erfolgt war,
+begegnete mir <persName rend="smallcaps" xml:id="ID.98">Lontsch</persName>, er fasste mich bei der Hand und zog mich sozusagen
+in seine Wohnung, die ich erst nachmittags zu gelegener Zeit aufsuchen wollte. Ich kann Euch nicht
+beschreiben, was in diesem Hause für eine Freude herrschte über meine Ankunft. Ich könnte mir fast
+etwas darauf einbilden, wenn ich nicht wüsste, dass jeder Bekannte diesen im engen Mölltale sich so
+einsam fühlenden Freunden ein wahrer Augentrost ist. Sie überschütten mich mit Liebenswürdigkeiten
+und wollen mich fast nicht fortlassen. Ich soll Euch tausend und tausend Grüße von ihnen
+übersenden.</p>
+
+        <p>Heute habe ich schon das Schloss von Obervellach, den imposanten Fall der Raufen, die Ragabacher
+Eisenhütte in Begleitung von <persName rend="smallcaps" xml:id="ID.99">Lontsch</persName> besucht. Sie wenden alles auf, um mir
+die Zeit nicht lange werden zu lassen. Dem Großpapa sollst Du insbesondere ihre besten Grüße
+ausrichten.</p>
+
+        <p>Du sollst ihn erinnern an alle oben genannten Objekte, die er bei Gelegenheit seines hiesigen
+Aufenthaltes auch besuchte. Mit den Zelebritäten von Obervellach wurde ich gestern und heute auf
+feierliche Weise bekannt gemacht. Ich lernte den Gewerksbesitzer <persName rend="smallcaps" xml:id="ID.100">Augustin</persName>,
+den Schlossbesitzer von Obervellach, einen wahren Pavian, den Direktor des Ragabacher Eisenwerkes,
+<persName rend="smallcaps" xml:id="ID.101">Ullepitsch</persName>, kennen. Letzterer machte mir die ausgezeichneten Stahlsorten
+zum Geschenk, damit ich mir daraus anatom[ische] Instrumente machen lassen sollte. Er besitzt am
+Eisenwerk einen Garten, in welchem er die Alpenflora kultiviert, eine äußerst interessante Anlage.
+Mit dem Chirurgen von Obervellach machte ich heute eine Spazierfahrt.</p>
+        <p>Nächstens mehr. Lebe wohl, Dein </p>
+        <closer>
+          <signed>Alexander</signed>
+        </closer>
+      </div>
+      <div sameAs="R.56" type="letter" xml:id="L.67" xml:lang="deu">
+        <head>
+          <persName ref="#PN.396" type="creator" xml:id="ID.102">
+            <forename>Emil</forename>
+            <surname>Rollett</surname>
+          </persName>
+          <persName ref="#PN.392" type="addressee" xml:id="ID.103">
+            <forename>Alexander</forename>
+            <surname>Rollett</surname>
+          </persName>
+        </head>
+        <opener>
+          <dateline>
+            <date when="1861-08">1861 VIII 19</date>
+            <name key="Baden" type="place">Baden</name>
+          </dateline>
+          <salute>Lieber Bruder!</salute>
+        </opener>
+        <p rend="without_indent">Zu meiner großen Verwunderung erfahre ich aus Deinem Brief aus Bozen vom
+15. d[ieses Monats], dass du mein dahin gerichtetes Schreiben vom 13. d[ieses] M[onats] nicht
+erhalten hast. Schneller kann Blitz und Knall der Flinte nicht aufeinander folgen, als mein Brief
+nach Empfang des Deinen abgesendet wurde. Am 13. früh empfing ich Deinen Brief und am selben
+Vormittag war meine Antwort bereits auf der Post. Also der Termin scheint jedenfalls zu kurz
+gestellt worden zu sein. Übrigens muss ich bemerken, dass ich Deinen Brief aus Brixen vom
+16. d[ieses Monats] um einen Tag früher in Händen hatte, als Deinen Brief aus Bozen vom 15. d[ieses]
+M[onats]. In Bozen scheint also die Post nicht aufs eifrigste bedient zu sein. So erfahre denn aus
+diesem Schreiben, dass wir uns alle recht wohl befinden und Dich herzlich grüßen. – Einige lokale
+Neuigkeiten, die ich Dir in meinem letzten Briefe geschrieben, sind nun schon veraltet. – Ich muss
+mich sehr beeilen, weil ich jeden Augenblick den Vater erwarte, um mich zur Operation bei Fräulein
+Emilie <persName rend="smallcaps" xml:id="ID.104">Janzuly</persName> abzuholen. – Gestern war Parkfest, in welchem ich mir einen
+derben Schnupfen aquirierte. Ein recht drolliges Amusement das!</p>
+        <p>Vorgestern wurde der Jäger des Prinzen <persName rend="smallcaps" xml:id="ID.105">Rohani</persName>, ein kräftiger junger
+Mann, seziert, der sich bei einem Kopfsprunge im Doblhof-Teich durch Aufstoßen auf dem Grund die
+Symphyse zwischen 4. und 5. Halswirbel zerriss und das Rückenmark quetschte. Er war augenblicklich
+gelähmt, wurde aus dem Wasser gezogen, kam später zu vollem Bewusstsein und starb am folgenden Tage
+im Militärspitale. Ich habe Dir auch geschrieben, dass Prof. <persName rend="smallcaps" xml:id="ID.106">Ludwig</persName> bei
+uns war und, da ich nicht zu Hause war, dem Oskar seine Karte hinterließ mit dem Bemerken, dass er
+in Vöslau wohne und einen Besuch von Dir erwarte. Oskar sagte ihm nicht, dass Du verreist seiest.
+Lebe wohl, Dein </p>
+        <closer>
+          <signed>Emil</signed>
+        </closer>
+      </div>
+      <div sameAs="R.57" type="letter" xml:id="L.68" xml:lang="deu">
+        <head>
+          <persName ref="#PN.56" type="creator" xml:id="ID.107">
+            <forename>Ernst
+Wilhelm</forename>
+            <surname>Brücke</surname>
+          </persName>
+          <persName ref="#PN.392" type="addressee" xml:id="ID.108">
+            <forename>Alexander</forename>
+            <surname>Rollett</surname>
+          </persName>
+        </head>
+        <opener>
+          <dateline>
+            <date when="1861-09">1861 IX 11</date>
+            <name key="Unterach" type="place">Unterach</name>
+          </dateline>
+          <salute>Geehrter Herr Doktor!</salute>
+        </opener>
+        <p rend="without_indent">Ich danke Ihnen für Ihren Brief. <persName rend="smallcaps" xml:id="ID.109">Bruckner</persName> soll,
+wenn er einen Gang in die Stadt zu machen hat, der Hedwig die Schlüssel hinterlassen, damit diese
+aufsperren kann, wenn es vom Dekanate aus verlangt wird. Er soll sich überhaupt, namentlich in den
+Tagesstunden, von Morgens 8:00 bis Nachmittags 16:00 Uhr, wo am ehesten Fremdenbesuch zu erwarten
+ist, so viel als tunlich zu Hause halten und die Ärzte und Gelehrten, die ihm vom Dekanate
+zugewiesen werden oder die sich direkt an ihn wenden, überall herumführen, aber nicht von ihrer
+Seite weichen und sich unter keinerlei Vorwand fortschicken lassen. Das Übrige werde ich schon
+besorgen, wenn ich nach Hause komme, was, wie ich denke, am 27. oder 28. der Fall sein wird. Es
+freut mich, dass Sie Ihren Vorsatz, nach Venedig und Padua zu reisen, ausgeführt haben und gesund
+heimgekehrt sind. Von <persName rend="smallcaps" xml:id="ID.110">Vintschgau</persName> habe ich einen Brief erhalten. Er ist
+jetzt auf einer Reise durch Deutschland begriffen.</p>
+        <p>Mit bestem Gruße Ihr </p>
+        <p>E. <persName rend="smallcaps" xml:id="ID.111">Brücke</persName>
+        </p>
+      </div>
+      <div type="letter" xml:id="L.69" xml:lang="deu">
+        <head>
+          <persName ref="#PN.191" type="creator" xml:id="ID.112">
+            <forename>Karl</forename>
+            <surname>Hornstein</surname>
+          </persName>
+          <persName ref="#PN.392" type="addressee" xml:id="ID.113">
+            <forename>Alexander</forename>
+            <surname>Rollett</surname>
+          </persName>
+        </head>
+        <opener>
+          <dateline>
+            <date when="1861-10">[1861] [v.X] 19</date>
+            <name key="Wien" type="place">[Wien]</name>
+          </dateline>
+          <salute>Geehrter Herr Doktor</salute>
+        </opener>
+        <p rend="without_indent">Die Geschäftsführer des Vereines zur Verbreitung naturwissenschaftlicher
+Kenntnisse erlauben sich, Sie im Namen des Ausschusses einzuladen, demselben beizutreten und sich,
+wenn es Ihnen genehm ist, zur Abhaltung eines Vortrages vielleicht noch im Verlaufe dieses Winters
+zu entscheiden. </p>
+        <p>Für den Fall, als dass Sie dies tun, sind wir so frei, Ihnen eine Liste jener Abende
+beizuschließen, welche noch vollständig frei sind. Es wären dies: 23. Dezember, 27. Jänner, 3. und
+17. Februar, 31. März und vielleicht auch 11. November.</p>
+        <p>Sollte Ihnen keiner dieser Tage zusagen, so bitten wir selbstverständlich, den Ihnen angenehmsten
+zu bestimmen, da wir gerne bereit sind, nach Möglichkeit eine passende Abänderung des jetzt
+festgelegten Programmes zu treffen.</p>
+        <p>Ihre gütige Entscheidung sowie den Titel des etwa abzuhaltenden Vortrages bitten wir schriftlich
+Herrn Dr. Hornstein auf die k.k. Sternwarte zukommen zu lassen.</p>
+        <p>Die Geschäftsführer des Vereines</p>
+        <closer>
+          <signed>
+            <persName rend="smallcaps" xml:id="ID.114">Reissek</persName>
+            <persName rend="smallcaps" xml:id="ID.115">Hornstein</persName>
+          </signed>
+        </closer>
+        <postscript>
+          <p>
+            <hi rend="italic">Da die Ausschusse zugleich Vereinsmitglieder sein müssen, werden Euer
+Hochwohlgeboren unter einem ersucht, dem Vereine als Mitglied beitreten zu wollen.</hi>
+          </p>
+        </postscript>
+      </div>
+      <div sameAs="R.58" type="letter" xml:id="L.70" xml:lang="deu">
+        <head>
+          <persName ref="#PN.191" type="creator" xml:id="ID.116">
+            <forename>Karl</forename>
+            <surname>Hornstein</surname>
+          </persName>
+          <persName ref="#PN.392" type="addressee" xml:id="ID.117">
+            <forename>Alexander</forename>
+            <surname>Rollett</surname>
+          </persName>
+        </head>
+        <opener>
+          <dateline>
+            <date when="1861-10">1861 X 19</date>
+            <name key="Wien" type="place">Wien</name>
+          </dateline>
+          <salute>Geehrtester Herr Doktor.</salute>
+        </opener>
+        <p rend="without_indent">Für Ihren freundlichen Brief bestens dankend, übersende ich Ihnen die
+vorläufigen Statuten unseres Vereines. Den Vortrag, zu dessen Abhaltung Sie sich bereit erklärt
+haben, konnte ich leider nicht mehr an dem von Ihnen gewünschten Abend ansetzen, weil für diesen
+Prof. <persName rend="smallcaps" xml:id="ID.118">Ludwig</persName> schon einen Vortrag angesagt hat. Ich habe daher den Ihrigen
+auf den 28. April übertragen. In einigen Tagen werde ich ohnedies eine Ausschusssitzung zusammen
+berufen, wo sich Gelegenheit bieten wird, die definitive Vereinbarung bezüglich des Programmes zu
+treffen.</p>
+        <p>Hochachtungsvoll Ihr ergebener </p>
+        <closer>
+          <signed>K. <persName rend="smallcaps" xml:id="ID.119">Hornstein</persName>
+          </signed>
+        </closer>
+      </div>
+      <div sameAs="R.59" type="letter" xml:id="L.71" xml:lang="deu">
+        <head>
+          <persName ref="#PN.191" type="creator" xml:id="ID.120">
+            <forename>Karl</forename>
+            <surname>Hornstein</surname>
+          </persName>
+          <persName ref="#PN.392" type="addressee" xml:id="ID.121">
+            <forename>Alexander</forename>
+            <surname>Rollett</surname>
+          </persName>
+        </head>
+        <opener>
+          <dateline>
+            <date when="1861-10">1861 X 24</date>
+            <name key="Wien" type="place">Wien</name>
+          </dateline>
+          <salute>Geehrtester Herr Doktor.</salute>
+        </opener>
+        <p rend="without_indent">Ich erlaube mir, Sie hiermit zu unserer nächsten Ausschusssitzung
+einzuladen, welche Sonntag (27. Oktober) um 10:00 Uhr Vormittag im Akademiegebäude
+(Sternwarte-Bibliothek) stattfinden wird. Die definitive Feststellung des Programmes u.a. ist auf
+der Tagesordnung.</p>
+        <p>Ihr ganz ergebener </p>
+        <closer>
+          <signed>K. <persName rend="smallcaps" xml:id="ID.122">Hornstein</persName>
+          </signed>
+        </closer>
+      </div>
+      <div sameAs="R.60" type="letter" xml:id="L.72" xml:lang="deu">
+        <head>
+          <persName ref="#PN.51" type="creator" xml:id="ID.123">
+            <forename>Friedrich
+Moritz</forename>
+            <surname>Brauer</surname>
+          </persName>
+          <persName ref="#PN.392" type="addressee" xml:id="ID.124">
+            <forename>Alexander</forename>
+            <surname>Rollett</surname>
+          </persName>
+        </head>
+        <opener>
+          <dateline>
+            <date when="1861-11">1861 XI 14</date>
+            <name key="Wien" type="place">Wien</name>
+          </dateline>
+          <salute>Wertester Herr Doktor!</salute>
+        </opener>
+        <p rend="without_indent">Das überbrachte Tier ist die Larve eines Zweiflüglers (Ordo Diptera). Die
+Fliege gehört ganz in die Nähe der G. Corethra und ist ein Chironomus, wahrscheinlich Ch. plumosus
+Linné. Der Name Chironomus ist aus Cheiro nomos entstanden und bedeutet ‚Einer, der die Hände
+bewegt’. Bei <persName rend="smallcaps" xml:id="ID.125">Linné</persName> hieß das Insekt Tipula plumosa. Da die Gattung Tipula
+später in mehrere Gattungen gespalten wurde, wurde es von <persName rend="smallcaps" xml:id="ID.126">Fabricius</persName> als
+Chironomus plumosus aufgeführt. Letzteres Genus ist sehr artenreich und die Larven leben bei den
+einzelnen Arten sehr verschieden. Mehrere sehr verwandte Arten haben solche roten Larven, die nicht
+speziell beschrieben sind, daher nur sicher durch Erlangung des Imago bestimmbar sind. Bei Ihren
+Untersuchungen können Sie indes ruhig den Namen Chironomus plumosus L. gebrauchen; denn die
+beigefügte Beschreibung stimmt so gut dazu, dass die Imago nur unbedeutend differieren dürfte. – Ich
+weidete mich schon als Knabe von 7 Jahren an diesen Tieren, über die mir aber damals meine ganze
+Umgebung keine Aufklärung geben konnte. Sie müssen in den angegebenen Schriften sowie in den
+Berichten über Leistungen in der Entomologie von <persName rend="smallcaps" xml:id="ID.127">Erichson</persName> etc. (im
+kaiserlichen Museum) jedenfalls nachsehen. Kommt mir noch etwas vor, so werde ich es anzeigen. – Das
+Insekt gehört also in die Ordo Diptera, Familie Tipularia, Genus Chironomus Fabr., Species plumosus
+Linn.</p>
+        <p>In Betreff der <persName rend="smallcaps" xml:id="ID.128">Basch</persName>-Angelegenheit versichere ich Sie mit meinem
+Ehrenworte, dass sowohl ich als auch das kais[erlich] zool[ogische] Museum und die k. k.
+zool[ogisch]-bot[anische] Gesellschaft alle Bücher, die Herr <persName rend="smallcaps" xml:id="ID.129">Basch</persName>
+entlieh, richtig zurückerhalten hat. Ich habe noch ein Recipisse in Händen, welches ich aus Mangel
+seiner Adresse nicht an ihn senden kann. Ergebenst </p>
+        <closer>
+          <signed>Dr. <persName rend="smallcaps" xml:id="ID.130">Brauer</persName>
+          </signed>
+        </closer>
+        <postscript>
+          <p>
+            <hi rend="italic">Nach Kollar ist die verwandte Culex-Larve (Gelsen) ein Raubtier, über die
+Nahrung ihrer Larve habe ich nichts bemerkt gefunden, vielleicht enthält es die Schrift von
+Ellenberger. </hi>
+          </p>
+          <p rend="without_indent">
+            <persName rend="smallcaps" xml:id="ID.131">Linné</persName>. Fauna suec. sp. 1758 Tipula plumosa. Die
+Larve lebt in Wasser, ist hellrot, zwölfringlig, mit gespaltenem Schwanze, vorne und hinten je mit
+zwei Füßen und am vorletzten Ringe mit vier Fleischfäden versehen.</p>
+          <p rend="without_indent">
+            <persName rend="smallcaps" xml:id="ID.132">Réaumur</persName>, Tom. IV pl. 14. fig 11, 12 und Tom. V pl
+5. (Chironomus plumosus Westwood, ist eine andere, aber sehr verwandte Art, die Fliegen mit
+3 Punkten auf den Flügeln.) Larven ganz wurmförmig und von roter Farbe, daher sie Blutwürmer genannt
+werden. Sie werden in stehendem Wasser gefunden und sind sehr tätig, indem sie sich in allen
+Richtungen herumschnellen. Der Kopf hat zwei punktaugenartige Flecke und zwei zweigliedrige Palpen
+(nach <persName rend="smallcaps" xml:id="ID.133">Macquart</persName>); unter dem ersten Thoraxsegment sind zwei kurze fußförmige
+Tentakeln; das Körperende hat auch zwei breitere und vier schmale ovale Anhänge; jedes der zwei
+vorhergehenden Segmente ist ausgerüstet mit einem Paare langer Fleischfäden. Diese Larven kommen in
+Menge zusammen und bilden krumme Röhren, welche, gebildet aus Stücken zerfetzter Blätter, am Grunde
+des Wassers zusammen eine unregelmäßige Masse bilden (Vol. III pl 14 fig 11–16). Die Abgebildeten
+scheinen größtenteils gesponnen. Die Nymphe hat 5 lange, haarige Fäden an jeder Seite des Thorax und
+das Abdomen endet mit einem dicken Haarbüschl.</p>
+          <p rend="without_indent">
+            <persName rend="smallcaps" xml:id="ID.134">Degeer</persName>. Ins. VI 146. Wieder eine andere Art?</p>
+          <p rend="without_indent">
+            <persName rend="smallcaps" xml:id="ID.135">Ellenberger</persName>, Jak. Die Entwicklung der Dipteren
+Gattung Chironomus God. In: Lotos, 2. Jahrg. 1852. p. 89–92.</p>
+          <p rend="without_indent">
+            <persName rend="smallcaps" xml:id="ID.136">Tijdschr</persName> v. Entomol. nitgeg.d.d. nederl. entom.
+Vereenig. D. 2. St. 1.2.1858. p. 3–11. Wulp F. M. van der, Over het geslacht Chironomus (mit 2
+Taf.)</p>
+          <p rend="without_indent">
+            <persName rend="smallcaps" xml:id="ID.137">Löw</persName> H. Beitrag etc.: Germars Zeitschrift f.
+Entomol. Bd 3, 1841 p 386–406.</p>
+          <p rend="without_indent">
+            <persName rend="smallcaps" xml:id="ID.138">Siebold</persName>. Vergl. Anatomie, p. 572, Anmerkung
+11.</p>
+          <p rend="without_indent">Dto p. 599 Anmerkung 28 (Sieh die Zitate)</p>
+          <p rend="without_indent">Dto p. 639 Anmerkung 4. Germar. Z. Bde II, III.</p>
+          <p rend="without_indent">
+            <persName rend="smallcaps" xml:id="ID.139">Löw</persName> Horae anatomicae.</p>
+          <p rend="without_indent">
+            <persName rend="smallcaps" xml:id="ID.140">Bouché</persName> Naturgeschichte.</p>
+          <p rend="with_margin">
+            <note>Wohl vom Briefempfänger mit Bleistift notiert:</note>
+          </p>
+          <p rend="without_indent">Χέίφονόμος (πάντομιμος)</p>
+          <p rend="without_indent">pantomimos </p>
+          <p rend="without_indent">Gaukler</p>
+          <p rend="without_indent">blood-worm</p>
+          <p rend="without_indent">Cecidomyiae</p>
+        </postscript>
+      </div>
+      <div sameAs="R.61" type="letter" xml:id="L.73" xml:lang="deu">
+        <head>
+          <persName ref="#PN.400" type="creator" xml:id="ID.141">
+            <forename>[NN]</forename>
+            <surname>Rosenfeld</surname>
+          </persName>
+          <persName ref="#PN.392" type="addressee" xml:id="ID.142">
+            <forename>Alexander</forename>
+            <surname>Rollett</surname>
+          </persName>
+        </head>
+        <opener> 
+         <dateline>
+            <date when="1861-11">1861 XI 29</date>
+            <name key="Wien" type="place">Wien</name>
+          </dateline>
+          <salute>Euer Wohlgeboren!</salute>
+        </opener>
+        <p rend="without_indent">Sie werden entschuldigen, dass ich Sie mit diesem Schreiben belästige, aber
+ich bin gezwungen. Ich bin in Ihrem Kurs eingeschrieben, habe auch schon gezahlt, da ich aber seit 5
+Wochen jetzt krank war und auch später kam, so dass ich im Ganzen nur viermal gegenwärtig war, so
+werde ich Sie bitten, da ich jetzt rekonvaleszent bin und das Geld sehr benötige, mir es mit
+Überbringer dieses zu übersenden, den nächsten Kurs werde ich wieder Ihr Zuhörer. </p>
+        <p>Auf Ihre Güte rechnend und hoffend, zeichnet mit Achtung </p>
+        <closer>
+          <signed>
+            <persName rend="smallcaps" xml:id="ID.143">Rosenfeld</persName> […]</signed>
+        </closer>
+        <note>Antwortkonzept <persName rend="smallcaps" xml:id="ID.144">Rollett</persName>s: </note>
+        <postscript>
+          <p rend="without_indent">Ich leiste Ihrer Bitte Folge. Reden Sie weiter nichts davon, damit keine
+Präzedenzfälle erwachsen für Unschlüssige, die nicht durch Krankheit, sondern durch anderweitige
+Umstände sich abhalten lassen, einen einmal begonnenen Kurs auch nicht zu vollenden. In solchem
+Falle würde ich mich nie zu einer Rückgabe des Honorares entschließen, Ihr </p>
+          <p rend="with_margin">Dr. A. <persName rend="smallcaps" xml:id="ID.145">Rollett</persName>
+          </p>
+        </postscript>
+      </div>
+      <div sameAs="R.62" type="letter" xml:id="L.74" xml:lang="deu">
+        <head>
+          <persName ref="#PN.191" type="creator" xml:id="ID.146">
+            <forename>Karl</forename>
+            <surname>Hornstein</surname>
+          </persName>
+          <persName ref="#PN.392" type="addressee" xml:id="ID.147">
+            <forename>Alexander</forename>
+            <surname>Rollett</surname>
+          </persName>
+        </head>
+        <opener>
+          <dateline>
+            <date when="1861-12">1861 XII 26</date>
+            <name key="Wien" type="place">Wien</name>
+          </dateline>
+          <salute>Geehrtester Herr Doktor.</salute>
+        </opener>
+        <p rend="without_indent">Nächsten Montag findet nach dem Vortrage die schon besprochene
+Zusammenkunft im Gasthause (nächst <persName rend="smallcaps" xml:id="ID.148">Daum</persName>s Kaffeehause) statt, welche
+zugleich als Ausschusssitzung benutzt werden wird. Ich erlaube mir, Sie hierzu nochmals freundlichst
+einzuladen.</p>
+        <p>Hochachtungsvoll</p>
+        <closer>
+          <signed>Dr. <persName rend="smallcaps" xml:id="ID.149">Hornstein</persName>
+          </signed>
+        </closer>
+      </div>
+    </body>
+  </text>
+</TEI>
