@@ -24,7 +24,7 @@ xs:anyURI("http://openconvert.clarin.inl.nl/openconvert/text");
 declare variable $nlp:customTokenizer :="https://tokenizer.eos.arz.oeaw.ac.at/exist/restxq/xtoks/tokenize";
 
 declare variable $nlp:lemmatizerEndpoint :=
-xs:anyURI("http://127.0.0.1:8000/query/lemma?token=");
+xs:anyURI("https://spacyapp.acdh.oeaw.ac.at/query/lemma/?token=");
 
 declare variable $nlp:serialiserParams :=
         <output:serialization-parameters>
