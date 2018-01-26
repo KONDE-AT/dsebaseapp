@@ -11,7 +11,7 @@ return
 
 <response>{
 try{
-    let $source  := request:get-parameter("source",$config:app-root)
+    let $source := request:get-parameter("source",$config:app-root)
     let $target-base := request:get-parameter("target-base",$target-base-default)
     let $synced-files :=  file:sync($source, $target-base||"/"||$app-name, ()) 
     return $synced-files

@@ -63,9 +63,10 @@ declare function nlp:custom-tokenizer($input as node(), $profile as xs:string) a
 (:~
  : Sends a TEI-Document to the tokenizer web-service and stores the result
  : in 'db/apps/{app-name}/nlp/temp/{doc-name}'
- : @see http://openconvert.clarin.inl.nl/openconvert/web/help.html
+ : @see https://tokenizer.eos.arz.oeaw.ac.at/exist/apps/xToks/index.html
  :
  : @param $input An xml docuemnt which validates against the TEI-schema
+ : @param $profile The identifier of the tokenization profile which should be used
  : @return The location of the stored tokenized document
 :)
 
@@ -77,6 +78,30 @@ declare function nlp:custom-tokenize-and-save($input as node(), $profile as xs:s
     let $stored := xmldb:store($collection-uri, $resource-name, $tokenized//httpclient:body/*)
     return
         $stored
+};
+
+(:~
+ : Bulk tonenizes all TEI-Documents found in the passed in collection
+ :
+ : @param $collection The URI of a collection to process
+ : @param $profile The identifier of the tokenization profile which should be used
+ : @return An XML-Node containing the paths to the stored tokenized files <result><item>{path/to/item}</item></result>
+:)
+
+declare function nlp:custom-bulk-tokenize($collection as xs:string, $profile as xs:string) as item(){
+    let $result :=
+    <result>{
+        for $x in collection($collection)//tei:TEI
+            let $wait := util:wait(1000)
+            let $name := util:document-name($x)
+            let $docUri := $collection||$name
+            let $input := doc($docUri)
+            let $tokenized := nlp:custom-tokenize-and-save($input, $profile)
+                return
+                    <item>{$tokenized}</item>
+    }</result>
+    return
+        $result
 };
 
 

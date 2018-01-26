@@ -6,11 +6,14 @@ import module namespace util = "http://exist-db.org/xquery/util";
 import module namespace httpclient ="http://exist-db.org/xquery/httpclient";
 declare namespace tei="http://www.tei-c.org/ns/1.0";
 
-(:let $collection := '/db/apps/dsebaseapp/data/editions/':)
+let $collection := '/db/apps/dsebaseapp/data/editions/'
 let $input := doc('/db/apps/dsebaseapp/data/editions/1762-I-28.xml')
 
 (: example for nlp:custom-tokenizer:)
-return nlp:custom-tokenize-and-save($input, 'default')
+(:return nlp:custom-tokenize-and-save($input, 'default'):)
+
+(: example for nlp:custom-bulk-tokenize :)
+return nlp:custom-bulk-tokenize($collection, 'default')
 
 (: example for nlp:bulk-tokenize :)
 (: return nlp:bulk-tokenize($collection):)
