@@ -7,10 +7,10 @@ import module namespace httpclient ="http://exist-db.org/xquery/httpclient";
 declare namespace tei="http://www.tei-c.org/ns/1.0";
 
 (:let $collection := '/db/apps/dsebaseapp/data/editions/':)
-let $input := doc('/db/apps/dsebaseapp/data/editions/rollet.xml')
+let $input := doc('/db/apps/dsebaseapp/data/editions/1762-I-28.xml')
 
 (: example for nlp:custom-tokenizer:)
-return nlp:custom-tokenizer($input, 'default')
+return nlp:custom-tokenize-and-save($input, 'default')
 
 (: example for nlp:bulk-tokenize :)
 (: return nlp:bulk-tokenize($collection):)

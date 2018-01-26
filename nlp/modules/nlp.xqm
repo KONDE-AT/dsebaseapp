@@ -61,6 +61,26 @@ declare function nlp:custom-tokenizer($input as node(), $profile as xs:string) a
 };
 
 (:~
+ : Sends a TEI-Document to the tokenizer web-service and stores the result
+ : in 'db/apps/{app-name}/nlp/temp/{doc-name}'
+ : @see http://openconvert.clarin.inl.nl/openconvert/web/help.html
+ :
+ : @param $input An xml docuemnt which validates against the TEI-schema
+ : @return The location of the stored tokenized document
+:)
+
+declare function nlp:custom-tokenize-and-save($input as node(), $profile as xs:string) as xs:string{
+    let $collection-uri := '/db/apps/dsebaseapp/nlp/temp/'
+    let $resource-name := util:document-name($input)
+    let $tokenized := nlp:custom-tokenizer($input, $profile)
+    where $tokenized//httpclient:body/*
+    let $stored := xmldb:store($collection-uri, $resource-name, $tokenized//httpclient:body/*)
+    return
+        $stored
+};
+
+
+(:~
  : Sends a TEI-Document to the tokenizer web-service
  : http://openconvert.clarin.inl.nl/openconvert/web/help.html
  :
