@@ -195,17 +195,22 @@ declare function nlp:bulk-tokenize($collection as xs:string){
 
 declare function nlp:fetch-text($input as node()){
     let $result :=
-    <result>{
+    <result>
+        {
     for $word at $pos in $input//*[local-name() eq 'w' or local-name() eq 'pc']
         let $token := functx:trim(string-join($word//text(), ''))
         let $index := $pos - 1
+        let $ws := if($word/following-sibling::tei:seg[1]) then true() else false()
         return
-            <token>
-                <text>{$token}</text>
-                <index>{$index}</index>
+            <tokenArray>
+                <value>{xs:string($token)}</value>
+                <tokenID>{$index}</tokenID>
                 <xmlid>{data($word/@xml:id)}</xmlid>
-            </token>
-    }</result>
+                <whitespace>{$ws}</whitespace>
+            </tokenArray>
+    }
+        <language>german</language>
+    </result>
     return
         $result
 };
