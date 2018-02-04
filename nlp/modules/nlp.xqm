@@ -26,6 +26,9 @@ declare variable $nlp:customTokenizer :="https://tokenizer.eos.arz.oeaw.ac.at/ex
 declare variable $nlp:lemmatizerEndpoint :=
 xs:anyURI("https://spacyapp.acdh.oeaw.ac.at/query/lemma/?token=");
 
+declare variable $nlp:posTaggerEndpoint :=
+xs:anyURI("https://spacyapp.acdh.oeaw.ac.at/query/jsonparser-api/");
+
 declare variable $nlp:serialiserParams :=
         <output:serialization-parameters>
           <output:omit-xml-declaration value="yes"/>
@@ -204,8 +207,8 @@ declare function nlp:fetch-text($input as node()){
         return
             <tokenArray>
                 <value>{xs:string($token)}</value>
-                <tokenID>{$index}</tokenID>
-                <xmlid>{data($word/@xml:id)}</xmlid>
+                <runningNr>{$index}</runningNr>
+                <tokenId>{data($word/@xml:id)}</tokenId>
                 <whitespace>{$ws}</whitespace>
             </tokenArray>
     }
@@ -222,6 +225,45 @@ declare function nlp:fetch-text($input as node()){
  : @param $input A TEI document with tei:w tags ready for pos-tagging
  : @return The with POS-tags enriched tei:w element
 :)
+
+
+declare function nlp:pos-tagging($input as node(), $language as xs:string){
+    let $request-headers :=
+        <headers>
+            <header name="Accept" value="application/json+acdhlang"/>
+            <header name="Content-Type" value="application/json+acdhlang"/>
+        </headers>
+    let $words := nlp:fetch-text($input)
+    let $parameters := 
+        <output:serialization-parameters>
+              <output:expand-xincludes value="no"/>
+              <output:method value="json"/>
+              <output:media-type value="text/javascript"/>
+              <output:encoding value="utf-8"/>
+            </output:serialization-parameters>
+    let $payload := util:serialize($words, $parameters)
+    let $request := httpclient:post(
+          $nlp:posTaggerEndpoint, $payload, true(), $request-headers
+      )
+    let $json := try {
+                util:base64-decode($request//httpclient:body/text())
+            } catch * {
+                false()
+            }
+    let $parsed := parse-json($json)('result')
+    for $y in $parsed?*
+        for $x in $y?('tokens')?*
+            let $tokenId := $x('tokenId')
+            let $type := $x('type')
+            let $pos := $x('pos')
+            let $lemma := $x('lemma')
+            let $origNode := $input//tei:w[@xml:id=$tokenId]
+            let $new := update insert attribute type {$type} into $origNode
+            let $newer := update insert attribute lemma {$lemma} into $origNode
+            let $newest := update insert attribute ana {$pos} into $origNode
+            return 
+                $origNode
+};
 
 declare function nlp:pos-tagging($input as node()){
     let $request-headers :=
