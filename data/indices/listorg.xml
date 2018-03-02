@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>ListPerson</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Information about the source</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="listplace.xml" xpointer="listplace">
+                    <fallback xmlns="http://www.w3.org/2001/XInclude">File to include couldn't be found</fallback>
+                </xi:include>
+            </p>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <listOrg xml:id="listorg">
+                    <org xml:id="zentralinstitut">
+                        <orgName>Zentralinstitut</orgName>
+                        <orgName type="alt">Zentralinstitut für Theaterwissenschaft</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/10017549-1</idno>
+                    </org>
+                    <org xml:id="reichserziehungsministerium">
+                        <orgName>Reichsministerium für Wissenschaft, Erziehung und Volksbildung</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/4357021-5</idno>
+                    </org>
+                    <org xml:id="verlag_matthiesen">
+                        <orgName>Verlag Matthiesen</orgName>
+                        <orgName type="alt">Matthiesen Verlag</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/1028565046</idno>
+                    </org>
+                    <org xml:id="propyläenverlag">
+                        <orgName>Propyläenverlag</orgName>
+                        <orgName type="alt">Propyläen-Verlag</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/39569-9</idno>
+                    </org>
+                    <org xml:id="verlag_frick">
+                        <orgName>Verlag Frick</orgName>
+                        <orgName type="alt">FRICK Verlag-GmbH</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/1065494858</idno>
+                    </org>
+                    <org xml:id="wiener_verlag">
+                        <orgName>Wiener Verlag</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/10074501-5</idno>
+                    </org>
+                    <org xml:id="gesellschaft_für_wiener_theatergeschichte">
+                        <orgName>Gesellschaft für Wiener Theatergeschichte</orgName>
+                        <idno type="URL"/>
+                    </org>
+                    <org xml:id="stadtbibliothek">
+                        <orgName>Stadtbibliothek</orgName>
+                        <orgName type="alt">Wiener Stadtbibliothek</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/2026851-8</idno>
+                    </org>
+                    <org xml:id="busch-bibliothek">
+                        <orgName>Universitäts- und Landesbibliothek Münster - Theatersammlung Busch</orgName>
+                        <orgName type="alt">Busch Bibliothek</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/7845448-7</idno>
+                    </org>
+                    <org xml:id="fachschaft_theater">
+                        <orgName>Fachschaft Theater am Zentralinstitut für Theaterwissenschaft der Universität Wien</orgName>
+                        <idno type="URL"/>
+                    </org>
+                    <org xml:id="deutsches_volkstheater">
+                        <orgName>Deutsches Volkstheater</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/146313-5</idno>
+                    </org>
+                    <org xml:id="exl_buehne">
+                        <orgName>Exl-Bühne</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/1098398-3</idno>
+                    </org>
+                    <org xml:id="akademietheater">
+                        <orgName>Akademietheater (Wien)</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/2033589-1</idno>
+                    </org>
+                    <org xml:id="burgtheater">
+                        <orgName>Burgtheater</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/38633-9</idno>
+                    </org>
+                    <org xml:id="staatsoper">
+                        <orgName>Wiener Staatsoper</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/1131732448</idno>
+                    </org>
+                    <org xml:id="duesseldorfer_schauspielhause">
+                        <orgName>Düsseldorfer Schauspielhaus</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/4254882-2</idno>
+                    </org>
+                    <org xml:id="universitaet_wien">
+                        <orgName>Universität Wien</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/2024703-5</idno>
+                    </org>
+                    <org xml:id="max_reinhardt_seminar">
+                        <orgName>Max Reinhardt Seminar</orgName>
+                        <orgName type="alt">Institut für Schauspiel- und Schauspielregie</orgName>
+                        <orgName type="alt">
+                            <rs type="place" ref="#schoenbrunn">Schönbrunner</rs> Schauspiel- und
+                            Regieseminar</orgName>
+                        <orgName type="alt">Schauspielschule des Burgtheaters</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/10091007-5</idno>
+                    </org>
+                    <org xml:id="akademie_der_bildenden_kuenste">
+                        <orgName>Akademie der bildenden Künste Wien</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/2003761-2</idno>
+                    </org>
+                    <org xml:id="wien-film">
+                        <orgName>Wien-Film</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/4306622-7</idno>
+                        <desc>Filmgesellschaft</desc>
+                    </org>
+                    <org xml:id="ufa">
+                        <orgName full="abb">UFA</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/19944-8</idno>
+                        <desc>Filmgesellschaft</desc>
+                    </org>
+                    <org xml:id="deutsches_nationaltheater">
+                        <orgName>Deutsches Nationaltheater</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/117758-8</idno>
+                    </org>
+                    <org xml:id="universitaet_jena">
+                        <orgName>Universität Jena</orgName>
+                        <orgName type="alt">Friedrich-Schiller-Universität Jena</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/36164-1</idno>
+                    </org>
+                    <org xml:id="technische_hochschule_wien">
+                        <orgName>Technische Universität Wien</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/55426-1</idno>
+                    </org>
+                    <org xml:id="technische_hochschule_hannover">
+                        <orgName>Technische Hochschule Hannover</orgName>
+                        <idno/>
+                    </org>
+                    <org xml:id="theaterwissenschaftliches_institut_hannover">
+                        <orgName>Theaterwissenschaftliches Institut an der <rs type="org" ref="#technische_hochschule_hannover">Technischen Hochschule Hannover</rs>
+                        </orgName>
+                        <idno/>
+                    </org>
+                    <org xml:id="theatersammlung_nationalbibliothek">
+                        <orgName>Österreichische Nationalbibliothek. Theatersammlung</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/2020869-8</idno>
+                    </org>
+                    <org xml:id="hochschule_angewandte_kunst">
+                        <orgName>Hochschule für angewandte Kunst Wien</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/2034379-6</idno>
+                    </org>
+                    <org xml:id="reichsstudentenführung">
+                    <orgName>Reichsstudentenführung</orgName>
+                    <note>https://de.wikipedia.org/wiki/Reichsstudentenführer</note>
+                    </org>
+                    <org xml:id="wehrmacht">
+                        <orgName>Deutsche Wehrmacht</orgName>
+                        <idno type="URL">http://d-nb.info/gnd/4064995-7</idno>
+                        <idno type="URL">http://d-nb.info/gnd/26159-2</idno>
+                    </org>
+                </listOrg>
+            </p>
+        </body>
+    </text>
+</TEI>

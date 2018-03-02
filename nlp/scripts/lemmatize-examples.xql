@@ -4,7 +4,7 @@ import module namespace nlp="http://www.digital-archiv.at/ns/dsebaseapp/nlp" at 
 (:declare option exist:serialize "method=json media-type=text/javascript";:)
 
 
-let $input := doc("/db/apps/dsebaseapp/nlp/temp/bezirkskommissariate-an-stadthauptmannschaft-1851-03-a3-xxi-d109.xml")
+let $input := doc("/db/apps/dsebaseapp/nlp/temp/oko.xml")
 (:let $posTaggd := nlp:pos-tagging($input):)
 (:    return $posTaggd:)
 

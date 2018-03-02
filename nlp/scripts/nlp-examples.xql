@@ -6,10 +6,10 @@ import module namespace util = "http://exist-db.org/xquery/util";
 declare namespace tei="http://www.tei-c.org/ns/1.0";
 
 let $collection := '/db/apps/dsebaseapp/data/editions/'
-(:let $input := doc('/db/apps/dsebaseapp/data/editions/BleierHadden.xml'):)
+let $input := doc('/db/apps/dsebaseapp/data/editions/oko.xml')
 
 (: example for nlp:bulk-tokenize :)
- return nlp:bulk-tokenize($collection)
+(: return nlp:bulk-tokenize($collection):)
 
 (: example for nlp:tokenize:)
 (:let $tokenized := nlp:tokenize($input):)

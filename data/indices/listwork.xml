@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>List of Works (of Literature)</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Information about the source</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="listperson.xml" xpointer="listperson">
+                    <fallback xmlns="http://www.w3.org/2001/XInclude">File to include couldn't be found</fallback>
+                </xi:include>
+            </p>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <listBibl xml:id="listwork">
+                    <bibl xml:id="hölderlin_kindermann">
+                        <title>Hölderlin und das deutsche Theater</title>
+                        <author>
+                            <rs type="person" ref="#kindermann_heinz">Heinz Kindermann</rs>
+                        </author>
+                        <idno type="URL">http://d-nb.info/574310355</idno>
+                    </bibl>
+                    <bibl xml:id="hebbel_kindermann">
+                         <title>Hebbel und das Wiener Theater seiner Zeit</title>
+                         <author>
+                            <rs type="person" ref="#kindermann_heinz">Heinz Kindermann</rs>
+                        </author>
+                        <idno type="URL">http://d-nb.info/574310320</idno>
+                    </bibl>
+                    <bibl xml:id="schauspieler_rezitator_redner">
+                        <title>Schauspieler, Rezitator, Redner – eine Typologie der redenden Künste</title>
+                        <author>
+                            <rs type="person" ref="#weller_">Weller</rs>
+                        </author>
+                        <idno type="URL"/>
+                    </bibl>
+                    <bibl xml:id="theater_hinter_stacheldraht">
+                        <title>Theater hinter Stacheldraht</title>
+                        <author>
+                            <rs type="person" ref="#karsten_">Karsten</rs>
+                        </author>
+                        <idno type="URL"/>
+                    </bibl>
+                    <bibl xml:id="lanzelot_sanderein">
+                        <title>Lanzelot und Sanderein</title>
+                        <idno type="URL">http://d-nb.info/gnd/4166724-4</idno>
+                    </bibl>
+                    <bibl xml:id="hans_sachsens_poetische_sendung">
+                        <title>Erklärung eines alten Holzschnittes, vorstellend Hans Sachsens poetische Sendung</title>
+                        <author>
+                            <rs ref="#goethe_johann">Johann Wolfgang von Goethe</rs>
+                        </author>
+                        <idno type="URL">http://d-nb.info/gnd/4598497-9</idno>
+                    </bibl>
+                    <bibl xml:id="il_decamerone">
+                        <title>Il Decamerone</title>
+                        <author>
+                            <rs ref="#boccaccio_giovanni">Giovanni Boccaccio</rs>
+                        </author>
+                        <idno type="URL">http://d-nb.info/gnd/4226218-5</idno>
+                    </bibl>
+                    <bibl xml:id="peter_squentz">
+                        <title>Peter Squentz</title>
+                        <title type="alt">Absurda comica oder Herr Peter Sequentz</title>
+                        <author>
+                            <rs ref="#gryphius_andreas">Andreas Gryphius</rs>
+                        </author>
+                        <idno type="URL">http://d-nb.info/gnd/4528941-4</idno>
+                    </bibl>
+                    <bibl xml:id="teutscher_merkur">
+                        <title>Der Teutsche Merkur</title>
+                        <idno type="URL">http://ds.ub.uni-bielefeld.de/viewer/toc/1951387/1/LOG_0000/</idno>
+                        <note>Literaturzeitschrift 1773-1789</note>
+                    </bibl>
+                    <bibl xml:id="empedokles">
+                        <title>Der Tod des Empedokles</title>
+                        <author>
+                            <rs type="person" ref="#hölderlin_friedrich">Friedrich Hölderlin</rs>
+                        </author>
+                        <idno type="URL">http://d-nb.info/gnd/4099237-8</idno>
+                    </bibl>
+                    <bibl xml:id="dramaturg_buehnenbetrieb">
+                        <title>Der Dramaturg im praktischen Bühnenbetrieb</title>
+                        <author>
+                            <rs type="person" ref="#niederführ_otto">Otto Niederführ</rs>
+                        </author>
+                        <idno/>
+                    </bibl>
+                    <bibl xml:id="samurai">
+                        <title>Samurai</title>
+                        <author>
+                            <rs type="person" ref="#jelusich_mirko">Mirko Jelusich</rs>
+                        </author>
+                        <idno>http://d-nb.info/574100466</idno>
+                    </bibl>
+                    <bibl xml:id="cromwell">
+                        <title>Cromwell</title>
+                        <author>
+                            <rs type="person" ref="#jelusich_mirko">Mirko Jelusich</rs>
+                        </author>
+                        <idno>http://d-nb.info/580278107</idno>
+                    </bibl>
+                    <bibl xml:id="goetter_unter_menschen">
+                        <title>Götter unter Menschen</title>
+                        <author>
+                            <rs type="person" ref="#jelusich_mirko">Mirko Jelusich</rs>
+                        </author>
+                        <idno/>
+                    </bibl>
+                    <bibl xml:id="bauerntheater">
+                        <title>Prinzipien, Aufbau und Arbeitsweise der Bauerntheater</title>
+                        <author>
+                            <rs type="person" ref="#exl_ilse">Ilse Exl</rs>
+                        </author>
+                        <idno/>
+                    </bibl>
+                    <bibl xml:id="wilhelm_tell">
+                        <title>Wilhelm Tell</title>
+                        <author>
+                            <rs type="person" ref="#schiller_friedrich">Friedrich Schiller</rs>
+                        </author>
+                        <idno>http://d-nb.info/gnd/4099341-3</idno>
+                    </bibl>
+                    <bibl xml:id="goetz_von_berlichingen">
+                        <title>Götz von Berlichingen</title>
+                        <author>
+                            <rs type="person" ref="#goethe_johann">Johann Wolfgang von Goethe</rs>
+                        </author>
+                        <idno>http://d-nb.info/gnd/4099199-4</idno>
+                    </bibl>
+                    <bibl xml:id="peer_gynt">
+                        <title>Peer Gynt</title>
+                        <author>
+                            <rs type="person" ref="#ibsen_henrik">Henrik Ibsen</rs>
+                        </author>
+                        <idno>http://d-nb.info/gnd/4256031-7</idno>
+                    </bibl>
+                    <bibl xml:id="nibelungen">
+                        <title>Die Nibelungen</title>
+                        <author>
+                            <rs type="person" ref="#hebbel_friedrich">Friedrich Hebbel</rs>
+                        </author>
+                        <idno>http://d-nb.info/gnd/4331538-0</idno>
+                    </bibl>
+                    <bibl xml:id="goethe_und_das_theater">
+                        <title>Goethe und das Theater</title>
+                        <author>
+                            <rs type="person" ref="#gregor_">Gregor</rs>
+                        </author>
+                        <idno/>
+                    </bibl>
+                    <bibl xml:id="faust_I">
+                        <title>Faust I.</title>
+                        <author>
+                            <rs type="person" ref="#goethe_johann">Johann Wolfgang von Goethe</rs>
+                        </author>
+                        <idno/>
+                    </bibl>
+                    <bibl xml:id="alsfelder_passionsspiel">
+                        <title>
+                            <rs type="place" ref="#alsfeld">Alsfelder</rs> Passionsspiel</title>
+                        <author/>
+                        <idno>http://d-nb.info/gnd/4192483-6</idno>
+                    </bibl>
+                    <bibl xml:id="urfaust">
+                        <title>Urfaust</title>
+                        <author>
+                            <rs type="person" ref="#goethe_johann">Johann Wolfgang von Goethe</rs>
+                        </author>
+                        <idno>http://d-nb.info/gnd/4127437-4</idno>
+                    </bibl>
+                    <bibl xml:id="dramaturgische_einrichtung">
+                        <title>Die dramaturgische Einrichtung des Bühnenbildes</title>
+                        <author>
+                            <rs type="person" ref="#niedermoser_">Niedermoser</rs>
+                        </author>
+                        <idno/>
+                    </bibl>
+                    <bibl xml:id="dramaturgie_des_films">
+                        <title>Dramaturgie des Films</title>
+                        <author>
+                            <rs type="person" ref="#börge_vagn">Vagn Börge</rs>
+                        </author>
+                        <idno/>
+                    </bibl>
+                    <bibl xml:id="einfuehrung_kostuemkunde">
+                        <title>Einführung in die Kostümkunde</title>
+                        <author>
+                            <rs type="person" ref="#lutz_">Lutz</rs>
+                        </author>
+                        <idno/>
+                    </bibl>
+                    <bibl xml:id="drama_und_dramaturgie">
+                        <title>Drama und Dramaturgie des 20. Jahrhunderts</title>
+                        <author>
+                            <rs type="person" ref="#zurnedden_">Zur Nedden</rs>
+                        </author>
+                        <idno/>
+                    </bibl>
+                    <bibl xml:id="komposition_im_buehnenbild">
+                        <title>Komposition im Bühnenbild</title>
+                        <author>
+                            <rs type="person" ref="#grom-rottmayer_hermann">Hermann Grom-Rottmayer</rs>
+                        </author>
+                        <idno/>
+                    </bibl>
+                    <bibl xml:id="dramaturg_und_spielplangestaltung">
+                        <title>Der Dramaturg und die Spielplangestaltung</title>
+                        <author>
+                            <rs type="person" ref="#kindermann_heinz">Heinz Kindermann</rs>
+                        </author>
+                        <idno/>
+                    </bibl>
+                    <bibl xml:id="der_wienerische_hans_wurst">
+                        <title>Der Wienerische Hans Wurst in europäischer Beleuchtung</title>
+                        <author>
+                            <rs type="person" ref="#rommel_otto">Otto Rommel</rs>
+                        </author>
+                        <idno/>
+                    </bibl>
+                    <bibl xml:id="arbeit_bernhard_shaw">
+                        <title>George Bernard Shaw in Deutschland</title>
+                        <author>
+                            <rs type="person" ref="#pilger_else">Else Pilger</rs>
+                        </author>
+                        <idno>http://d-nb.info/571021557</idno>
+                    </bibl>
+                    <bibl xml:id="meistersinger">
+                        <title>Die Meistersinger von Nürnberg</title>
+                        <author>
+                            <rs ref="#wagner_richard" type="person">Richard Wagner</rs>
+                        </author>
+                    </bibl>
+                    <bibl xml:id="napoleon_hundert_tage">
+                        <title>Napoleon oder die hundert Tage</title>
+                        <author>
+                            <rs ref="#grabbe_christian" type="person">Christian Dietrich Grabbe</rs>
+                        </author>
+                        <idno type="URL">http://d-nb.info/gnd/4325626-0</idno>
+                    </bibl>
+                    <bibl xml:id="pole_poppenspaeler">
+                        <title>Pole Poppenspäler</title>
+                        <author>
+                            <rs ref="#storm_theodor" type="person">Theoder Storm</rs>
+                        </author>
+                        <idno type="URL">http://d-nb.info/gnd/4264150-0</idno>
+                    </bibl>
+                    <bibl xml:id="faust_volksbuch">
+                        <title>Faust Volksbuch</title>
+                        <title type="alt">Historia von Doctor Johann Fausten</title>
+                        <author>
+                            <rs ref="#spies_johann" type="person">Johann Spies</rs>
+                        </author>
+                        <idno type="URL">http://d-nb.info/gnd/4153795-6</idno>
+                    </bibl>
+                    <bibl xml:id="rundbrief_01">
+                        <title>ersten Rundbrief</title>
+                        <author>
+                            <rs type="org" ref="#zentralinstitut">Zentralinstitut</rs>
+                        </author>
+                        <idno type="URL">https://d-nb.info/02158866X</idno>
+                    </bibl>
+                    <bibl xml:id="nationaltheater_deutsche_klassik">
+                        <title>Das Nationaltheater der deutschen Klassik</title>
+                        <author>
+                            <rs type="person" ref="#kindermann_heinz">Heinz Kindermann</rs>
+                        </author>
+                    </bibl>
+                </listBibl>
+            </p>
+        </body>
+    </text>
+</TEI>

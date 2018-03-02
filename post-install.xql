@@ -6,4 +6,7 @@ for $resource in xmldb:get-child-resources(xs:anyURI($config:app-root||"/analyze
     return sm:chmod(xs:anyURI($config:app-root||'/analyze/'||$resource), "rwxrwxr-x"),
 
 for $resource in xmldb:get-child-resources(xs:anyURI($config:app-root||"/modules/"))
-    return sm:chmod(xs:anyURI($config:app-root||'/modules/'||$resource), "rwxrwxr-x")
+    return sm:chmod(xs:anyURI($config:app-root||'/modules/'||$resource), "rwxrwxr-x"),
+
+for $resource in xmldb:get-child-resources(xs:anyURI($config:app-root||"/ac/"))
+    return sm:chmod(xs:anyURI($config:app-root||'/ac/'||$resource), "rwxrwxr-x")
