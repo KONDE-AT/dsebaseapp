@@ -73,6 +73,12 @@
                             <li>
                                 <a href="places.html">Places</a>
                             </li>
+                            <li>
+                                <a href="orgs.html">Organizations</a>
+                            </li>
+                            <li>
+                                <a href="bibl.html">Works</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -165,8 +171,7 @@
                 </div>
             </div>
 
-            <script>
-                /*script for loading the content of the modal */
+            <script>/*script for loading the content of the modal */
                 $(document).ready(function(){
                     var trigger = $('a[data-type]');
                     $(trigger).click(function(){
@@ -174,7 +179,7 @@
                         var dataKey = $( this ).attr('data-key');
                         var xsl = dataType.replace(".xml", "");
                         var baseUrl = "showNoTemplate.html?directory=indices&amp;document="
-                        var url = baseUrl+dataType+"&amp;stylesheet="+xsl+"&amp;entiyID="+dataKey;
+                        var url = baseUrl+dataType+"&amp;stylesheet=node2html&amp;entiyID="+dataKey;
                         $('#loadModal').load(url, function(){
                             $('#myModal').modal('show');
                         });

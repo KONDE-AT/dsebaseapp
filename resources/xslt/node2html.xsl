@@ -25,8 +25,17 @@
                             <button type="button" class="close" data-dismiss="modal">
                                 <span class="fa fa-times"/>
                             </button>
-                            <h4 class="modal-title" style="font-variant: small-caps">
+                            <h3 class="modal-title" style="font-variant: small-caps">
                                 <small>node id:</small> <xsl:value-of select="$entiyID"/>
+                            </h3>
+                            <h4>
+                                            <a>
+                                                <xsl:attribute name="href">
+                                                    <xsl:value-of select="concat('hits.html?searchkey=', $entiyID)"/>
+                                                </xsl:attribute>
+                                                <xsl:attribute name="target">_blank</xsl:attribute>
+                                                mentioned in
+                                            </a>
                             </h4>
                         </div>
                         <div class="modal-body">

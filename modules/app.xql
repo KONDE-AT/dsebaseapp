@@ -104,6 +104,12 @@ declare function app:nameOfIndexEntry($node as node(), $model as map (*)){
         else if (contains(node-name($hit), 'place'))
         then
             <a class="reference" data-type="listplace.xml" data-key="{$searchkey}">{normalize-space(string-join($hit/tei:placeName[1], ', '))}</a>
+        else if (contains(node-name($hit), 'org'))
+        then
+            <a class="reference" data-type="listorg.xml" data-key="{$searchkey}">{normalize-space(string-join($hit/tei:orgName[1], ', '))}</a>
+        else if (contains(node-name($hit), 'bibl'))
+        then
+            <a class="reference" data-type="listwork.xml" data-key="{$searchkey}">{normalize-space(string-join($hit/tei:title[1], ', '))}</a>
         else
             functx:capitalize-first($searchkey)
     return
@@ -277,3 +283,58 @@ let $params :=
 return
     transform:transform($xml, $xsl, $params)
 };
+
+(:~
+ : creates a basic work-index derived from the  '/data/indices/listbibl.xml'
+ :)
+declare function app:listBibl($node as node(), $model as map(*)) {
+    let $hitHtml := "hits.html?searchkey="
+    for $item in doc($app:workIndex)//tei:listBibl/tei:bibl
+    let $author := normalize-space(string-join($item/tei:author//text(), ' '))
+    let $gnd := $item//tei:idno/text()
+    let $gnd_link := if ($gnd) 
+        then
+            <a href="{$gnd}">{$gnd}</a>
+        else
+            'no normdata provided'
+   return
+        <tr>
+            <td>
+                <a href="{concat($hitHtml,data($item/@xml:id))}">{$item//tei:title[1]/text()}</a>
+            </td>
+            <td>
+                {$author}
+            </td>
+            <td>
+                {$gnd_link}
+            </td>
+        </tr>
+};
+
+(:~
+ : creates a basic organisation-index derived from the  '/data/indices/listorg.xml'
+ :)
+declare function app:listOrg($node as node(), $model as map(*)) {
+    let $hitHtml := "hits.html?searchkey="
+    for $item in doc($app:orgIndex)//tei:listOrg/tei:org
+    let $altnames := normalize-space(string-join($item//tei:orgName[@type='alt'], ' '))
+    let $gnd := $item//tei:idno/text()
+    let $gnd_link := if ($gnd) 
+        then
+            <a href="{$gnd}">{$gnd}</a>
+        else
+            'no normdata provided'
+   return
+        <tr>
+            <td>
+                <a href="{concat($hitHtml,data($item/@xml:id))}">{$item//tei:orgName[1]/text()}</a>
+            </td>
+            <td>
+                {$altnames}
+            </td>
+            <td>
+                {$gnd_link}
+            </td>
+        </tr>
+};
+

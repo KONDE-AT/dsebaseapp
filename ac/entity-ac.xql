@@ -32,37 +32,58 @@ let $return :=
                     <id>{data($x/@xml:id)}</id>
                     <description>{$description}</description>
                     <more>{$more}</more>
+                    <type>{$type}</type>
                 </item>
         }</list>
     else if($type eq 'place') then
         <list>{
         let $entities := doc($app:placeIndex)//tei:place
-        
-        for $x in $entities
-            return 
-                <item>
-                    <name>{normalize-space(string-join($x/tei:placeName//text(), ' '))}</name>
-                    <id>{data($x/@xml:id)}</id>
-                </item>
-        }</list>
+            for $x in $entities
+                let $name := normalize-space(string-join($x/tei:placeName//text(), ' '))
+                let $description := normalize-space(string-join($x//text(), ' '))
+                let $more := normalize-space($x//tei:idno[1 and @type="URL"]/text())
+                where contains($name, $query)
+                return 
+                    <item>
+                        <name>{$x//tei:placeName[1]/text()[1]}</name>
+                        <id>{data($x/@xml:id)}</id>
+                        <description>{$description}</description>
+                        <more>{$more}</more>
+                        <type>{$type}</type>
+                    </item>
+            }</list>
     else if($type eq 'org') then
         <list>{
         let $entities := doc($app:orgIndex)//tei:org
         for $x in $entities
-            return 
-                <item>
-                    <name>{normalize-space(string-join($x/tei:orgName//text(), ' '))}</name>
-                    <id>{data($x/@xml:id)}</id>
-                </item>
+            let $name := normalize-space(string-join($x/tei:orgName//text(), ' '))
+            let $description := normalize-space(string-join($x//text(), ' '))
+            let $more := normalize-space($x//tei:idno[1 and @type="URL"]/text())
+            where contains($name, $query)
+                return 
+                    <item>
+                        <name>{$name}</name>
+                        <id>{data($x/@xml:id)}</id>
+                        <description>{$description}</description>
+                        <more>{$more}</more>
+                        <type>{$type}</type>
+                    </item>
         }</list>
     else if($type eq 'work') then
         <list>{
         let $entities := doc($app:workIndex)//tei:bibl
         for $x in $entities
+            let $name := normalize-space(string-join($x/tei:title//text(), ' '))
+            let $description := normalize-space(string-join($x//text(), ' '))
+            let $more := normalize-space($x//tei:idno[1 and @type="URL"]/text())
+            where contains($name, $query)
             return 
                 <item>
-                    <name>{normalize-space(string-join($x/tei:title//text(), ' '))}</name>
+                    <name>{$name}</name>
                     <id>{data($x/@xml:id)}</id>
+                    <description>{$description}</description>
+                    <more>{$more}</more>
+                    <type>{$type}</type>
                 </item>
         }</list>
     else ()
