@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
+    <div class="panel panel-default">
+        <div class="panel-heading" style="text-align:center;">
+            <h1>Create new person-entity</h1>
+        </div>
+        <div class="panel-body">
+            <form action="../entities/create-person.xql" method="post">
+                <fieldset class="form-group">
+                    <legend>PersName</legend>
+                    <div class="form-group row">
+                        <label for="surname" class="col-sm-2 col-form-label">tei:surname</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="surname" id="surname" placeholder="Doe"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="forename" class="col-sm-2 col-form-label">tei:forename</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="forename" id="forename" placeholder="John"/>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend>Alternative Names <small>(@alt; tei:roleName)</small>
+                    </legend>
+                    <div class="form-group row">
+                        <label for="altnames" class="col-sm-2 col-form-label">tei:persName</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="altname" id="altnames" placeholder="Unknown Patient 3|Another Alternative Name"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="rolename" class="col-sm-2 col-form-label">tei:roleName</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="rolename" id="rolename" placeholder="Any role name"/>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend>Norm Data Identifier <small>tei:idno @type="URL"</small>
+                    </legend>
+                    <div class="form-group row">
+                        <label for="idno" class="col-sm-2 col-form-label">tei:idno</label>
+                        <div class="col-sm-10">
+                            <input type="URL" class="form-control" name="idno" id="idno" placeholder="http://d-nb.info/gnd/1043834540"/>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

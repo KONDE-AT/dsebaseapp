@@ -88,7 +88,7 @@ let $name := functx:substring-after-last(document-uri(root($node)), '/')
 };
 
 (:~
-: returns the concatenated child nodes of a fetched placeName or persName element.
+: renders the name element of the passed in entity node as a link to entity's info-modal.
 :)
 declare function app:nameOfIndexEntry($node as node(), $model as map (*)){
 
