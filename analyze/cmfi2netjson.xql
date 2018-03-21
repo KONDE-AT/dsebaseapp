@@ -25,7 +25,8 @@ let $result :=
                             return
                                 <nodes>
                                     <id>{$key}</id>
-                                    <label>{$person[1]/text()}</label>
+                                    <title>{$person[1]/text()}</title>
+                                    <color>green</color>
                                 </nodes>
          
                 }

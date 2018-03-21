@@ -29168,6 +29168,20 @@
                         </note>
                     <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URL">http://d-nb.info/gnd/119157527</tei:idno>
                     </person>
+                <tei:person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="person_2ac2da9bc368b1cbd7351155967ce717">
+                        <tei:persName>
+                            <tei:surname>Dobcheva</tei:surname>
+                            <tei:forename>Ivana</tei:forename>
+                        </tei:persName>
+                        <tei:idno type="URL">http://www.123.com</tei:idno>
+                    </tei:person>
+                    <tei:person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="person_aef50e9f04d0ef88dd3dfab744130785">
+                        <tei:persName>
+                            <tei:surname>Andorfer</tei:surname>
+                            <tei:forename>Ivana</tei:forename>
+                        </tei:persName>
+                        <tei:idno type="URL">http://www.123.com</tei:idno>
+                    </tei:person>
                 </listPerson>
             </div>
         </body>
