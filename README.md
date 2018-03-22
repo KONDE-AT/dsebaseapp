@@ -1,6 +1,6 @@
 #dsebaseapp
 
-dsebaseapp stands for Digital (scholarly) Editions Base Application. It's purpose is to bootstrap the development of (web) applications which support the process of
+dsebaseapp stands for Digital (Scholarly) Editions Base Application. Its purpose is to bootstrap the development of (web) applications which support the process of
 
 * creating
 * curating
@@ -12,26 +12,26 @@ texts encoded in XML and validating against a TEI (P5) schema.
 
 ## History
 
-dsebaseapp is a successor of the generic-de-web-app project described by this blog posts [How to build a digital edition web app](https://howto.acdh.oeaw.ac.at/blog/books/how-to-build-a-digital-edition-web-app/). Whereas this blog posts were focused on describing general principles and basic implementations of a digital edition web app, dsebaseapp should help you getting things done.
-generic-de-web-app as well as dsebaseapp are designed as (almost) self containing eXist-db packages. Therefore you can
+dsebaseapp is a successor of the generic-de-web-app project described by the blog post series [How to build a digital edition web app](https://howto.acdh.oeaw.ac.at/blog/books/how-to-build-a-digital-edition-web-app/). While these blog posts were focused on describing general principles and basic implementations of a digital edition web app, dsebaseapp should help you getting things done.
+generic-de-web-app as well as dsebaseapp are designed as (almost) self-containing eXist-db packages. Therefore you can
 
-* install your dse-web application via eXist-dbs package manager,
-* download your dse-web app via eXist-dbs package manager,
-* and tweak you your app via eXist-dbs built in editor eXide.
+* install your dse-web application via eXist-db’s package manager,
+* download your dse-web app via eXist-db’s package manager,
+* and tweak your app via eXist-db’s built in editor eXide.
 
 ## Web app features
 
 The application ships with the following default features:
 
-* A customizable (ordering and filtering) table of contents of documents stored in specific directories is created
+* A customizable (in terms of ordering and filtering) table of contents of documents stored in specific directories is created
 
-* Links from this table of content to HTML views
+* Links from this table of contents to HTML views
 
-* Default XSLT transforms TEI-Documents into HTML
+* Default XSLT transforms TEI documents into HTML
 
 * Full text search over all documents in the edition.
 
-* Linking between index entries (e.g. of persons, places, ...) and mentions of those indexes in the text (e.g. through `@ref`) is supported.
+* Linking between index entries (e.g. of persons, places, …) and mentions of those indices in the text (e.g. through `@ref`) is supported.
 
 * Index based search
 
@@ -45,7 +45,7 @@ The application ships with the following default features:
 
 * several scripts for processing/enriching/harmonizing your data
 
-* an nlp module for processing your data with 3rd party NLP-Services
+* an NLP (natural language processing) module for processing your data with 3rd party NLP services
 
 * autocomplete endpoints for entities
 
@@ -53,17 +53,17 @@ Basically all features mentioned above are implemented with plain XSLT, XQuery a
 
 ## Getting started
 
-1. clone the repo into a suitable directory. Be aware that the name of the applications root directory will show up in several places (e.g. the name of the application's .xar package)
+1. Clone the repo into a suitable directory. Be aware that the name of the applications root directory will show up in several places (e.g. the name of the application’s .xar package)
 `git clone https://github.com/KONDE-AT/dsebaseapp.git <folder-name>`
 
-2. Run a search and replace through the whole codebase, replacing `dsebaseapp` with e.g. the name of your application's root directory. Since `dsebaseapp` is used in several namespaces, make sure the replacement does not contain any tricky characters.
+2. Run a search and replace through the whole codebase, replacing `dsebaseapp` with e.g. the name of your application’s root directory. Since `dsebaseapp` is used in several namespaces, make sure the replacement string does not contain any tricky characters.
 
-3. Go through the `data` directory and replace the existing data with your own. But keep the directory structure (`data/editions, data/indices, data/meta`) as it is.
-Ideally your data (structure, mark up) is very similar to the application's sample data because then most of the features mentioned above should work 'out of the box'
+3. Go through the `data` directory and replace the existing data with your own. But keep the directory structure (`data/editions/, data/indices/, data/meta/`) as it is.  
+Ideally, your data (structure, markup) is very similar to the application’s sample data – in this case most of the features mentioned above should work 'out of the box'.
 
-4. After this initial changes try to build your application by running `ant` in your application's root directory. This should create a `<folder-name>.xar` in `<folder-name>/build`.
+4. After these initial changes try to build your application by running `ant` in your application’s root directory. This should create a `<folder-name>.xar` in `<folder-name>/build/`.
 
-5. Install this package via eXist-db's package manager.
+5. Install this package via eXist-db’s package manager.
 
 6. Click through your application and start customizing.
 
@@ -71,15 +71,15 @@ Ideally your data (structure, mark up) is very similar to the application's samp
 
 ### XML2HTML
 
-The detail views of the 'regular' XML/TEIs is generated by a simple XML2HTML transformation using an XSLT stylesheet. This stylesheet is located at `<folder-name>/resources/xslt/xmlToHtml.xsl`. This should be the central entry to point for changing the HTML representation of your data. This stylesheet serves also as default in cases when there is no stylesheet parameter provided unlike in a request as `...&stylesheet=meta` which would look into `<folder-name>/resources/xslt/` for a document with the name `meta.xslt`.
+The detail views of the 'regular' XML/TEIs is generated by a simple XML2HTML transformation using an XSLT stylesheet. This stylesheet is located at `<folder-name>/resources/xslt/xmlToHtml.xsl`. This should be the central entry to point for changing the HTML representation of your data. This stylesheet also serves as default in cases when there is no stylesheet parameter provided unlike in a request as `...&stylesheet=meta` which would look into `<folder-name>/resources/xslt/` for a document named `meta.xslt`.
 
 ### Index views
 
-The index views for Persons, Places, ... are created with the XQuery functions, called through eXist-dbs templating system and stored in `<folder-name>/modules/app.xql`. To find out which function is responsible for which view, look into the according `HTML`. To modify e.g. the person index view called by the URL`...../pages/persons.html` you need to
-1. open `<folder-name>/pages/places.html`
+The index views for persons, places, … are created with XQuery functions, called through eXist-db’s templating system and stored in `<folder-name>/modules/app.xql`. To find out which function is responsible for which view, look into the according `HTML`. To modify e.g. the person index view called by the URL `.../pages/persons.html` you need to
+1. open `<folder-name>/pages/persons.html`
 2. search for the line(s) calling any template function like `<tr data-template="app:listPers"/>`
-3. Look this function up in `<folder-name>/modules/app.xql`.
-4. Tweak this function according to your needs.
-5. Make sure the number of returned columns much the HTML mark up.
+3. Look up this function in `<folder-name>/modules/app.xql`.
+4. Tweak that function according to your needs.
+5. Make sure the number of returned columns match the HTML markup.
 
 to be continued....
