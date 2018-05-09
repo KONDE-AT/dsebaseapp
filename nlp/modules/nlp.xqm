@@ -21,7 +21,7 @@ declare namespace tei="http://www.tei-c.org/ns/1.0";
 declare variable $nlp:tokenizerEnpoint :=
 xs:anyURI("http://openconvert.clarin.inl.nl/openconvert/text");
 
-declare variable $nlp:customTokenizer :="https://tokenizer.eos.arz.oeaw.ac.at/exist/restxq/xtoks/tokenize";
+declare variable $nlp:customTokenizer :="https://xtx.acdh.oeaw.ac.at/exist/restxq/xtoks/tokenize";
 
 declare variable $nlp:lemmatizerEndpoint :=
 xs:anyURI("https://spacyapp.acdh.oeaw.ac.at/query/lemma/?token=");
