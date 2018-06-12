@@ -4,7 +4,7 @@
     <xsl:param name="entiyID"/>
     <xsl:variable name="entity" as="node()">
         <xsl:choose>
-            <xsl:when test="//tei:org[@xml:id=$entiyID][1]">
+            <xsl:when test="not(empty(//tei:org[@xml:id=$entiyID][1]))">
                 <xsl:value-of select="//tei:org[@xml:id=$entiyID][1]"/>
             </xsl:when>
             <xsl:otherwise>
@@ -12,13 +12,14 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:variable>
-    <xsl:template match="/">       
+    <xsl:template match="/">
+        <xsl:if test="$entity">
         <div class="modal" id="myModal" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <xsl:choose>
                         <xsl:when test="$entity">
-                            <xsl:variable name="entity" select="//tei:org[@xml:id=$entiyID][1]" as="node()"/>
+                            <xsl:variable name="entity" select="//tei:org[@xml:id=$entiyID]"/>
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal">
                                     <span class="fa fa-times"/>
@@ -70,16 +71,20 @@
                                         </tr>
                                     </xsl:if>
                                 </table>
-                                <h4>more (tei structure)</h4>
-                                    <xsl:choose>
-                                        <xsl:when test="//*[contains(@xml:id, $entiyID) or contains(@id, $entiyID)]">
-                                            <xsl:apply-templates select="//*[contains(@xml:id, $entiyID) or contains(@id, $entiyID)]" mode="start"/>
-                                        </xsl:when>
-                                        <xsl:otherwise>Looks like there exists no index entry for ID<strong>
+                                <div>
+                                    <h4 data-toggle="collapse" data-target="#more"> more (tei structure)</h4>
+                                    <div id="more" class="collapse">
+                                        <xsl:choose>
+                                            <xsl:when test="//*[contains(@xml:id, $entiyID) or contains(@id, $entiyID)]">
+                                                <xsl:apply-templates select="//*[contains(@xml:id, $entiyID) or contains(@id, $entiyID)]" mode="start"/>
+                                            </xsl:when>
+                                            <xsl:otherwise>Looks like there exists no index entry for ID<strong>
                                                 <xsl:value-of select="concat(' ', $entiyID)"/>
                                             </strong> 
-                                        </xsl:otherwise>
-                                    </xsl:choose>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                    </div>
+                                </div>
                             </div>
                         </xsl:when>
                     </xsl:choose>
@@ -89,7 +94,8 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript">
+        </xsl:if>
+       <script type="text/javascript">
             $(window).load(function(){
             $('#myModal').modal('show');
             });

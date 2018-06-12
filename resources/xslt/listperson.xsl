@@ -18,7 +18,7 @@
                 <div class="modal-content">
                     <xsl:choose>
                         <xsl:when test="$entity">
-                            <xsl:variable name="entity" select="//tei:person[@xml:id=$entiyID][1]" as="node()"/>
+                            <xsl:variable name="entity" select="//tei:person[@xml:id=$entiyID]"/>
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal">
                                     <span class="fa fa-times"/>
@@ -126,16 +126,20 @@
                                         </tr>
                                     </xsl:if>
                                 </table>
-                                <h4>more (tei structure)</h4>
-                                <xsl:choose>
-                                    <xsl:when test="//*[contains(@xml:id, $entiyID) or contains(@id, $entiyID)]">
-                                        <xsl:apply-templates select="//*[contains(@xml:id, $entiyID) or contains(@id, $entiyID)]" mode="start"/>
-                                    </xsl:when>
-                                    <xsl:otherwise>Looks like there exists no index entry for ID<strong>
-                                        <xsl:value-of select="concat(' ', $entiyID)"/>
-                                    </strong> 
-                                    </xsl:otherwise>
-                                </xsl:choose>
+                                <div>
+                                    <h4 data-toggle="collapse" data-target="#more"> more (tei structure)</h4>
+                                    <div id="more" class="collapse">
+                                        <xsl:choose>
+                                            <xsl:when test="//*[contains(@xml:id, $entiyID) or contains(@id, $entiyID)]">
+                                                <xsl:apply-templates select="//*[contains(@xml:id, $entiyID) or contains(@id, $entiyID)]" mode="start"/>
+                                            </xsl:when>
+                                            <xsl:otherwise>Looks like there exists no index entry for ID<strong>
+                                                <xsl:value-of select="concat(' ', $entiyID)"/>
+                                            </strong> 
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                    </div>
+                                </div>
                             </div>
                         </xsl:when>
                         <xsl:otherwise>
@@ -148,15 +152,7 @@
                                         <xsl:value-of select="$entiyID"/>
                                     </strong> for the entity you were looking for  
                                 </h3>
-                                <h4>
-                                    <a>
-                                        <xsl:attribute name="href">
-                                            <xsl:value-of select="concat('hits.html?searchkey=', $entiyID)"/>
-                                        </xsl:attribute>
-                                        <xsl:attribute name="target">_blank</xsl:attribute>
-                                        mentioned in
-                                    </a>
-                                </h4>
+                                
                             </div>
                         </xsl:otherwise>
                     </xsl:choose>
