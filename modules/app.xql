@@ -263,6 +263,7 @@ declare function app:toc($node as node(), $model as map(*)) {
 :)
 declare function app:XMLtoHTML ($node as node(), $model as map (*), $query as xs:string?) {
 let $ref := xs:string(request:get-parameter("document", ""))
+let $refname := substring-before($ref, '.xml')
 let $xmlPath := concat(xs:string(request:get-parameter("directory", "editions")), '/')
 let $xml := doc(replace(concat($config:app-root,'/data/', $xmlPath, $ref), '/exist/', '/db/'))
 let $collection := functx:substring-after-last(util:collection-name($xml), '/')
@@ -272,8 +273,11 @@ let $xsl := if($xslPath eq "")
         if(doc($config:app-root||'/resources/xslt/'||$collection||'.xsl'))
             then
                 doc($config:app-root||'/resources/xslt/'||$collection||'.xsl')
-            else
-                $app:defaultXsl
+        else if(doc($config:app-root||'/resources/xslt/'||$refname||'.xsl'))
+            then
+                doc($config:app-root||'/resources/xslt/'||$refname||'.xsl')
+        else
+            $app:defaultXsl
     else
         if(doc($config:app-root||'/resources/xslt/'||$xslPath||'.xsl'))
             then

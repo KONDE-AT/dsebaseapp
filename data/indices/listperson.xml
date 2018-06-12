@@ -26,6 +26,17 @@
         <body>
             <div type="index_persons">
                 <listPerson xml:id="listperson">
+                    <person xml:id="kindermann_heinz">
+                        <persName>
+                            <surname>Kindermann</surname>
+                            <forename>Heinz</forename>
+                            <roleName type="degree" full="abb">Prof.</roleName>
+                            <roleName>Leiter des <rs type="org" ref="#zentralinstitut">Zentralinstituts für
+                                Theaterwissenschaft der Universität Wien</rs>
+                            </roleName>
+                        </persName>
+                        <idno type="URL">http://d-nb.info/gnd/118562193</idno>
+                    </person>
                     <person>
                         <persName>
                             <surname>Aaronu</surname>
