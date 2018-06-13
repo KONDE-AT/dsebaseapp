@@ -83,8 +83,8 @@
                                         <h4 data-toggle="collapse" data-target="#more"> more (tei structure)</h4>
                                         <div id="more" class="collapse">
                                             <xsl:choose>
-                                                <xsl:when test="//*[contains(@xml:id, $entiyID) or contains(@id, $entiyID)]">
-                                                    <xsl:apply-templates select="//*[contains(@xml:id, $entiyID) or contains(@id, $entiyID)]" mode="start"/>
+                                                <xsl:when test="//*[@xml:id=$entiyID or @id=$entiyID]">
+                                                    <xsl:apply-templates select="//*[@xml:id=$entiyID or @id=$entiyID]" mode="start"/>
                                                 </xsl:when>
                                             <xsl:otherwise>Looks like there exists no index entry for ID<strong>
                                                 <xsl:value-of select="concat(' ', $entiyID)"/>
