@@ -51,6 +51,20 @@ declare function functx:substring-after-last
    concat(upper-case(substring($arg,1,1)),
              substring($arg,2))
  } ;
+ 
+(:~
+ : returns the names of the previous, current and next document  
+:)
+
+declare function local:next-doc($collection as xs:string, $current as xs:string) {
+let $all := sort(xmldb:get-child-resources($collection))
+let $currentIx := index-of($all, $current)
+let $prev := if ($currentIx > 1) then $all[$currentIx - 1] else false()
+let $next := if ($currentIx < count($all)) then $all[$currentIx + 1] else false()
+return 
+    ($prev, $current, $next)
+};
+
 
 declare function app:fetchEntity($ref as xs:string){
     let $entity := collection($config:app-root||'/data/indices')//*[@xml:id=$ref]
@@ -354,4 +368,6 @@ declare function app:listOrg($node as node(), $model as map(*)) {
             </td>
         </tr>
 };
+
+
 
