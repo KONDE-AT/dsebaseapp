@@ -5,19 +5,46 @@
     <xsl:param name="app-name"/>
     <xsl:param name="collection-name"/>
     <xsl:param name="path2source"/>
-    <xsl:param name="ref"/><!--
+    <xsl:param name="ref"/>
+    <xsl:param name="prev"/>
+    <xsl:param name="next"/>
+ <!--
 ##################################
 ### Seitenlayout und -struktur ###
 ##################################
 -->
     <xsl:template match="/">
         <div class="page-header">
-            <h2 align="center">
-                <xsl:for-each select="//tei:fileDesc/tei:titleStmt/tei:title">
-                    <xsl:apply-templates/>
-                    <br/>
-                </xsl:for-each>
-            </h2>
+            <div class="row" style="text-align:left">
+                <div class="col-md-2">
+                    <xsl:if test="$prev">
+                        <a>
+                            <xsl:attribute name="href">
+                                <xsl:value-of select="$prev"/>
+                            </xsl:attribute>
+                            prev
+                        </a>
+                    </xsl:if>
+                </div>
+                <div class="col-md-8">
+                    <h2 align="center">
+                         <xsl:for-each select="//tei:fileDesc/tei:titleStmt/tei:title">
+                            <xsl:apply-templates/>
+                            <br/>
+                        </xsl:for-each>
+                    </h2>
+                </div>
+                <div class="col-md-2" style="text-align:right">
+                    <xsl:if test="$next">
+                        <a>
+                            <xsl:attribute name="href">
+                                <xsl:value-of select="$next"/>
+                            </xsl:attribute>
+                            next
+                        </a>
+                    </xsl:if>
+                </div>
+            </div>
         </div>
         <div class="regest">
             <div class="panel panel-default">
