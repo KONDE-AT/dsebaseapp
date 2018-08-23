@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns="http://www.w3.org/1999/xhtml" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="tei" version="2.0">
+    <xsl:template match="tei:date[@*]">
+        <abbr>
+            <xsl:attribute name="title">
+                <xsl:value-of select="data(./@*)"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </abbr>
+    </xsl:template>
     <xsl:template match="tei:term">
         <span>
             <xsl:apply-templates/>
@@ -11,6 +19,16 @@
                 <u>
                     <xsl:apply-templates/>
                 </u>
+            </xsl:when>
+            <xsl:when test="@rend='superscript'">
+                <sup>
+                    <xsl:apply-templates/>
+                </sup>
+            </xsl:when>
+            <xsl:when test="@rend='strikethrough'">
+                <strike>
+                    <xsl:apply-templates/>
+                </strike>
             </xsl:when>
             <xsl:when test="@rend='italic'">
                 <i>
