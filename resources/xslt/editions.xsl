@@ -47,13 +47,13 @@
             </div>
         </div>
         <div class="regest">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">
                         <h2 align="center">Header</h2>
                     </h3>
                 </div>
-                <div class="panel-body">
+                <div class="card-body">
                     <table class="table table-striped">
                         <tbody>
                             <tr>
@@ -154,7 +154,7 @@
                                 </tr>                            
                         </tbody>
                     </table>
-                    <div class="panel-footer">
+                    <div class="card-footer">
                         <p style="text-align:center;">
                             <a>
                                 <xsl:attribute name="href">
@@ -167,15 +167,15 @@
                 </div>
             </div>
         </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">
                     <h2 align="center">
                         Body
                     </h2>
                 </h3>
             </div>
-            <div class="panel-body">
+            <div class="card-body">
                 <xsl:if test="//tei:div/tei:head">
                     <h3 id="clickme">
                         <abbr title="Click to display Table of Content">[Table of Content]</abbr>
@@ -210,7 +210,7 @@
                     <xsl:apply-templates select="//tei:text"/>
                 </div>
             </div>
-            <div class="panel-footer">
+            <div class="card-footer">
                 <p style="text-align:center;">
                     <xsl:for-each select="tei:TEI/tei:text/tei:body//tei:note">
                         <div class="footnotes">

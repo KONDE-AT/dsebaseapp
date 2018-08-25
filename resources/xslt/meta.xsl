@@ -24,8 +24,8 @@
         <div>
                 <xsl:apply-templates select="//tei:text"/>
             
-            <div class="panel-footer">
-                <div class="panel-footer">
+            <div class="card-footer">
+                <div class="card-footer">
                     <p style="text-align:center;">
                         <xsl:for-each select="tei:TEI/tei:text/tei:body//tei:note">
                             <div class="footnotes">

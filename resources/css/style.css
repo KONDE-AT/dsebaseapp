@@ -1,36 +1,29 @@
-/* Application styles could go here */
-html{
-    height:100%;
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
 }
-body{
-    display:flex;
-    flex-direction:column;
-    height:100%;
+body {
+  margin-bottom: 10rem; /* Margin bottom by footer height */
 }
-header{
-    flex:0 0 auto;
-    background-color:#F8F8F8;
-    color:#ffffff;
+.footer {
+    margin-top: 4rem;
+    background-color: #212529;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
-.main-content{
-    flex:1 0 auto;
+
+.page-header {
+    margin-top: 4rem;
+}
+.reference {
+    cursor: pointer;
+    color: #0062cc;
 }
 
 span.data-hr {
     background-color: #ffff00;
 }
 
-footer{
-    flex:0 0 auto;
-    background-color:#333; /*#F8F8F8*/
-    color:#ffffff;
-    font-size:13px;
-    padding:20px;
-    /* position: absolute;*/
-    left:0;
-    right:0;
-    width:100%;
-    margin-top:10px;
-}
-footer .poweredby { float: right; margin: 33px 10px 0 0;}
-footer .poweredby img { width: 120px; }

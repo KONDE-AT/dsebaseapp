@@ -450,14 +450,14 @@
         <xsl:variable name="x">
             <xsl:number count="." level="any"/>
         </xsl:variable>
-        <div class="panel panel-default" id="mspart_{$x}">
-            <div class="panel-heading">
+        <div class="card-header" id="mspart_{$x}">
+            <div class="card-header">
                     <h4 align="center">
                         <xsl:value-of select="./tei:msIdentifier"/>
                         <xsl:value-of select="./tei:head"/>
                     </h4>
             </div>
-            <div class="panel-body">
+            <div class="card-body">
                 <xsl:apply-templates select=".//tei:msContents"/>
             </div>
         </div>
