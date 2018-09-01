@@ -1,29 +1,22 @@
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  margin-bottom: 10rem; /* Margin bottom by footer height */
-}
-.footer {
-    margin-top: 4rem;
-    background-color: #212529;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.page-header {
-    margin-top: 4rem;
-}
 .reference {
     cursor: pointer;
-    color: #0062cc;
+    color: #88dbdf;
 }
 
 span.data-hr {
     background-color: #ffff00;
+}
+
+.card {
+    overflow: visible;
+}
+
+a {
+    color: #88dbdf;
+}
+
+a:not([href]):not([tabindex]) {
+    color: #88dbdf;
+    text-decoration: none;
 }
 
