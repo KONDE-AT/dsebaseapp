@@ -18,10 +18,7 @@ import module namespace xmldb = "http://exist-db.org/xquery/xmldb";
 declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
 declare namespace tei="http://www.tei-c.org/ns/1.0";
 
-declare variable $nlp:tokenizerEnpoint :=
-xs:anyURI("http://openconvert.clarin.inl.nl/openconvert/text");
-
-declare variable $nlp:customTokenizer :="https://xtx.acdh.oeaw.ac.at/exist/restxq/xtoks/tokenize";
+declare variable $nlp:customTokenizer :="https://xtx.acdh.oeaw.ac.at/exist/restxq/xtx/tokenize";
 
 declare variable $nlp:lemmatizerEndpoint :=
 xs:anyURI("https://spacyapp.acdh.oeaw.ac.at/query/lemma/?token=");
@@ -36,17 +33,6 @@ declare variable $nlp:serialiserParams :=
           <output:method value="xml"/>
           <output:encoding value="utf-8"/>
         </output:serialization-parameters>;
-
-declare variable $nlp:codepoints := doc('codepoints.xml');
-
-(:~
- : Sends a TEI-Document to an ACDH-OeAW Tokenizer web service
- : https://tokenizer.eos.arz.oeaw.ac.at/exist/apps/xToks/index.html
- :
- : @param $input An xml docuemnt which validates against the TEI-schema
- : @param $profile The identifier of the tokenization profile which should be used
- : @return The tokenized (tei:w-tags) xml document wrappend in an httpclient:response element
-:)
 
 declare function nlp:custom-tokenizer($input as node(), $profile as xs:string) as item(){
   let $endpoint := xs:anyURI(string-join(($nlp:customTokenizer, $profile), '/'))
@@ -66,7 +52,7 @@ declare function nlp:custom-tokenizer($input as node(), $profile as xs:string) a
 (:~
  : Sends a TEI-Document to the tokenizer web-service and stores the result
  : in 'db/apps/{app-name}/nlp/temp/{doc-name}'
- : @see https://tokenizer.eos.arz.oeaw.ac.at/exist/apps/xToks/index.html
+ : @see https://xtx.acdh.oeaw.ac.at/
  :
  : @param $input An xml docuemnt which validates against the TEI-schema
  : @param $profile The identifier of the tokenization profile which should be used
@@ -107,88 +93,6 @@ declare function nlp:custom-bulk-tokenize($collection as xs:string, $profile as 
         $result
 };
 
-
-(:~
- : Sends a TEI-Document to the tokenizer web-service
- : http://openconvert.clarin.inl.nl/openconvert/web/help.html
- :
- : @param $input An xml docuemnt which validates against the TEI-schema
- : @return The tokenized (tei:w-tags) xml document
-:)
-
-declare function nlp:tokenize($input as node()) as item(){
-    let $file := util:serialize($input, $nlp:serialiserParams)
-    let $content := "input="||$file||"&amp;format=tei&amp;to=tei&amp;tagger=tokenizer&amp;output=raw"
-    let $request-headers :=
-        <headers>
-            <header name="Content-Type" value="application/x-www-form-urlencoded"/>
-        </headers>
-    let $request := httpclient:post(
-            $nlp:tokenizerEnpoint, $content, true(), $request-headers
-        )
-    let $tei := $request
-    return
-        $tei
-};
-
-(:~
- : Searches and replaces false encoded special characters (e.g. 'Á¼' -> 'ü')
- :
- : @param $tei An xml docuemnt which validates against the TEI-schema
- : @return The the cleaned document
-:)
-
-declare function nlp:clean-encoding($input as node()){
-    let $from := ('Ã¼', 'Á¤', 'Á¶', 'ÁŸ', 'Áœ','â', 'Á')
-    let $to :=   ('ü', 'ä', 'ö', 'ß', 'Ü', '–', 'ß')
-    let $string := util:serialize($input, $nlp:serialiserParams)
-    let $new := functx:replace-multi($string, $from, $to)
-    let $fromCp := $nlp:codepoints//tei:cell[@n="2"]/text()
-    let $toCP := $nlp:codepoints//tei:cell[@n="1"]/text()
-    let $newer := functx:replace-multi($new, $fromCp, $toCP)
-    return
-        util:parse($newer)
-};
-
-
-(:~
- : Sends a TEI-Document to the tokenizer web-service and stores the result
- : in 'db/apps/{app-name}/nlp/temp/{doc-name}'
- : @see http://openconvert.clarin.inl.nl/openconvert/web/help.html
- :
- : @param $input An xml docuemnt which validates against the TEI-schema
- : @return The location of the stored tokenized document
-:)
-
-declare function nlp:tokenize-and-save($input as node()){
-    let $collection-uri := '/db/apps/dsebaseapp/nlp/temp/'
-    let $resource-name := util:document-name($input)
-    let $tokenized := nlp:tokenize($input)
-    where $tokenized//httpclient:body/*
-    let $cleaned := nlp:clean-encoding($tokenized//httpclient:body/*)
-    let $stored := xmldb:store($collection-uri, $resource-name, $cleaned)
-    return
-        $stored
-};
-
-
-(:~
- : Bulk tonenizes all TEI-Documents found in the passed in collection
- :
- : @param $collection The URI of a collection to process
- : @return The path of the stored documentst
-:)
-
-declare function nlp:bulk-tokenize($collection as xs:string){
-    for $x in collection($collection)//tei:TEI
-        let $wait := util:wait(5000)
-        let $name := util:document-name($x)
-        let $docUri := $collection||$name
-        let $input := doc($docUri)
-        let $tokenized := nlp:tokenize-and-save($input)
-            return $tokenized
-};
-
 (:~
  : Fetches all tei:w-tags and tei:pc
  :
@@ -223,11 +127,12 @@ declare function nlp:fetch-text($input as node()){
  : as type-, lemma- and ana-attributes to the tei:w element
  :
  : @param $input A TEI document with tei:w tags ready for pos-tagging
+ : @param $input a string denoting the language of the text (currently only 'de' works
  : @return The with POS-tags enriched tei:w element
 :)
 
 
-declare function nlp:pos-tagging($input as node(), $language as xs:string){
+declare function nlp:pos-tagging-post($input as node(), $language as xs:string){
     let $request-headers :=
         <headers>
             <header name="Accept" value="application/json+acdhlang"/>
@@ -264,6 +169,16 @@ declare function nlp:pos-tagging($input as node(), $language as xs:string){
             return 
                 $origNode
 };
+
+(:~
+ : Fetches POS-Information from a web service and adds this information
+ : as type-, lemma- and ana-attributes to the tei:w element. This function 
+ : sends for each w-tag a request, takes quite a lot of time. Use the function above
+ :
+ : @param $input A TEI document with tei:w tags ready for pos-tagging
+ : @param $input a string denoting the language of the text (currently only 'de' works
+ : @return The with POS-tags enriched tei:w element
+:)
 
 declare function nlp:pos-tagging($input as node()){
     let $request-headers :=
