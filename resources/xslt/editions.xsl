@@ -8,6 +8,9 @@
     <xsl:param name="ref"/>
     <xsl:param name="prev"/>
     <xsl:param name="next"/>
+    <xsl:param name="currentIx"/>
+    <xsl:param name="amount"/>
+    <xsl:param name="progress"/>
  <!--
 ##################################
 ### Seitenlayout und -struktur ###
@@ -18,12 +21,14 @@
             <div class="row" style="text-align:left">
                 <div class="col-md-2">
                     <xsl:if test="$prev">
-                        <a>
-                            <xsl:attribute name="href">
-                                <xsl:value-of select="$prev"/>
-                            </xsl:attribute>
-                            prev
-                        </a>
+                        <h1>
+                            <a>
+                                <xsl:attribute name="href">
+                                    <xsl:value-of select="$prev"/>
+                                </xsl:attribute>
+                                <i class="fas fa-chevron-left" title="prev"/>
+                            </a>
+                        </h1>
                     </xsl:if>
                 </div>
                 <div class="col-md-8">
@@ -33,15 +38,21 @@
                             <br/>
                         </xsl:for-each>
                     </h2>
+                    <h2 style="text-align:center;">
+                        <input type="range" min="1" max="{$amount}" value="{$currentIx}" data-rangeslider="" style="width:100%;"/>
+                        <a id="output" class="btn btn-main btn-outline-primary btn-sm" href="show.html?document=entry__1879-03-03.xml&amp;directory=editions" role="button">go to </a>
+                    </h2>
                 </div>
                 <div class="col-md-2" style="text-align:right">
                     <xsl:if test="$next">
-                        <a>
-                            <xsl:attribute name="href">
-                                <xsl:value-of select="$next"/>
-                            </xsl:attribute>
-                            next
-                        </a>
+                        <h1>
+                            <a>
+                                <xsl:attribute name="href">
+                                    <xsl:value-of select="$next"/>
+                                </xsl:attribute>
+                                <i class="fas fa-chevron-right" title="next"/>
+                            </a>
+                        </h1>
                     </xsl:if>
                 </div>
             </div>

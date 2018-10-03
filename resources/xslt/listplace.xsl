@@ -14,28 +14,30 @@
     </xsl:variable>
     <xsl:template match="/">
         <xsl:if test="$entity">
-            <div class="modal" id="myModal" role="dialog">
+            <div class="modal" tabindex="-1" role="dialog" id="myModal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <xsl:choose>
                             <xsl:when test="$entity">
                                 <xsl:variable name="entity" select="//tei:place[@xml:id=$entiyID]"/>
                                 <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">
-                                        <span class="fa fa-times"/>
-                                    </button>
+                                    
                                     <h3 class="modal-title">
-                                        <xsl:value-of select="$entity/tei:placeName[1]"/>  
+                                        <xsl:value-of select="$entity/tei:placeName[1]"/>
+                                        <br/>
+                                        <small>
+                                            <a>
+                                                <xsl:attribute name="href">
+                                                    <xsl:value-of select="concat('hits.html?searchkey=', $entiyID)"/>
+                                                </xsl:attribute>
+                                                <xsl:attribute name="target">_blank</xsl:attribute>
+                                                mentioned in
+                                            </a>
+                                        </small>
                                     </h3>
-                                    <h4>
-                                        <a>
-                                            <xsl:attribute name="href">
-                                                <xsl:value-of select="concat('hits.html?searchkey=', $entiyID)"/>
-                                            </xsl:attribute>
-                                            <xsl:attribute name="target">_blank</xsl:attribute>
-                                            mentioned in
-                                        </a>
-                                    </h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">x</span>
+                                    </button>
                                 </div>
                                 <div class="modal-body">
                                     <table class="table table-boardered table-hover">
@@ -86,10 +88,10 @@
                                                 <xsl:when test="//*[@xml:id=$entiyID or @id=$entiyID]">
                                                     <xsl:apply-templates select="//*[@xml:id=$entiyID or @id=$entiyID]" mode="start"/>
                                                 </xsl:when>
-                                            <xsl:otherwise>Looks like there exists no index entry for ID<strong>
-                                                <xsl:value-of select="concat(' ', $entiyID)"/>
-                                            </strong> 
-                                            </xsl:otherwise>
+                                                <xsl:otherwise>Looks like there exists no index entry for ID<strong>
+                                                    <xsl:value-of select="concat(' ', $entiyID)"/>
+                                                </strong> 
+                                                </xsl:otherwise>
                                             </xsl:choose>
                                         </div>
                                     </div>

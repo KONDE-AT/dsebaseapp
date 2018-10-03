@@ -1,9 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div class="templates:surround?with=templates/page.html&amp;at=content">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.js"/>
     <div data-template="app:XMLtoHTML"/>
     <script src="$app-root/resources/js/hrjs/hr.js"/>
-    <script>var hit = findGetParameter("searchexpr")
+    <script>
+        var hit = findGetParameter("searchexpr")
         new HR("p", {
         highlight: hit
-        }).hr();</script>
+        }).hr();
+    </script>
+    <style>
+        .rangeslider__fill {
+        background: #88dbdf;
+        position: absolute;
+        }
+    </style>
+    <script>
+        $(function() {
+        var $document = $(document);
+        var selector = '[data-rangeslider]';
+        var $element = $(selector);
+        // Example functionality to demonstrate a value feedback
+        
+        $element.rangeslider({
+        
+        // Deactivate the feature detection
+        polyfill: false,
+        
+        // Callback function
+        onInit: function() {
+        $('#output').hide()
+        },
+        
+        // Callback function
+        onSlideEnd: function(position, value) {
+        
+        $.get( "../analyze/docname-by-index.xql?index="+ value, function( data ) {
+        var linkToDoc = data.replace('"', '');
+        console.log(linkToDoc)
+        var out = $('#output'); 
+        out.text( "go to entry: "+ value );
+        out.attr("href", linkToDoc.replace('"', ''));
+        out.show()
+        });
+        
+        }
+        });
+        });
+    </script>
 </div>

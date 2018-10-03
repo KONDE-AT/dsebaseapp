@@ -13,16 +13,13 @@
         </xsl:choose>
     </xsl:variable>
     <xsl:template match="/">       
-        <div class="modal" id="myModal" role="dialog">
+        <div class="modal" tabindex="-1" role="dialog" id="myModal">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <xsl:choose>
                         <xsl:when test="$entity">
-                            <xsl:variable name="entity" select="//tei:person[@xml:id=$entiyID]"/>
                             <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">
-                                    <span class="fa fa-times"/>
-                                </button>
+                                <xsl:variable name="entity" select="//tei:person[@xml:id=$entiyID]"/>
                                 <h3 class="modal-title">
                                     <xsl:choose>
                                         <xsl:when test="//$entity//tei:surname[1]/text()">
@@ -32,19 +29,25 @@
                                             <xsl:value-of select="$entity//tei:persName[1]"/>
                                         </xsl:otherwise>
                                     </xsl:choose>
+                                    <br/>
+                                    <small>
+                                        <a>
+                                            <xsl:attribute name="href">
+                                                <xsl:value-of select="concat('hits.html?searchkey=', $entiyID)"/>
+                                            </xsl:attribute>
+                                            <xsl:attribute name="target">_blank</xsl:attribute>
+                                            mentioned in
+                                        </a>
+                                    </small>
                                 </h3>
-                                <h4>
-                                    <a>
-                                        <xsl:attribute name="href">
-                                            <xsl:value-of select="concat('hits.html?searchkey=', $entiyID)"/>
-                                        </xsl:attribute>
-                                        <xsl:attribute name="target">_blank</xsl:attribute>
-                                        mentioned in
-                                    </a>
-                                </h4>
+                                
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">x</span>
+                                </button>
                             </div>
                             <div class="modal-body">
                                 <table class="table table-boardered table-hover">
+                                    <xsl:variable name="entity" select="//tei:person[@xml:id=$entiyID]"/>
                                     <xsl:for-each select="$entity//tei:persName">
                                         <tr>
                                             <th>
@@ -59,6 +62,9 @@
                                                         <xsl:value-of select="./tei:forename"/>
                                                         <xsl:value-of select="./tei:surname"/>
                                                     </xsl:when>
+                                                    <xsl:otherwise>
+                                                        hallo
+                                                    </xsl:otherwise>
                                                 </xsl:choose>                                                
                                             </td>
                                         </tr>
@@ -84,7 +90,7 @@
                                                         birth and death
                                                     </th>
                                                     <td>
-                                                       <xsl:value-of select="$entity//tei:birth"/>
+                                                        <xsl:value-of select="$entity//tei:birth"/>
                                                         <br/>
                                                         <xsl:value-of select="$entity//tei:death"/>
                                                     </td>

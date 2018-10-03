@@ -6,6 +6,8 @@ import module namespace templates="http://exist-db.org/xquery/templates" ;
 import module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/config" at "config.xqm";
 import module namespace kwic = "http://exist-db.org/xquery/kwic" at "resource:org/exist/xquery/lib/kwic.xql";
 
+
+declare variable  $app:data := $config:app-root||'/data';
 declare variable  $app:editions := $config:app-root||'/data/editions';
 declare variable  $app:indices := $config:app-root||'/data/indices';
 declare variable $app:placeIndex := $config:app-root||'/data/indices/listplace.xml';
@@ -65,6 +67,16 @@ return
     ($prev, $current, $next)
 };
 
+declare function app:doc-context($collection as xs:string, $current as xs:string) {
+let $all := sort(xmldb:get-child-resources($collection))
+let $currentIx := index-of($all, $current)
+let $prev := if ($currentIx > 1) then $all[$currentIx - 1] else false()
+let $next := if ($currentIx < count($all)) then $all[$currentIx + 1] else false()
+let $amount := count($all)
+return 
+    ($prev, $current, $next, $amount, $currentIx)
+};
+
 
 declare function app:fetchEntity($ref as xs:string){
     let $entity := collection($config:app-root||'/data/indices')//*[@xml:id=$ref]
@@ -100,6 +112,15 @@ declare function local:viewName($entity as node()){
 declare function app:getDocName($node as node()){
 let $name := functx:substring-after-last(document-uri(root($node)), '/')
     return $name
+};
+
+(:~
+: returns the (relativ) name of the collection the passed in node is located at.
+:)
+declare function app:getColName($node as node()){
+let $root := tokenize(document-uri(root($node)), '/')
+    let $dirIndex := count($root)-1
+    return $root[$dirIndex]
 };
 
 (:~
@@ -162,7 +183,7 @@ let $href := concat('show.html','?document=', app:getDocName($node), '&amp;direc
  declare function app:ft_search($node as node(), $model as map (*)) {
  if (request:get-parameter("searchexpr", "") !="") then
  let $searchterm as xs:string:= request:get-parameter("searchexpr", "")
- for $hit in collection(concat($config:app-root, '/data/editions/'))//*[.//tei:p[ft:query(.,$searchterm)]|.//tei:cell[ft:query(.,$searchterm)]]
+ for $hit in collection(concat($config:app-root, '/data/editions/'))//*[.//tei:p[ft:query(.,$searchterm)]]
     let $href := concat(app:hrefToDoc($hit), "&amp;searchexpr=", $searchterm)
     let $score as xs:float := ft:score($hit)
     order by $score descending
@@ -179,23 +200,25 @@ let $href := concat('show.html','?document=', app:getDocName($node), '&amp;direc
 declare function app:indexSearch_hits($node as node(), $model as map(*),  $searchkey as xs:string?, $path as xs:string?){
 let $indexSerachKey := $searchkey
 let $searchkey:= '#'||$searchkey
-let $entities := collection($app:editions)//tei:TEI[.//*/@ref=$searchkey]
+let $entities := collection($app:data)//tei:TEI[.//*/@ref=$searchkey]
 let $terms := collection($app:editions)//tei:TEI[.//tei:term[./text() eq substring-after($searchkey, '#')]]
 for $title in ($entities, $terms)
-    let $docTitle := string-join(root($title)//tei:titleStmt/tei:title//text(), ' ')
+    let $docTitle := string-join(root($title)//tei:titleStmt/tei:title[@type='main']//text(), ' ')
     let $hits := if (count(root($title)//*[@ref=$searchkey]) = 0) then 1 else count(root($title)//*[@ref=$searchkey])
+    let $collection := app:getColName($title)
     let $snippet :=
         for $entity in root($title)//*[@ref=$searchkey]
                 let $before := $entity/preceding::text()[1]
                 let $after := $entity/following::text()[1]
                 return
-                    <p>... {$before} <strong><a href="{concat(app:hrefToDoc($title), "&amp;searchkey=", $indexSerachKey)}"> {$entity/text()}</a></strong> {$after}...<br/></p>
+                    <p>… {$before} <strong><a href="{concat(app:hrefToDoc($title, $collection), "&amp;searchkey=", $indexSerachKey)}"> {$entity//text()[not(ancestor::tei:abbr)]}</a></strong> {$after}…<br/></p>
     let $zitat := $title//tei:msIdentifier
+    let $collection := app:getColName($title)
     return
             <tr>
                <td>{$docTitle}</td>
                <td>{$hits}</td>
-               <td>{$snippet}<p style="text-align:right">({<a href="{concat(app:hrefToDoc($title), "&amp;searchkey=", $indexSerachKey)}">{app:getDocName($title)}</a>})</p></td>
+               <td>{$snippet}<p style="text-align:right">{<a href="{concat(app:hrefToDoc($title, $collection), "&amp;searchkey=", $indexSerachKey)}">{app:getDocName($title)}</a>}</p></td>
             </tr>
 };
 
@@ -282,9 +305,12 @@ let $xmlPath := concat(xs:string(request:get-parameter("directory", "editions"))
 let $xml := doc(replace(concat($config:app-root,'/data/', $xmlPath, $ref), '/exist/', '/db/'))
 let $collectionName := util:collection-name($xml)
 let $collection := functx:substring-after-last($collectionName, '/')
-let $neighbors := app:next-doc($collectionName, $ref)
+let $neighbors := app:doc-context($collectionName, $ref)
 let $prev := if($neighbors[1]) then 'show.html?document='||$neighbors[1]||'&amp;directory='||$collection else ()
 let $next := if($neighbors[3]) then 'show.html?document='||$neighbors[3]||'&amp;directory='||$collection else ()
+let $amount := $neighbors[4]
+let $currentIx := $neighbors[5]
+let $progress := ($currentIx div $amount)*100
 let $xslPath := xs:string(request:get-parameter("stylesheet", ""))
 let $xsl := if($xslPath eq "")
     then
@@ -310,6 +336,10 @@ let $params :=
     <param name="path2source" value="{$path2source}"/>
     <param name="prev" value="{$prev}"/>
     <param name="next" value="{$next}"/>
+    <param name="amount" value="{$amount}"/>
+    <param name="currentIx" value="{$currentIx}"/>
+    <param name="progress" value="{$progress}"/>
+    
    {
         for $p in request:get-parameter-names()
             let $val := request:get-parameter($p,())
