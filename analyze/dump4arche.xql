@@ -12,7 +12,7 @@ let $RDF :=
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/#"
+    xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#"
     xmlns:acdhi="https://id.acdh.oeaw.ac.at/"
     xmlns:foaf="http://xmlns.com/foaf/spec/#"
 
