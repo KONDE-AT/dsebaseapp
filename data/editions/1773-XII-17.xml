@@ -703,5 +703,9 @@
             <p>Testes nebst denen<rs type="person">Gerichts Beysizern Martin Eppacher gewester Schneidermeister</rs> zu <rs type="place">St. Georgen</rs>, und <rs type="person">Joseph Steeger Schreiber</rs>.</p>
          </div>
       </body>
-   </text>
+   <back>
+            <listPerson/>
+            <listPlace/>
+        </back>
+    </text>
 </TEI>

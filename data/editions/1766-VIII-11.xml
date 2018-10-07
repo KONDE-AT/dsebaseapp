@@ -240,5 +240,9 @@
             <p>Testes die geist- und weltliche Herrn Actuary und<rs type="person">Joseph Steeger</rs> Schreiber.</p>
          </div>
       </body>
-   </text>
+   <back>
+            <listPerson/>
+            <listPlace/>
+        </back>
+    </text>
 </TEI>

@@ -475,5 +475,9 @@
             <p>Testes nebst denen Commission und Gerichts Beisizern, Ihro Wohlerwirden Herr<rs type="person">Andreeas Starckh Cooperator und Joseph Steeger Schreiber</rs> beedt alhier zu <rs type="place">St. Lorenzen</rs>.</p>
          </div>
       </body>
-   </text>
+   <back>
+            <listPerson/>
+            <listPlace/>
+        </back>
+    </text>
 </TEI>

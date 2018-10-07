@@ -379,5 +379,9 @@
                <rs type="person">Michael Sigmayr</rs> bekhene wie obsteth</p>
          </div>
       </body>
-   </text>
+   <back>
+            <listPerson/>
+            <listPlace/>
+        </back>
+    </text>
 </TEI>

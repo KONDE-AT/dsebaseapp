@@ -538,5 +538,9 @@
                         Lorenzen</rs>.</p>
             </div>
         </body>
+    <back>
+            <listPerson/>
+            <listPlace/>
+        </back>
     </text>
 </TEI>

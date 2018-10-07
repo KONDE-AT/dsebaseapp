@@ -986,5 +986,9 @@ einzuladen.</p>
         </closer>
       </div>
     </body>
-  </text>
+  <back>
+            <listPerson/>
+            <listPlace/>
+        </back>
+    </text>
 </TEI>

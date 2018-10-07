@@ -301,5 +301,34 @@
             </signed>
          </div>
       </body>
-   </text>
+   <back>
+            <listPerson>
+                <person xml:id="kindermann_heinz">
+                        <persName>
+                            <surname>Kindermann</surname>
+                            <forename>Heinz</forename>
+                            <roleName type="degree" full="abb">Prof.</roleName>
+                            <roleName>Leiter des <rs type="org" ref="#zentralinstitut">Zentralinstituts für
+                                Theaterwissenschaft der Universität Wien</rs>
+                            </roleName>
+                        </persName>
+                        <idno type="URL">http://d-nb.info/gnd/118562193</idno>
+                    </person>
+                <person xml:id="aristoteles">
+                        <persName>
+                            <surname>Aristoteles</surname>
+                            <forename>k_A</forename>
+                        </persName>
+                        <note>
+                            <p>Stageira 384–322 v. Chr. Chalkis</p>
+                            <p>griech. Philosoph</p>
+                            <p>http://d-nb.info/gnd/185689361</p>
+                            <p>k_A</p>
+                        </note>
+                    <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URL">http://d-nb.info/gnd/185689361</tei:idno>
+                    </person>
+            </listPerson>
+            <listPlace/>
+        </back>
+    </text>
 </TEI>

@@ -1557,5 +1557,9 @@
                 </div>
             </div>
         </body>
+    <back>
+            <listPerson/>
+            <listPlace/>
+        </back>
     </text>
 </TEI>

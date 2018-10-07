@@ -327,5 +327,256 @@
                 </div>
             </div>
         </body>
+    <back>
+            <listPerson>
+                <person xml:id="tobisch-franz">
+                        <persName>
+                            <surname>Tobisch</surname>
+                            <forename>Franz</forename>
+                        </persName>
+                        <note>
+                            <p>k_A</p>
+                            <p>Rektor der Bürgerschule in Reindorf</p>
+                            <p>no gnd provided</p>
+                            <p>k_A</p>
+                        </note>
+                    </person>
+                <person xml:id="heinz-karl">
+                        <persName>
+                            <surname>Heinz</surname>
+                            <forename>Karl</forename>
+                        </persName>
+                        <note>
+                            <p>*Brunnersdorf 1811</p>
+                            <p>ab 1836 Konzeptspraktikant, ab 1845 Aktuar, ab 1852 Oberkommissär des Polizeibezirkskommissariats Sechshaus</p>
+                            <p>http://d-nb.info/gnd/1037056264</p>
+                            <p>k_A</p>
+                        </note>
+                    <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URL">http://d-nb.info/gnd/1037056264</tei:idno>
+                    </person>
+                <person xml:id="prucha-prokop">
+                        <persName>
+                            <surname>Prucha</surname>
+                            <forename>Prokop</forename>
+                        </persName>
+                        <note>
+                            <p>Budweis 1815–1889 Döbling</p>
+                            <p>ab 1849 Leiter des Polizeikommissariats Weinhaus, ab 1851 Leiter des Kommissariats Ottakring</p>
+                            <p>no gnd provided</p>
+                            <p>k_A</p>
+                        </note>
+                    </person>
+                <person xml:id="weiss-von-starkenfels-theodor">
+                        <persName>
+                            <surname>Weiß von Starkenfels</surname>
+                            <forename>Theodor</forename>
+                        </persName>
+                        <note>
+                            <p>*Linz 1813</p>
+                            <p>ab 1848 Regierungsrat und Ministerialrat im Ministerium des Innern, Dez. 1850–1853 Stadthauptmann von Wien, 1853 Generalinspektor des Gefängniswesens im Ministerium des Innern</p>
+                            <p>no gnd provided</p>
+                            <p>k_A</p>
+                        </note>
+                    </person>
+                <person xml:id="bartsch-jakob">
+                        <persName>
+                            <surname>Bartsch</surname>
+                            <forename>Jakob</forename>
+                        </persName>
+                        <note>
+                            <p>k_A</p>
+                            <p>Oberlehrer in der Pfarrschule in Meidling</p>
+                            <p>no gnd provided</p>
+                            <p>k_A</p>
+                        </note>
+                    </person>
+                <person xml:id="schnabel-jakob">
+                        <persName>
+                            <surname>Schnabel</surname>
+                            <forename>Jakob</forename>
+                        </persName>
+                        <note>
+                            <p>k_A</p>
+                            <p>Lehrer in Gaudenzdorf</p>
+                            <p>no gnd provided</p>
+                            <p>k_A</p>
+                        </note>
+                    </person>
+                <person xml:id="rickert-wilhelm">
+                        <persName>
+                            <surname>Rickert</surname>
+                            <forename>Wilhelm</forename>
+                        </persName>
+                        <note>
+                            <p>k_A</p>
+                            <p>Beamter im Bezirk Gaudenzdorf</p>
+                            <p>no gnd provided</p>
+                            <p>k_A</p>
+                        </note>
+                    </person>
+            </listPerson>
+            <listPlace>
+                <place xml:id="place_95b8315bd8f5c49ffd94d827cc5ece93">
+                        <placeName>Wien</placeName>
+                        <placeName type="alt">Wiener</placeName>
+                        <placeName type="alt">Wiens</placeName>
+                        <placeName type="alt">Vienne</placeName>
+                        <placeName type="alt">Viennes</placeName>
+                        <placeName type="alt">Reichsresidenz</placeName>
+                        <placeName type="alt">[Wien]</placeName>
+                        <placeName type="alt">Metropole des Reichs</placeName>
+                        <placeName type="alt">Kaiserhauptstadt</placeName>
+                        <placeName type="alt">Residenz</placeName>
+                        <placeName type="alt">Residenzstadt</placeName>
+                        <placeName type="alt">Haupt- und Residenzstadt des Reiches</placeName>
+                        <placeName type="alt">Haupt- und Residenzstadt</placeName>
+                        <placeName type="alt">Hauptstadt Oesterreichs</placeName>
+                        <placeName type="alt">Hauptstadt</placeName>
+                        <placeName type="alt">Haupt- und Residenzstadt</placeName>
+                        <placeName type="alt">Haupt- und Residenzstadt Oesterreichs</placeName>
+                        <placeName type="alt">österreichischen Hauptstadt</placeName>
+                        <placeName type="alt">Hauptstadt Oesterreichs</placeName>
+                        <placeName type="alt">Haupt- und die Residenzstadt</placeName>
+                        <placeName type="alt">Haupt- und Residenzstadt der Monarchie</placeName>
+                        <placeName type="alt">Kaiserstadt</placeName>
+                        <placeName type="alt">kaiserlichen Residenz</placeName>
+                        <placeName type="alt">kaiserlichen Residenz</placeName>
+                        <placeName type="alt">o. O. [Wien]</placeName>
+                        <placeName type="alt">Hauptstadt des Reiches</placeName>
+                        <placeName type="alt">Wiens</placeName>
+                        <placeName type="alt">[Wien]</placeName>
+                        <location>
+                            <geo decls="#LatLng">48.2082 16.37169</geo>
+                        </location>
+                        <idno>http://sws.geonames.org/2761367/</idno>
+                    </place>
+                <place xml:id="place_a8a8d03449db447f4be292c0240da5a2">
+                        <placeName>Gemeindebezirk Rudolfsheim-Fünfhaus</placeName>
+                        <placeName type="pref">reindorf</placeName>
+                        <placeName type="alt">Reindorfer</placeName>
+                        <placeName type="alt">Reindorf</placeName>
+                        <location>
+                            <geo decls="#LatLng">48.19625 16.32749</geo>
+                        </location>
+                        <idno>http://sws.geonames.org/2779138/</idno>
+                    </place>
+                <place xml:id="place_b3a1423103ff1eb4f2a8af2d045be4be" type="placeName">
+                        <placeName type="pref">fuenfhaus</placeName>
+                        <placeName type="alt">Fünfhaus</placeName>
+                    </place>
+                <place xml:id="place_089f86d9d1435122eee164e3917b138d">
+                        <placeName>Sechshaus</placeName>
+                        <location>
+                            <geo decls="#LatLng">48.186389 16.331667</geo>
+                        </location>
+                    </place>
+                <place xml:id="place_1549a9a3dfd0c321ec93e4da91736104">
+                        <placeName>huetteldorf</placeName>
+                        <placeName type="alt">Hütteldorf</placeName>
+                        <location>
+                            <geo decls="#LatLng">48.201667 16.258056</geo>
+                        </location>
+                    </place>
+                <place xml:id="place_1a598eeca6df59d538f051fc5a231d9a">
+                        <placeName>Gemeindebezirk Penzing</placeName>
+                        <placeName type="pref">Baumgarten</placeName>
+                        <placeName type="alt">Baumgarten</placeName>
+                        <location>
+                            <geo decls="#LatLng">48.2 16.3</geo>
+                        </location>
+                        <idno>http://sws.geonames.org/2769121/</idno>
+                    </place>
+                <place xml:id="place_e3a1571b9091d6d78548ad3b4b159d11">
+                        <placeName>Hetzendorf</placeName>
+                        <location>
+                            <geo decls="#LatLng">48.165278 16.304167</geo>
+                        </location>
+                    </place>
+                <place xml:id="place_30e401734dd84d2c5c0f739ba6b6b74c">
+                        <placeName>Wien-Neulerchenfeld</placeName>
+                        <placeName type="pref">Neulerchenfeld</placeName>
+                        <placeName type="alt">Neulerchenfeld</placeName>
+                        <placeName type="alt">Neulerchenfelder</placeName>
+                        <location>
+                            <geo decls="#LatLng">48.207946 16.3244335</geo>
+                        </location>
+                        <idno>http://d-nb.info/gnd/4108808-6</idno>
+                    </place>
+                <place xml:id="place_ae27b00fe645446cec370e16f3d1a671">
+                        <placeName>Gemeindebezirk Ottakring</placeName>
+                        <placeName type="pref">Ottakring</placeName>
+                        <placeName type="alt">Ottakring</placeName>
+                        <location>
+                            <geo decls="#LatLng">48.21667 16.3</geo>
+                        </location>
+                        <idno>http://sws.geonames.org/2769357/</idno>
+                    </place>
+                <place xml:id="place_6be66c0b77354cfc57532ae11c489da6">
+                        <placeName>Gemeindebezirk Hernals</placeName>
+                        <placeName type="pref">hernals</placeName>
+                        <placeName type="alt">Hernalser</placeName>
+                        <placeName type="alt">Hernals</placeName>
+                        <location>
+                            <geo decls="#LatLng">48.22707 16.31006</geo>
+                        </location>
+                        <idno>http://sws.geonames.org/2776486/</idno>
+                    </place>
+                <place xml:id="place_a3c879a4f19e7987aa5aa1f1b929b0da">
+                        <placeName>Klosterneuburg</placeName>
+                        <location>
+                            <geo decls="#LatLng">48.30521 16.32522</geo>
+                        </location>
+                        <idno>http://sws.geonames.org/2773913/</idno>
+                    </place>
+                <place xml:id="place_f5af0e4beb99b2ded62ac5ff72643954">
+                        <placeName>Dornbach</placeName>
+                        <location>
+                            <geo decls="#LatLng">48.08324 16.13454</geo>
+                        </location>
+                        <idno>http://sws.geonames.org/2780747/</idno>
+                    </place>
+                <place xml:id="place_01dbd9137da0ce96d711c4cd8cbeef6f">
+                        <placeName>Unter-Meidling bei Wien</placeName>
+                        <placeName type="pref">Untermeidling</placeName>
+                        <placeName type="alt">Untermeidling</placeName>
+                        <location>
+                            <geo decls="#LatLng">48.1645 16.313</geo>
+                        </location>
+                        <idno>http://d-nb.info/gnd/402488-6</idno>
+                    </place>
+                <place xml:id="place_7c623c08220222bd9f50583382924179">
+                        <placeName>Gaudenzdorf</placeName>
+                        <location>
+                            <geo decls="#LatLng">48.171772 16.2857986</geo>
+                        </location>
+                        <idno>http://d-nb.info/gnd/414634-7</idno>
+                    </place>
+                <place xml:id="place_2ab7384f536cc10ddfcec7284e1f32d3">
+                        <placeName>Zwölfaxing</placeName>
+                        <placeName type="pref">zwoelfaxing</placeName>
+                        <location>
+                            <geo decls="#LatLng">48.1099 16.46267</geo>
+                        </location>
+                        <idno>http://sws.geonames.org/2760388/</idno>
+                    </place>
+                <place xml:id="place_dd478124f3334c385daa440b23a1b65a">
+                        <placeName>Untermarkersdorf</placeName>
+                        <location>
+                            <geo decls="#LatLng">48.7 16.1</geo>
+                        </location>
+                        <idno>http://sws.geonames.org/2762786/</idno>
+                    </place>
+                <place xml:id="place_01b2e8cfb34e1d933aa943e42ef15919">
+                        <placeName>Niederösterreich</placeName>
+                        <placeName type="pref">niederoesterreich</placeName>
+                        <placeName type="alt">N[ieder]Oesterreich</placeName>
+                        <location>
+                            <geo decls="#LatLng">48.33333 15.75</geo>
+                        </location>
+                        <idno>http://sws.geonames.org/2770542/</idno>
+                        <idno>http://d-nb.info/gnd/4075391-8</idno>
+                    </place>
+            </listPlace>
+        </back>
     </text>
 </TEI>

@@ -153,5 +153,160 @@
                 <p>Limburg an der Lahn im Herzogthum Nassau, den 23. August 1854</p>
             </div>
         </body>
+    <back>
+            <listPerson>
+                <person xml:id="blum-peter-josef">
+                        <persName>
+                            <surname>Blum</surname>
+                            <forename>Peter Josef</forename>
+                        </persName>
+                        <note>
+                            <p>Geisenheim 1808–1884 Limburg a. d. Lahn</p>
+                            <p>ab 1842 Bischof von Limburg a. d. Lahn</p>
+                            <p>http://d-nb.info/gnd/119512858</p>
+                            <p>k_A</p>
+                        </note>
+                    <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URL">http://d-nb.info/gnd/119512858</tei:idno>
+                    </person>
+                <person xml:id="rauscher-joseph">
+                        <persName>
+                            <surname>Rauscher</surname>
+                            <forename>Josef Othmar</forename>
+                        </persName>
+                        <note>
+                            <p>Wien 1797–1875 Wien</p>
+                            <p>ab 1825 Prof. für Kirchengeschichte und Kirchenrecht am Lyzeum Salzburg, ab 1832 Direktor der orientalischen Akademie in Wien, ab 1849 Fürstbischof von Seckau, ab März 1853 Erzbischof von Wien, ab 1855 Kardinal</p>
+                            <p>http://d-nb.info/gnd/118787977</p>
+                            <p>k_A</p>
+                        </note>
+                    <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URL">http://d-nb.info/gnd/118787977</tei:idno>
+                    </person>
+                <person xml:id="boczek-alois">
+                        <persName>
+                            <surname>Boczek</surname>
+                            <forename>Alois</forename>
+                        </persName>
+                        <note>
+                            <p>1817–1876</p>
+                            <p>1848 Mitglied der Frankfurter Nationalversammlung, Beamter in Brünn, Redakteur der Nassauischen Allgemeinen Zeitung</p>
+                            <p>http://d-nb.info/gnd/116215046</p>
+                            <p>k_A</p>
+                        </note>
+                    <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URL">http://d-nb.info/gnd/116215046</tei:idno>
+                    </person>
+                <person xml:id="luther-martin">
+                        <persName>
+                            <surname>Luther</surname>
+                            <forename>Martin OESA</forename>
+                        </persName>
+                        <note>
+                            <p>Eisleben 1483–1546 Eisleben</p>
+                            <p>Reformator</p>
+                            <p>no gnd provided</p>
+                            <p>k_A</p>
+                        </note>
+                    </person>
+                <person xml:id="hutten-ulrich">
+                        <persName>
+                            <surname>Hutten</surname>
+                            <forename>Ulrich</forename>
+                        </persName>
+                        <note>
+                            <p>Steckelberg 1488–1523 Ufenau</p>
+                            <p>Humanist und Kritiker des Papsttums</p>
+                            <p>http://d-nb.info/gnd/118588095</p>
+                            <p>k_A</p>
+                        </note>
+                    <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URL">http://d-nb.info/gnd/118588095</tei:idno>
+                    </person>
+                <person xml:id="sickingen-franz">
+                        <persName>
+                            <surname>Sickingen</surname>
+                            <forename>Franz von</forename>
+                        </persName>
+                        <note>
+                            <p>Burg Ebernburg 1481–1523 Burg Nanstein</p>
+                            <p>Anführer des rheinischen und schwäbischen Adels, Anhänger Martin Luthers</p>
+                            <p>http://d-nb.info/gnd/124582419</p>
+                            <p>k_A</p>
+                        </note>
+                    <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URL">http://d-nb.info/gnd/124582419</tei:idno>
+                    </person>
+            </listPerson>
+            <listPlace>
+                <place xml:id="place_5d1b48484123ba03451fd33dc81c047f">
+                        <placeName>Limburg an der Lahn</placeName>
+                        <placeName type="pref">Limburg</placeName>
+                        <placeName type="alt">Limburg</placeName>
+                        <location>
+                            <geo decls="#LatLng">50.3836 8.0503</geo>
+                        </location>
+                        <idno>http://sws.geonames.org/2877648/</idno>
+                    </place>
+                <place xml:id="place_e9cd6cbbbc3248f7a69252439ba3d6e6">
+                        <placeName>Frankfurt-Eckenheim</placeName>
+                        <placeName type="pref">Frankfurt a. M.</placeName>
+                        <placeName type="alt">Frankfurt a. M.</placeName>
+                        <placeName type="alt">Frankfurt am Main</placeName>
+                        <placeName type="alt">Francfurt a. M.</placeName>
+                        <placeName type="alt">Francfurt</placeName>
+                        <placeName type="alt">Francoforte</placeName>
+                        <location>
+                            <geo decls="#LatLng">50.1497921 8.6662762</geo>
+                        </location>
+                        <idno>http://d-nb.info/gnd/4093156-0</idno>
+                    </place>
+                <place xml:id="place_9a43e84f6e1d406076f2372205804f6d">
+                        <placeName>Baden-Baden</placeName>
+                        <placeName type="pref">Baden</placeName>
+                        <placeName type="alt">Baden</placeName>
+                        <location>
+                            <geo decls="#LatLng">48.7606 8.23975</geo>
+                        </location>
+                        <idno>http://sws.geonames.org/2953504/</idno>
+                    </place>
+                <place xml:id="place_9974545279455eb03bf50b1b1b4d7fea">
+                        <placeName>Wiesbaden</placeName>
+                        <location>
+                            <geo decls="#LatLng">50.08258 8.24932</geo>
+                        </location>
+                        <idno>http://sws.geonames.org/2809346/</idno>
+                    </place>
+                <place xml:id="place_95b8315bd8f5c49ffd94d827cc5ece93">
+                        <placeName>Wien</placeName>
+                        <placeName type="alt">Wiener</placeName>
+                        <placeName type="alt">Wiens</placeName>
+                        <placeName type="alt">Vienne</placeName>
+                        <placeName type="alt">Viennes</placeName>
+                        <placeName type="alt">Reichsresidenz</placeName>
+                        <placeName type="alt">[Wien]</placeName>
+                        <placeName type="alt">Metropole des Reichs</placeName>
+                        <placeName type="alt">Kaiserhauptstadt</placeName>
+                        <placeName type="alt">Residenz</placeName>
+                        <placeName type="alt">Residenzstadt</placeName>
+                        <placeName type="alt">Haupt- und Residenzstadt des Reiches</placeName>
+                        <placeName type="alt">Haupt- und Residenzstadt</placeName>
+                        <placeName type="alt">Hauptstadt Oesterreichs</placeName>
+                        <placeName type="alt">Hauptstadt</placeName>
+                        <placeName type="alt">Haupt- und Residenzstadt</placeName>
+                        <placeName type="alt">Haupt- und Residenzstadt Oesterreichs</placeName>
+                        <placeName type="alt">österreichischen Hauptstadt</placeName>
+                        <placeName type="alt">Hauptstadt Oesterreichs</placeName>
+                        <placeName type="alt">Haupt- und die Residenzstadt</placeName>
+                        <placeName type="alt">Haupt- und Residenzstadt der Monarchie</placeName>
+                        <placeName type="alt">Kaiserstadt</placeName>
+                        <placeName type="alt">kaiserlichen Residenz</placeName>
+                        <placeName type="alt">kaiserlichen Residenz</placeName>
+                        <placeName type="alt">o. O. [Wien]</placeName>
+                        <placeName type="alt">Hauptstadt des Reiches</placeName>
+                        <placeName type="alt">Wiens</placeName>
+                        <placeName type="alt">[Wien]</placeName>
+                        <location>
+                            <geo decls="#LatLng">48.2082 16.37169</geo>
+                        </location>
+                        <idno>http://sws.geonames.org/2761367/</idno>
+                    </place>
+            </listPlace>
+        </back>
     </text>
 </TEI>
