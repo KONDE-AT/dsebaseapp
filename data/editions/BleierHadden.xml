@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" prev="https://id.acdh.oeaw.ac.at/dsebaseapp/editions/1773-XII-17.xml" next="https://id.acdh.oeaw.ac.at/dsebaseapp/editions/Fasz_7_Pos_5_20_BUCH.xml">
     <teiHeader>
         <fileDesc>
             <titleStmt>

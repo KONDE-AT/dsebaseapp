@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" prev="https://id.acdh.oeaw.ac.at/dsebaseapp/editions/grobid-export.xml">
   <teiHeader type="correspondence">
     <fileDesc>
       <titleStmt>

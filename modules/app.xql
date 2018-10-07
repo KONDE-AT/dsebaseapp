@@ -7,9 +7,9 @@ import module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/confi
 import module namespace kwic = "http://exist-db.org/xquery/kwic" at "resource:org/exist/xquery/lib/kwic.xql";
 
 
-declare variable  $app:data := $config:app-root||'/data';
-declare variable  $app:editions := $config:app-root||'/data/editions';
-declare variable  $app:indices := $config:app-root||'/data/indices';
+declare variable $app:data := $config:app-root||'/data';
+declare variable $app:editions := $config:app-root||'/data/editions';
+declare variable $app:indices := $config:app-root||'/data/indices';
 declare variable $app:placeIndex := $config:app-root||'/data/indices/listplace.xml';
 declare variable $app:personIndex := $config:app-root||'/data/indices/listperson.xml';
 declare variable $app:orgIndex := $config:app-root||'/data/indices/listorg.xml';

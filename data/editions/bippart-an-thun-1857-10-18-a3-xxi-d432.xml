@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" prev="https://id.acdh.oeaw.ac.at/dsebaseapp/editions/bezirkskommissariate-an-stadthauptmannschaft-1851-03-a3-xxi-d109.xml" next="https://id.acdh.oeaw.ac.at/dsebaseapp/editions/blum-an-rauscher-1854-08-23-a3-xxi-d277.xml">
     <teiHeader>
         <fileDesc>
             <titleStmt>

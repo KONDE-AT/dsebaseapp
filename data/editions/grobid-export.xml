@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 C:\Users\pandorfer\Documents\grobid-0.5.1\grobid-home/schemas/xsd/Grobid.xsd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 C:\Users\pandorfer\Documents\grobid-0.5.1\grobid-home/schemas/xsd/Grobid.xsd" prev="https://id.acdh.oeaw.ac.at/dsebaseapp/editions/caroline-an-caroline-thun-o-d-a3-xxi-d190.xml" next="https://id.acdh.oeaw.ac.at/dsebaseapp/editions/rollet.xml">
     <teiHeader xml:lang="en">
         <encodingDesc>
             <appInfo>

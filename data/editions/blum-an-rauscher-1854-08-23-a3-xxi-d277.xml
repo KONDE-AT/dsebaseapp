@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" prev="https://id.acdh.oeaw.ac.at/dsebaseapp/editions/bippart-an-thun-1857-10-18-a3-xxi-d432.xml" next="https://id.acdh.oeaw.ac.at/dsebaseapp/editions/caroline-an-caroline-thun-o-d-a3-xxi-d190.xml">
     <teiHeader>
         <fileDesc>
             <titleStmt>
