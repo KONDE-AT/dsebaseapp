@@ -23,7 +23,7 @@ let $language := 'de'
 (: let $pos := nlp:pos-tagging($tokInput):)
 (: return $pos:)
  
-  (: example for nlp:pos-tagging-post don't use this function, use the next one :)
+  (: example for nlp:pos-tagging-post :)
 (: let $tokInput := doc('/db/apps/dsebaseapp/nlp/temp/bezirkskommissariate-an-stadthauptmannschaft-1851-03-a3-xxi-d109.xml'):)
 (: let $pos := nlp:pos-tagging-post($tokInput, $language):)
 (: return $pos:)
