@@ -139,6 +139,15 @@ function api:list-entity-types($pageNumber, $pageSize){
         ($api:XML, $result)
 };
 
+declare 
+    %rest:GET
+    %rest:path("/dsebaseapp/api/entity-types/{$id}")
+function api:show-ent-type-doc($id) {
+    let $result := doc($app:indices||'/'||$id)
+    return 
+       ($api:XML, $result)
+};
+
 (:~ list all entities api ~:)
 
 declare
