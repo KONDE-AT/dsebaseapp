@@ -27,38 +27,38 @@ declare function api:paginator(
         $pageSize as xs:integer,
         $sequence as item()*
     ){
-    let $all := count($sequence)
-    let $collection := subsequence($sequence, $pageNumber, $pageSize)
-    let $base := functx:substring-before-last($endpoint,'/')
-    let $first := $endpoint||'?page[number]='||1
-    let $prev := if ($pageNumber gt 1) then $pageNumber - 1 else $pageNumber
-    let $prev := $endpoint||'?page[number]='||$prev
-    let $last := ceiling($all div $pageSize)
-    let $next:= if ($pageNumber lt $last) then $pageNumber + 1 else $pageNumber
-    let $next := $endpoint||'?page[number]='||$next
-    let $last := $endpoint||'?page[number]='||$last
-    let $result := 
-            <result>
-                <meta>
-                    <hits>{$all}</hits>
-                </meta>
-                <links>
-                    <self>{$endpoint}</self>
-                    <first>{$first}</first>
-                    <prev>{$prev}</prev>
-                    <next>{$next}</next>
-                    <last>{$last}</last>
-                </links>
-            </result>
-    return
-        map{
-            "meta": $result,
-            "sequence": $collection,
-            "base": $base,
-            "endpoint": $endpoint,
-            "pageNumber": $pageNumber,
-            "pageSize": $pageSize
-        }
+        let $all := count($sequence)
+        let $collection := subsequence($sequence, $pageNumber, $pageSize)
+        let $base := functx:substring-before-last($endpoint,'/')
+        let $first := $endpoint||'?page[number]='||1
+        let $prev := if ($pageNumber gt 1) then $pageNumber - 1 else $pageNumber
+        let $prev := $endpoint||'?page[number]='||$prev
+        let $last := ceiling($all div $pageSize)
+        let $next:= if ($pageNumber lt $last) then $pageNumber + 1 else $pageNumber
+        let $next := $endpoint||'?page[number]='||$next
+        let $last := $endpoint||'?page[number]='||$last
+        let $result := 
+                <result>
+                    <meta>
+                        <hits>{$all}</hits>
+                    </meta>
+                    <links>
+                        <self>{$endpoint}</self>
+                        <first>{$first}</first>
+                        <prev>{$prev}</prev>
+                        <next>{$next}</next>
+                        <last>{$last}</last>
+                    </links>
+                </result>
+        return
+            map{
+                "meta": $result,
+                "sequence": $collection,
+                "base": $base,
+                "endpoint": $endpoint,
+                "pageNumber": $pageNumber,
+                "pageSize": $pageSize
+            }
 };
 
 declare variable $api:JSON := 
@@ -88,6 +88,98 @@ declare variable $api:XML :=
         <output:media-type value='application/xml'/>
     </output:serialization-parameters>
  </rest:response>;
+
+declare
+    %rest:GET
+    %rest:path("/dsebaseapp/api/entities/{$id}")
+function api:list-entities($id){
+    let $entity := collection($app:indices)//id($id)
+    return
+    ($api:XML, $entity)
+};
+
+(:~ list all entity-types ~:)
+
+declare
+    %rest:GET
+    %rest:path("/dsebaseapp/api/entity-types")
+    %rest:query-param("page[number]", "{$pageNumber}", 1)
+    %rest:query-param("page[size]", "{$pageSize}", 20)
+function api:list-entity-types($pageNumber, $pageSize){
+    let $pageNumber := xs:integer($pageNumber)
+    let $pageSize := xs:integer($pageSize)
+    let $self := rest:uri()
+    let $base := functx:substring-before-last($self,'/')
+    let $sequence := collection($app:indices)//tei:TEI
+    let $paginator := api:paginator($self, $pageNumber, $pageSize, $sequence)
+    let $content := 
+            for $x in $paginator?sequence
+                let $id := app:getDocName($x)
+                let $title := replace(substring-after($id, 'list'), '.xml', '')||'s'
+                let $self := string-join(($paginator?endpoint, $id), '/')
+                return
+                    <data>
+                        <type>Entity Type</type>
+                        <id>{$id}</id>
+                        <attributes>
+                            <title>{$title}</title>
+                        </attributes>
+                        <links>
+                            <self>
+                                {$self}
+                            </self>
+                        </links>
+                    </data>
+    let $result := 
+        <result>
+            {$paginator?meta}
+            {$content}
+        </result>
+    return 
+        ($api:XML, $result)
+};
+
+(:~ list all entities api ~:)
+
+declare
+    %rest:GET
+    %rest:path("/dsebaseapp/api/entities")
+    %rest:query-param("page[number]", "{$pageNumber}", 1)
+    %rest:query-param("page[size]", "{$pageSize}", 20)
+function api:list-entities($pageNumber, $pageSize){
+    let $serialization := $api:XML
+    let $pageNumber := xs:integer($pageNumber)
+    let $pageSize := xs:integer($pageSize)
+    let $self := rest:uri()
+    let $base := functx:substring-before-last($self,'/')
+    let $sequence := collection($app:indices)//tei:*[@xml:id]/tei:*[@xml:id]
+    let $paginator := api:paginator($self, $pageNumber, $pageSize, $sequence)
+    let $content := 
+    for $x in $paginator?sequence
+        let $id := data($x/@xml:id)
+        let $title := normalize-space(string-join($x/*[1]//text(), ' '))
+        let $self := string-join(($paginator?endpoint, $id), '/')
+        return
+            <data>
+                <type>{name($x)}</type>
+                <id>{$id}</id>
+                <attributes>
+                    <title>{$title}</title>
+                </attributes>
+                <links>
+                    <self>
+                        {$self}
+                    </self>
+                </links>
+            </data>
+    let $result := 
+        <result>
+            {$paginator?meta}
+            {$content}
+        </result>
+    return
+        ($serialization, $result)
+};
 
 
 (:~ lists content of collection ~:)
@@ -179,7 +271,7 @@ declare %private function api:list-collection-content($collection as xs:string, 
         let $content := 
             for $x in $result?sequence
                 let $id := app:getDocName($x)
-                let $title := normalize-space(string-join($x//tei:persName[1]//text(), ' '))
+                let $title := normalize-space(string-join($x//tei:title[1]//text(), ' '))
                 let $self := string-join(($result?endpoint, $id), '/')
                 return
                     <data>
