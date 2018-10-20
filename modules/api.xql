@@ -9,6 +9,58 @@ import module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/confi
 declare namespace output = "http://www.w3.org/2010/xslt-xquery-serialization";
 declare namespace http = "http://expath.org/ns/http-client";
 
+(:~
+ : returns a 'paginator-map'
+ :
+ : @param $endpoint The URL calling this function
+ : @param $pageNumber The number of the current page
+ : @param $pageSize Number of items per page
+ : @param $sequence Any kind of sequence to be paginated
+ : @return A map object with keys "meta" containing pagination info, 
+ : "sequence" containing the subsequence of the passed in sequence,
+ : and the other passed in params
+:)
+
+declare function api:paginator(
+        $endpoint as xs:string,
+        $pageNumber as xs:integer,
+        $pageSize as xs:integer,
+        $sequence as item()*
+    ){
+    let $all := count($sequence)
+    let $collection := subsequence($sequence, $pageNumber, $pageSize)
+    let $base := functx:substring-before-last($endpoint,'/')
+    let $first := $endpoint||'?page[number]='||1
+    let $prev := if ($pageNumber gt 1) then $pageNumber - 1 else $pageNumber
+    let $prev := $endpoint||'?page[number]='||$prev
+    let $last := ceiling($all div $pageSize)
+    let $next:= if ($pageNumber lt $last) then $pageNumber + 1 else $pageNumber
+    let $next := $endpoint||'?page[number]='||$next
+    let $last := $endpoint||'?page[number]='||$last
+    let $result := 
+            <result>
+                <meta>
+                    <hits>{$all}</hits>
+                </meta>
+                <links>
+                    <self>{$endpoint}</self>
+                    <first>{$first}</first>
+                    <prev>{$prev}</prev>
+                    <next>{$next}</next>
+                    <last>{$last}</last>
+                </links>
+            </result>
+    return
+        map{
+            "meta": $result,
+            "sequence": $collection,
+            "base": $base,
+            "endpoint": $endpoint,
+            "pageNumber": $pageNumber,
+            "pageSize": $pageSize
+        }
+};
+
 declare variable $api:JSON := 
 <rest:response>
     <http:response>
@@ -122,52 +174,31 @@ declare %private function api:list-collection-content($collection as xs:string, 
         let $pageSize := xs:integer($pageSize)
         let $self := rest:uri()
         let $base := functx:substring-before-last($self,'/')
-        let $docs := collection($config:app-root||'/data/'||$collection)//tei:TEI
-        let $all := count($docs)
-        let $docs := subsequence($docs, ($pageNumber - 1)*$pageSize, $pageSize)
-        let $first := $self||'?page[number]='||1
-        let $prev := if ($pageNumber gt 1) then $pageNumber - 1 else $pageNumber
-        let $prev := $self||'?page[number]='||$prev
-        let $last := ceiling($all div $pageSize)
-        let $next:= if ($pageNumber lt $last) then $pageNumber + 1 else $pageNumber
-        let $next := $self||'?page[number]='||$next
-        let $last := $self||'?page[number]='||$last
-       
-        let $result := 
+        let $sequence := collection($config:app-root||'/data/'||$collection)//tei:TEI
+        let $result := api:paginator($self, $pageNumber, $pageSize, $sequence)
+        let $content := 
+            for $x in $result?sequence
+                let $id := app:getDocName($x)
+                let $title := normalize-space(string-join($x//tei:persName[1]//text(), ' '))
+                let $self := string-join(($result?endpoint, $id), '/')
+                return
+                    <data>
+                        <type>TEI-Document</type>
+                        <id>{$id}</id>
+                        <attributes>
+                            <title>{$title}</title>
+                        </attributes>
+                        <links>
+                            <self>
+                                {$self}
+                            </self>
+                        </links>
+                    </data>
+        return
             <result>
-                <meta>
-                    <hits>{$all}</hits>
-                </meta>
-                <links>
-                    <self>{$self}</self>
-                    <first>{$first}</first>
-                    <prev>{$prev}</prev>
-                    <next>{$next}</next>
-                    <last>{$last}</last>
-                </links>
-               
-                {for $doc in $docs
-                
-                let $path := functx:substring-before-last(document-uri(root($doc)),'/')
-                let $id := app:getDocName($doc)
-                let $path2me := string-join(($base, $id, 'xml'), '/')
-                    return
-                        <data>
-                            <type>TEI-Document</type>
-                            <id>{$id}</id>
-                            <attributes>
-                                <title>{normalize-space(string-join($doc//tei:title[1]//text(), ' '))}</title>
-                                <created>{xmldb:created($path, $id)}</created>
-                                <modified>{xmldb:last-modified($path, $id)}</modified>
-                            </attributes>
-                            <links>
-                                <self>{$path2me}</self>
-                            </links>
-                        </data>
-                 }
+                {$result?meta}
+                {$content}
             </result>
-            return 
-                $result
     else
         let $result := <error>Page size and page number params need to be of type integer</error>
         return 
