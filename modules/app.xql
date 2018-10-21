@@ -328,7 +328,7 @@ let $xsl := if($xslPath eq "")
                 doc($config:app-root||'/resources/xslt/'||$xslPath||'.xsl')
             else
                 $app:defaultXsl
-let $path2source := string-join(('../../../../exist/restxq', $config:app-name, $collection, $ref, 'xml'), '/')
+let $path2source := string-join(('../../../../exist/restxq', $config:app-name,'api/collections', $collection, $ref), '/')
 let $params :=
 <parameters>
     <param name="app-name" value="{$config:app-name}"/>
