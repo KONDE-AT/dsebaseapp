@@ -1,4 +1,4 @@
-xquery version "3.0";
+xquery version "3.1";
 
 module namespace api="http://www.digital-archiv.at/ns/dsebaseapp/api";
 declare namespace rest = "http://exquery.org/ns/restxq";
@@ -10,18 +10,18 @@ declare namespace output = "http://www.w3.org/2010/xslt-xquery-serialization";
 declare namespace http = "http://expath.org/ns/http-client";
 
 (:~
- : returns a 'paginator-map'
+ : A utility function to create a 'paginator-map'
  :
  : @param $endpoint The URL calling this function
  : @param $pageNumber The number of the current page
  : @param $pageSize Number of items per page
  : @param $sequence Any kind of sequence to be paginated
- : @return A map object with keys "meta" containing pagination info, 
+ : @return A map object with keys: "meta" containing pagination info, 
  : "sequence" containing the subsequence of the passed in sequence,
  : and the other passed in params
 :)
 
-declare function api:paginator(
+declare function api:utils-paginator(
         $endpoint as xs:string,
         $pageNumber as xs:integer,
         $pageSize as xs:integer,
@@ -89,37 +89,22 @@ declare variable $api:XML :=
     </output:serialization-parameters>
  </rest:response>;
 
-declare
-    %rest:GET
-    %rest:path("/dsebaseapp/api/entities/{$id}")
-function api:list-entities($id){
-    let $entity := collection($app:indices)//id($id)
-    return
-    ($api:XML, $entity)
-};
-
-(:~ list all entity-types ~:)
-
-declare
-    %rest:GET
-    %rest:path("/dsebaseapp/api/entity-types")
-    %rest:query-param("page[number]", "{$pageNumber}", 1)
-    %rest:query-param("page[size]", "{$pageSize}", 20)
-function api:list-entity-types($pageNumber, $pageSize){
-    let $pageNumber := xs:integer($pageNumber)
-    let $pageSize := xs:integer($pageSize)
-    let $self := rest:uri()
-    let $base := functx:substring-before-last($self,'/')
-    let $sequence := collection($app:indices)//tei:TEI
-    let $paginator := api:paginator($self, $pageNumber, $pageSize, $sequence)
-    let $content := 
-            for $x in $paginator?sequence
+declare %private function api:utils-list-collection-content($collection as xs:string, $pageNumber as xs:integer, $pageSize as xs:integer){
+    if ($pageNumber castable as xs:integer and $pageSize castable as xs:integer) then
+        let $pageNumber := xs:integer($pageNumber)
+        let $pageSize := xs:integer($pageSize)
+        let $self := rest:uri()
+        let $base := functx:substring-before-last($self,'/')
+        let $sequence := collection($config:app-root||'/data/'||$collection)//tei:TEI
+        let $result := api:utils-paginator($self, $pageNumber, $pageSize, $sequence)
+        let $content := 
+            for $x in $result?sequence
                 let $id := app:getDocName($x)
-                let $title := replace(substring-after($id, 'list'), '.xml', '')||'s'
-                let $self := string-join(($paginator?endpoint, $id), '/')
+                let $title := normalize-space(string-join($x//tei:title[1]//text(), ' '))
+                let $self := string-join(($result?endpoint, $id), '/')
                 return
                     <data>
-                        <type>Entity Type</type>
+                        <type>TEI-Document</type>
                         <id>{$id}</id>
                         <attributes>
                             <title>{$title}</title>
@@ -130,39 +115,125 @@ function api:list-entity-types($pageNumber, $pageSize){
                             </self>
                         </links>
                     </data>
+        return
+            <result>
+                {$result?meta}
+                {$content}
+            </result>
+    else
+        let $result := <error>Page size and page number params need to be of type integer</error>
+        return 
+            $result
+};
+
+
+(:~
+ : API-Endpoint to list all child collections of the app's data collection
+ :
+ : @return A JSON-API list
+:)
+
+declare 
+    %rest:GET
+    %rest:path("/dsebaseapp/api/collections")
+    %rest:query-param("page[number]", "{$pageNumber}", 1)
+    %rest:query-param("page[size]", "{$pageSize}", 20)
+    %rest:query-param("format", "{$format}", 'json')
+function api:api-list-collections($pageNumber as xs:integer, $pageSize as xs:integer, $format as xs:string) {
+    let $sequence := sort(xmldb:get-child-collections($app:data))
+    let $self := rest:uri()
+    let $paginator := api:utils-paginator($self, $pageNumber, $pageSize, $sequence)
+    let $content :=
+        for $x in $paginator?sequence
+            let $id := $x
+            let $title := $x
+            let $self := string-join(($paginator?endpoint, $id), '/')
+            return
+                <data>
+                    <type>Collection</type>
+                    <id>{$id}</id>
+                    <attributes>
+                        <title>{$title}</title>
+                    </attributes>
+                    <links>
+                        <self>
+                            {$self}
+                        </self>
+                    </links>
+                </data>
     let $result := 
         <result>
             {$paginator?meta}
             {$content}
         </result>
-    return 
-        ($api:XML, $result)
+    let $serialization := switch($format)
+        case('xml') return $api:XML
+        default return $api:JSON
+            return 
+                ($serialization, $result)
 };
 
+
+(:~
+ : API-Endpoint to list all documents stored in the passed in collection
+ :
+ : @param $collection The name of the collection which documents should be listed
+ : @return A JSON-API list
+:)
 declare 
     %rest:GET
-    %rest:path("/dsebaseapp/api/entity-types/{$id}")
-function api:show-ent-type-doc($id) {
-    let $result := doc($app:indices||'/'||$id)
-    return 
-       ($api:XML, $result)
+    %rest:path("/dsebaseapp/api/collections/{$collection}")
+    %rest:query-param("page[number]", "{$pageNumber}", 1)
+    %rest:query-param("page[size]", "{$pageSize}", 20)
+    %rest:query-param("format", "{$format}", 'json')
+function api:api-list-documents($collection as xs:string, $format as xs:string, $pageNumber as xs:integer, $pageSize as xs:integer) {
+    let $result:= api:utils-list-collection-content($collection, $pageNumber, $pageSize)
+    let $serialization := switch($format)
+        case('xml') return $api:XML
+        default return $api:JSON
+            return 
+                ($serialization, $result)
+    };
+
+(:~
+ : API-Endpoint for an entity
+ :
+ : @param $id The xml:id of an xml-node located in the app's indices directory
+ : @return The xml-node with the matching xml:id
+:)
+
+declare
+    %rest:GET
+    %rest:path("/dsebaseapp/api/entities/{$id}")
+function api:api-show-entity($id as xs:string){
+    let $entity := collection($app:indices)//id($id)
+    return
+    ($api:XML, $entity)
 };
 
-(:~ list all entities api ~:)
+
+(:~
+ : API-Endpoint to list all entities located in the app's indices collections.
+ :
+ : @return A JSON-API list of all entities
+~:)
 
 declare
     %rest:GET
     %rest:path("/dsebaseapp/api/entities")
     %rest:query-param("page[number]", "{$pageNumber}", 1)
     %rest:query-param("page[size]", "{$pageSize}", 20)
-function api:list-entities($pageNumber, $pageSize){
-    let $serialization := $api:XML
+    %rest:query-param("format", "{$format}", 'json')
+function api:api-list-entities($pageNumber as xs:integer, $pageSize as xs:integer, $format as xs:string){
+    let $serialization := switch($format)
+        case('xml') return $api:XML
+        default return $api:JSON
     let $pageNumber := xs:integer($pageNumber)
     let $pageSize := xs:integer($pageSize)
     let $self := rest:uri()
     let $base := functx:substring-before-last($self,'/')
     let $sequence := collection($app:indices)//tei:*[@xml:id]/tei:*[@xml:id]
-    let $paginator := api:paginator($self, $pageNumber, $pageSize, $sequence)
+    let $paginator := api:utils-paginator($self, $pageNumber, $pageSize, $sequence)
     let $content := 
     for $x in $paginator?sequence
         let $id := data($x/@xml:id)
@@ -190,22 +261,71 @@ function api:list-entities($pageNumber, $pageSize){
         ($serialization, $result)
 };
 
+(:~
+ : API-Endpoint to list all entity-types (i.d. all TEI documents stored in the app's indices directory 
+ :
+ : @return A JSON-API list of all entity-types
+:)
 
-(:~ lists content of collection ~:)
-declare 
+declare
     %rest:GET
-    %rest:path("/dsebaseapp/{$collection}/{$format}")
+    %rest:path("/dsebaseapp/api/entity-types")
     %rest:query-param("page[number]", "{$pageNumber}", 1)
     %rest:query-param("page[size]", "{$pageSize}", 20)
-function api:list-documents($collection, $format, $pageNumber, $pageSize) {
-let $result:= api:list-collection-content($collection, $pageNumber, $pageSize)
-
-let $serialization := switch($format)
-    case('xml') return $api:XML
-    default return $api:JSON
-        return 
-            ($serialization, $result)
+    %rest:query-param("format", "{$format}", 'json')
+function api:api-list-entity-types($pageNumber as xs:integer, $pageSize as xs:integer, $format as xs:string){
+    let $serialization := switch($format)
+        case('xml') return $api:XML
+        default return $api:JSON
+    let $pageNumber := xs:integer($pageNumber)
+    let $pageSize := xs:integer($pageSize)
+    let $self := rest:uri()
+    let $base := functx:substring-before-last($self,'/')
+    let $sequence := collection($app:indices)//tei:TEI
+    let $paginator := api:utils-paginator($self, $pageNumber, $pageSize, $sequence)
+    let $content := 
+            for $x in $paginator?sequence
+                let $id := app:getDocName($x)
+                let $title := replace(substring-after($id, 'list'), '.xml', '')||'s'
+                let $self := string-join(($paginator?endpoint, $id), '/')
+                return
+                    <data>
+                        <type>Entity Type</type>
+                        <id>{$id}</id>
+                        <attributes>
+                            <title>{$title}</title>
+                        </attributes>
+                        <links>
+                            <self>
+                                {$self}
+                            </self>
+                        </links>
+                    </data>
+    let $result := 
+        <result>
+            {$paginator?meta}
+            {$content}
+        </result>
+    return 
+        ($serialization, $result)
 };
+
+(:~
+ : API-Endpoint to display an XML/TEI document stored in the app's indices directory
+ : 
+ : @param $id The name of the document which should be showed
+ : @return The xml-node identified by the passed in xml:id
+~:)
+
+declare 
+    %rest:GET
+    %rest:path("/dsebaseapp/api/entity-types/{$id}")
+function api:api-show-ent-type-doc($id as xs:integer) {
+    let $result := doc($app:indices||'/'||$id)
+    return 
+       ($api:XML, $result)
+};
+
 
 (:~ lists content of collection according to datatables API ~:)
 declare 
@@ -213,8 +333,8 @@ declare
     %rest:path("/dsebaseapp/dt/{$collection}/{$format}")
     %rest:query-param("start", "{$start}", 0)
     %rest:query-param("lenght", "{$lenght}", 10)
-function api:list-documents($collection, $format, $start, $lenght, $draw) {
-let $result:= api:dt-list-collection-content($collection, $start, $lenght, $draw)
+function api:list-documents-dt($collection, $format, $start, $lenght, $draw) {
+let $result:= api:dt-utils-list-collection-content($collection, $start, $lenght, $draw)
 
 let $serialization := switch($format)
     case('xml') return $api:XML
@@ -225,17 +345,17 @@ let $serialization := switch($format)
 
 declare 
     %rest:GET
-    %rest:path("/dsebaseapp/{$collection}/{$id}/{$format}")
-function api:show-document-api($collection, $id, $format) {
+    %rest:path("/dsebaseapp/api/collections/{$collection}/{$id}")
+function api:api-show-document($collection, $id) {
     let $result := api:show-document($collection, $id)
-    let $serialization := switch($format)
-    case('xml') return $api:XML
-    default return $api:JSON
+    let $serialization := $api:XML
     return 
        ($serialization, $result)
 };
 
-declare %private function api:dt-list-collection-content($collection as xs:string, $start, $lenght, $draw){
+
+
+declare %private function api:dt-utils-list-collection-content($collection as xs:string, $start, $lenght, $draw){
         let $draw := xs:integer($draw)
         let $start := xs:integer($start)+1
         let $lenght := xs:integer($lenght)
@@ -269,42 +389,7 @@ declare %private function api:dt-list-collection-content($collection as xs:strin
                 $result
 };
 
-declare %private function api:list-collection-content($collection as xs:string, $pageNumber, $pageSize){
-    if ($pageNumber castable as xs:integer and $pageSize castable as xs:integer) then
-        let $pageNumber := xs:integer($pageNumber)
-        let $pageSize := xs:integer($pageSize)
-        let $self := rest:uri()
-        let $base := functx:substring-before-last($self,'/')
-        let $sequence := collection($config:app-root||'/data/'||$collection)//tei:TEI
-        let $result := api:paginator($self, $pageNumber, $pageSize, $sequence)
-        let $content := 
-            for $x in $result?sequence
-                let $id := app:getDocName($x)
-                let $title := normalize-space(string-join($x//tei:title[1]//text(), ' '))
-                let $self := string-join(($result?endpoint, $id), '/')
-                return
-                    <data>
-                        <type>TEI-Document</type>
-                        <id>{$id}</id>
-                        <attributes>
-                            <title>{$title}</title>
-                        </attributes>
-                        <links>
-                            <self>
-                                {$self}
-                            </self>
-                        </links>
-                    </data>
-        return
-            <result>
-                {$result?meta}
-                {$content}
-            </result>
-    else
-        let $result := <error>Page size and page number params need to be of type integer</error>
-        return 
-            $result
-};
+
 
 declare %private function api:show-document($collection as xs:string, $id as xs:string){
     let $doc := doc($config:app-root||'/data/'||$collection||'/'||$id)
