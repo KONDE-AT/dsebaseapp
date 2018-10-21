@@ -1,5 +1,10 @@
 xquery version "3.1";
 
+(:~
+ : This module provides a couple of restxq functions (and some helper functions) to set up a basic JSON-API
+ : @author Peter Andorfer
+:)
+
 module namespace api="http://www.digital-archiv.at/ns/dsebaseapp/api";
 declare namespace rest = "http://exquery.org/ns/restxq";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
@@ -253,8 +258,8 @@ function api:api-list-entities($pageNumber as xs:integer*, $pageSize as xs:integ
  : API-Endpoint to display an XML/TEI document
  : 
  : @param $id The name of the document which should be showed
- : @return The xml-node identified by the passed in xml:id
-~:)
+ : @return XML/TEI document
+:)
 
 declare 
     %rest:GET
@@ -270,7 +275,7 @@ function api:api-show-doc($collection as xs:string, $id as xs:string) {
  : API-Endpoint for an entity
  :
  : @param $id The xml:id of an xml-node located in the app's indices directory
- : @return The xml-node with the matching xml:id
+ : @return The xml-node of the matching xml:id
 :)
 
 declare
@@ -337,7 +342,7 @@ function api:api-list-entity-types($pageNumber as xs:integer*, $pageSize as xs:i
  : 
  : @param $id The name of the document which should be showed
  : @return The xml-node identified by the passed in xml:id
-~:)
+:)
 
 declare 
     %rest:GET
