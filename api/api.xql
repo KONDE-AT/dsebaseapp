@@ -135,6 +135,94 @@ declare variable $api:XML :=
  </rest:response>;
 
 
+(:~
+ : API-Endpoint to list all entry points of this current API
+ :
+ : @return A JSON-API list
+:)
+
+declare 
+    %rest:GET
+    %rest:path("/dsebaseapp/api/about")
+    %rest:query-param("page[number]", "{$pageNumber}", 1)
+    %rest:query-param("page[size]", "{$pageSize}", 20)
+    %rest:query-param("format", "{$format}", 'json')
+function api:api-about($format as xs:string*, $pageNumber as xs:integer*, $pageSize as xs:integer*) {
+    let $endpoints := 
+        <result>
+            <ep>
+                <url>/dsebaseapp/api/collections</url>
+                <name>list collections</name>
+                <description>API-Endpoint to list all child collections of the app's data collection</description>
+                <group>collections</group>
+            </ep>
+            <ep>
+                <url>{"/dsebaseapp/api/collections/{$collection}"}</url>
+                <name>list documents per collection</name>
+                <description>API-Endpoint to list all documents stored in the passed in collection</description>
+                <group>documents</group>
+            </ep>
+            <ep>
+                <url>{"/collections/{collectionId}/{$id}"}</url>
+                <name>show document</name>
+                <description>Get an XML/TEI version of a document.</description>
+                <group>documents</group>
+            </ep>
+            <ep>
+                <url>{"/entity-types"}</url>
+                <name>list entity types</name>
+                <description>List all entity-types</description>
+                <group>entities</group>
+            </ep>
+            <ep>
+                <url>{"/entity-types"}</url>
+                <name>list entities</name>
+                <description>List all entities located in the app's indices collections.</description>
+                <group>entities</group>
+            </ep>
+            <ep>
+                <url>{"/entities/{$id}"}</url>
+                <name>show entity</name>
+                <description>API-Endpoint for an entity</description>
+                <group>entities</group>
+            </ep>
+        </result>
+    let $self := rest:uri()
+    let $sequence := for $x in $endpoints/ep return $x
+    let $paginator := api:utils-paginator($self, $pageNumber, $pageSize, $sequence)
+    let $content := for $x in $paginator?sequence
+        let $id := $x/url
+        let $title := $x/name
+        let $self := string-join(($paginator?endpoint, $id), '')
+        return
+                <data>
+                    <type>{name($x)}</type>
+                    <id>{$id}</id>
+                    <attributes>
+                        <title>{$title/text()}</title>
+                        <description>{$x/description/text()}</description>
+                        <group>{$x/group/text()}</group>
+                    </attributes>
+                    <links>
+                        <self>
+                            {$self}
+                        </self>
+                    </links>
+                </data>
+    
+    let $result := 
+            <result>
+                {$paginator?meta}
+                {$content}
+            </result>
+     let $serialization := switch($format)
+        case('xml') return $api:XML
+        default return $api:JSON
+            return 
+                ($serialization, $result)
+};
+
+
 
 (:~
  : API-Endpoint to list all child collections of the app's data collection
