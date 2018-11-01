@@ -3,7 +3,7 @@
 
 # But not these files...
 !.gitignore
-!__init__.py
+!project.rdf
 
 
 # ...even if they are in subdirectories
