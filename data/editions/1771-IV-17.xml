@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" prev="https://id.acdh.oeaw.ac.at/dsebaseapp/editions/1766-VIII-11.xml" next="https://id.acdh.oeaw.ac.at/dsebaseapp/editions/1773-XII-17.xml">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/" xml:id="1771-IV-17.xml" prev="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/1766-VIII-11.xml" next="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/1773-XII-17.xml">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -475,9 +475,7 @@
             <p>Testes nebst denen Commission und Gerichts Beisizern, Ihro Wohlerwirden Herr<rs type="person">Andreeas Starckh Cooperator und Joseph Steeger Schreiber</rs> beedt alhier zu <rs type="place">St. Lorenzen</rs>.</p>
          </div>
       </body>
-   <back>
-            <listPerson/>
-            <listPlace/>
-        </back>
+   
+    <back/>
     </text>
 </TEI>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" prev="https://id.acdh.oeaw.ac.at/dsebaseapp/editions/Fasz_7_Pos_5_20_BUCH.xml" next="https://id.acdh.oeaw.ac.at/dsebaseapp/editions/bezirkskommissariate-an-stadthauptmannschaft-1851-03-a3-xxi-d109.xml">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/" xml:id="Rundbrief_005.xml" prev="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/Fasz_7_Pos_5_20_BUCH.xml" next="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/bezirkskommissariate-an-stadthauptmannschaft-1851-03-a3-xxi-d109.xml">
    <teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0">
       <fileDesc>
          <titleStmt>
@@ -301,7 +301,8 @@
             </signed>
          </div>
       </body>
-   <back>
+   
+    <back>
             <listPerson>
                 <person xml:id="kindermann_heinz">
                         <persName>
@@ -328,7 +329,6 @@
                     <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URL">http://d-nb.info/gnd/185689361</tei:idno>
                     </person>
             </listPerson>
-            <listPlace/>
         </back>
     </text>
 </TEI>

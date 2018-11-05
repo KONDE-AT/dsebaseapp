@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" prev="https://id.acdh.oeaw.ac.at/dsebaseapp/editions/grobid-export.xml">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/" xml:id="rollet.xml" prev="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/grobid-export.xml">
   <teiHeader type="correspondence">
     <fileDesc>
       <titleStmt>
@@ -986,9 +986,7 @@ einzuladen.</p>
         </closer>
       </div>
     </body>
-  <back>
-            <listPerson/>
-            <listPlace/>
-        </back>
+  
+    <back/>
     </text>
 </TEI>

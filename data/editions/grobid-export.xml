@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 C:\Users\pandorfer\Documents\grobid-0.5.1\grobid-home/schemas/xsd/Grobid.xsd" prev="https://id.acdh.oeaw.ac.at/dsebaseapp/editions/caroline-an-caroline-thun-o-d-a3-xxi-d190.xml" next="https://id.acdh.oeaw.ac.at/dsebaseapp/editions/rollet.xml">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 C:\Users\pandorfer\Documents\grobid-0.5.1\grobid-home/schemas/xsd/Grobid.xsd" xml:base="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/" xml:id="grobid-export.xml" prev="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/caroline-an-caroline-thun-o-d-a3-xxi-d190.xml" next="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/rollet.xml">
     <teiHeader xml:lang="en">
         <encodingDesc>
             <appInfo>
@@ -279,9 +279,7 @@ COMA Ltd. Shoumen, BULGARIA. </table>
             <note place="foot" n="2"> The metadata is also available in the CMDI format at the IMS Clarin repository. 3 www.fon.hum.uva.nl/praat 4 https://catalog.ldc.upenn.edu/docs/ LDC2015S04/SEAME.V4.0.pdf 5 http://www.kiezdeutschkorpus. de/files/kidko/downloads/ KiDKo-Transkriptionsrichtlinien.pdf</note>
         </body>
         
-    <back>
-            <listPerson/>
-            <listPlace/>
-        </back>
+    
+    <back/>
     </text>
 </TEI>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" prev="https://id.acdh.oeaw.ac.at/dsebaseapp/editions/1771-IV-17.xml" next="https://id.acdh.oeaw.ac.at/dsebaseapp/editions/BleierHadden.xml">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/" xml:id="1773-XII-17.xml" prev="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/1771-IV-17.xml" next="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/BleierHadden.xml">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -703,9 +703,7 @@
             <p>Testes nebst denen<rs type="person">Gerichts Beysizern Martin Eppacher gewester Schneidermeister</rs> zu <rs type="place">St. Georgen</rs>, und <rs type="person">Joseph Steeger Schreiber</rs>.</p>
          </div>
       </body>
-   <back>
-            <listPerson/>
-            <listPlace/>
-        </back>
+   
+    <back/>
     </text>
 </TEI>

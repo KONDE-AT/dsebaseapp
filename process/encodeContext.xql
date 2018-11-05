@@ -12,16 +12,18 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 let $archeURL := "https://id.acdh.oeaw.ac.at/"
 let $projectURL := 'dsebaseapp/'
-let $dataURL := 'editions/'
+let $dataURL := 'dsebaseapp/'
 let $idURL := $archeURL||$projectURL||$dataURL
 
 
 let $all := collection($app:editions)//tei:TEI
-let $sample := subsequence($all, 1, 5)
+let $all := subsequence($all, 1, 5)
 for $x in $all
     let $collectionName := util:collection-name($x)
     let $currentDocName := util:document-name($x)
     let $neighbors := app:doc-context($collectionName, $currentDocName)
+    let $base := update insert attribute xml:base {$idURL} into $x
+    let $currentID := update insert attribute xml:id {$currentDocName} into $x
     let $prev := if($neighbors[1])
         then
             update insert attribute prev {$idURL||$neighbors[1]} into $x 

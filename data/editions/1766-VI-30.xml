@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" prev="https://id.acdh.oeaw.ac.at/dsebaseapp/editions/1762-I-28.xml" next="https://id.acdh.oeaw.ac.at/dsebaseapp/editions/1766-VIII-11.xml">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/" xml:id="1766-VI-30.xml" prev="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/1762-I-28.xml" next="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/1766-VIII-11.xml">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -379,9 +379,7 @@
                <rs type="person">Michael Sigmayr</rs> bekhene wie obsteth</p>
          </div>
       </body>
-   <back>
-            <listPerson/>
-            <listPlace/>
-        </back>
+   
+    <back/>
     </text>
 </TEI>

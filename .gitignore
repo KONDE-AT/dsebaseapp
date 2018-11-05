@@ -8,3 +8,4 @@ bower_components
 /data/editions/oko.xml
 /tryouts/play.xql
 /build/old_dsebaseapp-1.0.xar
+/*.xpr
