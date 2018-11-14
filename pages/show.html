@@ -2,7 +2,9 @@
 <div class="templates:surround?with=templates/page.html&amp;at=content">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.js"/>
-    <div data-template="app:XMLtoHTML"/>
+    <div class="container-fluid">
+        <div data-template="app:XMLtoHTML"/>
+    </div>
     <script src="$app-root/resources/js/hrjs/hr.js"/>
     <script>
         var hit = findGetParameter("searchexpr")
@@ -29,14 +31,16 @@
         polyfill: false,
         
         // Callback function
-        onInit: function() {
-        $('#output').hide()
-        },
-        
-        // Callback function
         onSlideEnd: function(position, value) {
-        var directory = findGetParameter("directory")
-        $.get( "../analyze/docname-by-index.xql?index="+ value+"&amp;directory="+ directory,  function( data ) {
+        var directory = findGetParameter("directory");
+        var defaultdir = function(param){
+        if (param = "none"){
+        return "editions";
+        } else {
+        return param;
+        }
+        };
+        $.get( "../analyze/docname-by-index.xql?index="+ value+"&amp;directory="+ defaultdir(directory),  function( data ) {
         var linkToDoc = data.replace('"', '');
         console.log(linkToDoc)
         var out = $('#output'); 
