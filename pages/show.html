@@ -35,8 +35,8 @@
         
         // Callback function
         onSlideEnd: function(position, value) {
-        
-        $.get( "../analyze/docname-by-index.xql?index="+ value, function( data ) {
+        var directory = findGetParameter("directory")
+        $.get( "../analyze/docname-by-index.xql?index="+ value+"&amp;directory="+ directory,  function( data ) {
         var linkToDoc = data.replace('"', '');
         console.log(linkToDoc)
         var out = $('#output'); 
