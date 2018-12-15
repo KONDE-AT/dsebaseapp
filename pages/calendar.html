@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="templates:surround?with=templates/page.html&amp;at=content">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-year-calendar/1.1.1/css/bootstrap-year-calendar.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-year-calendar/1.1.1/js/bootstrap-year-calendar.js"/>
+
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header" style="text-align:center;">
+                <h1>
+                    Calendar
+                </h1>
+                <h3>
+                    <a>
+                        <i class="fas fa-info" title="Info" data-toggle="modal" data-target="#exampleModal"/>
+                    </a>
+                    |
+                    <a href="../analyze/calendar_datasource.xql">
+                        <i class="fas fa-download" title="Data"/>
+                    </a>
+                </h3>
+            </div>
+            <div id="calendar"/>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">About the Calendar</h5>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        The Calendar depicts the documents by their date of creation
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    // most of the code taken from https://github.com/ingoboerner
+    //https://github.com/martinantonmueller/Hermann-Bahr_Arthur-Schnitzler/blob/master/app/resources/js/calendar.js
+        var datasource = "../analyze/calendar_datasource.xql";
+        $.getJSON(datasource, function(data) {
+            console.log(data);
+            var $dataSource = [];
+            $.each( data, function( key, entry ) {
+              var $obj = {};
+              var $j = entry.startDate.substring(0,4);
+              var $m = entry.startDate.substring(5,7);
+              var $d = entry.startDate.substring(8,10);
+              $obj.endDate = new Date($j,$m-1,$d);
+              $obj.startDate = new Date($j,$m-1,$d);
+              $obj.id = entry.id;
+              $dataSource.push($obj);
+            });
+            $('#calendar').calendar({
+                dataSource: $dataSource,
+                startYear: 1857,
+                minDate : new Date(1582,0,1),
+                maxDate : new Date(2018,0,1),
+            });
+
+            $('#calendar').clickDay(function(e){
+                var ids = []
+                $.each(e.events, function( key, entry ) {
+                    ids.push(entry.id)
+                });
+                window.location = ids.join()
+            });
+        });
+
+
+    </script>
+</div>
