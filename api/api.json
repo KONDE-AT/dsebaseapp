@@ -1,0 +1,245 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is the API for [dsebaseapp-Web-App](https://dsebaseapp-korrespondenz.acdh.oeaw.ac.at).",
+    "version": "v1.0",
+    "title": "dsebaseapp API",
+    "termsOfService": "../pages/imprint.html",
+    "contact": {
+      "email": "peter.andorfer@oeaw.ac.at"
+    },
+    "license": {
+      "name": "CC-BY",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+
+  "basePath": "/exist/restxq/dsebaseapp/api",
+  "tags": [
+    {
+      "name": "about",
+      "description": "About the current API"
+    },
+    {
+      "name": "collections",
+      "description": "Methods about collections"
+    },
+    {
+      "name": "documents",
+      "description": "Methods about documents"
+    },
+    {
+      "name": "entities",
+      "description": "Methods about entities"
+    }
+  ],
+  "paths": {
+  "/about": {
+      "get": {
+        "tags": [
+          "about"
+        ],
+        "summary": "API-Endpoint to list all entry points of this current API",
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "description": "The format of the response, defaults to 'json', alternative is 'xml'",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          }
+        }
+      }
+    },
+    "/collections": {
+      "get": {
+        "tags": [
+          "collections"
+        ],
+        "summary": "API-Endpoint to list all child collections of the app's data collection",
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "description": "The format of the response, defaults to 'json', alternative is 'xml'",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          }
+        }
+      }
+    },
+    "/collections/{collectionId}": {
+      "get": {
+        "tags": [
+          "documents"
+        ],
+        "summary": "List all documents stored in the passed in collection",
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "collectionId",
+            "in": "path",
+            "description": "ID of the document to return",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "description": "The format of the response, defaults to 'json', alternative is 'xml'",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "404": {
+            "description": "collectionID not found"
+          }
+        }
+      }
+    },
+    "/collections/{collectionId}/{documentId}": {
+      "get": {
+        "tags": [
+          "documents"
+        ],
+        "summary": "Get an XML/TEI version of a document.",
+        "produces": [
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "collectionId",
+            "in": "path",
+            "description": "ID of the document to return",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "documentId",
+            "in": "path",
+            "description": "ID of the document to return",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "404": {
+            "description": "document not found"
+          }
+        }
+      }
+    },
+    "/entity-types": {
+      "get": {
+        "tags": [
+          "entities"
+        ],
+        "summary": "List all entity-types",
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "description": "The format of the response, defaults to 'json', alternative is 'xml'",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          }
+        }
+      }
+    },
+    "/entities": {
+      "get": {
+        "tags": [
+          "entities"
+        ],
+        "summary": "List all entities located in the app's indices collections.",
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "description": "The format of the response, defaults to 'json', alternative is 'xml'",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          }
+        }
+      }
+    },
+    "/entities/{entityId}": {
+      "get": {
+        "tags": [
+          "entities"
+        ],
+        "summary": "List all documents stored in the passed in collection",
+        "produces": [
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "entityId",
+            "in": "path",
+            "description": "ID of the entity to return",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "404": {
+            "description": "entityId not found"
+          }
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "About the ACDH",
+    "url": "http://acdh.oeaw.ac.at"
+  }
+}

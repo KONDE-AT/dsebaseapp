@@ -1,212 +1,206 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
     <head>
         <title data-template="config:app-title">App Title</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta data-template="config:app-meta"/>
         <link rel="shortcut icon" href="$shared/resources/images/exist_icon_16x16.ico"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"/>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"/>
+        <link rel="stylesheet" type="text/css" href="$app-root/resources/css/fundament.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+        
+        
         <link rel="stylesheet" type="text/css" href="$app-root/resources/css/style.css"/>
-
-
         <!--scroll to top start-->
         <link rel="stylesheet" href="../resources/js/scroll-to-top/css/ap-scroll-top.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"/>
+        <script type="text/javascript" src="$app-root/resources/js/custom.js"/>        
+        <!-- Matomo -->
+        <!--<script type="text/javascript">
+        var _paq = _paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+              var u="//matomo.acdh.oeaw.ac.at/";
+              _paq.push(['setTrackerUrl', u+'piwik.php']);
+              _paq.push(['setSiteId', '101']);
+              var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+              g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>-->
+        <!-- End Matomo Code -->
+        
+        
+    </head>
+    <body role="document" class="contained fixed-nav" id="body">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white box-shadow">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../resources/img/acdh_logo.png" alt="HistoGIS" title="some project logo"/>
+                </a>
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"/>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Home
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="index.html">Home</a>
+                                <a class="dropdown-item" href="show.html?document=about.xml&amp;directory=meta&amp;stylesheet=meta">About this website</a>
+                                <a class="dropdown-item" href="imprint.html">Imprint</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Table of Content
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="toc.html?collection=editions">Collection Editions</a>
+                                <a class="dropdown-item" href="toc.html?collection=indices">Collection Indices</a>
+                                <a class="dropdown-item" href="toc.html?collection=meta">Collection Meta</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Indices
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="persons.html">Persons</a>
+                                <a class="dropdown-item" href="places.html">Places</a>
+                                <a class="dropdown-item" href="orgs.html">Organizations</a>
+                                <a class="dropdown-item" href="bibl.html">Works</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Analyze
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="calendar.html">Calendar</a>
+                                <a class="dropdown-item" href="timeline.html">Timeline</a>
+                                <a class="dropdown-item" href="netvis.html">Entity-Document-Net</a>
+                                <a class="dropdown-item" href="cmfi-netvis.html">CMFI-Net</a>
+                                <a class="dropdown-item" href="cmfi-timeline.html">CMFI-Timeline</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Data endpoints
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="../api/api.html">API-Documentation</a>
+                                <a class="dropdown-item" href="../../../../exist/restxq/dsebaseapp/api/collections">List Collections (in /data)</a>
+                                <a class="dropdown-item" href="../../../../exist/restxq/dsebaseapp/api/collections/editions">List Documents in collection 'editions'</a>
+                                <a class="dropdown-item" href="../../../../exist/restxq/dsebaseapp/api/entities">List all Entities</a>
+                                <a class="dropdown-item" href="../../../../exist/restxq/dsebaseapp/api/entity-types">List all Entity-Types</a>
+                                <a class="dropdown-item" href="../analyze/cmfi2net.xql">Network Data (GEFX)</a>
+                                <a class="dropdown-item" href="../analyze/beacon.xql">GND Beacon</a>
+                                <a class="dropdown-item" href="../analyze/timeline.xql">Timeline</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Autocompletes
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="../ac/entity-ac.xql?query=">Persons</a>
+                                <a class="dropdown-item" href="../ac/entity-ac.xql?entity=place&amp;query=">Places</a>
+                                <a class="dropdown-item" href="../ac/entity-ac.xql?entity=org&amp;query=">Institutions</a>
+                                <a class="dropdown-item" href="../ac/entity-ac.xql?entity=work&amp;query=">Work</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form method="get" action="ft_search.html" class="form-inline my-2 my-lg-0">
+                        <input name="searchexpr" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" pattern=".{3,}" required="" title="3 characters minimum"/>
+                        <button class="btn btn-main btn-outline-primary btn-mg" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+             <div id="content" class="container"/>
+            <div id="loadModal"/>
+            <footer class="main-footer">
+                <div class="container">
+                    <div class="footer-wrapper">
+                        <div class="footer-sep">
+                            <i class="far fa-comment"/> CONTACT
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1 pl-0">
+                                <a href="https://www.oeaw.ac.at/acdh/acdh-home/" target="_blank" rel="noopener" aria-label="ACDH">
+                                    <img src="../resources/img/acdh_logo.png" alt="ACDH" title="Austrian Centre for Digital Humanities"/>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <p>
+                                    ACDH-OeAW
+                                    <br/>
+                                        Austrian Centre for Digital Humanities
+                                        <br/>
+                                            Austrian Academy of Sciences
+                                </p>
+                                <p>
+                                    Sonnenfelsgasse 19,
+                                    <br/>
+                                        1010 Vienna
+                                </p>
+                                <p>
+                                    T: +43 1 51581-2200
+                                    <br/>
+                                        E: <a href="javascript:linkTo_UnCryptMailto('nbjmup;bdeiApfbx/bd/bu');">acdh(at)oeaw.ac.at</a>
+                                </p>
+                            </div>
+                            <div class="col-md-3 ml-auto">
+                                <img src="../resources/img/acdh_logo.png" alt="ProjectLogo" title="Place for Official project logo"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-imprint-bar">
+                    <a href="https://www.oeaw.ac.at/die-oeaw/impressum/">Impressum/Imprint</a>
+                </div>
+            </footer>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"/>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"/>
         <script src="../resources/js/scroll-to-top/js/ap-scroll-top.min.js"/>
         <!--scroll to top end -->
-        <script type="text/javascript" src="$app-root/resources/js/custom.js"/>
         <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
         <script type="text/javascript">
                 window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"index.html","theme":"dark-bottom"};
             </script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"/>
-        <!-- End Cookie Consent plugin -->
-    </head>
-    <body id="body">
-        <header>
-            <nav class="navbar navbar-default" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"/>
-                    <span class="icon-bar"/>
-                    <span class="icon-bar"/>
-                </button>
-            </div>
-            <div class="navbar-collapse collapse" id="navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown" id="about">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="show.html?document=about.xml&amp;directory=meta&amp;stylesheet=meta">About this website</a>
-                            </li>
-                            <li>
-                                <a href="imprint.html">Imprint</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown" id="toc">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Table of Content</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="toc.html?collection=editions">Collection Editions</a>
-                            </li>
-                            <li>
-                                <a href="toc.html?collection=indices">Collection Indices</a>
-                            </li>
-                            <li>
-                                <a href="toc.html?collection=meta">Collection Meta</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Indices</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="persons.html">Persons</a>
-                            </li>
-                            <li>
-                                <a href="places.html">Places</a>
-                            </li>
-                            <li>
-                                <a href="orgs.html">Organizations</a>
-                            </li>
-                            <li>
-                                <a href="bibl.html">Works</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Analyze</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="timeline.html">Timeline</a>
-                            </li>
-                            <li>
-                                <a href="netvis.html">Entity-Document-Net</a>
-                            </li>
-                            <li>
-                                <a href="cmfi-netvis.html">CMFI-Net</a>
-                            </li>
-                            <li>
-                                <a href="cmfi-timeline.html">CMFI-Timeline</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data endpoints</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="../../../../exist/restxq/dsebaseapp/editions/xml">Text as XML</a>
-                            </li>
-                            <li>
-                                <a href="../../../../exist/restxq/dsebaseapp/editions/json">Text as JSON</a>
-                            </li>
-                            <li>
-                                <a href="../../../../exist/restxq/dsebaseapp/dt/editions/json">Datatables API-Endpoint</a>
-                            </li>
-                            <li>
-                                <a href="../analyze/cmfi2net.xql">Network Data (GEFX)</a>
-                            </li>
-                            <li>
-                                <a href="../analyze/beacon.xql">GND Beacon</a>
-                            </li>
-                            <li>
-                                <a href="../analyze/timeline.xql">Timeline</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Autocompletes</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="../ac/entity-ac.xql?query=">Persons</a>
-                            </li>
-                            <li>
-                                <a href="../ac/entity-ac.xql?entity=place&amp;query=">Places</a>
-                            </li>
-                            <li>
-                                <a href="../ac/entity-ac.xql?entity=org&amp;query=">Institutions</a>
-                            </li>
-                            <li>
-                                <a href="../ac/entity-ac.xql?entity=work&amp;query=">Work</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="pull-right">
-                    <form method="get" action="ft_search.html" class="navbar-form" id="pageform">
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input type="text" class="form-control" name="searchexpr" placeholder="Volltextsuche" pattern=".{3,}" required="" title="3 characters minimum"/>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Search</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </nav>
-        </header>
-        <section class="main-content">
-            <div id="content" class="container"/>
-            <div id="loadModal"/>
-        </section>
-        <footer>
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <a href="https://www.oeaw.ac.at/acdh/" class="navlink" target="_blank">
-                            <img src="../resources/img/acdh_logo_02.png" alt="ACDH" width="100"/>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="https://github.com/KONDE-AT/dsebaseapp" class="navlink" target="_blank">
-                            <img src="../resources/img/GitHub-Mark-Light-64px.png" alt="github" width="20%"/>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="http://exist-db.org/" class="navlink" target="_blank">
-                            <img src="../resources/img/existdb.png" alt="eXist-db" width="50%"/>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <script>/*script for loading the content of the modal */
-                $(document).ready(function(){
+        <script>
+            /*script for loading the content of the modal */
+            $(document).ready(function(){
                     var trigger = $('a[data-type]');
                     $(trigger).click(function(){
                         var dataType = $( this ).attr('data-type');
                         var dataKey = $( this ).attr('data-key');
                         var xsl = dataType.replace(".xml", "");
                         var baseUrl = "showNoTemplate.html?directory=indices&amp;document="
-                        var url = baseUrl+dataType+"&amp;stylesheet=node2html&amp;entiyID="+dataKey;
+                        var url = baseUrl+dataType+"&amp;entiyID="+dataKey;
                         $('#loadModal').load(url, function(){
                             $('#myModal').modal('show');
                         });
                     });
-                });</script>
-                <script type="text/javascript">
-                $(window).on('load', function(){
-                    $('#myModal').modal('show');
                 });
         </script>
-        <!-- scroll-up-bottom -->
-            <script type="text/javascript">
-                   // http://www.jqueryscript.net/animation/jQuery-Plugin-For-Fixed-Positioned-Scroll-To-Top-Button-ap-scroll-top.html
-                   // Setup plugin with default settings
-                   $.apScrollTop({
-                       'onInit': function(evt) {
-                              // console.log('apScrollTop: init');
-                           }
-                       });
-            </script>
-        <!-- scroll-up-bottom end -->
-        </footer>
+        <script type="text/javascript">
+            $(window).on('load', function(){
+                $('#myModal').modal('show');
+            });
+        </script>
+        <script type="text/javascript">
+            // http://www.jqueryscript.net/animation/jQuery-Plugin-For-Fixed-Positioned-Scroll-To-Top-Button-ap-scroll-top.html
+            // Setup plugin with default settings
+            $.apScrollTop({
+                'onInit': function(evt) {}
+            });
+        </script>
     </body>
 </html>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="https://id.acdh.oeaw.ac.at/dsebaseapp/editions" xml:id="caroline-an-caroline-thun-o-d-a3-xxi-d190.xml" prev="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/blum-an-rauscher-1854-08-23-a3-xxi-d277.xml" next="https://id.acdh.oeaw.ac.at/dsebaseapp/editions/grobid-export.xml">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -151,5 +151,123 @@
                 </div>
             </div>
         </body>
+    
+    <back>
+            <listPerson>
+                <person xml:id="langenau-karoline">
+                        <persName>
+                            <surname>Langenau</surname>
+                            <forename>Karoline</forename>
+                        </persName>
+                        <note>
+                            <p>*1813</p>
+                            <p>Schwester von Ferdinand von Langenau, Schwägerin von Karl Mertens</p>
+                            <p>no gnd provided</p>
+                            <p>k_A</p>
+                        </note>
+                    </person>
+                <person xml:id="thun-hohenstein-caroline">
+                        <persName>
+                            <surname>Thun-Hohenstein</surname>
+                            <forename>Caroline</forename>
+                        </persName>
+                        <note>
+                            <p>1822–1898 Bad Ischl</p>
+                            <p>geb. Clam-Martinic, ab 1847 Gattin von Leo Thun</p>
+                            <p>http://d-nb.info/gnd/118757393</p>
+                            <p>k_A</p>
+                        </note>
+                    <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URL">http://d-nb.info/gnd/118757393</tei:idno>
+                    </person>
+                <person xml:id="thun-hohenstein-leo">
+                        <persName>
+                            <surname>Thun-Hohenstein</surname>
+                            <forename>Leo (Leopold)</forename>
+                        </persName>
+                        <note>
+                            <p>Tetschen 1811–1888 Wien</p>
+                            <p>1848 Gubernialpräsident von Böhmen, 1849–1860 Minister für Kultus und Unterricht, ab 1861 Mitglied des Herrenhauses, Herausgeber der Zeitung "Das Vaterland"</p>
+                            <p>http://d-nb.info/gnd/118757393</p>
+                            <p>k_A</p>
+                        </note>
+                    <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URL">http://d-nb.info/gnd/118757393</tei:idno>
+                    </person>
+                <person xml:id="mertens-karl">
+                        <persName>
+                            <surname>Mertens</surname>
+                            <forename>Karl</forename>
+                        </persName>
+                        <note>
+                            <p>Herzogenburg 1803–1874 Wien</p>
+                            <p>FZM, 1848 Erster Generaladjutant des Fürsten Windischgrätz, 1849 Sektionschef im Kriegsministerium und Stellvertreter des Kriegsministers, ab 1854 Militär- und Zivilgouverneur von Triest, Statthalter im Küstenland</p>
+                            <p>http://d-nb.info/gnd/116905611</p>
+                            <p>k_A</p>
+                        </note>
+                    <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URL">http://d-nb.info/gnd/116905611</tei:idno>
+                    </person>
+                <person xml:id="mertens-karl-sohn">
+                        <persName>
+                            <surname>Mertens</surname>
+                            <forename>Karl</forename>
+                        </persName>
+                        <note>
+                            <p>*1842</p>
+                            <p>Militär in bayerischem Dienst, Sohn von Karl Mertens</p>
+                            <p>http://d-nb.info/gnd/116905611</p>
+                            <p>k_A</p>
+                        </note>
+                    <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URL">http://d-nb.info/gnd/116905611</tei:idno>
+                    </person>
+                <person xml:id="ahn-karl">
+                        <persName>
+                            <surname>Ahn</surname>
+                            <forename>Karl</forename>
+                        </persName>
+                        <note>
+                            <p>*Seligenstadt 1826</p>
+                            <p>ab 1852 Lehrer am Gymnasium in Mainz, 1852–1857 Erzieher beim österr. FZM Baron Mertens, 1857 Lehrer am Gymnasium in Cilli, 1858–1861 Lehrer am Gymnasium in Budapest</p>
+                            <p>no gnd provided</p>
+                            <p>k_A</p>
+                        </note>
+                    </person>
+                <person xml:id="mertens-zoe">
+                        <persName>
+                            <surname>Mertens</surname>
+                            <forename>Zoe</forename>
+                        </persName>
+                        <note>
+                            <p>*1844</p>
+                            <p>Tochter von Karl Mertens</p>
+                            <p>no gnd provided</p>
+                            <p>k_A</p>
+                        </note>
+                    </person>
+            </listPerson>
+            <listPlace>
+                <place xml:id="place_3496da6c1db0a5223edb1fb4c415a154">
+                        <placeName>Mainz</placeName>
+                        <location>
+                            <geo decls="#LatLng">49.98419 8.2791</geo>
+                        </location>
+                        <idno>http://sws.geonames.org/2874225/</idno>
+                    </place>
+                <place xml:id="place_d4279ac9f79e45b961a6fb2c80c169be">
+                        <placeName>Seligenstadt</placeName>
+                        <location>
+                            <geo decls="#LatLng">50.0432 8.97394</geo>
+                        </location>
+                        <idno>http://sws.geonames.org/2833242/</idno>
+                    </place>
+                <place xml:id="place_d54f6cc2237a0ee51accd7a92bf76db1">
+                        <placeName>Giessen</placeName>
+                        <placeName type="pref">Gießen</placeName>
+                        <placeName type="alt">Gießen</placeName>
+                        <location>
+                            <geo decls="#LatLng">50.58727 8.67554</geo>
+                        </location>
+                        <idno>http://sws.geonames.org/2920512/</idno>
+                    </place>
+            </listPlace>
+        </back>
     </text>
 </TEI>

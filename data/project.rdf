@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:acdhid="https://id.acdh.oeaw.ac.at/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:acdh="https://vocabs.acdh.oeaw.ac.at/schema#" xml:lang="en">
+    
+    <!--    see https://arche.acdh.oeaw.ac.at/browser/formats-filenames-and-metadata#metadata -->
+
+    <acdh:Project rdf:about="https://id.acdh.oeaw.ac.at/dsebaseapp/project">
+        <acdh:hasTitle>dsebaseapp</acdh:hasTitle>
+        <acdh:hasDescription>dsebaseapp</acdh:hasDescription>
+        <acdh:hasStartDate>2010-07-01</acdh:hasStartDate>
+        <acdh:hasEndDate>2015-06-30</acdh:hasEndDate>
+        <acdh:hasPrincipalInvestigator>
+            <acdh:Person rdf:about="http://d-nb.info/gnd/1043833846">
+                <acdh:hasLastName>Andorfer</acdh:hasLastName>
+                <acdh:hasFirstName>Peter</acdh:hasFirstName>
+            </acdh:Person>
+        </acdh:hasPrincipalInvestigator>
+        <acdh:hasContributor>
+            <acdh:Person rdf:about="http://d-nb.info/gnd/1043833846"/>
+        </acdh:hasContributor>
+        <acdh:hasFunder>
+            <acdh:Organisation rdf:about="http://d-nb.info/gnd/108889819X"/>
+        </acdh:hasFunder>
+    </acdh:Project>
+    
+<!--    top collection -->
+    <acdh:Collection rdf:about="https://id.acdh.oeaw.ac.at/dsebaseapp">
+        <acdh:hasTitle>dsebaseapp collection</acdh:hasTitle>
+        <acdh:hasDescription>The dsebaseapp collection ...</acdh:hasDescription>
+        <acdh:hasRelatedProject rdf:resource="https://id.acdh.oeaw.ac.at/dsebaseapp/project"/>
+        <acdh:hasContact>
+            <acdh:Person rdf:about="http://d-nb.info/gnd/1043833846"/>
+        </acdh:hasContact>
+        <acdh:hasCreator>
+            <acdh:Person rdf:about="http://d-nb.info/gnd/1043833846"/>
+        </acdh:hasCreator>
+        <acdh:hasMetadataCreator>
+            <acdh:Person rdf:about="http://d-nb.info/gnd/1043833846"/>
+        </acdh:hasMetadataCreator>
+    </acdh:Collection>
+    
+    <acdh:Collection rdf:about="https://id.acdh.oeaw.ac.at/dsebaseapp/meta">
+        <acdh:hasTitle>Meta</acdh:hasTitle>
+        <acdh:hasDescription>Contains information about dsebaseapp</acdh:hasDescription>
+        <acdh:isPartOf rdf:resource="https://id.acdh.oeaw.ac.at/dsebaseapp"/>
+    </acdh:Collection>
+    <acdh:Collection rdf:about="https://id.acdh.oeaw.ac.at/dsebaseapp/editions">
+        <acdh:hasTitle>Editions</acdh:hasTitle>
+        <acdh:hasDescription>Collection of XML/TEI documents gathered in dsebaseapp</acdh:hasDescription>
+        <acdh:isPartOf rdf:resource="https://id.acdh.oeaw.ac.at/dsebaseapp"/>
+    </acdh:Collection>
+    <acdh:Collection rdf:about="https://id.acdh.oeaw.ac.at/dsebaseapp/indices">
+        <acdh:hasTitle>Indices</acdh:hasTitle>
+        <acdh:hasDescription>Collection indices/register documents describing entities mentioned in dsebaseapp</acdh:hasDescription>
+        <acdh:isPartOf rdf:resource="https://id.acdh.oeaw.ac.at/dsebaseapp"/>
+    </acdh:Collection>
+    
+</rdf:RDF>

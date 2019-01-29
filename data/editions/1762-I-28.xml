@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/" xml:id="1762-I-28.xml" next="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/1766-VI-30.xml">
     <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -538,5 +538,7 @@
                         Lorenzen</rs>.</p>
             </div>
         </body>
+    
+    <back/>
     </text>
 </TEI>
