@@ -290,7 +290,7 @@ declare function app:tocHeader($node as node(), $model as map(*)) {
     let $infoDoc := doc($app:meta||"/"||$colName||".xml")
     let $colLabel := $infoDoc//tei:title[1]/text()
     let $infoUrl := "show.html?document="||$colName||".xml&amp;directory=meta"
-    let $apiUrl := "../../../../exist/restxq/desbaseapp/api/collections/"||$colName
+    let $apiUrl := "../../../../exist/restxq/dsebaseapp/api/collections/"||$colName
     return
         <div class="card-header" style="text-align:center;">
             <h1>{$docs} Dokumente in {$colLabel}</h1>
@@ -299,7 +299,7 @@ declare function app:tocHeader($node as node(), $model as map(*)) {
                     <i class="fas fa-info" title="Info zum Personenregister" data-toggle="modal" data-target="#exampleModal"/>
                 </a>
                 |
-                <a href="../../../../exist/restxq/desbaseapp/api/collections/editions">
+                <a href="{$apiUrl}">
                     <i class="fas fa-download" title="Liste der TEI Dokumente"/>
                 </a>
             </h3>
@@ -307,7 +307,7 @@ declare function app:tocHeader($node as node(), $model as map(*)) {
 };
 
 (:~
- : returns context information about the current collection
+ : returns context information about the current collection displayd in a bootstrap modal
  :)
 declare function app:tocModal($node as node(), $model as map(*)) {
 
