@@ -65,9 +65,9 @@
             <xsl:attribute name="title">
                 <xsl:value-of select="normalize-space(.)"/>
             </xsl:attribute>
-            <span style="font-size:7pt;vertical-align:super;">
-                <xsl:number level="any" format="1" count="tei:note"/>
-            </span>
+            <sup>
+                <xsl:number level="any" format="1" count="tei:note[./tei:p]"/>
+            </sup>
         </xsl:element>
     </xsl:template>
 
@@ -277,6 +277,11 @@
     </xsl:template><!-- Tabellen -->
     <xsl:template match="tei:table">
         <xsl:element name="table">
+            <xsl:if test="@xml:id">
+                <xsl:attribute name="id">
+                    <xsl:value-of select="data(@xml:id)"/>
+                </xsl:attribute>
+            </xsl:if>
             <xsl:attribute name="class">
                 <xsl:text>table table-bordered table-striped table-condensed table-hover</xsl:text>
             </xsl:attribute>
@@ -431,6 +436,18 @@
         </xsl:for-each>
     </xsl:template>
     
+    <xsl:template match="tei:list">
+        <ul>
+            <xsl:apply-templates/>
+        </ul>
+    </xsl:template>
+    
+    <xsl:template match="tei:item">
+        <li>
+            <xsl:apply-templates/>
+        </li>
+    </xsl:template>
+    
     <xsl:template match="tei:listBibl">
         <xsl:for-each select=".//tei:bibl">
             <li>
@@ -554,18 +571,6 @@
         <code>
             <xsl:apply-templates/>
         </code>
-    </xsl:template>
-    
-    <xsl:template match="tei:list">
-        <ul>
-            <xsl:apply-templates/>
-        </ul>
-    </xsl:template>
-    
-    <xsl:template match="tei:item">
-        <li>
-            <xsl:apply-templates/>
-        </li>
     </xsl:template>
  
 </xsl:stylesheet>

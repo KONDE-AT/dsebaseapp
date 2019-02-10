@@ -1,6 +1,8 @@
 xquery version "3.1";
 module namespace app="http://www.digital-archiv.at/ns/dsebaseapp/templates";
 declare namespace tei="http://www.tei-c.org/ns/1.0";
+declare namespace pkg="http://expath.org/ns/pkg";
+declare namespace repo="http://exist-db.org/xquery/repo";
 declare namespace functx = 'http://www.functx.com';
 import module namespace templates="http://exist-db.org/xquery/templates" ;
 import module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/config" at "config.xqm";
@@ -15,6 +17,10 @@ declare variable $app:personIndex := $config:app-root||'/data/indices/listperson
 declare variable $app:orgIndex := $config:app-root||'/data/indices/listorg.xml';
 declare variable $app:workIndex := $config:app-root||'/data/indices/listwork.xml';
 declare variable $app:defaultXsl := doc($config:app-root||'/resources/xslt/xmlToHtml.xsl');
+declare variable $app:projectName := doc(concat($config:app-root, "/expath-pkg.xml"))//pkg:title//text();
+declare variable $app:authors := normalize-space(string-join(doc(concat($config:app-root, "/repo.xml"))//repo:author//text(), ', '));
+declare variable $app:description := doc(concat($config:app-root, "/repo.xml"))//repo:description/text();
+
 
 declare function functx:contains-case-insensitive
   ( $arg as xs:string? ,
@@ -339,6 +345,8 @@ let $params :=
     <param name="amount" value="{$amount}"/>
     <param name="currentIx" value="{$currentIx}"/>
     <param name="progress" value="{$progress}"/>
+    <param name="projectName" value="{$app:projectName}"/>
+    <param name="authors" value="{$app:authors}"/>
     
    {
         for $p in request:get-parameter-names()
