@@ -43,7 +43,6 @@
         $.getJSON( "../analyze/docname-by-index.xql?index="+ value+"&amp;directory="+ defaultdir(directory),  function( data ) {
         console.log(data);
         var linkToDoc = data.url;
-        console.log(linkToDoc)
         var out = $('#output'); 
         out.text( "go to entry: "+ data.title );
         out.attr("href", linkToDoc);
