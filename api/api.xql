@@ -370,11 +370,14 @@ declare
     %rest:query-param("format", "{$format}", 'xml')
 function api:api-show-doc($collection as xs:string, $id as xs:string, $format as xs:string*) {
     let $result := doc($config:app-root||'/data/'||$collection||'/'||$id)
+    let $content := switch($format)
+        case ('text') return $result//tei:body
+        default return $result
     let $serialization := switch($format)
         case('xml') return $api:XML
         default return $api:TEXT
     return 
-       ($serialization, $result//tei:body)
+       ($serialization, $content)
 };
 
 
