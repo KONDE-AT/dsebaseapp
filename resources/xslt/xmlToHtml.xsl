@@ -197,9 +197,9 @@
                                         <xsl:text>#fna_</xsl:text>
                                         <xsl:number level="any" format="1" count="tei:note"/>
                                     </xsl:attribute>
-                                    <span style="font-size:7pt;vertical-align:super;">
+                                    <sup>
                                         <xsl:number level="any" format="1" count="tei:note"/>
-                                    </span>
+                                    </sup>
                                 </a>
                             </xsl:element>
                             <xsl:apply-templates/>
