@@ -336,7 +336,7 @@
         </xsl:element>
     </xsl:template><!-- Durchstreichungen -->
     <xsl:template match="tei:del">
-        <xsl:element name="strike">
+        <xsl:element name="del">
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
