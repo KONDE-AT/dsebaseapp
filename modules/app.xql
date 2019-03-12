@@ -353,7 +353,7 @@ declare function app:tocModal($node as node(), $model as map(*)) {
 };
 
 (:~
- : creates a basic table of content derived from the documents stored in '/data/editions'
+ : creates a basic table of contents derived from the documents stored in '/data/editions'
  :)
 declare function app:toc($node as node(), $model as map(*)) {
 

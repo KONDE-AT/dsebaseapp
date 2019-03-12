@@ -151,7 +151,7 @@
             <div class="card-body">
                 <xsl:if test="//tei:div/tei:head">
                     <h3 id="clickme">
-                        <abbr title="Click to display Table of Content">[Table of Content]</abbr>
+                        <abbr title="Click to display Table of Contents">[Table of Contents]</abbr>
                     </h3>
                     <div id="headings" class="readmore">
                         <ul>
