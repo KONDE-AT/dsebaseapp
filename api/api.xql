@@ -6,10 +6,14 @@ xquery version "3.1";
 :)
 
 module namespace api="http://www.digital-archiv.at/ns/dsebaseapp/api";
+
 declare namespace rest = "http://exquery.org/ns/restxq";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
+
 import module namespace functx = "http://www.functx.com";
 import module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/config" at "../modules/config.xqm";
+import module namespace kwic = "http://exist-db.org/xquery/kwic" at "resource:org/exist/xquery/lib/kwic.xql";
+
 declare namespace output = "http://www.w3.org/2010/xslt-xquery-serialization";
 declare namespace http = "http://expath.org/ns/http-client";
 
@@ -463,3 +467,47 @@ function api:api-show-ent-type-doc($id as xs:string) {
        ($api:XML, $result)
 };
 
+
+(:~
+ : API-Endpoint to perform a fulltext search over passed in collection
+ :
+ : @param $collection The name of the collection which documents should be searched
+ : @param $q The search string.
+ : @return A JSON with key amount holding the number of hits (documents) and an array of 'hit' objects.
+:)
+declare 
+    %rest:GET
+    %rest:path("/dsebaseapp/api/kwic/collections/{$collection}")
+    %rest:query-param("q", "{$q}", '')
+function api:api-kwic($collection as xs:string, $q as xs:string*) {
+    if ($q != "") then
+        let $matches := collection($config:app-root||'/data/'||$collection||'/')//*[.//tei:p[ft:query(.,$q)]]
+        let $numMatches := count($matches)
+        let $kwics := 
+         for $hit in $matches
+            let $score as xs:float := ft:score($hit)
+            order by $score descending
+            return
+            <hits>
+                <score>{$score}</score>
+                <hl>{kwic:summarize($hit, <config width="40"/>)}</hl>
+                <id>{util:document-name($hit)}</id>
+                <collection>{$collection}</collection>
+            </hits>
+        let $result := 
+            <result>
+                <amount>{$numMatches}</amount>
+                {$kwics}
+            </result>
+        
+        return ($api:JSON, $result)
+    
+    else
+        let $result := <hits>
+                <score>0</score>
+                <hl></hl>
+                <id></id>
+            </hits>
+        return
+            ($api:JSON, $result)
+};
