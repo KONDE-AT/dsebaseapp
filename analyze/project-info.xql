@@ -6,8 +6,8 @@ import module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/confi
 declare option exist:serialize "method=json media-type=text/javascript content-type=application/json";
 
 
-let $purpose_de := "Ziel von"|| $app:projectName|| "ist die Publikation von Forschungsdaten."
-let $purpose_en := "The purpose of" || $app:projectName ||" is the publication of research data."
+let $purpose_de := "Das Projekt "|| $app:projectName|| " widmet sich "|| $app:purpose_de
+let $purpose_en := "The project " || $app:projectName ||" is dedicated to " || $app:purpose_en
 let $map := map{
     "title": $app:projectName,
     "subtitle": "Digital Scholarly Editions Base Application",

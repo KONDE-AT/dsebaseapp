@@ -17,6 +17,8 @@
                 <availability status="unknown">
                     <licence/>
                 </availability>
+            <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">https://id.acdh.oeaw.ac.at/dsebaseapp/v1/editions/grobid-export.xml</tei:idno>
+                <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">http://hdl.handle.net/21.11115/0000-000B-D96E-6</tei:idno>
             </publicationStmt>
             <sourceDesc>
                 <biblStruct>

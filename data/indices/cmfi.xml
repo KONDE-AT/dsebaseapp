@@ -15,6 +15,7 @@
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY 4.0</licence>
                 </availability>
+            <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">http://hdl.handle.net/21.11115/0000-000B-D97F-3</tei:idno>
             </publicationStmt>
             <sourceDesc>
                 <bibl type="online">Die Korrespondenz von Leo von Thun-Hohenstein<ref target="https://thun-korrespondenz.acdh.oeaw.ac.at">https://thun-korrespondenz.acdh.oeaw.ac.at</ref>

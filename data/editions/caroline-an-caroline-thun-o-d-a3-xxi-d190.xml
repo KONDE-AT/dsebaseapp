@@ -11,6 +11,8 @@
             </titleStmt>
             <publicationStmt>
                 <p/>
+            <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">https://id.acdh.oeaw.ac.at/dsebaseapp/v1/editions/caroline-an-caroline-thun-o-d-a3-xxi-d190.xml</tei:idno>
+                <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">http://hdl.handle.net/21.11115/0000-000B-D970-2</tei:idno>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>

@@ -22,7 +22,8 @@ declare variable $app:defaultXsl := doc($config:app-root||'/resources/xslt/xmlTo
 declare variable $app:projectName := doc(concat($config:app-root, "/expath-pkg.xml"))//pkg:title//text();
 declare variable $app:authors := normalize-space(string-join(doc(concat($config:app-root, "/repo.xml"))//repo:author//text(), ', '));
 declare variable $app:description := doc(concat($config:app-root, "/repo.xml"))//repo:description/text();
-
+declare variable $app:purpose_de := "der Bereitstellung von Forschungsdaten";
+declare variable $app:purpose_en := "is the publication of research data.";
 
 declare function functx:contains-case-insensitive
   ( $arg as xs:string? ,

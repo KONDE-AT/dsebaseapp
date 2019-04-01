@@ -12,6 +12,8 @@
             </titleStmt>
             <publicationStmt>
                 <p/>
+            <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">https://id.acdh.oeaw.ac.at/dsebaseapp/v1/editions/bippart-an-thun-1857-10-18-a3-xxi-d432.xml</tei:idno>
+                <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">http://hdl.handle.net/21.11115/0000-000B-D973-F</tei:idno>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>

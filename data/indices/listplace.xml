@@ -20,6 +20,8 @@
             </titleStmt>
             <publicationStmt>
                 <p/>
+            <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">https://id.acdh.oeaw.ac.at/dsebaseapp/v1/indices/listplace.xml</tei:idno>
+                <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">http://hdl.handle.net/21.11115/0000-000B-D97C-6</tei:idno>
             </publicationStmt>
             <sourceDesc>
                 <p>Ortsverzeichnis der Thun-Korrespondenz</p>

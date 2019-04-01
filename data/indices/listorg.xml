@@ -9,6 +9,8 @@
             </titleStmt>
             <publicationStmt>
                 <p>Publication Information</p>
+            <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">https://id.acdh.oeaw.ac.at/dsebaseapp/v1/indices/listorg.xml</tei:idno>
+                <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">http://hdl.handle.net/21.11115/0000-000B-D97E-4</tei:idno>
             </publicationStmt>
             <sourceDesc>
                 <p>Information about the source</p>

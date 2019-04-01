@@ -21,36 +21,35 @@ let $root := if ($versionNo != "")
     else
         $archeBaseUrl
 let $resolver := "http://hdl.handle.net/21.11115/"
-let $auth := request:get-parameter('auth', 'entersomethingvalid')
+let $auth := request:get-parameter('auth', 'YOURUSERNAME:YOURPASSWORD')
 
 for $x in xmldb:get-child-collections($config:data-root)
     for $doc in xmldb:get-child-resources($config:data-root||'/'||$x)
         let $filename := string-join(($root, $x, $doc), '/')    
         let $url := $filename
-        return $url
-(:        let $data := '[{"type":"URL","parsed_data":"' || $url||'"}]':)
-(:        let $node := try {:)
-(:                        doc(string-join(($config:data-root, $x, $doc), '/'))//tei:publicationStmt[not(.//tei:idno)]:)
-(:                    } catch * {:)
-(:                        false():)
-(:                    }:)
-(:        return :)
-(:            if ($node):)
-(:                then:)
-(:                    let $auth :="Basic "||util:string-to-binary($auth):)
-(:                    let $headers := <headers>:)
-(:                                            <header name="Authorization" value="{$auth}"/>:)
-(:                                            <header name="Content-Type" value="application/json"/>:)
-(:                                            <header name="Accept" value="application/xhtml+xml"/>:)
-(:                                        </headers>:)
-(:                    let $response := httpclient:post(xs:anyURI("http://pid.gwdg.de/handles/21.11115"), $data, true(),$headers):)
-(:                    let $handle := if ($response/@statusCode="201") :)
-(:                        then:)
-(:                            $resolver || $response//xhtml:dl[@class='rackful-object'][xhtml:dt='location']/xhtml:dd/xhtml:a/text():)
-(:                        else:)
-(:                            $url:)
-(:                    let $idno := <tei:idno type="URI">{$handle}</tei:idno>:)
-(:                    let $updated := update insert $idno into $node:)
-(:                        return $node:)
-(:            else :)
-(:                $node:)
+        let $data := '[{"type":"URL","parsed_data":"' || $url||'"}]'
+        let $node := try {
+                        doc(string-join(($config:data-root, $x, $doc), '/'))//tei:publicationStmt
+                    } catch * {
+                        false()
+                    }
+        return 
+            if ($node)
+                then
+                    let $auth :="Basic "||util:string-to-binary($auth)
+                    let $headers := <headers>
+                                            <header name="Authorization" value="{$auth}"/>
+                                            <header name="Content-Type" value="application/json"/>
+                                            <header name="Accept" value="application/xhtml+xml"/>
+                                        </headers>
+                    let $response := httpclient:post(xs:anyURI("http://pid.gwdg.de/handles/21.11115"), $data, true(),$headers)
+                    let $handle := if ($response/@statusCode="201") 
+                        then
+                            $resolver || $response//xhtml:dl[@class='rackful-object'][xhtml:dt='location']/xhtml:dd/xhtml:a/text()
+                        else
+                            $url
+                    let $idno := <tei:idno type="URI">{$handle}</tei:idno>
+                    let $updated := update insert $idno into $node
+                        return $node
+            else 
+                $node
