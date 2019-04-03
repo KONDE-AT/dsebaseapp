@@ -1,13 +1,17 @@
 xquery version "3.1";
 module namespace app="http://www.digital-archiv.at/ns/dsebaseapp/templates";
 declare namespace tei="http://www.tei-c.org/ns/1.0";
+declare namespace pkg="http://expath.org/ns/pkg";
+declare namespace repo="http://exist-db.org/xquery/repo";
 declare namespace functx = 'http://www.functx.com';
 import module namespace templates="http://exist-db.org/xquery/templates" ;
 import module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/config" at "config.xqm";
 import module namespace kwic = "http://exist-db.org/xquery/kwic" at "resource:org/exist/xquery/lib/kwic.xql";
 
 
+declare variable $app:xslCollection := $config:app-root||'/resources/xslt';
 declare variable $app:data := $config:app-root||'/data';
+declare variable $app:meta := $config:app-root||'/data/meta';
 declare variable $app:editions := $config:app-root||'/data/editions';
 declare variable $app:indices := $config:app-root||'/data/indices';
 declare variable $app:placeIndex := $config:app-root||'/data/indices/listplace.xml';
@@ -15,6 +19,11 @@ declare variable $app:personIndex := $config:app-root||'/data/indices/listperson
 declare variable $app:orgIndex := $config:app-root||'/data/indices/listorg.xml';
 declare variable $app:workIndex := $config:app-root||'/data/indices/listwork.xml';
 declare variable $app:defaultXsl := doc($config:app-root||'/resources/xslt/xmlToHtml.xsl');
+declare variable $app:projectName := doc(concat($config:app-root, "/expath-pkg.xml"))//pkg:title//text();
+declare variable $app:authors := normalize-space(string-join(doc(concat($config:app-root, "/repo.xml"))//repo:author//text(), ', '));
+declare variable $app:description := doc(concat($config:app-root, "/repo.xml"))//repo:description/text();
+declare variable $app:purpose_de := "der Bereitstellung von Forschungsdaten";
+declare variable $app:purpose_en := "is the publication of research data.";
 
 declare function functx:contains-case-insensitive
   ( $arg as xs:string? ,
@@ -191,7 +200,7 @@ let $href := concat('show.html','?document=', app:getDocName($node), '&amp;direc
     <tr>
         <td>{$score}</td>
         <td class="KWIC">{kwic:summarize($hit, <config width="40" link="{$href}" />)}</td>
-        <td>{app:getDocName($hit)}</td>
+        <td align="center"><a href="{app:hrefToDoc($hit)}">{app:getDocName($hit)}</a></td>
     </tr>
  else
     <div>Nothing to search for</div>
@@ -267,9 +276,85 @@ declare function app:listPlace($node as node(), $model as map(*)) {
         </tr>
 };
 
+(:~
+ : returns header information about the current collection
+ :)
+declare function app:tocHeader($node as node(), $model as map(*)) {
+
+    let $collection := request:get-parameter("collection", "")
+    let $colName := if ($collection)
+        then
+            $collection
+        else
+            "editions"
+    let $docs := count(collection(concat($config:app-root, '/data/', $colName, '/'))//tei:TEI)
+    let $infoDoc := doc($app:meta||"/"||$colName||".xml")
+    let $colLabel := $infoDoc//tei:title[1]/text()
+    let $infoUrl := "show.html?document="||$colName||".xml&amp;directory=meta"
+    let $apiUrl := "../../../../exist/restxq/dsebaseapp/api/collections/"||$colName
+    return
+        <div class="card-header" style="text-align:center;">
+            <h1>{$docs} Dokumente in {$colLabel}</h1>
+            <h3>
+                <a>
+                    <i class="fas fa-info" title="Info zum Personenregister" data-toggle="modal" data-target="#exampleModal"/>
+                </a>
+                |
+                <a href="{$apiUrl}">
+                    <i class="fas fa-download" title="Liste der TEI Dokumente"/>
+                </a>
+            </h3>
+        </div>
+};
 
 (:~
- : creates a basic table of content derived from the documents stored in '/data/editions'
+ : returns context information about the current collection displayd in a bootstrap modal
+ :)
+declare function app:tocModal($node as node(), $model as map(*)) {
+
+    let $collection := request:get-parameter("collection", "")
+    let $colName := if ($collection)
+        then
+            $collection
+        else
+            "editions"
+    let $infoDoc := doc($app:meta||"/"||$colName||".xml")
+    let $colLabel := $infoDoc//tei:title[1]/text()
+   let $params :=
+        <parameters>
+            <param name="app-name" value="{$config:app-name}"/>
+            <param name="collection-name" value="{$colName}"/>
+            <param name="projectName" value="{$app:projectName}"/>
+            <param name="authors" value="{$app:authors}"/>
+           {
+                for $p in request:get-parameter-names()
+                    let $val := request:get-parameter($p,())
+                        return
+                           <param name="{$p}"  value="{$val}"/>
+           }
+        </parameters>
+    let $xsl := doc($app:xslCollection||"/modals.xsl")
+    let $modalBody := transform:transform($infoDoc, $xsl, $params)
+    return
+        <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">{$colLabel}</h5>
+                </div>
+                <div class="modal-body">
+                   {$modalBody}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+};
+
+(:~
+ : creates a basic table of contents derived from the documents stored in '/data/editions'
  :)
 declare function app:toc($node as node(), $model as map(*)) {
 
@@ -339,6 +424,8 @@ let $params :=
     <param name="amount" value="{$amount}"/>
     <param name="currentIx" value="{$currentIx}"/>
     <param name="progress" value="{$progress}"/>
+    <param name="projectName" value="{$app:projectName}"/>
+    <param name="authors" value="{$app:authors}"/>
     
    {
         for $p in request:get-parameter-names()

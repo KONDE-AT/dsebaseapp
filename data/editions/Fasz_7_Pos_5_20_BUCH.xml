@@ -37,6 +37,7 @@
                 </availability>
                 <date when-iso="2015">2015</date>
             <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">http://hdl.handle.net/11022/0000-0007-C250-3</tei:idno>
+            <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">http://hdl.handle.net/21.11115/0000-000B-D96F-5</tei:idno>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>

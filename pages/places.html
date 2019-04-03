@@ -1,36 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div data-template="templates:surround" data-template-with="templates/datatable.html" data-template-at="datatable">
-    <div class="card">
-        <div class="card-header" style="text-align:center;">
-            <h1>Ortsregister</h1>
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header" style="text-align:center;">
+                <h1>Ortsregister</h1>
+                <h3>
+                    <a>
+                        <i class="fas fa-info" title="Info zum Ortsregister" data-toggle="modal" data-target="#exampleModal"/>
+                    </a>
+                    |
+                    <a href="../../../../exist/restxq/dsebaseapp/api/collections/indices/listplace.xml">
+                        <i class="fas fa-download" title="show TEI source"/>
+                    </a>
+                </h3>
+            </div>
+            <div class="card-body">
+                <div id="map"/>     
+                <div>
+                    <table id="myTable" class="table table-striped table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th class="header"> Ortsname (normalisiert) </th>
+                                <th>Alternative Schreibweisen</th>
+                                <th>Normdata</th>
+                                <th>Lat</th>
+                                <th>Lng</th>
+                            </tr>
+                        </thead>
+                        <tfoot style="display:none">
+                            <tr>
+                                <th class="header"> Ortsname (normalisiert) </th>
+                                <th>Alternative Schreibweisen</th>
+                                <th>Normdata</th>
+                                <th>Lat</th>
+                                <th>Lng</th>
+                            </tr>
+                        </tfoot>
+                        <tbody id="myTableBody" style="display:none">
+                            <tr data-template="app:listPlace"/>
+                        </tbody>
+                    </table>
+                </div>       
+            </div>
         </div>
-        <div class="card-body">
-            <div id="map"/>     
-            <div>
-                <table id="myTable" class="table table-striped table-condensed table-hover">
-                    <thead>
-                        <tr>
-                            <th class="header"> Ortsname (normalisiert) </th>
-                            <th>Alternative Schreibweisen</th>
-                            <th>Normdata</th>
-                            <th>Lat</th>
-                            <th>Lng</th>
-                        </tr>
-                    </thead>
-                    <tfoot style="display:none">
-                        <tr>
-                            <th class="header"> Ortsname (normalisiert) </th>
-                            <th>Alternative Schreibweisen</th>
-                            <th>Normdata</th>
-                            <th>Lat</th>
-                            <th>Lng</th>
-                        </tr>
-                    </tfoot>
-                    <tbody id="myTableBody" style="display:none">
-                        <tr data-template="app:listPlace"/>
-                    </tbody>
-                </table>
-            </div>       
+        <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Info zum Ortsregister</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Der Name des jeweiligen Ortes ist mit jenen Dokumenten verlinkt, in denen dieser Ort erwähnt wird.
+                        </p>
+                        <p>
+                            Die Sortierung der einzelnen Spalten kann durch einen Klick auf die Spaltenüberschrift geändert werden. Das Suchfeld rechts oberhalb der Tabelle durchsucht den gesamten Tabelleninhalt. Darüberhinaus können mit Hilfe der Suchfelder am Fußende der Spalten gezielt die Inhalte dieser Spalten durchsucht bzw. gefiltert werden.
+                        </p>
+                        <p>Die (ggf. gefilterte) Tabelle kann als PDF oder Excel heruntegalden bzw. in den Zwischenspeicher kopiert werden.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
@@ -40,6 +72,9 @@
     <script src="https://unpkg.com/leaflet.markercluster@1.2.0/dist/leaflet.markercluster.js"/>
     <script>$("#map").css("height", "500px");
         var table = $('#myTable').DataTable({
+        "language": {
+        "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/German.json"
+        },
         dom: 'Bfrtip',
         keepConditions: true,
         buttons: [
@@ -50,7 +85,7 @@
         attribution: 'Map data &amp;copy;<a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
         maxZoom: 18,
         id: 'mapbox.light',
-        accessToken: 'pk.eyJ1Ijoic2VubmllcmVyIiwiYSI6ImNpbHk1YWV0bDAwZnB2dW01d2l1Y3phdmkifQ.OljQLEhqeAygai2y6VoSwQ'
+        accessToken: 'pk.eyJ1IjoiY3NhZTgwOTIiLCJhIjoiY2lnM2FoZWpjMDJqZnY1a2gxdWl6a29kaiJ9.FQXlsKIu60WhiXLrfI59VA'
         });
         var map = L.map('map').addLayer(tiles);
         var markers = L.markerClusterGroup();

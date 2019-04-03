@@ -2,10 +2,7 @@
 <div data-template="templates:surround" data-template-with="templates/datatable.html" data-template-at="datatable">
 
     <div class="card">
-        <div class="card-header" style="text-align:center;">
-            <h1>Table of Content<br/>
-            </h1>
-        </div>
+        <div data-template="app:tocHeader"/>
         <div class="card-body">
             <table id="myTable" class="table table-striped table-condensed table-hover">
                 <thead>
@@ -18,11 +15,14 @@
             </table>
         </div>
     </div>
-    <script>var table = $('#myTable').DataTable({
+    <div data-template="app:tocModal"/>
+    <script>
+        var table = $('#myTable').DataTable({
             keepConditions: true,
             dom: 'Bfrtip',
             buttons: [
                 'copy', 'excel', 'pdf'
             ]
-        });</script>
+        });
+    </script>
 </div>

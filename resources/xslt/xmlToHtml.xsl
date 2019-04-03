@@ -151,7 +151,7 @@
             <div class="card-body">
                 <xsl:if test="//tei:div/tei:head">
                     <h3 id="clickme">
-                        <abbr title="Click to display Table of Content">[Table of Content]</abbr>
+                        <abbr title="Click to display Table of Contents">[Table of Contents]</abbr>
                     </h3>
                     <div id="headings" class="readmore">
                         <ul>
@@ -197,9 +197,9 @@
                                         <xsl:text>#fna_</xsl:text>
                                         <xsl:number level="any" format="1" count="tei:note"/>
                                     </xsl:attribute>
-                                    <span style="font-size:7pt;vertical-align:super;">
+                                    <sup>
                                         <xsl:number level="any" format="1" count="tei:note"/>
-                                    </span>
+                                    </sup>
                                 </a>
                             </xsl:element>
                             <xsl:apply-templates/>

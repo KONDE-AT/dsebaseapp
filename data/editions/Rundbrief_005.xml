@@ -29,7 +29,9 @@
                      distribute your contributions under the same license as the original. </p>
                </licence>
             </availability>
-         </publicationStmt>
+         <tei:idno type="URI">https://id.acdh.oeaw.ac.at/dsebaseapp/v1/editions/Rundbrief_005.xml</tei:idno>
+                <tei:idno type="URI">http://hdl.handle.net/21.11115/0000-000B-D979-9</tei:idno>
+            </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>

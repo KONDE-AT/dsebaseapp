@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div class="templates:surround?with=templates/page.html&amp;at=content">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-year-calendar/1.1.1/css/bootstrap-year-calendar.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-year-calendar/1.1.1/js/bootstrap-year-calendar.js"/>
+    <link rel="stylesheet" href="../resources/css/bootstrap-year-calendar.min.css"/>
+    <script src="../resources/js/bootstrap-year-calendar-bs4/bootstrap-year-calendar.min.js"/>
 
     <div class="container-fluid">
         <div class="card">
@@ -40,8 +40,8 @@
             </div>
         </div>
     </div>
-
-    <script type="text/javascript">
+    <script src="../resources/js/bootstrap-year-calendar-bs4/languages/bootstrap-year-calendar.de.js" charset="UTF-8"/>
+    <script type="text/javascript" charset="UTF-8">
     // most of the code taken from https://github.com/ingoboerner
     //https://github.com/martinantonmueller/Hermann-Bahr_Arthur-Schnitzler/blob/master/app/resources/js/calendar.js
         var datasource = "../analyze/calendar_datasource.xql";
@@ -60,9 +60,11 @@
             });
             $('#calendar').calendar({
                 dataSource: $dataSource,
-                startYear: 1857,
-                minDate : new Date(1850,0,1),
-                maxDate : new Date(1950,0,1),
+                language: "de",
+                startYear: 1848,
+                minDate : new Date(1848,0,1),
+                maxDate : new Date(1918,12,31),
+                
             });
 
             $('#calendar').clickDay(function(e){

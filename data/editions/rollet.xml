@@ -13,7 +13,8 @@
         <publisher>Historische Landeskommission für Steiermark</publisher>
         <authority>Center for Information Modelling in the Humanities, University Graz</authority>
         <idno type="PID">o:rollett.1861</idno>
-      </publicationStmt>
+      <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">http://hdl.handle.net/21.11115/0000-000B-D96D-7</tei:idno>
+            </publicationStmt>
       <sourceDesc>
         <bibl>
           <pubPlace>Graz</pubPlace>

@@ -40,12 +40,12 @@
         return param;
         }
         };
-        $.get( "../analyze/docname-by-index.xql?index="+ value+"&amp;directory="+ defaultdir(directory),  function( data ) {
-        var linkToDoc = data.replace('"', '');
-        console.log(linkToDoc)
+        $.getJSON( "../analyze/docname-by-index.xql?index="+ value+"&amp;directory="+ defaultdir(directory),  function( data ) {
+        console.log(data);
+        var linkToDoc = data.url;
         var out = $('#output'); 
-        out.text( "go to entry: "+ value );
-        out.attr("href", linkToDoc.replace('"', ''));
+        out.text( "go to entry: "+ data.title );
+        out.attr("href", linkToDoc);
         out.show()
         });
         

@@ -16,6 +16,8 @@
             </titleStmt>
             <publicationStmt>
                 <date>2015-05-28</date>
+            <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">https://id.acdh.oeaw.ac.at/dsebaseapp/v1/indices/listperson.xml</tei:idno>
+                <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">http://hdl.handle.net/21.11115/0000-000B-D97D-5</tei:idno>
             </publicationStmt>
             <sourceDesc>
                 <p>Personenverzeichnis der Thun-Korrespondenz</p>

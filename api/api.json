@@ -31,6 +31,10 @@
     {
       "name": "entities",
       "description": "Methods about entities"
+    },
+    {
+      "name": "kwic",
+      "description": "Keyword in Context (full text search)"
     }
   ],
   "paths": {
@@ -145,6 +149,13 @@
             "description": "ID of the document to return",
             "required": true,
             "type": "string"
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "description": "The format of the response, defaults to 'xml', alternative is 'text'",
+            "required": false,
+            "type": "string"
           }
         ],
         "responses": {
@@ -233,6 +244,41 @@
           },
           "404": {
             "description": "entityId not found"
+          }
+        }
+      }
+    },
+       "/kwic/collections/{collectionId}": {
+      "get": {
+        "tags": [
+          "kwic"
+        ],
+        "summary": "API-Endpoint to perform a fulltext search over passed in collection. Retuns a KWIC snippet",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "collectionId",
+            "in": "path",
+            "description": "ID of the collection which should be searched",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "description": "The query string. You can use '*' on the string's end as wildcard",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "404": {
+            "description": "collectionID not found"
           }
         }
       }

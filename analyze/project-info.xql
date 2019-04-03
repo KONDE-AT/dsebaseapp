@@ -6,16 +6,16 @@ import module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/confi
 declare option exist:serialize "method=json media-type=text/javascript content-type=application/json";
 
 
-let $description := doc(concat($config:app-root, "/repo.xml"))//repo:description/text()
-let $authors := normalize-space(string-join(doc(concat($config:app-root, "/repo.xml"))//repo:author//text(), ', '))
+let $purpose_de := "Das Projekt "|| $app:projectName|| " widmet sich "|| $app:purpose_de
+let $purpose_en := "The project " || $app:projectName ||" is dedicated to " || $app:purpose_en
 let $map := map{
-    "title": "DSEBAEAPP",
+    "title": $app:projectName,
     "subtitle": "Digital Scholarly Editions Base Application",
-    "author": $authors,
-    "description": $description,
+    "author": $app:authors,
+    "description": $app:description,
     "github": "https://github.com/KONDE-AT/dsebaseapp",
-    "purpose_de": "Ziel von dsebaseapp ist die Publikation von Forschungsdaten.",
-    "purpose_en": "The purpose of dsebaseapp is the publication of research data.",
+    "purpose_de": $purpose_de,
+    "purpose_en": $purpose_en,
     "app_type": "digital-edition",
     "base_tech": "eXist-db",
     "framework": "Digital Scholarly Editions Base Application"

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Meta</title>
+            <author>
+               <persName>
+                  <forename>forename</forename>
+                  <surname>surename</surname>
+               </persName>
+            </author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>The (CC BY 4.0)-License applies to this document.</p>
+               </licence>
+            </availability>
+         <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">https://id.acdh.oeaw.ac.at/dsebaseapp/v1/meta/meta.xml</tei:idno>
+                <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">http://hdl.handle.net/21.11115/0000-000B-D969-B</tei:idno>
+            </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <head>About</head>
+            <p>Some place to write about the documents stored in the collection meta</p>
+         </div>
+      </body>
+   </text>
+</TEI>
