@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <div class="templates:surround?with=templates/page.html&amp;at=content" id="test_id">
-    <div id="imprint-content" class="container"/><!-- #imprint-content -->
-    <script>
-        const params = {
-        'language': 'both',
-        'projectName': "dsebaseapp",
-        'projectPurpose': {
-        'de': "der Bereitstellung von Forschungsdaten",
-        'en': "is the publication of research data."
-        }
-        };
-        const imprintService = 'https://shared.acdh.oeaw.ac.at/acdh-common-assets/api/imprint.php';
-        $.get(imprintService, params, function(response){
-        document.getElementById('imprint-content').innerHTML = response;
-        });
-    </script>
+    <div class="container-fluid">
+        <div data-template="app:fetchImprint"/>
+    </div>
 </div>

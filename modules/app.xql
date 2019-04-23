@@ -25,6 +25,9 @@ declare variable $app:description := doc(concat($config:app-root, "/repo.xml"))/
 declare variable $app:purpose_de := "der Bereitstellung von Forschungsdaten";
 declare variable $app:purpose_en := "is the publication of research data.";
 
+declare variable $app:redmineBaseUrl := "https://shared.acdh.oeaw.ac.at/acdh-common-assets/api/imprint.php?serviceID=";
+declare variable $app:redmineID := "6930";
+
 declare function functx:contains-case-insensitive
   ( $arg as xs:string? ,
     $substring as xs:string )  as xs:boolean? {
@@ -502,4 +505,23 @@ declare function app:firstDoc($node as node(), $model as map(*)) {
             <a class="btn btn-main btn-outline-primary btn-lg" href="{$href}" role="button">Start Reading</a>
 };
 
+(:~
+ : fetches html snippets from ACDH's imprint service; Make sure you'll have $app:redmineBaseUrl and $app:redmineID set
+ :)
+ 
+declare function app:fetchImprint($node as node(), $model as map(*)) {
+    let $url := $app:redmineBaseUrl||$app:redmineID
 
+let $headers := 
+    <headers>
+        <header name="Accept" value="text/html"/>
+        <header name="Accept-Charset" value="utf-8"/>
+    </headers>
+    
+    let $request := httpclient:get(($url), true(), $headers)
+    return
+    <div>
+        {$request//BODY}
+    </div>
+
+};
