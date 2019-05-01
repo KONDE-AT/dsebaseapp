@@ -12,4 +12,7 @@ for $resource in xmldb:get-child-resources(xs:anyURI($config:app-root||"/ac/"))
     return sm:chmod(xs:anyURI($config:app-root||'/ac/'||$resource), "rwxrwxr-x"),
 
 for $resource in xmldb:get-child-resources(xs:anyURI($config:app-root||"/api/"))
-    return sm:chmod(xs:anyURI($config:app-root||'/api/'||$resource), "rwxrwxr-x")
+    return sm:chmod(xs:anyURI($config:app-root||'/api/'||$resource), "rwxrwxr-x"),
+
+for $resource in xmldb:get-child-resources(xs:anyURI($config:app-root||"/resolver/"))
+    return sm:chmod(xs:anyURI($config:app-root||'/resolver/'||$resource), "rwxrwxr-x")

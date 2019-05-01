@@ -295,7 +295,7 @@ declare function app:tocHeader($node as node(), $model as map(*)) {
     let $infoDoc := doc($app:meta||"/"||$colName||".xml")
     let $colLabel := $infoDoc//tei:title[1]/text()
     let $infoUrl := "show.html?document="||$colName||".xml&amp;directory=meta"
-    let $apiUrl := "../../../../exist/restxq/dsebaseapp/api/collections/"||$colName
+    let $apiUrl := "../resolver/resolve-col.xql?collection="||$colName
     return
         <div class="card-header" style="text-align:center;">
             <h1>{$docs} Dokumente in {$colLabel}</h1>
@@ -417,7 +417,7 @@ let $xsl := if($xslPath eq "")
                 doc($config:app-root||'/resources/xslt/'||$xslPath||'.xsl')
             else
                 $app:defaultXsl
-let $path2source := string-join(('../../../../exist/restxq', $config:app-name,'api/collections', $collection, $ref), '/')
+let $path2source := "../resolver/resolve-doc.xql?doc-name="||$ref||"&amp;collection="||$collection
 let $params :=
 <parameters>
     <param name="app-name" value="{$config:app-name}"/>
@@ -515,5 +515,4 @@ declare function app:fetchImprint($node as node(), $model as map(*)) {
     <http:request href="{$url}" method="GET"/>
     let $response := http:send-request($request)
         return $response[2]
-
 };
