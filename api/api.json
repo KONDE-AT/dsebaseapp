@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "This is the API for [dsebaseapp-Web-App](https://dsebaseapp-korrespondenz.acdh.oeaw.ac.at).",
+    "description": "This is the API for [dsebaseapp-Web-App](https://dsebaseapp.acdh.oeaw.ac.at).",
     "version": "v1.0",
     "title": "dsebaseapp API",
     "termsOfService": "../pages/imprint.html",
