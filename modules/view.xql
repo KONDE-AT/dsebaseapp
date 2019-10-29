@@ -11,8 +11,8 @@ import module namespace templates="http://exist-db.org/xquery/templates" ;
  : The following modules provide functions which will be called by the 
  : templating.
  :)
-import module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/config" at "config.xqm";
-import module namespace app="http://www.digital-archiv.at/ns/dsebaseapp/templates" at "app.xql";
+import module namespace config="http://www.digital-archiv.at/ns/config" at "config.xqm";
+import module namespace app="http://www.digital-archiv.at/ns/templates" at "app.xql";
 
 declare namespace output = "http://www.w3.org/2010/xslt-xquery-serialization";
 

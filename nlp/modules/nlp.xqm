@@ -7,7 +7,7 @@ xquery version "3.1";
  : @author Peter Andorfer
 :)
 
-module namespace nlp="http://www.digital-archiv.at/ns/dsebaseapp/nlp";
+module namespace nlp="http://www.digital-archiv.at/ns/nlp";
 
 import module namespace functx = "http://www.functx.com";
 import module namespace httpclient ="http://exist-db.org/xquery/httpclient";

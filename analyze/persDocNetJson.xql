@@ -1,6 +1,6 @@
 xquery version "3.1";
-import module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/config" at "../modules/config.xqm";
-import module namespace app="http://www.digital-archiv.at/ns/dsebaseapp/templates" at "../modules/app.xql";
+import module namespace config="http://www.digital-archiv.at/ns/config" at "../modules/config.xqm";
+import module namespace app="http://www.digital-archiv.at/ns/templates" at "../modules/app.xql";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare option exist:serialize "method=json media-type=text/javascript";
 
