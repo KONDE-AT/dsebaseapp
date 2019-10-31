@@ -1,0 +1,11 @@
+version: '2'
+services:
+  dsebaseapp:
+    image: "acdh/dsebaseapp"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/tmp/export
