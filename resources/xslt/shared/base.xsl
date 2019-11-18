@@ -572,5 +572,21 @@
             <xsl:apply-templates/>
         </code>
     </xsl:template>
+
+    <xsl:template match="tei:figure">
+        <figure>
+            <figcaption><xsl:value-of select="./head"/></figcaption>
+            <xsl:apply-templates/>
+        </figure>
+    </xsl:template>
+    
+    <xsl:template match="tei:graphic">
+        <img width="100%">
+            <xsl:attribute name="src"><xsl:value-of select="@url"/></xsl:attribute>
+            <xsl:attribute name="alt"><xsl:value-of select="@url"/></xsl:attribute>
+        </img>
+    </xsl:template>
+ 
+
  
 </xsl:stylesheet>
