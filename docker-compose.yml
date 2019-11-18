@@ -1,0 +1,18 @@
+version: '2'
+services:
+  dsebaseapp:
+    image: "acdh/dsebaseapp"
+    labels:
+      - traefik.backend=dsebaseapp
+      - traefik.frontend.rule=Host:dsebaseapp.sisyphos.arz.oeaw.ac.at
+      - traefik.docker.network=web
+      - traefik.port=8080
+    networks:
+      - web
+    build:
+      context: .
+      dockerfile: Dockerfile
+networks:
+  web:
+    external:
+      name: web

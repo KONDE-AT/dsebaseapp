@@ -1,5 +1,5 @@
 xquery version "3.1";
-import module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/config" at "../modules/config.xqm";
+import module namespace config="http://www.digital-archiv.at/ns/config" at "../modules/config.xqm";
 
 declare namespace tei="http://www.tei-c.org/ns/1.0";
 declare namespace wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#";

@@ -1,5 +1,5 @@
 xquery version "3.1";
-import module namespace app="http://www.digital-archiv.at/ns/dsebaseapp/templates" at "../modules/app.xql";
+import module namespace app="http://www.digital-archiv.at/ns/templates" at "../modules/app.xql";
 import module namespace util="http://exist-db.org/xquery/util";
 
 declare namespace tei = "http://www.tei-c.org/ns/1.0";

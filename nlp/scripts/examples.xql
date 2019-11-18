@@ -1,7 +1,7 @@
 xquery version "3.1";
 import module namespace functx = "http://www.functx.com";
 import module namespace 
-nlp="http://www.digital-archiv.at/ns/dsebaseapp/nlp" at "../modules/nlp.xqm";
+nlp="http://www.digital-archiv.at/ns/nlp" at "../modules/nlp.xqm";
 import module namespace util = "http://exist-db.org/xquery/util";
 import module namespace httpclient ="http://exist-db.org/xquery/httpclient";
 declare namespace tei="http://www.tei-c.org/ns/1.0";

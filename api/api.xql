@@ -5,13 +5,13 @@ xquery version "3.1";
  : @author Peter Andorfer
 :)
 
-module namespace api="http://www.digital-archiv.at/ns/dsebaseapp/api";
+module namespace api="http://www.digital-archiv.at/ns/api";
 
 declare namespace rest = "http://exquery.org/ns/restxq";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 import module namespace functx = "http://www.functx.com";
-import module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/config" at "../modules/config.xqm";
+import module namespace config="http://www.digital-archiv.at/ns/config" at "../modules/config.xqm";
 import module namespace kwic = "http://exist-db.org/xquery/kwic" at "resource:org/exist/xquery/lib/kwic.xql";
 
 declare namespace output = "http://www.w3.org/2010/xslt-xquery-serialization";

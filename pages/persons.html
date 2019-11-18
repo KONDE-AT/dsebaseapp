@@ -1,95 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div data-template="templates:surround" data-template-with="templates/datatable.html" data-template-at="datatable">
-    <div class="card">
-        <div class="card-header" style="text-align:center;">
-            <h1>Personenregister</h1>
-            <h3>
-                <a>
-                    <i class="fas fa-info" title="Info zum Personenregister" data-toggle="modal" data-target="#exampleModal"/>
-                </a>
-                |
-                <a href="../../../../exist/restxq/dsebaseapp/api/collections/indices/listperson.xml">
-                    <i class="fas fa-download" title="show TEI source"/>
-                </a>
-            </h3>
-        </div>
-        <div class="card-body">
-            <table id="myTable" class="table table-striped table-condensed table-hover">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Vorname(n)</th>
-                        <th>GND-ID</th>
-                    </tr>
-                </thead>
-                <tfoot style="display:none">
-                    <tr>
-                        <th>Name</th>
-                        <th>Vorname(n)</th>
-                        <th>GND-ID</th>
-                    </tr>
-                </tfoot>
-                <tbody id="myTableBody" style="display:none">
-                    <tr data-template="app:listPers"/>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Info zum Personenregister</h5>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h1>Personenregister</h1>
+                        <a>
+                            <i class="fas fa-info" title="Info zum Personenregister" data-toggle="modal" data-target="#exampleModal"/>
+                            
+                        </a>
+                        <a href="../resolver/resolve-doc.xql?doc-name=listperson.xml&amp;collection=indices">
+                            <i class="fas fa-download" title="show TEI source"/>
+                        </a>
+                    </div>
+                    
+                    <div class="card-body containingloader">
+                        <div class="loader" id="loader"/>
+                        <table id="myTable" style="width:100%;display:none;" class="table table-striped table-condensed table-hover">   
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Vorname(n)</th>
+                                    <th>GND-ID</th>
+                                </tr>
+                                <tr id="filterrow">
+                                    <th>Name</th>
+                                    <th>Vorname(n)</th>
+                                    <th>GND-ID</th>
+                                </tr>
+                            </thead>
+                            <tbody id="myTableBody">
+                                <tr data-template="app:listPers"/>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <p>Das vorliegende Personenverzeichnis umfasst Personen die in den edierten Dokumenten erwähnt werden. Die Namensansetzung wurden von den EditorInnen zum Zwecke besserer Suchmöglichkeiten normalisiert.</p>
-                    <p>
-                        Der Name der jeweiligen Person ist mit jenen Dokumenten verlinkt, in denen diese Person erwähnt wird.
-                    </p>
-                    <p>
-                        Die Sortierung der einzelnen Spalten kann durch einen Klick auf die Spaltenüberschrift geändert werden. Das Suchfeld rechts oberhalb der Tabelle durchsucht den gesamten Tabelleninhalt. Darüberhinaus können mit Hilfe der Suchfelder am Fußende der Spalten gezielt die Inhalte dieser Spalten durchsucht bzw. gefiltert werden.
-                    </p>
-                    <p>Die (ggf. gefilterte) Tabelle kann als PDF oder Excel heruntegalden bzw. in den Zwischenspeicher kopiert werden.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+                <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Info zum Personenregister</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Eine Erklärung
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        var table = $('#myTable').DataTable({
-        "language": {
-        "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/German.json"
-        },
-        keepConditions: true,
-        "pageLength": 25,
-        dom: 'Bfrtip',
-        buttons: [
-        'copy', 'excel', 'pdf'
-        ]
-        });
-        
-        $(document).ready(function() {
-        $("#myTableBody").show({});
-        $('#myTable tfoot th').each( function () {
-        var title = $(this).text();
-        $(this).html( '<input type="text"/>' );
-        });
-        $("#myTable tfoot").show();
-        table.columns().every( function () {
-        var that = this;
-        
-        $( 'input', this.footer() ).on( 'keyup change', function () {
-        if ( that.search() !== this.value ) {
-        that
-        .search( this.value )
-        .draw();
-        }
-        } );
-        } );
-        });
-        
-        
-    </script>
+    <script type="text/javascript" src="../resources/js/datatables.custom.js"/>
 </div>

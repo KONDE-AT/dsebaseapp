@@ -1,8 +1,8 @@
 xquery version "3.1";
 declare namespace expath="http://expath.org/ns/pkg";
 declare namespace repo="http://exist-db.org/xquery/repo";
-import module namespace app="http://www.digital-archiv.at/ns/dsebaseapp/templates" at "../modules/app.xql";
-import module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/config" at "modules/config.xqm";
+import module namespace app="http://www.digital-archiv.at/ns/templates" at "../modules/app.xql";
+import module namespace config="http://www.digital-archiv.at/ns/config" at "modules/config.xqm";
 declare option exist:serialize "method=json media-type=text/javascript content-type=application/json";
 
 

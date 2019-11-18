@@ -1,8 +1,8 @@
 xquery version "3.0";
 declare namespace functx = "http://www.functx.com";
 import module namespace xmldb="http://exist-db.org/xquery/xmldb";
-import module namespace config="http://www.digital-archiv.at/ns/dsebaseapp/config" at "../modules/config.xqm";
-import module namespace app="http://www.digital-archiv.at/ns/dsebaseapp/templates" at "../modules/app.xql";
+import module namespace config="http://www.digital-archiv.at/ns/config" at "../modules/config.xqm";
+import module namespace app="http://www.digital-archiv.at/ns/templates" at "../modules/app.xql";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace gefx = "http://gexf.net/data/hello-world.gexf";
 declare namespace util = "http://exist-db.org/xquery/util";
