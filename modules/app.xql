@@ -66,9 +66,9 @@ declare function functx:substring-after-last
    concat(upper-case(substring($arg,1,1)),
              substring($arg,2))
  } ;
- 
+
 (:~
- : returns the names of the previous, current and next document  
+ : returns the names of the previous, current and next document
 :)
 
 declare function app:next-doc($collection as xs:string, $current as xs:string) {
@@ -76,7 +76,7 @@ let $all := sort(xmldb:get-child-resources($collection))
 let $currentIx := index-of($all, $current)
 let $prev := if ($currentIx > 1) then $all[$currentIx - 1] else false()
 let $next := if ($currentIx < count($all)) then $all[$currentIx + 1] else false()
-return 
+return
     ($prev, $current, $next)
 };
 
@@ -86,7 +86,7 @@ let $currentIx := index-of($all, $current)
 let $prev := if ($currentIx > 1) then $all[$currentIx - 1] else false()
 let $next := if ($currentIx < count($all)) then $all[$currentIx + 1] else false()
 let $amount := count($all)
-return 
+return
     ($prev, $current, $next, $amount, $currentIx)
 };
 
@@ -296,6 +296,7 @@ declare function app:tocHeader($node as node(), $model as map(*)) {
     let $colLabel := $infoDoc//tei:title[1]/text()
     let $infoUrl := "show.html?document="||$colName||".xml&amp;directory=meta"
     let $apiUrl := "../resolver/resolve-col.xql?collection="||$colName
+    let $zipUrl := "../resolver/download-col.xql?collection="||$colName
     return
         <div class="card-header" style="text-align:center;">
             <h1>{$docs} Dokumente in {$colLabel}</h1>
@@ -306,6 +307,10 @@ declare function app:tocHeader($node as node(), $model as map(*)) {
                 |
                 <a href="{$apiUrl}">
                     <i class="fas fa-download" title="Liste der TEI Dokumente"/>
+                </a>
+                  |
+                <a href="{$zipUrl}">
+                    <i class="fas fa-file-archive" title="Download Collection as ZIP"></i>
                 </a>
             </h3>
         </div>
@@ -430,7 +435,7 @@ let $params :=
     <param name="progress" value="{$progress}"/>
     <param name="projectName" value="{$app:projectName}"/>
     <param name="authors" value="{$app:authors}"/>
-    
+
    {
         for $p in request:get-parameter-names()
             let $val := request:get-parameter($p,())
@@ -450,7 +455,7 @@ declare function app:listBibl($node as node(), $model as map(*)) {
     for $item in doc($app:workIndex)//tei:listBibl/tei:bibl
     let $author := normalize-space(string-join($item/tei:author//text(), ' '))
     let $gnd := $item//tei:idno/text()
-    let $gnd_link := if ($gnd) 
+    let $gnd_link := if ($gnd)
         then
             <a href="{$gnd}">{$gnd}</a>
         else
@@ -477,7 +482,7 @@ declare function app:listOrg($node as node(), $model as map(*)) {
     for $item in doc($app:orgIndex)//tei:listOrg/tei:org
     let $altnames := normalize-space(string-join($item//tei:orgName[@type='alt'], ' '))
     let $gnd := $item//tei:idno/text()
-    let $gnd_link := if ($gnd) 
+    let $gnd_link := if ($gnd)
         then
             <a href="{$gnd}">{$gnd}</a>
         else
@@ -511,7 +516,7 @@ declare function app:firstDoc($node as node(), $model as map(*)) {
  :)
 declare function app:fetchImprint($node as node(), $model as map(*)) {
     let $url := $app:redmineBaseUrl||$app:redmineID
-    let $request := 
+    let $request :=
     <http:request href="{$url}" method="GET"/>
     let $response := http:send-request($request)
         return $response[2]
