@@ -32,6 +32,12 @@
         <body>
             <div type="index_places">
                 <listPlace xml:id="listplace">
+					<place xml:id="pmb34438">
+						<placeName>Russland</placeName>
+						<location>
+							<geo decls="LatLng">60.0 100.0</geo>
+						</location>
+					</place>
                     <place xml:id="place_d9c760d2f9fb1d5170c2517c7be64c75">
                         <placeName>Risran</placeName>
                         <location>

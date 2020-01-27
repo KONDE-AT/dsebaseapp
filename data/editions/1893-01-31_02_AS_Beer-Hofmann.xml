@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../XML/META/asbwschema.xsd" xml:id="L1893-01-31_02_AS_Beer-Hofmann"><teiHeader type="text">
+<fileDesc>
+<titleStmt>
+<title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
+<title level="a">Arthur Schnitzler an Richard Beer-Hofmann, 31. 1. 1893</title>
+<author ref="#pmb2121">Schnitzler, Arthur</author>
+<editor>
+<name>Müller, Martin Anton</name>
+<name>Susen, Gerd-Hermann</name>
+</editor>
+<funder>
+<name>FWF - Fonds für Wissenschaft und Forschung</name>
+<address>
+<street>Sensengasse 1</street>
+<postCode>1090 Wien</postCode>
+<placeName>
+<country>A</country>
+<settlement>Wien</settlement>
+</placeName>
+</address>
+</funder>
+</titleStmt>
+<editionStmt>
+<edition>ASBW</edition>
+<respStmt>
+<resp>Transkription und Kommentierung</resp>
+<name>Müller, Martin Anton</name>
+<name>Susen, Gerd-Hermann</name>
+</respStmt>
+</editionStmt>
+<publicationStmt>
+<publisher>Austrian Academy of Sciences, Vienna</publisher>
+<idno type="ASBW" n="2751"/>
+<availability status="free">
+<p>Copyright © 2019</p>
+</availability>
+</publicationStmt>
+<seriesStmt>
+<p>Machine-Readable Transcriptions of the Correspondences of Arthur Schnitzler</p>
+</seriesStmt>
+<sourceDesc>
+<listWit>
+<witness n="1">
+<msDesc>
+<msIdentifier>
+<country>U.S.A.</country>
+<settlement>Yale</settlement>
+<repository>Beinecke Rare Book and Manuscript Library</repository>
+<idno>Yale Collection of German Literature, MSS 31</idno>
+</msIdentifier>
+<physDesc>
+<p>eh. Briefkarte mit Umschlag, Bleistift.</p>
+</physDesc>
+</msDesc>
+</witness>
+</listWit>
+<listBibl>
+<biblStruct corresp="ASBH">
+<monogr>
+<author ref="#pmb2121">Schnitzler, Arthur</author>
+<author ref="#pmb10863">Beer-Hofmann, Richard</author>
+<title level="m">Briefwechsel 1891–1931</title>
+<editor>Hg. Konstanze Fliedl</editor>
+<imprint>
+<pubPlace>Wien, Zürich</pubPlace>
+<publisher>Europaverlag</publisher>
+<date when="1992">1992</date>
+</imprint>
+<biblScope unit="pp">41</biblScope>
+</monogr>
+</biblStruct>
+</listBibl>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<langUsage>
+<language ident="de-AT">German</language>
+</langUsage>
+<correspDesc>
+<correspAction type="sent">
+<persName ref="#pmb2121">Schnitzler, Arthur</persName>
+<placeName ref="#pmb50">Wien</placeName>
+<date when="1893-01-31" n="02">31. 1. 1893</date>
+</correspAction>
+<correspAction type="received">
+<persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
+<placeName ref="#pmb50">Wien</placeName>
+</correspAction>
+<correspContext>
+<ptr type="previous" subtype="toAuthor" target="1893-01-31_01">Beer-Hofmann an Schnitzler, [31.? 1. 1893]</ptr>
+<ptr type="next" subtype="toAuthor" target="1893-01-31_03">Beer-Hofmann an Schnitzler, 31. 1. 1893</ptr>
+</correspContext>
+</correspDesc>
+</profileDesc>
+<encodingDesc>
+<refsDecl>
+<ab>References to Arthur Schnitzler’s diary online consist of the relevant dates only, e.g. <ref type="schnitzlerDiary" target="1891-05-15"/> The complete URI is either: "https://schnitzler-tagebuch.acdh.oeaw.ac.at/pages/show.html?directory=editions&amp;document=entry__1912-05-15.xml" (whereas &amp; has to be replaced with the single character ampersand) or "https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-tagebuch/editions/entry__1912-05-15.xml". </ab>
+</refsDecl>
+</encodingDesc>
+<revisionDesc status="approved">
+<change who="MAM" when="2019-06-12">Automatisch angelegt aus Buchausgabe</change>
+<change who="MAM" when="2019-09-18">Abgleich mit Faksimile</change>
+<!-- GHS - nur für meine Liste -->
+<change who="MAM" when="2019-10-18">Finalisiert</change>
+<change who="MAM" when="2019-10-18">Index check</change>
+</revisionDesc>
+</teiHeader><facsimile><graphic url="AS an RBH Beinecke - 691"/><graphic url="AS an RBH Beinecke - 692"/><graphic url="AS an RBH Beinecke - 693"/></facsimile><text type="letter"><body><div type="address"><address><addrLine><pb facs="AS an RBH Beinecke - 691"/><hi rend="latintype">Hrn Dr. Rich. Beer H</hi><damage agent="paperloss"><supplied>ofmann</supplied></damage></addrLine><addrLine><rs ref="#pmb338" type="place"><hi rend="latintype">Wollzeile 15</hi></rs></addrLine></address></div><div type="writingSession" n="1"><opener><p><seg rend="left"><pb facs="AS an RBH Beinecke - 692"/><del rend="strikethrough"><hi rend="pre-print">PROFESSOR <rs ref="#pmb12695" type="person">SCHNITZLER</rs></hi></del></seg><seg rend="right"><rs ref="#pmb412" type="place"><hi rend="latintype">I Grillparzerstraße 7</hi></rs>. </seg></p></opener><p><salute>Lieber Richard! </salute>Voilà – aber was?! Sie <hi rend="underline" n="2">vergaßen</hi> mir die Karte zu ſenden!! Bitte entweder um Aufklärg oder um die Karte! Ja? <pb facs="AS an RBH Beinecke - 693"/>Dem <rs ref="#pmb20723" type="person">Löbl</rs> hab ich um eine Redoutekarte geſchrieben. Sollt ich ſie kriegen, ſo geh ich! Sie erfahrens rechtzeitig! Vorher <subst><del rend="overwritten"><unclear>bitt</unclear></del><add place="inline">geh</add></subst> ich <subst><del rend="overwritten">eine</del><add place="inline">zu</add></subst><space unit="chars" quantity="1"/><rs ref="#pmb40841" type="work">Mongodin</rs></p><p>– Alſo bitte die Karte!</p><closer>Herzlich<lb/><anchor type="textConst" xml:id="TLMAM20191018-1"/>Ihr <signed>Arthur</signed><note type="commentary" xml:id="TLMAM20191018-1h">Am Papier links von »<quote>Herzlich</quote>«, aber durch den Bleistiftdruck als zwei Schreibakte zu erkennen.</note></closer></div></body></text></TEI>

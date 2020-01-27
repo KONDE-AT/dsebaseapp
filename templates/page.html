@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html>
     <head>
-        <title data-template="config:app-title">App Title</title>
+        <title data-template="config:app-title">Arthur Schnitzler – Briefwechsel mit Autorinnen und Autoren</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta data-template="config:app-meta"/>
         <link rel="shortcut icon" href="$shared/resources/images/exist_icon_16x16.ico"/>
@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
         
         
-        <link rel="stylesheet" type="text/css" href="$app-root/resources/css/style.css"/>
+        <link id="pagestyle" rel="stylesheet" type="text/css" href="$app-root/resources/css/style.css"/>
+        
         <!--scroll to top start-->
         <link rel="stylesheet" href="../resources/js/scroll-to-top/css/ap-scroll-top.min.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"/>
@@ -36,7 +37,7 @@
         <header>
             <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white box-shadow">
                 <a class="navbar-brand" href="index.html">
-                    <img src="../resources/img/acdh_logo.png" alt="HistoGIS" title="some project logo"/>
+                    <img src="../resources/img/as_briefe.svg" alt="Schnitzler Briefe" title="some project logo"/>
                 </a>
                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"/>
@@ -45,64 +46,66 @@
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Home
+                                Start
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="index.html">Home</a>
-                                <a class="dropdown-item" href="show.html?document=about.xml&amp;directory=meta&amp;stylesheet=meta">About this website</a>
-                                <div class="dropdown-divider"/>
-                                <a class="dropdown-item" href="../api/api.html">API</a>
-                                <a class="dropdown-item" href="../analyze/beacon.xql">GND Beacon</a>
+                                <a class="dropdown-item" href="index.html">Start</a>
+                                <a class="dropdown-item" href="show.html?document=about.xml&amp;directory=meta&amp;stylesheet=meta">Zur Edition</a>
+                                <a class="dropdown-item" href="https://schnitzler.acdh.oeaw.ac.at">Schnitzler am ACDH</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dropdown-item" href="calendar.html">Kalender</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Verzeichnisse
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="persons.html">Personen</a>
+                                <a class="dropdown-item" href="bibl.html">Werke</a>
+                                <a class="dropdown-item" href="places.html">Orte</a>
+                                <a class="dropdown-item" href="orgs.html">Organisationen</a>
+                                <a class="dropdown-item" href="toc_correspDesc_received.html?collection=editions">Versand</a>
+                                <a class="dropdown-item" href="toc_correspDesc_sent.html?collection=editions">Empfang</a>
+                               
+                                
                             </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Table of Contents
+                                Inhalt
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="toc.html?collection=editions">Collection Editions</a>
-                                <a class="dropdown-item" href="toc.html?collection=indices">Collection Indices</a>
-                                <a class="dropdown-item" href="toc.html?collection=meta">Collection Meta</a>
+                                <a class="dropdown-item" href="toc.html?collection=editions">Briefe</a>
+                                <a class="dropdown-item" href="toc.html?collection=indices">Indizes</a>
+                                <a class="dropdown-item" href="toc.html?collection=meta">Metatexte</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Indices
+                                Extras
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="persons.html">Persons</a>
-                                <a class="dropdown-item" href="places.html">Places</a>
-                                <a class="dropdown-item" href="orgs.html">Organizations</a>
-                                <a class="dropdown-item" href="bibl.html">Works</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Analyze
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="calendar.html">Calendar</a>
-                                <a class="dropdown-item" href="timeline.html">Timeline</a>
+                               
+                                <a class="dropdown-item" href="timeline.html">Zeitleiste</a>
                                 <a class="dropdown-item" href="netvis.html">Entity-Document-Net</a>
                                 <a class="dropdown-item" href="cmfi-netvis.html">CMFI-Net</a>
                                 <a class="dropdown-item" href="cmfi-timeline.html">CMFI-Timeline</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Autocompletes
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="../ac/entity-ac.xql?query=">Persons</a>
-                                <a class="dropdown-item" href="../ac/entity-ac.xql?entity=place&amp;query=">Places</a>
-                                <a class="dropdown-item" href="../ac/entity-ac.xql?entity=org&amp;query=">Institutions</a>
-                                <a class="dropdown-item" href="../ac/entity-ac.xql?entity=work&amp;query=">Work</a>
+                                <div class="dropdown-divider"/>
+                                <a class="dropdown-item" href="../api/api.html">API</a>
+                                <a class="dropdown-item" href="../analyze/beacon.xql">GND Beacon</a>
+                                <div class="dropdown-divider"/>
+                                <a class="dropdown-item" href="../ac/entity-ac.xql?query=">Autocompletes Persons</a>
+                                <a class="dropdown-item" href="../ac/entity-ac.xql?entity=place&amp;query=">Autocompletes Places</a>
+                                <a class="dropdown-item" href="../ac/entity-ac.xql?entity=org&amp;query=">Autocompletes Institutions</a>
+                                <a class="dropdown-item" href="../ac/entity-ac.xql?entity=work&amp;query=">Autocompletes Places</a>
                             </div>
                         </li>
                     </ul>
                     <form method="get" action="ft_search.html" class="form-inline my-2 my-lg-0">
-                        <input name="searchexpr" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" pattern=".{3,}" required="" title="3 characters minimum"/>
-                        <button class="btn btn-main btn-outline-primary btn-mg" type="submit">Search</button>
+                        <input name="searchexpr" class="form-control mr-sm-2" type="text" placeholder="Suche" aria-label="Suche" pattern=".{3,}" required="" title="3 characters minimum"/>
+                        <button class="btn btn-main btn-outline-primary btn-mg" type="submit">Suche</button>
                     </form>
                 </div>
             </nav>
@@ -110,10 +113,12 @@
              <div id="content" class="container"/>
             <div id="loadModal"/>
             <footer class="main-footer">
+                
                 <div class="container">
+                    
                     <div class="footer-wrapper">
                         <div class="footer-sep">
-                            <i class="far fa-comment"/> CONTACT
+                            <i class="far fa-comment"/> KONTAKT
                         </div>
                         <div class="row">
                             <div class="col-md-1 pl-0">
@@ -161,22 +166,7 @@
                 window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"index.html","theme":"dark-bottom"};
             </script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"/>
-        <script>
-            /*script for loading the content of the modal */
-            $(document).ready(function(){
-                    var trigger = $('a[data-type]');
-                    $(trigger).click(function(){
-                        var dataType = $( this ).attr('data-type');
-                        var dataKey = $( this ).attr('data-key');
-                        var xsl = dataType.replace(".xml", "");
-                        var baseUrl = "showNoTemplate.html?directory=indices&amp;document="
-                        var url = baseUrl+dataType+"&amp;entiyID="+dataKey;
-                        $('#loadModal').load(url, function(){
-                            $('#myModal').modal('show');
-                        });
-                    });
-                });
-        </script>
+        
         <script type="text/javascript">
             $(window).on('load', function(){
                 $('#myModal').modal('show');

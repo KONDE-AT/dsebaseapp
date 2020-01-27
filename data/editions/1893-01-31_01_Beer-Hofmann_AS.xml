@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../XML/META/asbwschema.xsd" xml:id="L1893-01-31_01_Beer-Hofmann_AS"><teiHeader type="text">
+<fileDesc>
+<titleStmt>
+<title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
+<title level="a">Richard Beer-Hofmann an Arthur Schnitzler, [31.? 1. 1893]</title>
+<author ref="#pmb10863">Beer-Hofmann, Richard</author>
+<editor>
+<name>Müller, Martin Anton</name>
+<name>Susen, Gerd-Hermann</name>
+</editor>
+<funder>
+<name>FWF - Fonds für Wissenschaft und Forschung</name>
+<address>
+<street>Sensengasse 1</street>
+<postCode>1090 Wien</postCode>
+<placeName>
+<country>A</country>
+<settlement>Wien</settlement>
+</placeName>
+</address>
+</funder>
+</titleStmt>
+<editionStmt>
+<edition>ASBW</edition>
+<respStmt>
+<resp>Transkription und Kommentierung</resp>
+<name>Müller, Martin Anton</name>
+<name>Susen, Gerd-Hermann</name>
+</respStmt>
+</editionStmt>
+<publicationStmt>
+<publisher>Austrian Academy of Sciences, Vienna</publisher>
+<idno type="ASBW" n="2745"/>
+<availability status="free">
+<p>Copyright © 2019</p>
+</availability>
+</publicationStmt>
+<seriesStmt>
+<p>Machine-Readable Transcriptions of the Correspondences of Arthur Schnitzler</p>
+</seriesStmt>
+<sourceDesc>
+<listWit>
+<witness n="1">
+<msDesc>
+<msIdentifier>
+<country>GB</country>
+<settlement>Cambridge</settlement>
+<repository>University Library</repository>
+<idno>Schnitzler, B 8</idno>
+</msIdentifier>
+<physDesc>
+<p>eh. Brief, 1 Bl., 1 S., blauer Buntstift; Lateinschrift. Von unbekannter Hand mit Bleistift nummeriert: »<quote>13</quote>«.</p>
+</physDesc>
+</msDesc>
+</witness>
+</listWit>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<langUsage>
+<language ident="de-AT">German</language>
+</langUsage>
+<correspDesc>
+<correspAction type="sent">
+<persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
+<placeName ref="#pmb50">Wien</placeName>
+<date when="1893-01-31" n="01">[31.? 1. 1893]</date>
+</correspAction>
+<correspAction type="received">
+<persName ref="#pmb2121">Schnitzler, Arthur</persName>
+<placeName ref="#pmb50">Wien</placeName>
+</correspAction>
+<correspContext>
+<ptr type="previous" subtype="toAuthor" target="1893-01-11_02">Schnitzler an Beer-Hofmann, 11. 1. 1893</ptr>
+<ptr type="next" subtype="toAuthor" target="1893-01-31_02">Schnitzler an Beer-Hofmann, 31. 1. 1893</ptr>
+</correspContext>
+</correspDesc>
+</profileDesc>
+<encodingDesc>
+<refsDecl>
+<ab>References to Arthur Schnitzler’s diary online consist of the relevant dates only, e.g. <ref type="schnitzlerDiary" target="1891-05-15"/> The complete URI is either: "https://schnitzler-tagebuch.acdh.oeaw.ac.at/pages/show.html?directory=editions&amp;document=entry__1912-05-15.xml" (whereas &amp; has to be replaced with the single character ampersand) or "https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-tagebuch/editions/entry__1912-05-15.xml". </ab>
+</refsDecl>
+</encodingDesc>
+<revisionDesc status="approved">
+<change who="GHS" when="2019-09-19">angelegt aus Faksimile</change>
+<change who="MAM" when="2019-09-19">Index check</change>
+<change who="MAM" when="2019-09-13">Durchsicht</change>
+</revisionDesc>
+</teiHeader><facsimile><graphic url="MS-SCHNITZLER-B-0008-B-00001-000-00027.jpg"/></facsimile><text type="letter"><body><div type="writingSession" n="1"><p><salute><pb facs="MS-SCHNITZLER-B-0008-B-00001-000-00027.jpg"/>Lieber Arthur! </salute><anchor type="commentary" xml:id="KL2745-1"/>Voilà<note type="commentary" xml:id="KL2745-1h">Wie aus dem folgenden Korrespondenzstück hervorgeht, hätte dem Brief eine Eintrittskarte für den Weiße Kreuz-Ball beigelegt sein sollen, der am <date>31. 1. 1893</date> stattfand.</note>! Was ist’s denn mit der <rs ref="#pmb15" type="place">Opern</rs>redoute? Gehen wir hin?</p><closer>Herzlichst<lb/><signed>Richard</signed></closer></div></body></text></TEI>
