@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../XML/META/asbwschema.xsd"
+    xml:id="L1893-01-30_02_Hofmannsthal_AS">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
+                <title level="a">Hugo von Hofmannsthal an Arthur Schnitzler, [30.? 1. 1893]</title>
+                <author ref="#pmb11740">Hofmannsthal, Hugo von</author>
+                <editor>
+                    <name>Müller, Martin Anton</name>
+                    <name>Susen, Gerd-Hermann</name>
+                </editor>
+                <funder>
+                    <name>FWF - Fonds für Wissenschaft und Forschung</name>
+                    <address>
+                        <street>Sensengasse 1</street>
+                        <postCode>1090 Wien</postCode>
+                        <placeName>
+                            <country>A</country>
+                            <settlement>Wien</settlement>
+                        </placeName>
+                    </address>
+                </funder>
+            </titleStmt>
+            <editionStmt>
+                <edition>ASBW</edition>
+                <respStmt>
+                    <resp>Transkription und Kommentierung</resp>
+                    <name>Müller, Martin Anton</name>
+                    <name>Susen, Gerd-Hermann</name>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Austrian Academy of Sciences, Vienna</publisher>
+                <idno type="ASBW" n="2144"/>
+                <availability status="free">
+                    <p>Copyright © 2018</p>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <p>Machine-Readable Transcriptions of the Correspondences of Arthur Schnitzler</p>
+            </seriesStmt>
+            <sourceDesc>
+                <listWit>
+                    <witness n="1">
+                        <msDesc>
+                            <msIdentifier>
+                                <country>GB</country>
+                                <settlement>Cambridge</settlement>
+                                <repository>University Library</repository>
+                                <idno>Schnitzler, B 43</idno>
+                            </msIdentifier>
+                            <physDesc>
+                                <p>eh. Briefkarte mit aufgeprägtem Wappen, schwarze Tinte. Von
+                                    Schnitzlers Hand mit Bleistift nummeriert:
+                                    »<quote>37</quote>«.</p>
+                            </physDesc>
+                        </msDesc>
+                    </witness>
+                </listWit>
+                <listBibl>
+                    <biblStruct corresp="HvHAS">
+                        <monogr>
+                            <author ref="#pmb11740">Hofmannsthal, Hugo</author>
+                            <author ref="#pmb2121">Schnitzler, Arthur</author>
+                            <title level="m">Briefwechsel</title>
+                            <editor>Hg. Therese Nickl und Heinrich Schnitzler</editor>
+                            <imprint>
+                                <pubPlace>Frankfurt am Main</pubPlace>
+                                <publisher>S. Fischer</publisher>
+                                <date when="1964">1964</date>
+                            </imprint>
+                            <biblScope unit="pp">33–34</biblScope>
+                        </monogr>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="de-AT">German</language>
+            </langUsage>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName ref="#pmb11740">Hofmannsthal, Hugo von</persName>
+                    <placeName ref="#pmb50">Wien</placeName>
+                    <date when="1893-01-30" n="01">[30.? 1. 1893]</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="#pmb2121">Schnitzler, Arthur</persName>
+                    <placeName ref="#pmb50">Wien</placeName>
+                </correspAction>
+                <correspContext>
+                    <ptr type="previous" subtype="toAuthor" target="1893-01-25_01">Hofmannsthal an Schnitzler, 25. 1. [1893]</ptr>
+                    <ptr type="next" subtype="toAuthor" target="1893-02-01_02">Schnitzler an Hofmannsthal, [1. 2. 1893]</ptr>
+                </correspContext>
+            </correspDesc>
+        </profileDesc>
+        <encodingDesc>
+            <refsDecl>
+                <ab>References to Arthur Schnitzler’s diary online consist of the relevant dates
+                    only, e.g. <ref type="schnitzlerDiary" target="1891-05-15"/> The complete URI is
+                    either:
+                    "https://schnitzler-tagebuch.acdh.oeaw.ac.at/pages/show.html?directory=editions&amp;document=entry__1912-05-15.xml"
+                    (whereas &amp; has to be replaced with the single character ampersand) or
+                    "https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-tagebuch/editions/entry__1912-05-15.xml".
+                </ab>
+            </refsDecl>
+        </encodingDesc>
+        <revisionDesc status="approved">
+            <change who="GHS" when="2018-12-29">Angelegt</change>
+            <change who="MAM" when="2019-01-23">Durchsicht</change>
+            <change who="MAM" when="2019-01-23">Index check</change>
+            <change who="GHS" when="2019-09-21">finalisiert</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="MS-SCHNITZLER-B-00043-B-00001-000-00075"/>
+        <graphic url="MS-SCHNITZLER-B-00043-B-00001-000-00076"/>
+    </facsimile>
+    <text type="letter">
+        <body>
+            <div type="writingSession" n="1">
+                <opener>
+                    <dateline rend="right">
+                        <pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00075"/>
+                        <date>
+                            <anchor type="commentary" xml:id="KL2144-1"/>Montag<note
+                                type="commentary" xml:id="KL2144-1h">Der <date>30. 1. 1893</date>
+                                war ein Montag. Die Einordnung erfolgt durch das Antwortschreiben
+                                    <rs ref="#pmb2121" type="person">Schnitzler</rs>s.</note>
+                        </date>.</dateline>
+                    <salute>lieber Arthur.</salute>
+                </opener>
+                <p>Die Empfehlung <rs ref="#pmb2147" type="person">Engländer</rs>s ſehr gern beim
+                    nächſten Zuſammentreffen mit <rs ref="#pmb10883" type="person">Berger</rs>, was für
+                    eine Arbeit iſt es denn?</p>
+                <p>Über <rs ref="#pmb2450" type="person">Fels</rs> höre ich unbeſtimmt erſchreckendes;
+                    ich werde Ihnen in den nächſten Tagen etwas ſchicken, eventuell ein paar Freunde
+                    ohne Namennennung um Mithilfe bitten; ſagen Sie mir doch, was wahr iſt. »<rs
+                        ref="#pmb30195" type="work">
+                        <hi rend="underline" n="1">Familie</hi>
+                    </rs>«?!!</p>
+                <p>Ein herausgegriffenes Kapitel aus dem »<rs ref="#pmb32272" type="work">Kind</rs>«
+                    hat mir einen ſtarken Eindruck gemacht; ich freue mich ſehr auf die
+                    Vollendung.</p>
+                <p>Das <rs type="work" ref="#pmb29935" subtype="implied">Exemplar</rs> für die <rs
+                        ref="#pmb29614" type="org">akademiſche Vereinigung</rs> ſchicken Sie am
+                    tactvollſten in das <rs ref="#pmb1282" type="place">Hôtel Wandel</rs>
+                    <space unit="chars" quantity="1"/>
+                    <pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00076"/>mit der Weiſung, es am
+                        <date>Samstagabend</date> dem <rs ref="#pmb27760" type="person"
+                        >Präſidenten</rs> zu übergeben.</p>
+                <p>Der kleine <rs ref="#pmb4937" type="person">
+                        <hi rend="latintype">Teltſch</hi>
+                    </rs> möchte auch gern eins haben. Vor einer Woche hat mir eine <anchor
+                        type="commentary" xml:id="KL2144-2"/>
+                    <rs type="person" ref="#pmb27761" subtype="implied">
+                        <rs ref="#pmb34438" type="place">Ruſſin </rs>
+                    </rs>
+                    <note type="commentary" xml:id="KL2144-2h">Vgl.: »<quote>
+                            <p>
+                                <date>Sonntag 22.</date>
+                            </p>
+                            <p>Die beiden Russinnen</p>.</quote>« (<bibl>
+                            <rs ref="#pmb11740" type="person">Hofmannsthal</rs>: <title level="m"
+                                >Aufzeichnungen</title>, S.&#160;204</bibl>). </note>, meine <hi
+                        rend="latintype">Souper</hi>nachbarin, ſehr von den »<hi rend="latintype"
+                        >proverbes de ce monsieur, qui est en même temps médecin</hi>«, <del
+                        rend="strikethrough">gerſch</del> geſchwärmt.</p>
+                <p>Wann ſoll denn <rs ref="#pmb2167" type="person">Salten</rs> fortkommen?</p>
+                <closer>Herzlichſt<lb/>
+                    <signed>Loris.</signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

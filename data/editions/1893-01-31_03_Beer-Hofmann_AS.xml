@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../XML/META/asbwschema.xsd" xml:id="L1893-01-31_03_Beer-Hofmann_AS"><teiHeader type="text">
+<fileDesc>
+<titleStmt>
+<title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
+<title level="a">Richard Beer-Hofmann an Arthur Schnitzler, [31. 1. 1893]</title>
+<author ref="#pmb10863">Beer-Hofmann, Richard</author>
+<editor>
+<name>Müller, Martin Anton</name>
+<name>Susen, Gerd-Hermann</name>
+</editor>
+<funder>
+<name>FWF - Fonds für Wissenschaft und Forschung</name>
+<address>
+<street>Sensengasse 1</street>
+<postCode>1090 Wien</postCode>
+<placeName>
+<country>A</country>
+<settlement>Wien</settlement>
+</placeName>
+</address>
+</funder>
+</titleStmt>
+<editionStmt>
+<edition>ASBW</edition>
+<respStmt>
+<resp>Transkription und Kommentierung</resp>
+<name>Müller, Martin Anton</name>
+<name>Susen, Gerd-Hermann</name>
+</respStmt>
+</editionStmt>
+<publicationStmt>
+<publisher>Austrian Academy of Sciences, Vienna</publisher>
+<idno type="ASBW" n="2752"/>
+<availability status="free">
+<p>Copyright © 2019</p>
+</availability>
+</publicationStmt>
+<seriesStmt>
+<p>Machine-Readable Transcriptions of the Correspondences of Arthur Schnitzler</p>
+</seriesStmt>
+<sourceDesc>
+<listWit>
+<witness n="1">
+<msDesc>
+<msIdentifier>
+<country>GB</country>
+<settlement>Cambridge</settlement>
+<repository>University Library</repository>
+<idno>Schnitzler, B 8</idno>
+</msIdentifier>
+<physDesc>
+<p>eh. Brief, 1 Bl., 2 S., Bleistift; Lateinschrift. Von Schnitzler mit Bleistift nummeriert: »<quote>14.</quote>«.</p>
+</physDesc>
+</msDesc>
+</witness>
+</listWit>
+<listBibl>
+<biblStruct corresp="ASBH">
+<monogr>
+<author ref="#pmb2121">Schnitzler, Arthur</author>
+<author ref="#pmb10863">Beer-Hofmann, Richard</author>
+<title level="m">Briefwechsel 1891–1931</title>
+<editor>Hg. Konstanze Fliedl</editor>
+<imprint>
+<pubPlace>Wien, Zürich</pubPlace>
+<publisher>Europaverlag</publisher>
+<date when="1992">1992</date>
+</imprint>
+<biblScope unit="pp">41–42</biblScope>
+</monogr>
+</biblStruct>
+</listBibl>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<langUsage>
+<language ident="de-AT">German</language>
+</langUsage>
+<correspDesc>
+<correspAction type="sent">
+<persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
+<placeName ref="#pmb50">Wien</placeName>
+<date when="1893-01-31" n="03">31. 1. 1893</date>
+</correspAction>
+<correspAction type="received">
+<persName ref="#pmb2121">Schnitzler, Arthur</persName>
+<placeName ref="#pmb50">Wien</placeName>
+</correspAction>
+<correspContext>
+<ptr type="previous" subtype="toAuthor" target="1893-01-31_02">Schnitzler an Beer-Hofmann, 31. 1. 1893</ptr>
+<ptr type="next" subtype="toAuthor" target="1893-02-01_01">Schnitzler an Beer-Hofmann, 1. 2. [1893?]</ptr>
+</correspContext>
+</correspDesc>
+</profileDesc>
+<encodingDesc>
+<refsDecl>
+<ab>References to Arthur Schnitzler’s diary online consist of the relevant dates only, e.g. <ref type="schnitzlerDiary" target="1891-05-15"/> The complete URI is either: "https://schnitzler-tagebuch.acdh.oeaw.ac.at/pages/show.html?directory=editions&amp;document=entry__1912-05-15.xml" (whereas &amp; has to be replaced with the single character ampersand) or "https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-tagebuch/editions/entry__1912-05-15.xml". </ab>
+</refsDecl>
+</encodingDesc>
+<revisionDesc status="approved">
+<change who="MAM" when="2019-06-12">Automatisch angelegt aus Buchausgabe</change>
+<change who="MAM" when="2019-09-19">Durchsicht mit Faksimile</change>
+<change who="MAM" when="2019-09-13">Index check</change>
+<!-- GHS - nur für meine Liste -->
+</revisionDesc>
+</teiHeader><facsimile><graphic url="MS-SCHNITZLER-B-0008-B-00001-000-00029"/><graphic url="MS-SCHNITZLER-B-0008-B-00001-000-00030"/></facsimile><text type="letter"><body><div type="writingSession" n="1"><opener><salute><pb facs="MS-SCHNITZLER-B-0008-B-00001-000-00029"/>Lieber Arthur!</salute></opener><p>Ich war zerstreut, mit der Adresse; aber der Dienstmann war verrückt und hat die Ballkarte die in dem Couvert war das <rs type="person" ref="#pmb13913" subtype="implied">Papa</rs> an mich sandte, und die er Ihnen hätte mitüberbingen sollen <pb facs="MS-SCHNITZLER-B-0008-B-00001-000-00029"/>an irgend einen »Hofmann« in der <rs ref="#pmb338" type="place">Wollzeile</rs>, <del rend="strikethrough">de</del> von dem er sie jetzt abholt getragen. Entschuldigen Sie die Confusion.</p><closer>Herzlichst<lb/><signed>Richard</signed></closer></div></body></text></TEI>

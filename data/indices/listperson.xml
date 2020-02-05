@@ -28,6 +28,54 @@
         <body>
             <div type="index_persons">
                 <listPerson xml:id="listperson">
+					<person xml:id="pmb27761">
+						<persName>
+							<surname>?? Unbekannte Russin</surname>
+							<forename/>
+						</persName>
+						<birth>
+						<date/>
+						</birth>
+						<death>
+						<date/>
+						</death>
+					</person>
+					<person xml:id="pmb2972">
+						<persName>
+							<surname>Flöge</surname>
+							<forename>Emilie</forename>
+						</persName>
+						<birth>
+							<date>1874-01-01</date>
+						</birth>
+						<death>
+							<date>1952-01-01</date>
+						</death>
+					</person>
+					<person xml:id="pmb27674">
+						<persName>
+							<surname>Flöge</surname>
+							<forename>Helene</forename>
+						</persName>
+						<birth>
+							<date>1871-01-01</date>
+						</birth>
+						<death>
+							<date>1936-01-01</date>
+						</death>
+					</person>
+					<person xml:id="pmb27677">
+						<persName>
+							<surname>Flöge</surname>
+							<forename>Pauline</forename>
+						</persName>
+						<birth>
+							<date>1866-01-01</date>
+						</birth>
+						<death>
+							<date>1917-01-01</date>
+						</death>
+					</person>
                     <person xml:id="kindermann_heinz">
                         <persName>
                             <surname>Kindermann</surname>
