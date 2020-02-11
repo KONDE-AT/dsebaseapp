@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../XML/META/asbwschema.xsd" xml:id="L1893-01-31_02_AS_Beer-Hofmann"><teiHeader type="text">
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../XML/META/asbwschema.xsd" xml:id="L1893-01-31_02_AS_Beer-Hofmann">
+    <teiHeader type="text">
 <fileDesc>
 <titleStmt>
 <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
@@ -104,4 +106,65 @@
 <change who="MAM" when="2019-10-18">Finalisiert</change>
 <change who="MAM" when="2019-10-18">Index check</change>
 </revisionDesc>
-</teiHeader><facsimile><graphic url="AS an RBH Beinecke - 691"/><graphic url="AS an RBH Beinecke - 692"/><graphic url="AS an RBH Beinecke - 693"/></facsimile><text type="letter"><body><div type="address"><address><addrLine><pb facs="AS an RBH Beinecke - 691"/><hi rend="latintype">Hrn Dr. Rich. Beer H</hi><damage agent="paperloss"><supplied>ofmann</supplied></damage></addrLine><addrLine><rs ref="#pmb338" type="place"><hi rend="latintype">Wollzeile 15</hi></rs></addrLine></address></div><div type="writingSession" n="1"><opener><p><seg rend="left"><pb facs="AS an RBH Beinecke - 692"/><del rend="strikethrough"><hi rend="pre-print">PROFESSOR <rs ref="#pmb12695" type="person">SCHNITZLER</rs></hi></del></seg><seg rend="right"><rs ref="#pmb412" type="place"><hi rend="latintype">I Grillparzerstraße 7</hi></rs>. </seg></p></opener><p><salute>Lieber Richard! </salute>Voilà – aber was?! Sie <hi rend="underline" n="2">vergaßen</hi> mir die Karte zu ſenden!! Bitte entweder um Aufklärg oder um die Karte! Ja? <pb facs="AS an RBH Beinecke - 693"/>Dem <rs ref="#pmb20723" type="person">Löbl</rs> hab ich um eine Redoutekarte geſchrieben. Sollt ich ſie kriegen, ſo geh ich! Sie erfahrens rechtzeitig! Vorher <subst><del rend="overwritten"><unclear>bitt</unclear></del><add place="inline">geh</add></subst> ich <subst><del rend="overwritten">eine</del><add place="inline">zu</add></subst><space unit="chars" quantity="1"/><rs ref="#pmb40841" type="work">Mongodin</rs></p><p>– Alſo bitte die Karte!</p><closer>Herzlich<lb/><anchor type="textConst" xml:id="TLMAM20191018-1"/>Ihr <signed>Arthur</signed><note type="commentary" xml:id="TLMAM20191018-1h">Am Papier links von »<quote>Herzlich</quote>«, aber durch den Bleistiftdruck als zwei Schreibakte zu erkennen.</note></closer></div></body></text></TEI>
+</teiHeader>
+    <facsimile>
+        <graphic url="AS an RBH Beinecke - 691"/>
+        <graphic url="AS an RBH Beinecke - 692"/>
+        <graphic url="AS an RBH Beinecke - 693"/>
+    </facsimile>
+    <text type="letter">
+        <body>
+            <div type="address">
+                <address>
+                    <addrLine>
+                        <pb facs="AS an RBH Beinecke - 691"/>
+                        <hi rend="latintype">Hrn Dr. Rich. Beer H</hi>
+                        <damage agent="paperloss">
+                            <supplied>ofmann</supplied>
+                        </damage>
+                    </addrLine>
+                    <addrLine>
+                        <rs ref="#pmb338" type="place">
+                            <hi rend="latintype">Wollzeile 15</hi>
+                        </rs>
+                    </addrLine>
+                </address>
+            </div>
+            <div type="writingSession" n="1">
+                <opener>
+                    <p>
+                        <seg rend="left">
+                            <pb facs="AS an RBH Beinecke - 692"/>
+                            <del rend="strikethrough">
+                                <hi rend="pre-print">PROFESSOR <rs ref="#pmb12695" type="person">SCHNITZLER</rs>
+                                </hi>
+                            </del>
+                        </seg>
+                        <seg rend="right">
+                            <rs ref="#pmb412" type="place">
+                                <hi rend="latintype">I Grillparzerstraße 7</hi>
+                            </rs>. </seg>
+                    </p>
+                </opener>
+                <p>
+                    <salute>Lieber Richard! </salute>Voilà – aber was?! Sie <hi rend="underline" n="2">vergaßen</hi> mir die Karte zu ſenden!! Bitte entweder um Aufklärg oder um die Karte! Ja? <pb facs="AS an RBH Beinecke - 693"/>Dem <rs ref="#pmb20723" type="person">Löbl</rs> hab ich um eine Redoutekarte geſchrieben. Sollt ich ſie kriegen, ſo geh ich! Sie erfahrens rechtzeitig! Vorher <subst>
+                        <del rend="overwritten">
+                            <unclear>bitt</unclear>
+                        </del>
+                        <add place="inline">geh</add>
+                    </subst> ich <subst>
+                        <del rend="overwritten">eine</del>
+                        <add place="inline">zu</add>
+                    </subst>
+                    <space unit="chars" quantity="1"/>
+                    <rs ref="#pmb40841" type="work">Mongodin</rs>
+                </p>
+                <p>– Alſo bitte die Karte!</p>
+                <closer>Herzlich<lb/>
+                    <anchor type="textConst" xml:id="TLMAM20191018-1"/>Ihr <signed>Arthur</signed>
+                    <note type="commentary" xml:id="TLMAM20191018-1h">Am Papier links von »<quote>Herzlich</quote>«, aber durch den Bleistiftdruck als zwei Schreibakte zu erkennen.</note>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../XML/META/asbwschema.xsd" xml:id="L1893-01-31_03_Beer-Hofmann_AS"><teiHeader type="text">
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../XML/META/asbwschema.xsd" xml:id="L1893-01-31_03_Beer-Hofmann_AS">
+    <teiHeader type="text">
 <fileDesc>
 <titleStmt>
 <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
@@ -103,4 +105,23 @@
 <change who="MAM" when="2019-09-13">Index check</change>
 <!-- GHS - nur für meine Liste -->
 </revisionDesc>
-</teiHeader><facsimile><graphic url="MS-SCHNITZLER-B-0008-B-00001-000-00029"/><graphic url="MS-SCHNITZLER-B-0008-B-00001-000-00030"/></facsimile><text type="letter"><body><div type="writingSession" n="1"><opener><salute><pb facs="MS-SCHNITZLER-B-0008-B-00001-000-00029"/>Lieber Arthur!</salute></opener><p>Ich war zerstreut, mit der Adresse; aber der Dienstmann war verrückt und hat die Ballkarte die in dem Couvert war das <rs type="person" ref="#pmb13913" subtype="implied">Papa</rs> an mich sandte, und die er Ihnen hätte mitüberbingen sollen <pb facs="MS-SCHNITZLER-B-0008-B-00001-000-00029"/>an irgend einen »Hofmann« in der <rs ref="#pmb338" type="place">Wollzeile</rs>, <del rend="strikethrough">de</del> von dem er sie jetzt abholt getragen. Entschuldigen Sie die Confusion.</p><closer>Herzlichst<lb/><signed>Richard</signed></closer></div></body></text></TEI>
+</teiHeader>
+    <facsimile>
+        <graphic url="MS-SCHNITZLER-B-0008-B-00001-000-00029"/>
+        <graphic url="MS-SCHNITZLER-B-0008-B-00001-000-00030"/>
+    </facsimile>
+    <text type="letter">
+        <body>
+            <div type="writingSession" n="1">
+                <opener>
+                    <salute>
+                        <pb facs="MS-SCHNITZLER-B-0008-B-00001-000-00029"/>Lieber Arthur!</salute>
+                </opener>
+                <p>Ich war zerstreut, mit der Adresse; aber der Dienstmann war verrückt und hat die Ballkarte die in dem Couvert war das <rs type="person" ref="#pmb13913" subtype="implied">Papa</rs> an mich sandte, und die er Ihnen hätte mitüberbingen sollen <pb facs="MS-SCHNITZLER-B-0008-B-00001-000-00029"/>an irgend einen »Hofmann« in der <rs ref="#pmb338" type="place">Wollzeile</rs>, <del rend="strikethrough">de</del> von dem er sie jetzt abholt getragen. Entschuldigen Sie die Confusion.</p>
+                <closer>Herzlichst<lb/>
+                    <signed>Richard</signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

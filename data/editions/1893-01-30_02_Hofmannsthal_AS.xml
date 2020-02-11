@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../XML/META/asbwschema.xsd"
-    xml:id="L1893-01-30_02_Hofmannsthal_AS">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../XML/META/asbwschema.xsd" xml:id="L1893-01-30_02_Hofmannsthal_AS">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -128,8 +125,7 @@
                     <dateline rend="right">
                         <pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00075"/>
                         <date>
-                            <anchor type="commentary" xml:id="KL2144-1"/>Montag<note
-                                type="commentary" xml:id="KL2144-1h">Der <date>30. 1. 1893</date>
+                            <anchor type="commentary" xml:id="KL2144-1"/>Montag<note type="commentary" xml:id="KL2144-1h">Der <date>30. 1. 1893</date>
                                 war ein Montag. Die Einordnung erfolgt durch das Antwortschreiben
                                     <rs ref="#pmb2121" type="person">Schnitzler</rs>s.</note>
                         </date>.</dateline>
@@ -140,24 +136,20 @@
                     eine Arbeit iſt es denn?</p>
                 <p>Über <rs ref="#pmb2450" type="person">Fels</rs> höre ich unbeſtimmt erſchreckendes;
                     ich werde Ihnen in den nächſten Tagen etwas ſchicken, eventuell ein paar Freunde
-                    ohne Namennennung um Mithilfe bitten; ſagen Sie mir doch, was wahr iſt. »<rs
-                        ref="#pmb30195" type="work">
+                    ohne Namennennung um Mithilfe bitten; ſagen Sie mir doch, was wahr iſt. »<rs ref="#pmb30195" type="work">
                         <hi rend="underline" n="1">Familie</hi>
                     </rs>«?!!</p>
                 <p>Ein herausgegriffenes Kapitel aus dem »<rs ref="#pmb32272" type="work">Kind</rs>«
                     hat mir einen ſtarken Eindruck gemacht; ich freue mich ſehr auf die
                     Vollendung.</p>
-                <p>Das <rs type="work" ref="#pmb29935" subtype="implied">Exemplar</rs> für die <rs
-                        ref="#pmb29614" type="org">akademiſche Vereinigung</rs> ſchicken Sie am
+                <p>Das <rs type="work" ref="#pmb29935" subtype="implied">Exemplar</rs> für die <rs ref="#pmb29614" type="org">akademiſche Vereinigung</rs> ſchicken Sie am
                     tactvollſten in das <rs ref="#pmb1282" type="place">Hôtel Wandel</rs>
                     <space unit="chars" quantity="1"/>
                     <pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00076"/>mit der Weiſung, es am
-                        <date>Samstagabend</date> dem <rs ref="#pmb27760" type="person"
-                        >Präſidenten</rs> zu übergeben.</p>
+                        <date>Samstagabend</date> dem <rs ref="#pmb27760" type="person">Präſidenten</rs> zu übergeben.</p>
                 <p>Der kleine <rs ref="#pmb4937" type="person">
                         <hi rend="latintype">Teltſch</hi>
-                    </rs> möchte auch gern eins haben. Vor einer Woche hat mir eine <anchor
-                        type="commentary" xml:id="KL2144-2"/>
+                    </rs> möchte auch gern eins haben. Vor einer Woche hat mir eine <anchor type="commentary" xml:id="KL2144-2"/>
                     <rs type="person" ref="#pmb27761" subtype="implied">
                         <rs ref="#pmb34438" type="place">Ruſſin </rs>
                     </rs>
@@ -166,11 +158,7 @@
                                 <date>Sonntag 22.</date>
                             </p>
                             <p>Die beiden Russinnen</p>.</quote>« (<bibl>
-                            <rs ref="#pmb11740" type="person">Hofmannsthal</rs>: <title level="m"
-                                >Aufzeichnungen</title>, S.&#160;204</bibl>). </note>, meine <hi
-                        rend="latintype">Souper</hi>nachbarin, ſehr von den »<hi rend="latintype"
-                        >proverbes de ce monsieur, qui est en même temps médecin</hi>«, <del
-                        rend="strikethrough">gerſch</del> geſchwärmt.</p>
+                            <rs ref="#pmb11740" type="person">Hofmannsthal</rs>: <title level="m">Aufzeichnungen</title>, S. 204</bibl>). </note>, meine <hi rend="latintype">Souper</hi>nachbarin, ſehr von den »<hi rend="latintype">proverbes de ce monsieur, qui est en même temps médecin</hi>«, <del rend="strikethrough">gerſch</del> geſchwärmt.</p>
                 <p>Wann ſoll denn <rs ref="#pmb2167" type="person">Salten</rs> fortkommen?</p>
                 <closer>Herzlichſt<lb/>
                     <signed>Loris.</signed>

@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../XML/META/asbwschema.xsd" xml:id="L1893-01-31_01_Beer-Hofmann_AS"><teiHeader type="text">
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../XML/META/asbwschema.xsd" xml:id="L1893-01-31_01_Beer-Hofmann_AS">
+    <teiHeader type="text">
 <fileDesc>
 <titleStmt>
 <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
@@ -86,4 +88,21 @@
 <change who="MAM" when="2019-09-19">Index check</change>
 <change who="MAM" when="2019-09-13">Durchsicht</change>
 </revisionDesc>
-</teiHeader><facsimile><graphic url="MS-SCHNITZLER-B-0008-B-00001-000-00027.jpg"/></facsimile><text type="letter"><body><div type="writingSession" n="1"><p><salute><pb facs="MS-SCHNITZLER-B-0008-B-00001-000-00027.jpg"/>Lieber Arthur! </salute><anchor type="commentary" xml:id="KL2745-1"/>Voilà<note type="commentary" xml:id="KL2745-1h">Wie aus dem folgenden Korrespondenzstück hervorgeht, hätte dem Brief eine Eintrittskarte für den Weiße Kreuz-Ball beigelegt sein sollen, der am <date>31. 1. 1893</date> stattfand.</note>! Was ist’s denn mit der <rs ref="#pmb15" type="place">Opern</rs>redoute? Gehen wir hin?</p><closer>Herzlichst<lb/><signed>Richard</signed></closer></div></body></text></TEI>
+</teiHeader>
+    <facsimile>
+        <graphic url="MS-SCHNITZLER-B-0008-B-00001-000-00027.jpg"/>
+    </facsimile>
+    <text type="letter">
+        <body>
+            <div type="writingSession" n="1">
+                <p>
+                    <salute>
+                        <pb facs="MS-SCHNITZLER-B-0008-B-00001-000-00027.jpg"/>Lieber Arthur! </salute>
+                    <anchor type="commentary" xml:id="KL2745-1"/>Voilà<note type="commentary" xml:id="KL2745-1h">Wie aus dem folgenden Korrespondenzstück hervorgeht, hätte dem Brief eine Eintrittskarte für den Weiße Kreuz-Ball beigelegt sein sollen, der am <date>31. 1. 1893</date> stattfand.</note>! Was ist’s denn mit der <rs ref="#pmb15" type="place">Opern</rs>redoute? Gehen wir hin?</p>
+                <closer>Herzlichst<lb/>
+                    <signed>Richard</signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>
