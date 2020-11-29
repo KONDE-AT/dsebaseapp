@@ -1,6 +1,6 @@
 .reference {
     cursor: pointer;
-    color: #254aa5;
+    color: #0c0c0c;
 }
 
 span.data-hr {
@@ -12,11 +12,15 @@ span.data-hr {
 }
 
 a {
-    color: #254aa5;
+    color: #0063a6;
 }
 
 a:not([href]):not([tabindex]) {
-    color: #254aa5;
+    color: #0063a6;
     text-decoration: none;
 }
 
+.markhighlight {
+    background: orange;
+    color: black;
+}

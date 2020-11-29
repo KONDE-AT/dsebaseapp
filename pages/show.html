@@ -1,56 +1,58 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <div class="templates:surround?with=templates/page.html&amp;at=content">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.js"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous" />
     <div class="container-fluid">
         <div data-template="app:XMLtoHTML"/>
     </div>
-    <script src="$app-root/resources/js/hrjs/hr.js"/>
-    <script>
-        var hit = findGetParameter("searchexpr")
-        new HR("p", {
-        highlight: hit
-        }).hr();
-    </script>
+
     <style>
-        .rangeslider__fill {
-        background: #254aa5;
+    .rangeslider__fill {
+        background: #0063a6;
         position: absolute;
-        }
+    }
     </style>
     <script>
-        $(function() {
+      var hit = findGetParameter("searchexpr")
+      var instance = new Mark(document.querySelector("#main_content"));
+      instance.mark(hit, {
+        "element": "span",
+        "className": "markhighlight"
+      });
+    </script>
+    <script>
+      $(function() {
         var $document = $(document);
         var selector = '[data-rangeslider]';
         var $element = $(selector);
         // Example functionality to demonstrate a value feedback
-        
+
         $element.rangeslider({
-        
-        // Deactivate the feature detection
-        polyfill: false,
-        
-        // Callback function
-        onSlideEnd: function(position, value) {
-        var directory = findGetParameter("directory");
-        var defaultdir = function(param){
-        if (param = "none"){
-        return "editions";
-        } else {
-        return param;
-        }
-        };
-        $.getJSON( "../analyze/docname-by-index.xql?index="+ value+"&amp;directory="+ defaultdir(directory),  function( data ) {
-        console.log(data);
-        var linkToDoc = data.url;
-        var out = $('#output'); 
-        out.text( "go to entry: "+ data.title );
-        out.attr("href", linkToDoc);
-        out.show()
+
+          // Deactivate the feature detection
+          polyfill: false,
+
+          // Callback function
+          onSlideEnd: function(position, value) {
+            var directory = findGetParameter("directory");
+            var defaultdir = function(param) {
+              if (param = "none") {
+                return "editions";
+              } else {
+                return param;
+              }
+            };
+            $.getJSON("../analyze/docname-by-index.xql?index=" + value + "&amp;directory=" + defaultdir(directory), function(data) {
+              console.log(data);
+              var linkToDoc = data.url;
+              var out = $('#output');
+              out.text("gehe zu: " + data.title);
+              out.attr("href", linkToDoc);
+              out.show()
+            });
+
+          }
         });
-        
-        }
-        });
-        });
+      });
     </script>
 </div>
