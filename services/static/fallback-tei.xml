@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:base="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/" xml:id="bippart-an-thun-1857-10-18-a3-xxi-d432.xml" prev="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/bezirkskommissariate-an-stadthauptmannschaft-1851-03-a3-xxi-d109.xml" next="https://id.acdh.oeaw.ac.at/dsebaseapp/dsebaseapp/blum-an-rauscher-1854-08-23-a3-xxi-d277.xml">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>
+                    <rs type="person" ref="#bippart-georg" role="sender:gelehrter">Georg
+                        Bippart</rs> an <rs type="person" ref="#thun-hohenstein-leo" role="recipient">Leo Thun</rs>
+                    <lb/>
+                    <rs type="place" subtype="place" ref="#place_e575530bd7a9cc03829dde0b8657f108">Prag</rs>, <date when="1857-10-18">18. Oktober 1857</date>
+                </title>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">https://id.acdh.oeaw.ac.at/dsebaseapp/v1/editions/bippart-an-thun-1857-10-18-a3-xxi-d432.xml</tei:idno>
+                <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">http://hdl.handle.net/21.11115/0000-000B-D973-F</tei:idno>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Staatliches Gebietsarchiv Leitmeritz, Zweigstelle
+                            Tetschen-Bodenbach</institution>
+                        <repository>Familienarchiv Thun-Hohenstein, Linie Tetschen, Nachlass Leo
+                            Thun</repository>
+                        <idno>A3 XXI D432</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <p>Der Philologe Georg Bippart bittet Leo Thun, ein Exemplar seines jüngst
+                            erschienenen Buches über das griechische Altertum entgegen zu nehmen.
+                            Das Buch wird ihn demnächst per Post erreichen. Dem Paket ist ein
+                            zweites Exemplar beigelegt, das Bippart dem Kaiser zum Geschenk machen
+                            möchte. Bippart hofft, mit dem Lehrbuch die Intentionen Thuns umgesetzt
+                            zu haben. Er entschuldigt sich gleichzeitig für die Verspätung, mit der
+                            das Werk erschienen ist. Diese rühre daher, dass die Auswahl der Texte
+                            für ein Schulbuch wohl durchdacht werden musste. Außerdem vertrete er in
+                            zahlreichen Aspekten andere Ansichten als viele seiner Kollegen, daher
+                            musste er bei der Abfassung große Sorgfalt aufwenden, zumal für eine
+                            wissenschaftliche Argumentation in einem Lehrbuch nicht ausreichend Raum
+                            vorhanden sei. Um dies nachzuholen, möchte er bei Gelegenheit ein
+                            ausführliches Werk zur griechischen Mythologie verfassen. Zuletzt
+                            spricht Bippart erneut seine Hoffnung aus, mit dem vorgelegten Werk
+                            Thuns Ansprüchen gerecht geworden zu sein und damit auch seine Berufung
+                            aus dem Ausland gerechtfertigt zu haben.</p>
+                    </msContents>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName ref="#bippart-georg">Georg Bippart</persName>
+                    <settlement ref="#place_e575530bd7a9cc03829dde0b8657f108">Prag</settlement>
+                    <date when="1857-10-18">18. Oktober 1857</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="#thun-hohenstein-leo">Leo Thun</persName>
+                </correspAction>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item>approved by Mazohl</item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcript">
+                <index>
+                    <term>Universität Prag</term>
+                    <term>Klassische Philologie</term>
+                    <term>Gymnasien</term>
+                    <term>Schulbücher</term>
+                </index>
+                <p>Euer Excellenz</p>
+                <p>wollen in Gnaden die in diesen Tagen eintreffenden zwei Exemplare meiner soeben
+                    vollendeten Schrift<note xml:id="note_1">Vgl. Georg Bippart, Hellas und Rom. Ein
+                        Grundriß des klassischen Alterthums für die studierende Jugend. Land und
+                        Volk, Stadt und Familie, Religion und Kultur der Hellenen, 2 Bde., Prag
+                        1857 und 1858.</note> über das griechische Alterthum entgegennehmen und
+                    geruhen das eine als Zeichen meiner Verehrung und Dankbarkeit zu behalten, das
+                    andere, sofern die Gabe nicht allzu gering erscheinen sollte, Seiner Majestät
+                    unserem Allergnädigsten Kaiser und Herrn zukommenlassen zu wollen.<lb/>Möge es
+                    mir gelungen sein, Euer Excellenz weise Intentionen richtig verstanden und zu
+                    Dero Zufriedenheit ausgeführt zu haben. Dann dürfte ich vielleicht hoffen, für
+                    die Verspätung dieser Leistung Verzeihung und für die Vollendung des zweiten
+                    Bandes, welcher das römische Alterthum behandeln wird, noch eine kleine Frist zu
+                    erhalten.<lb/>Zu meiner Entschuldigung wage ich folgendes zu bemerken. Um der
+                    mir gewordenen Weisung gemäß nicht bloß einen gewöhnlichen Abriß der
+                    Antiquitäten und Mythologie, sondern ein gründliches und anziehendes, für
+                    Schüler und Lehrer nützliches Lesebuch zu liefern, waren in Bezug auf Auswahl,
+                    Anordnung und Darstellung große Schwierigkeiten zu überwinden. Es verging
+                    geraume Zeit, ehe ich mit dem Plane im Reinen war; bei der Ausarbeitung mußten
+                    fast alle Partien mehrfach umgeformt und verkürzt werden. Dazu kam, daß ich, auf
+                    einem anderen Standpunkte stehend als die Mehrzahl der jetzt tonangebenden
+                    Philologen, vieles in einem anderen Lichte schaute und häufig zu anderen
+                    Resultaten gekommen war. Unter solchen Umständen war es doppelt geboten, die
+                    Quellen wiederholt zu durchforschen, die Ansichten der Neueren mehrfach zu
+                    prüfen und nur mit der größten Vorsicht von denselben abzuweichen, zumal da mir
+                    eine streng wissenschaftliche Beweisführung nicht vergönnt war, und der längst
+                    gehegte Plan, eine wissenschaftliche Mythologie zu schreiben, so lange
+                    verschoben werden muß, bis ich durch Gottes Hilfe und Euer Excellenz gütiger
+                    Fürsorge einmal in der Lage sein werde, mit ungetheilterer Kraft und frischerem
+                    Muthe der Wissenschaft leben zu können. Denn, um anderes nicht zu erwähnen, so
+                    kann ich endlich nicht unterlassen in Anschlag zu bringen, daß der Bereich,
+                    welcher mir von Euer Excellenz anvertraut worden, und welchen unausgesetzt und
+                    pünktlich zu erfüllen ich für heilige Pflicht halte, – besonders wegen der
+                    Correctur der lateinischen Seminararbeiten – meine Zeit und Kraft so in Anspruch
+                    nimmt, daß mir zu literarischen Arbeiten nur die Ferien übrig bleiben.
+                    <lb/>Mögen also Euer Excellenz alles dieses mit gewohnter Umsicht und Milde
+                    erwägen und die Verspätung wie mannigfachen Mängel meines Buches zum Theil der
+                    Schwierigkeit der Aufgabe und der Umstände zuschreiben. Übrigens schätze ich
+                    mich glücklich, an Euer Excellenz nicht nur einen nachsichtigen, sondern auch
+                    weisen und sachverständigen Beurtheiler zu haben; und ergreife mit Freuden die
+                    Gelegenheit, mich Euer Excellenz einmal ohne Mittelsperson mit einer Leistung
+                    nahen zu können. Indem ich mich der Hoffnung hingebe, dieselbe werde bei Euer
+                    Excellenz eine gnädige Aufnahme finden und mich in Dero Augen den übrigen aus
+                    dem Auslande berufenen Professoren in geistiger wie wissenschaftlicher Beziehung
+                    nicht ganz unebenbürtig erscheinen lassen, verharre ich in tiefster Ehrfurcht
+                    und vollkommenster Hochachtung</p>
+                <p>Euer Excellenz gehorsamster<lb/>Georg Bippart</p>
+                <p>Prag 18. October 1857</p>
+            </div>
+        </body>
+
+    <back>
+            <listPerson>
+                <person xml:id="bippart-georg">
+                        <persName>
+                            <surname>Bippart</surname>
+                            <forename>Georg</forename>
+                        </persName>
+                        <note>
+                            <p>Berka 1816–1892</p>
+                            <p>1842–1846 Direktor einer Privatschule in Eisenach, 1850 Prof. für klass. Philologie an der Universität Jena, 1852 Prof. für klass. Philologie an der Universität Prag</p>
+                            <p>http://d-nb.info/gnd/116188634</p>
+                            <p>k_A</p>
+                        </note>
+                    <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URL">http://d-nb.info/gnd/116188634</tei:idno>
+                    </person>
+                <person xml:id="thun-hohenstein-leo">
+                        <persName>
+                            <surname>Thun-Hohenstein</surname>
+                            <forename>Leo (Leopold)</forename>
+                        </persName>
+                        <note>
+                            <p>Tetschen 1811–1888 Wien</p>
+                            <p>1848 Gubernialpräsident von Böhmen, 1849–1860 Minister für Kultus und Unterricht, ab 1861 Mitglied des Herrenhauses, Herausgeber der Zeitung "Das Vaterland"</p>
+                            <p>http://d-nb.info/gnd/118757393</p>
+                            <p>k_A</p>
+                        </note>
+                    <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URL">http://d-nb.info/gnd/118757393</tei:idno>
+                    </person>
+            </listPerson>
+            <listPlace>
+                <place xml:id="place_e575530bd7a9cc03829dde0b8657f108">
+                        <placeName>Prag</placeName>
+                        <placeName type="alt">Prager</placeName>
+                        <placeName type="alt">Prahy</placeName>
+                        <placeName type="alt">Prags</placeName>
+                        <placeName type="alt">o. O. [Prag]</placeName>
+                        <placeName type="alt">hier</placeName>
+                        <placeName type="alt">Praze</placeName>
+                        <location>
+                            <geo decls="#LatLng">50.08804 14.42076</geo>
+                        </location>
+                        <idno>http://sws.geonames.org/3067696/</idno>
+                    </place>
+            </listPlace>
+        </back>
+    </text>
+</TEI>
