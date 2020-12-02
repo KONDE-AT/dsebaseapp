@@ -24,7 +24,7 @@
 ##################################
 -->
     <xsl:template match="/">
-        <div class="card" id="main_content">
+        <div class="card">
             <div class="card card-header">
                 <div class="row">
                     <div class="col-md-2">
