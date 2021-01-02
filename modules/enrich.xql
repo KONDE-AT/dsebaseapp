@@ -8,7 +8,6 @@ xquery version "3.1";
 module namespace enrich="http://www.digital-archiv.at/ns/enrich";
 
 import module namespace app="http://www.digital-archiv.at/ns/templates" at "../modules/app.xql";
-import module namespace config="http://www.digital-archiv.at/ns/config" at "../modules/config.xqm";
 import module namespace http = 'http://expath.org/ns/http-client';
 
 declare namespace functx = "http://www.functx.com";
@@ -85,4 +84,74 @@ declare function enrich:add_base_and_xmlid($archeURL as xs:string, $colName as x
             <xml_id>{$xml_id}</xml_id>
           </result>
 
+};
+
+(:~
+ : adds mentions as tei:events to index entry
+
+ : @param $colName The name of the data-collection to process, e.g. 'editions'
+ : @param $ent_type The name of the entity, e.g. 'place', 'org' or 'person'
+:)
+
+declare function enrich:mentions($colName as xs:string, $ent_type as xs:string) {
+  let $collection := $app:data||'/'||$colName
+  for $x at $count in collection($app:indices)//tei:*[name()=$ent_type]
+    let $events := $x//tei:event
+    let $event_list := $x//tei:listEvent
+    let $remove_events := for $e in $event_list let $removed := update delete $e return <removed>{$e}</removed>
+
+    let $ref := '#'||$x/@xml:id
+    let $lm := 'processing entity nr: '||$count||' with id: '||$ref
+    let $l := util:log('info', $lm)
+    let $event_list_node := 
+    <tei:listEvent>{
+    for $doc in collection($collection)//tei:TEI[.//tei:rs[@ref=$ref]]
+        let $doc_title := normalize-space(string-join($doc//tei:titleStmt/tei:title//text()[not(./parent::tei:note)], ''))
+        let $handle := $doc//tei:idno[@type='handle']/text()
+        return
+            <tei:event type="mentioned">
+                <tei:desc>erwähnt in <tei:title ref="{$handle}">{$doc_title}</tei:title></tei:desc>
+            </tei:event>
+    }
+    </tei:listEvent>
+        let $event_count := count($event_list_node//tei:event)
+        let $continue := if ($event_count gt 0) then true() else false()
+        let $update := 
+                if ($continue) then 
+                    update insert $event_list_node into $x
+                else
+                    ()
+        return
+            <result updated="{$ref}">
+                <event_count>{$event_count}</event_count>
+            </result>
+};
+
+(:~
+ : deletes index-entries without xml:id
+
+ : @param $colName The name of the data-collection to process, e.g. 'editions'
+ : @param $ent_type The name of the entity, e.g. 'place', 'org' or 'person'
+:)
+
+declare function enrich:delete_entities_without_xmlid($ent_type as xs:string) {
+  for $x at $count in collection($app:indices)//tei:*[name()=$ent_type and not(@xml:id)]
+    let $msg := substring(normalize-space(string-join($x//text(), ' ')), 1, 25)
+    let $l := util:log('info', $msg)
+
+    return
+      update delete $x
+};
+
+(:~
+ : deletes remove tei:list* elements in tei:back"
+
+ : @param $colName The name of the data-collection to process, e.g. 'editions'
+:)
+
+declare function enrich:delete_lists_in_back($colName) {
+  let $collection := $app:data||'/'||$colName
+  for $x at $count in collection($collection)//tei:back//*[starts-with(name(), 'list')]
+    return
+      update delete $x
 };
