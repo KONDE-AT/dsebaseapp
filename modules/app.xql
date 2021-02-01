@@ -512,12 +512,15 @@ declare function app:firstDoc($node as node(), $model as map(*)) {
 };
 
 (:~
- : fetches html snippets from ACDH's imprint service; Make sure you'll have $app:redmineBaseUrl and $app:redmineID set
- :)
+: fetches html snippets from ACDH's imprint service; Make sure you'll have $app:redmineBaseUrl and $app:redmineID set, you can pass in a 'lang' param as URL-param to switch between "de" (default) and "en"a
+:)
 declare function app:fetchImprint($node as node(), $model as map(*)) {
-    let $url := $app:redmineBaseUrl||$app:redmineID
-    let $request :=
-    <http:request href="{$url}" method="GET"/>
-    let $response := http:send-request($request)
-        return $response[2]
+    let $lang := request:get-parameter("lang", "de")
+    let $url := $app:redmineBaseUrl||$app:redmineID||"&amp;outputLang="||$lang
+    let $payload :=
+        <div>
+            {doc($url)}
+        </div>
+
+        return $payload
 };
