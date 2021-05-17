@@ -241,7 +241,10 @@ for $title in ($entities, $terms)
 declare function app:listPers($node as node(), $model as map(*)) {
     let $hitHtml := "hits.html?searchkey="
     for $person in doc($app:personIndex)//tei:listPerson/tei:person
-    let $gnd := $person/tei:note/tei:p[3]/text()
+    let $gnd := $person/tei:note/tei:p[3]/text() (: configure where your authority file links reside, they may be in <idno> :)
+    (: if you have multiple authority file links in idnos of different type, consider something like
+    let $gnd_link := for $i in $person/tei:idno return <small><a href="{$i}" title="{$i}">{data($i/@type)}</a>&#160;{data($i)}&#10;</small>
+    :)
     let $gnd_link := if ($gnd != "no gnd provided") then
         <a href="{$gnd}">{$gnd}</a>
         else
